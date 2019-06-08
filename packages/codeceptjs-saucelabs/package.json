@@ -1,0 +1,12 @@
+{
+  "name": "@codeceptjs/saucelabs",
+  "version": "1.0.0",
+  "description": "CodeceptJS Saucelabs Integration",
+  "keywords": [
+    "Saucelabs",
+    "CodeceptJS",
+    "Multibrowsers"
+  ],
+  "author": "Kushang Gajjar <kgajjar@salesforce.com>",
+  "license": "MIT"
+}

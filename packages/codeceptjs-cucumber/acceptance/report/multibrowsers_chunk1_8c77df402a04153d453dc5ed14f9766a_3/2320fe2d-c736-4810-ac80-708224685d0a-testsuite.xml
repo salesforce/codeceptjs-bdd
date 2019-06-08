@@ -1,0 +1,190 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1559918521694' stop='1559918578000'>
+    <name>Search Github @search_github</name>
+    <title>Search Github @search_github</title>
+    <test-cases>
+        <test-case start='1559918523727' status='failed' stop='1559918539493'>
+            <name>Fred is able to search for correct repository {"repository":"codeceptjs-quick-start"} @search_repositories</name>
+            <title>Fred is able to search for correct repository {"repository":"codeceptjs-quick-start"} @search_repositories</title>
+            <labels>
+                <label name='tag' value='@search_github'/>
+                <label name='tag' value='@search_repositories'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1559918536573' status='passed' stop='1559918536988'>
+                    <name>EventEmitter: emit </name>
+                    <title>EventEmitter: emit </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1559918536573' status='passed' stop='1559918536883'>
+                            <name>I am on page "/#/"</name>
+                            <title>I am on page "/#/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1559918536988' status='failed' stop='1559918539493'>
+                    <name>When he searches for the "codeceptjs-quick-start" </name>
+                    <title>When he searches for the "codeceptjs-quick-start" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1559918536988' status='failed' stop='1559918539493'>
+                            <name>ghHomePage: search </name>
+                            <title>ghHomePage: search </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1559918536988' status='failed' stop='1559918539492'>
+                                    <name>I fill field ".header-search-input", "codeceptjs-quick-start"</name>
+                                    <title>I fill field ".header-search-input", "codeceptjs-quick-start"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='a3177efb-00a1-4724-810a-4f4108e67f7f-attachment.png' type='image/png' size='111883'/>
+            </attachments>
+            <failure>
+                <message>unknown error</message>
+                <stack-trace>unknown error: unknown error
+                    at getErrorFromResponseBody (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/webdriver/build/utils.js:349:10)
+                    at Request._callback (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/webdriver/build/request.js:121:64)
+                    at Request.self.callback (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:185:22)
+                    at Request.emit (events.js:196:13)
+                    at Request.EventEmitter.emit (domain.js:471:20)
+                    at Request.&lt;anonymous> (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:1161:10)
+                    at Request.emit (events.js:196:13)
+                    at Request.EventEmitter.emit (domain.js:471:20)
+                    at IncomingMessage.&lt;anonymous> (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:1083:12)
+                    at Object.onceWrapper (events.js:284:20)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1559918540566' status='failed' stop='1559918561790'>
+            <name>Fred is able to search for correct repository {"repository":"gkushang/codeceptjs-selenium"} @search_repositories</name>
+            <title>Fred is able to search for correct repository {"repository":"gkushang/codeceptjs-selenium"} @search_repositories</title>
+            <labels>
+                <label name='tag' value='@search_github'/>
+                <label name='tag' value='@search_repositories'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1559918558854' status='passed' stop='1559918559394'>
+                    <name>EventEmitter: emit </name>
+                    <title>EventEmitter: emit </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1559918558854' status='passed' stop='1559918559289'>
+                            <name>I am on page "/#/"</name>
+                            <title>I am on page "/#/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1559918559394' status='failed' stop='1559918561790'>
+                    <name>When he searches for the "gkushang/codeceptjs-selenium" </name>
+                    <title>When he searches for the "gkushang/codeceptjs-selenium" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1559918559394' status='failed' stop='1559918561790'>
+                            <name>ghHomePage: search </name>
+                            <title>ghHomePage: search </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1559918559394' status='failed' stop='1559918561789'>
+                                    <name>I fill field ".header-search-input", "gkushang/codeceptjs-selenium"</name>
+                                    <title>I fill field ".header-search-input", "gkushang/codeceptjs-selenium"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='34805dd2-3741-499e-9735-e37065956f85-attachment.png' type='image/png' size='111883'/>
+            </attachments>
+            <failure>
+                <message>unknown error</message>
+                <stack-trace>unknown error: unknown error
+                    at getErrorFromResponseBody (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/webdriver/build/utils.js:349:10)
+                    at Request._callback (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/webdriver/build/request.js:121:64)
+                    at Request.self.callback (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:185:22)
+                    at Request.emit (events.js:196:13)
+                    at Request.EventEmitter.emit (domain.js:471:20)
+                    at Request.&lt;anonymous> (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:1161:10)
+                    at Request.emit (events.js:196:13)
+                    at Request.EventEmitter.emit (domain.js:471:20)
+                    at IncomingMessage.&lt;anonymous> (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:1083:12)
+                    at Object.onceWrapper (events.js:284:20)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1559918563488' status='failed' stop='1559918576932'>
+            <name>Fred should see the highlighted results for the searched repository @search</name>
+            <title>Fred should see the highlighted results for the searched repository @search</title>
+            <labels>
+                <label name='tag' value='@search_github'/>
+                <label name='tag' value='@search'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1559918574090' status='passed' stop='1559918574549'>
+                    <name>EventEmitter: emit </name>
+                    <title>EventEmitter: emit </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1559918574090' status='passed' stop='1559918574444'>
+                            <name>I am on page "/#/"</name>
+                            <title>I am on page "/#/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1559918574549' status='failed' stop='1559918576932'>
+                    <name>When he searches for the "codeceptjs-quick-start" </name>
+                    <title>When he searches for the "codeceptjs-quick-start" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1559918574549' status='failed' stop='1559918576931'>
+                            <name>ghHomePage: search </name>
+                            <title>ghHomePage: search </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1559918574549' status='failed' stop='1559918576931'>
+                                    <name>I fill field ".header-search-input", "codeceptjs-quick-start"</name>
+                                    <title>I fill field ".header-search-input", "codeceptjs-quick-start"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='e7c3ad48-6261-4be7-b73f-e8d11989dede-attachment.png' type='image/png' size='111883'/>
+            </attachments>
+            <failure>
+                <message>unknown error</message>
+                <stack-trace>unknown error: unknown error
+                    at getErrorFromResponseBody (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/webdriver/build/utils.js:349:10)
+                    at Request._callback (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/webdriver/build/request.js:121:64)
+                    at Request.self.callback (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:185:22)
+                    at Request.emit (events.js:196:13)
+                    at Request.EventEmitter.emit (domain.js:471:20)
+                    at Request.&lt;anonymous> (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:1161:10)
+                    at Request.emit (events.js:196:13)
+                    at Request.EventEmitter.emit (domain.js:471:20)
+                    at IncomingMessage.&lt;anonymous> (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:1083:12)
+                    at Object.onceWrapper (events.js:284:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

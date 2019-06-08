@@ -1,0 +1,15 @@
+{
+  "name": "codeceptjs-e2e",
+  "private": false,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.14.1"
+  },
+  "version": "1.0.0",
+  "description": "codeceptjs e2e solution",
+  "main": "index.js",
+  "author": "g.kushang@gmail.com",
+  "license": "MIT"
+}
