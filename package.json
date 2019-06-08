@@ -1,8 +1,9 @@
 {
   "name": "codeceptjs-e2e",
-  "private": false,
+  "private": true,
   "workspaces": [
-    "packages/*"
+    "codeceptjs-cucumber",
+    "codeceptjs-saucelabs"
   ],
   "devDependencies": {
     "lerna": "^3.14.1"
