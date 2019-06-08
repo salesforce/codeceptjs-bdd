@@ -1,10 +1,10 @@
 let debug = require('debug')('acceptance:config');
 let merge = require('deepmerge');
-let sauce = require('./codeceptjs-saucelabs/codecept.sauce.conf');
-let master = require('./codeceptjs-saucelabs/codecept.master.conf');
+// let sauce = require('./codeceptjs-saucelabs/codecept.sauce.conf');
+// let master = require('./codeceptjs-saucelabs/codecept.master.conf');
 
 const DEFAULT_HOST = 'https://github.com';
-const RELATIVE_PATH = './tests/acceptance/';
+const RELATIVE_PATH = './acceptance/';
 const PAGES_PATH = RELATIVE_PATH + 'pages/';
 const STEPS_PATH = RELATIVE_PATH + 'step_definitions/';
 
