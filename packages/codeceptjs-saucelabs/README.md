@@ -1,4 +1,4 @@
-# `codeceptjs-saucelabs`
+# codeceptjs-saucelabs
 
 > Run tests on Single or Multibrowsers in Parallel on Saucelabs
 
