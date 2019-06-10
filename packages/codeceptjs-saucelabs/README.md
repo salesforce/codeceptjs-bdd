@@ -4,7 +4,7 @@
 
 ## Saucelabs: Single or Multibrowsers in Parallel
 
-This module uses WebDriverIO `wdio` to run tests on single/multi-browsers tests parallel on saucelabs.
+This module uses WebDriverIO `wdio` to run tests on single/multi-browsers tests parallel on SauceLabs.
 
 ## Install
 
@@ -14,7 +14,7 @@ This module uses WebDriverIO `wdio` to run tests on single/multi-browsers tests 
 
 ## Usage
 
-In `codeceptjs.conf.js`,
+In your `codeceptjs.conf.js`,
 
 1. Require following
 
@@ -26,7 +26,7 @@ In `codeceptjs.conf.js`,
 2. Deep Merge and export your **Config** 
 
 ```bash
-   exports.config = merge(<your_existing_codeceptjs_conf, sauce.conf);
+   exports.config = merge(<your_existing_codeceptjs_conf>, sauce.conf);
 ```
 
 ## Run
