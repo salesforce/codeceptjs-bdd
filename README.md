@@ -52,7 +52,7 @@ Pass your required Sauce browsers thru `--profile` param as described below.
 
 ### Run on Single browser on Saucelabs
 
-Follow the instruction on codeceptjs-saucelabs [README](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
+Follow the instruction on [Codeceptjs-Saucelabs README](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
 
 ## Sample Feature File
 
