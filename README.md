@@ -21,10 +21,10 @@
 * Step Definitions files follows `<name_of_step>.steps.js` naming pattern, and created under [step_definitions](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/step_definitions) directory
 
 ## Quick Links
-* [CodeceptJS-Cucumber: E2E Framework](https://github.com/gkushang/codeceptjs-e2e#codceptjs-cucumber)
-* [Co-locate CodeceptJS to your existing project](https://github.com/gkushang/codeceptjs-e2e#codceptjs-cucumber)
+* [CodeceptJS-Cucumber: E2E Framework](https://github.com/gkushang/codeceptjs-e2e#codceptjs-cucumber--e2e-framework)
+* [Co-locate CodeceptJS to your existing project](https://github.com/gkushang/codeceptjs-e2e#co-locate-codeceptjs-to-your-existing-project)
 * [Install & Run Cucumber Tests](https://github.com/gkushang/codeceptjs-e2e#install--run-cucumber-tests)
-* [CodeceptJS-Saucelabs: Single or Multibrowsers in Parallel](https://github.com/gkushang/codeceptjs-e2e#codeceptjs-saueclabs)
+* [CodeceptJS-Saucelabs: Single or Multibrowsers in Parallel](https://github.com/gkushang/codeceptjs-e2e#codeceptjs-saucelabs--single-or-multibrowsers-in-parallel)
 
 
 ## CodceptJS-Cucumber : E2E Framework
