@@ -27,7 +27,7 @@
 * [CodeceptJS-Saucelabs: Single or Multibrowsers in Parallel](https://github.com/gkushang/codeceptjs-e2e#codeceptjs-saueclabs)
 
 
-## CodceptJS-Cucumber E2E Framework
+## CodceptJS-Cucumber : E2E Framework
 
 ### Co-locate CodeceptJS to your existing project
 
@@ -37,7 +37,7 @@ Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/bl
 
 Follow the instruction on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
-## CodeceptJS-Saueclabs, Single or Multibrowsers in Parallel
+## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
 
 Run tests in any requested Saucelabs browsers or can run Multibrowsers all in parallel.
 
