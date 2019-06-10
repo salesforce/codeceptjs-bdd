@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1559863696389' stop='1559863712026'>
+    <name>Search Github @search</name>
+    <title>Search Github @search</title>
+    <test-cases>
+        <test-case start='1559863697768' status='passed' stop='1559863711586'>
+            <name>Fred should see the highlighted results for the searched repository @search_results</name>
+            <title>Fred should see the highlighted results for the searched repository @search_results</title>
+            <labels>
+                <label name='tag' value='@search'/>
+                <label name='tag' value='@search_results'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1559863704913' status='passed' stop='1559863705822'>
+                    <name>EventEmitter: emit </name>
+                    <title>EventEmitter: emit </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1559863704913' status='passed' stop='1559863705718'>
+                            <name>I am on page "/#/"</name>
+                            <title>I am on page "/#/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1559863705822' status='passed' stop='1559863708822'>
+                    <name>When he searches for the "codeceptjs-quick-start" </name>
+                    <title>When he searches for the "codeceptjs-quick-start" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1559863705822' status='passed' stop='1559863708822'>
+                            <name>ghHomePage: search </name>
+                            <title>ghHomePage: search </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1559863705822' status='passed' stop='1559863707656'>
+                                    <name>I fill field ".header-search-input", "codeceptjs-quick-start"</name>
+                                    <title>I fill field ".header-search-input", "codeceptjs-quick-start"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1559863707760' status='passed' stop='1559863708822'>
+                                    <name>I press key "Enter"</name>
+                                    <title>I press key "Enter"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1559863708822' status='passed' stop='1559863711586'>
+                    <name>Then he sees all the detailed highlighted results including description or license info and many more </name>
+                    <title>Then he sees all the detailed highlighted results including description or license info and many more </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1559863708822' status='passed' stop='1559863710045'>
+                            <name>ghSearchPage: grabDescription </name>
+                            <title>ghSearchPage: grabDescription </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1559863708822' status='passed' stop='1559863710043'>
+                                    <name>I grab text from "p.col-12.col-md-9"</name>
+                                    <title>I grab text from "p.col-12.col-md-9"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1559863710045' status='passed' stop='1559863711586'>
+                            <name>ghSearchPage: grabLicenseInfo </name>
+                            <title>ghSearchPage: grabLicenseInfo </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1559863710045' status='passed' stop='1559863711585'>
+                                    <name>I grab text from "p.f6.text-gray"</name>
+                                    <title>I grab text from "p.f6.text-gray"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

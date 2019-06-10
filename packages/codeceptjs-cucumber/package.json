@@ -1,0 +1,36 @@
+{
+  "name": "@codeceptjs/cucumber",
+  "version": "1.0.0",
+  "description": "CodeceptJs Cucumber ",
+  "scripts": {
+    "clean": "rimraf tests/acceptance/report/*.*",
+    "acceptance": "yarn clean && ./node_modules/.bin/codeceptjs run --verbose --features",
+    "acceptance:parallel": "yarn clean && ./node_modules/.bin/codeceptjs run-multiple parallel --verbose --features",
+    "acceptance:multibrowsers": "yarn clean && ./node_modules/.bin/codeceptjs run-multiple multibrowsers --verbose",
+    "acceptance:report": "./node_modules/.bin/allure serve tests/acceptance/report",
+    "bdd:snippets": "./node_modules/.bin/codeceptjs bdd:snippets",
+    "tests": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Cucumber",
+    "CodeceptJS",
+    "Gherkin"
+  ],
+  "author": "Kushang Gajjar <kgajjar@salesforce.com>",
+  "devDependencies": {
+    "@wdio/sauce-service": "^5.9.3",
+    "@wdio/selenium-standalone-service": "^5.8.4",
+    "allure-commandline": "^2.9.0",
+    "codeceptjs": "^2.1.4",
+    "codeceptjs-selenium": "^1.0.2",
+    "debug": "^4.1.1",
+    "deepmerge": "^3.2.0",
+    "faker": "^4.1.0",
+    "protractor": "^5.4.2",
+    "rimraf": "^2.6.3",
+    "selenium-standalone": "^6.16.0",
+    "should": "^13.2.3",
+    "webdriverio": "^5.8.1"
+  },
+  "license": "MIT"
+}

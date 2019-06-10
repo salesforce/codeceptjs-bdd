@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1559866752932' stop='1559866756327'>
+    <name>Search Github @search</name>
+    <title>Search Github @search</title>
+    <test-cases>
+        <test-case start='1559866754583' status='failed' stop='1559866756324'>
+            <name>Fred should see the highlighted results for the searched repository @search_results</name>
+            <title>Fred should see the highlighted results for the searched repository @search_results</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't connect to WebDriver.
+                Error: Misconfigured -- Invalid type received for 'browserName', got '{'platformVersion': '10.14', 'browserName': 'chrome', 'platformName': 'macOS'}' of type 'dictionary' but Sauce OnDemand expects 'string'.
+                
+                The following desired capabilities were received:
+                {'browserName': {'browserName': 'chrome',
+                                 'platformName': 'macOS',
+                                 'platformVersion': '10.14'}}
+                
+                Please make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible</message>
+                <stack-trace>Error: Misconfigured -- Invalid type received for 'browserName', got '{'platformVersion': '10.14', 'browserName': 'chrome', 'platformName': 'macOS'}' of type 'dictionary' but Sauce OnDemand expects 'string'.
+                
+                The following desired capabilities were received:
+                {'browserName': {'browserName': 'chrome',
+                                 'platformName': 'macOS',
+                                 'platformVersion': '10.14'}}
+                    at getErrorFromResponseBody (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/webdriver/build/utils.js:342:12)
+                    at Request._callback (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/webdriver/build/request.js:121:64)
+                    at Request.self.callback (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:185:22)
+                    at Request.emit (events.js:196:13)
+                    at Request.EventEmitter.emit (domain.js:471:20)
+                    at Request.&lt;anonymous> (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:1161:10)
+                    at Request.emit (events.js:196:13)
+                    at Request.EventEmitter.emit (domain.js:471:20)
+                    at IncomingMessage.&lt;anonymous> (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-quick-start/node_modules/request/request.js:1083:12)
+                    at Object.onceWrapper (events.js:284:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

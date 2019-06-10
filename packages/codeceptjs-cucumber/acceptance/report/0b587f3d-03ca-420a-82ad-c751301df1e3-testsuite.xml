@@ -1,0 +1,231 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1560021560248' stop='1560021577370'>
+    <name>Search Github @search_github</name>
+    <title>Search Github @search_github</title>
+    <test-cases>
+        <test-case start='1560021562982' status='passed' stop='1560021568735'>
+            <name>Fred is able to search for correct repository {"repository":"codeceptjs-quick-start"} @search_repositories</name>
+            <title>Fred is able to search for correct repository {"repository":"codeceptjs-quick-start"} @search_repositories</title>
+            <labels>
+                <label name='tag' value='@search_github'/>
+                <label name='tag' value='@search_repositories'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1560021567543' status='passed' stop='1560021567669'>
+                    <name>EventEmitter: emit </name>
+                    <title>EventEmitter: emit </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1560021567543' status='passed' stop='1560021567565'>
+                            <name>I am on page "/#/"</name>
+                            <title>I am on page "/#/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1560021567669' status='passed' stop='1560021568701'>
+                    <name>When he searches for the "codeceptjs-quick-start" </name>
+                    <title>When he searches for the "codeceptjs-quick-start" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1560021567669' status='passed' stop='1560021568701'>
+                            <name>ghHomePage: search </name>
+                            <title>ghHomePage: search </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1560021567669' status='passed' stop='1560021568055'>
+                                    <name>I fill field ".header-search-input", "codeceptjs-quick-start"</name>
+                                    <title>I fill field ".header-search-input", "codeceptjs-quick-start"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1560021568159' status='passed' stop='1560021568701'>
+                                    <name>I press key "Enter"</name>
+                                    <title>I press key "Enter"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1560021568701' status='passed' stop='1560021568735'>
+                    <name>Then he is able to see the "codeceptjs-quick-start" in search results </name>
+                    <title>Then he is able to see the "codeceptjs-quick-start" in search results </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1560021568701' status='passed' stop='1560021568735'>
+                            <name>ghSearchPage: grabHrefForResult </name>
+                            <title>ghSearchPage: grabHrefForResult </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1560021568701' status='passed' stop='1560021568734'>
+                                    <name>I grab attribute from "li.repo-list-item>div>h3>a", "href"</name>
+                                    <title>I grab attribute from "li.repo-list-item>div>h3>a", "href"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1560021568792' status='passed' stop='1560021572765'>
+            <name>Fred is able to search for correct repository {"repository":"gkushang/codeceptjs-selenium"} @search_repositories</name>
+            <title>Fred is able to search for correct repository {"repository":"gkushang/codeceptjs-selenium"} @search_repositories</title>
+            <labels>
+                <label name='tag' value='@search_github'/>
+                <label name='tag' value='@search_repositories'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1560021571574' status='passed' stop='1560021571694'>
+                    <name>EventEmitter: emit </name>
+                    <title>EventEmitter: emit </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1560021571574' status='passed' stop='1560021571591'>
+                            <name>I am on page "/#/"</name>
+                            <title>I am on page "/#/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1560021571694' status='passed' stop='1560021572732'>
+                    <name>When he searches for the "gkushang/codeceptjs-selenium" </name>
+                    <title>When he searches for the "gkushang/codeceptjs-selenium" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1560021571694' status='passed' stop='1560021572732'>
+                            <name>ghHomePage: search </name>
+                            <title>ghHomePage: search </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1560021571694' status='passed' stop='1560021572077'>
+                                    <name>I fill field ".header-search-input", "gkushang/codeceptjs-selenium"</name>
+                                    <title>I fill field ".header-search-input", "gkushang/codeceptjs-selenium"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1560021572181' status='passed' stop='1560021572732'>
+                                    <name>I press key "Enter"</name>
+                                    <title>I press key "Enter"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1560021572732' status='passed' stop='1560021572765'>
+                    <name>Then he is able to see the "gkushang/codeceptjs-selenium" in search results </name>
+                    <title>Then he is able to see the "gkushang/codeceptjs-selenium" in search results </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1560021572732' status='passed' stop='1560021572765'>
+                            <name>ghSearchPage: grabHrefForResult </name>
+                            <title>ghSearchPage: grabHrefForResult </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1560021572732' status='passed' stop='1560021572765'>
+                                    <name>I grab attribute from "li.repo-list-item>div>h3>a", "href"</name>
+                                    <title>I grab attribute from "li.repo-list-item>div>h3>a", "href"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1560021572824' status='failed' stop='1560021576855'>
+            <name>Fred should see the highlighted results for the searched repository @search</name>
+            <title>Fred should see the highlighted results for the searched repository @search</title>
+            <labels>
+                <label name='tag' value='@search_github'/>
+                <label name='tag' value='@search'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1560021575715' status='passed' stop='1560021575834'>
+                    <name>EventEmitter: emit </name>
+                    <title>EventEmitter: emit </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1560021575715' status='passed' stop='1560021575733'>
+                            <name>I am on page "/#/"</name>
+                            <title>I am on page "/#/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1560021575834' status='passed' stop='1560021576819'>
+                    <name>When he searches for the "codeceptjs-quick-start" </name>
+                    <title>When he searches for the "codeceptjs-quick-start" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1560021575834' status='passed' stop='1560021576819'>
+                            <name>ghHomePage: search </name>
+                            <title>ghHomePage: search </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1560021575834' status='passed' stop='1560021576207'>
+                                    <name>I fill field ".header-search-input", "codeceptjs-quick-start"</name>
+                                    <title>I fill field ".header-search-input", "codeceptjs-quick-start"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1560021576309' status='passed' stop='1560021576818'>
+                                    <name>I press key "Enter"</name>
+                                    <title>I press key "Enter"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1560021576819' status='failed' stop='1560021576855'>
+                    <name>Then he sees all the detailed highlighted results including description or license info and many more </name>
+                    <title>Then he sees all the detailed highlighted results including description or license info and many more </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1560021576819' status='failed' stop='1560021576855'>
+                            <name>ghSearchPage: grabDescription </name>
+                            <title>ghSearchPage: grabDescription </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1560021576819' status='passed' stop='1560021576854'>
+                                    <name>I grab text from "p.col-12.col-md-9"</name>
+                                    <title>I grab text from "p.col-12.col-md-9"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='6187c9a0-a98d-4f84-9804-6f9bcc046034-attachment.png' type='image/png' size='166258'/>
+            </attachments>
+            <failure>
+                <message>expected 'CodeceptJS with Cucumber &amp; SauceLabs' to be 'Gherkin BDD / Cucumber tests with CodeceptJS'</message>
+                <stack-trace>AssertionError: expected 'CodeceptJS with Cucumber &amp; SauceLabs' to be 'Gherkin BDD / Cucumber tests with CodeceptJS'
+                    at Assertion.fail (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-e2e/node_modules/should/cjs/should.js:275:17)
+                    at Assertion.value (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-e2e/node_modules/should/cjs/should.js:356:19)
+                    at /Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-e2e/codeceptjs-cucumber/acceptance/step_definitions/search/github.steps.js:26:58
+                    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+                    at async runSteps (/Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-e2e/node_modules/codeceptjs/lib/interfaces/gherkin.js:46:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
