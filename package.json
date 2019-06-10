@@ -2,8 +2,7 @@
   "name": "codeceptjs-e2e",
   "private": true,
   "workspaces": [
-    "codeceptjs-cucumber",
-    "codeceptjs-saucelabs"
+    "packages/*"  
   ],
   "devDependencies": {
     "lerna": "^3.14.1"
@@ -11,6 +10,6 @@
   "version": "1.0.0",
   "description": "codeceptjs e2e solution",
   "main": "index.js",
-  "author": "g.kushang@gmail.com",
+  "author": "Kushang Gajjar <g.kushang@gmail.com>",
   "license": "MIT"
 }

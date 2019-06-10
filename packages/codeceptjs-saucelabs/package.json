@@ -7,10 +7,9 @@
     "CodeceptJS",
     "Multibrowsers"
   ],
-  "author": "Kushang Gajjar <kgajjar@salesforce.com>",
+  "author": "Kushang Gajjar <g.kushang@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "debug": "^4.1.1",
-    "deepmerge": "^3.2.0"
+    "debug": "^4.1.1"
   }
 }
