@@ -12,13 +12,13 @@
 
 * Run on **SauceLabs**. Single browser or Multibrowsers in Parallel
 
-* Uses [Should.js](https://shouldjs.github.io/) Assertions Library. Various assertions with examples are available [here][7]
+* Uses [Should.js](https://shouldjs.github.io/) Assertions Library. Various assertions with examples are available [here](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/acceptance/step_definitions/search/github.steps.js)
 
 * Reduces Flakieness with **RetryFailedSteps** plugin and a Webdriver's **SmartWait**
 
-* Page objects follow `<name_of_page>.page.js` naming pattern, and created under [pages][4] directory
+* Page objects follow `<name_of_page>.page.js` naming pattern, and created under [pages](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/pages/) directory
 
-* Step Definitions files follows `<name_of_step>.steps.js` naming pattern, and created under [step_definitions][5] directory
+* Step Definitions files follows `<name_of_step>.steps.js` naming pattern, and created under [step_definitions](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/step_definitions) directory
 
 ## Quick Links
 * [CodeceptJS-Cucumber: E2E Framework](https://github.com/gkushang/codeceptjs-e2e#codceptjs-cucumber)
@@ -35,7 +35,7 @@ Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/bl
 
 ### Install & Run Cucumber Tests
 
-Follow the instruction on codeceptjs-cucumber [README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
+Follow the instruction on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
 ## CodeceptJS-Saueclabs, Single or Multibrowsers in Parallel
 
