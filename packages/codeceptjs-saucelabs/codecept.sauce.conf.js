@@ -3,15 +3,19 @@ let sauceBrowsers = require('./sauce.browsers').browsers;
 const SAUCE_DELIMITER = ':';
 const MULTIBROWSER_DELIMITER = ',';
 
+function isSauceRequested() {
+  return (process.profile && process.profile.match('sauce:[a-zA-Z]'));
+}
+
 function getBrowsers() {
-    if (process.profile) {
+    if (isSauceRequested()) {
         let multibrowsers = [];
         let requestedBrowsers = process.profile.split(SAUCE_DELIMITER)[1].split(MULTIBROWSER_DELIMITER);
-        debug('requested multibrowsers:', requestedBrowsers);
+        debug('Tests are running on Saucelabs on Multi-Browsers:', requestedBrowsers);
         requestedBrowsers.forEach(browser => {
             multibrowsers.push(sauceBrowsers[browser]);
         });
-        debug('multibrowsers saucelabs conf:', multibrowsers);
+        debug('Saucelabs Confi for Multi-Browsers:', multibrowsers);
         return multibrowsers;
     }
 
@@ -39,4 +43,4 @@ let conf = {
     }
 };
 
-exports.conf = (process.profile && process.profile.match('sauce:[a-zA-Z]')) ? conf : {};
+exports.conf = isSauceRequested() ? conf : {};

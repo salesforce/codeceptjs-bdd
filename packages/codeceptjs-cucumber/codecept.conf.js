@@ -3,7 +3,6 @@ let merge = require('deepmerge');
 let master = require('./codecept.master.conf');
 let sauce = require('../codeceptjs-saucelabs/codecept.sauce.conf');
 
-
 const DEFAULT_HOST = 'https://github.com';
 const RELATIVE_PATH = './acceptance/';
 const PAGES_PATH = RELATIVE_PATH + 'pages/';
@@ -34,7 +33,5 @@ let conf = {
   },
   name: 'Github Acceptance Tests'
 };
-
-console.log('sauce conf: ', sauce.conf);
 
 exports.config = merge(merge(conf, master.conf), sauce.conf);

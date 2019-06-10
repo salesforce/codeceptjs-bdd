@@ -60,15 +60,11 @@ let conf = {
 
 conf.helpers.WebDriver = webDriver;
 
-if (process.profile) {
-  // run on chrome headless browser: --profile=chrome:headless
-  if (process.profile === 'chrome:headless') {
-    debug('running tests on "Headless" browser');
-
+if (process.profile && process.profile === 'chrome:headless') {
+    debug('Tests are running on "chrome:headless" browser');
     process.profile = process.profile.split(':')[0];
     conf.helpers.WebDriver.browser = process.profile;
     conf.helpers.WebDriver.capabilities = headlessCaps;
-  }
 }
 
 exports.conf = conf;
