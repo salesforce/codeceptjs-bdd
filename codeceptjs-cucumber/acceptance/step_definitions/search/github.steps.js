@@ -23,7 +23,7 @@ Then('he sees all the detailed highlighted results including description or lice
   async () => {
 
     // verify Complete Text
-    (await ghSearchPage.grabDescription()).trim().should.equal('Gherkin BDD / Cucumber tests with CodeceptJS');
+    (await ghSearchPage.grabDescription()).trim().should.equal('CodeceptJS with Cucumber & SauceLabs');
 
     // verify Partial Text
     // because there are two results for the same element, the result is in Array

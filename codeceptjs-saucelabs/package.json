@@ -8,5 +8,9 @@
     "Multibrowsers"
   ],
   "author": "Kushang Gajjar <kgajjar@salesforce.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "debug": "^4.1.1",
+    "deepmerge": "^3.2.0"
+  }
 }
