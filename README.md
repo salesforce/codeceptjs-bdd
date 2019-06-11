@@ -36,7 +36,7 @@ To get started, follow the instructions on [Codeceptjs-Cucumber README](https://
 
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
 
-> Integration with Saucelabs with Sauce Config
+> CodeceptJs Integration with Saucelabs. Ease of Configuration!
 
 * Easy to run tests on Saucelabs with command 
 
