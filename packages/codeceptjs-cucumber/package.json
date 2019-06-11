@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-cucumber",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CodeceptJs Cucumber ",
   "scripts": {
     "clean": "rimraf tests/acceptance/report/*.*",
@@ -21,7 +21,7 @@
     "@wdio/selenium-standalone-service": "^5.8.4",
     "allure-commandline": "^2.9.0",
     "codeceptjs": "^2.1.4",
-    "codeceptjs-saucelabs": "^1.0.0",
+    "codeceptjs-saucelabs": "^1.0.1",
     "codeceptjs-selenium": "^1.0.2",
     "debug": "^4.1.1",
     "deepmerge": "^3.2.0",
