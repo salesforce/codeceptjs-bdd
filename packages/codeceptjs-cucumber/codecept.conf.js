@@ -8,7 +8,7 @@ const RELATIVE_PATH = './acceptance/';
 const PAGES_PATH = RELATIVE_PATH + 'pages/';
 const STEPS_PATH = RELATIVE_PATH + 'step_definitions/';
 
-const HOST = process.host || DEFAULT_HOST;
+const HOST = process.env.HOST || DEFAULT_HOST;
 
 let conf = {
   output: RELATIVE_PATH + 'report',
