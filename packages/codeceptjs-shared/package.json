@@ -1,14 +1,13 @@
 {
   "name": "codeceptjs-shared",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "Shared Configurations and Helpers for CodeceptJS",
   "author": "Kushang Gajjar <g.kushang@gmail.com>",
   "homepage": "https://github.com/gkushang/codeceptjs-e2e#readme",
   "license": "MIT",
   "main": "lib/codeceptjs-shared.js",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
