@@ -62,6 +62,13 @@ To run on `chrome:headless` browser
 
 This framework integrates the Saucelabs to run the tests on cloud. It runs tests on Single or Cros-browsers all in Parallel.
 
+**Important:** Make sure to export your Sauce Username and Sauce Access Key as env variables
+
+```bash
+    export SAUCE_USERNAME=<sauce_username>
+    export SAUCE_KEY=<sauce_key>
+```
+
 * Easy to run tests on Saucelabs with command 
 
 ```bash

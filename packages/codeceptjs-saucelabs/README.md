@@ -8,6 +8,8 @@ This module uses WebDriverIO `wdio` to run tests on single/multi-browsers tests 
 
 ## Install
 
+This integration is already part of [CodeceptJS-Cucumber](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber) E2E framework. Follow the instructions below to install individually on your project, 
+
 ```bash
     npm i codeceptjs-saucelabs --save-dev
 ```
