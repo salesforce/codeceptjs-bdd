@@ -1,4 +1,4 @@
-# `codeceptjs-shared`
+# codeceptjs-shared
 
 ***Shared library for the CodeceptJS***
 
