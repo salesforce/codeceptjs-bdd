@@ -1,4 +1,4 @@
-# codeceptjs-cucumber
+# Codeceptjs-Cucumber
 
 ***[CodeceptJS](https://codecept.io/) E2E framework with Cucumber and Saucelabs***
 
