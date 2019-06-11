@@ -22,7 +22,7 @@
 
 ## CodceptJS-Cucumber : E2E Framework
 
-To get it starte, follow the instructions on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
+To get started, follow the instructions on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
 
