@@ -34,6 +34,10 @@
 
 To get started, follow the instructions on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
+### Co-locate CodeceptJS to your existing project
+
+Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md) to co-locate and quik start with CodeceptJS-Cucumber tests.
+
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
 
 > CodeceptJs Integration with Saucelabs. Ease of Configuration!
