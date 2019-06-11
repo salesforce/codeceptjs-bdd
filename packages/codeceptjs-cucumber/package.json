@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-cucumber",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CodeceptJs Cucumber ",
   "scripts": {
     "clean": "rimraf tests/acceptance/report/*.*",
