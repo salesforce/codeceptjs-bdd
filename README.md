@@ -50,4 +50,4 @@ To get started, follow the instructions on [Codeceptjs-Cucumber README](https://
   yarn acceptance:multibrowsers --profile sauce:chrome,ie,safari
 ```
 
-Follow the instruction on [Codeceptjs-Saucelabs README](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
+To get started, follow the instruction on [Codeceptjs-Saucelabs README](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
