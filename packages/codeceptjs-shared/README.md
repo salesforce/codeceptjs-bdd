@@ -1,11 +1,24 @@
 # `codeceptjs-shared`
 
-> TODO: description
+> Shared library for the CodeceptJS
 
-## Usage
+## Install
+
+```
+    yarn codeceptjs-shared deepmerge -D
+```
+
+## Reuse the Master Configuration
+
+In your `codecept.conf.js` file, add the following 
 
 ```
 const codeceptjsShared = require('codeceptjs-shared');
+const merge = require('deepmerge');
+```
 
-// TODO: DEMONSTRATE API
+Exports below config,
+
+```
+    exports.config = merge(conf, codeceptjsShared.conf);
 ```
