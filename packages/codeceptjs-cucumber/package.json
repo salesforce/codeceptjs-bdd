@@ -10,6 +10,7 @@
     "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",
     "bdd:snippets": "./node_modules/.bin/codeceptjs bdd:snippets"
   },
+  "main": "index.js",
   "keywords": [
     "Cucumber",
     "CodeceptJS",
