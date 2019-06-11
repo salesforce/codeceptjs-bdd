@@ -6,7 +6,7 @@
 
 > This is the E2E framework with CodeceptJS and Cucumber. Integrates with Saucelabs, uses Should.js assertion library. Runs cross-browsers tests in Parallel on saucelabs.
 
-## Co-locate CodeceptJS to your existing project
+## Co-locate CodeceptJS-Cucumber E2E Framework to your existing project
 
 Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md) to co-locate and quik start with CodeceptJS-Cucumber tests.
 
