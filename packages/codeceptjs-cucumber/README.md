@@ -81,7 +81,7 @@ This framework integrates the Saucelabs to run the tests on cloud. It runs tests
   yarn acceptance:multibrowsers --profile sauce:chrome,ie,safari
 ```
 
-For more information, please follow the instructions on [CodeceptJS-Saucelabs](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-saucelabs/README.md) module.
+For more information, please follow the instructions on [CodeceptJS-Saucelabs](https://github.com/gkushang/codeceptjs-e2e/blob/master/CO-LOCATE.md) module.
 
 ## Debug
 
