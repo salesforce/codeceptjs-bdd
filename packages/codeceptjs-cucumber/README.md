@@ -1,14 +1,14 @@
 # codeceptjs-cucumber
 
-***[CodeceptJS][1] E2E framework with Cucumber and Saucelabs***
+***[CodeceptJS](https://codecept.io/) E2E framework with Cucumber and Saucelabs***
 
 ## About
 
-> This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
+> This is the E2E framework with CodeceptJS and Cucumber. Integrates with Saucelabs, uses Should.js assertion library. Runs cross-browsers tests in Parallel on saucelabs.
 
 ## Co-locate CodeceptJS to your existing project
 
-Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md) to co-locate and quik start with CodeceptJS-Cucumber tests
+Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md) to co-locate and quik start with CodeceptJS-Cucumber tests.
 
 ## Usage
 
@@ -16,8 +16,11 @@ Prefer installing [yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 
 ```bash
     git clone git@github.com:gkushang/codeceptjs-e2e.git
+
     npx lerna bootstrap
+
     cd codeceptjs-e2e/packages/codeceptjs-cucumber
+
     yarn
 ```
 
@@ -57,32 +60,7 @@ To run on `chrome:headless` browser
 
 ## Saucelabs: Single or Multibrowsers in Parallel
 
-**Important:** Make sure to export your Sauce Username and Sauce Access Key as env variables
-
-```bash
-    export SAUCE_USERNAME=<sauce_username>
-    export SAUCE_KEY=<sauce_key>
-```
-
-### Run on Single browser on Saucelabs
-
-* command: `yarn acceptance`
-* param: `--profile sauce:<sauce_browser>`
-* available browsers: `chrome`, `ie`, `edge`, `safari`, `firefox`
-
-```bash
-    yarn acceptance --grep @search_results --profile sauce:chrome
-```
-
-### Run Parallel on Multibrowsers on Saucelabs
-
-* command: `yarn acceptance:multibrowsers`
-* param: `--profile sauce:<first_sauce_browser>,<second_sauce_browser>,<and_so_on>`
-* available browsers: `chrome`, `ie`, `edge`, `safari`, `firefox`
-
-```bash
-    yarn acceptance:multibrowsers --grep @search_results --profile sauce:chrome,ie
-```
+This framework integrates the Saucelabs to run the tests on cloud. Please follow the instructions on [CodeceptJS-Saucelabs](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-saucelabs/README.md) module to get started.
 
 ## Debug
 
