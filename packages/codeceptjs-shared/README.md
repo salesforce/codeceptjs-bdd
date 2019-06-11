@@ -8,7 +8,7 @@
     yarn codeceptjs-shared deepmerge -D
 ```
 
-## Reuse the Master Configuration
+## Simply your existing configuration by Re-Using the Master Configuration
 
 In your `codecept.conf.js` file, add the following 
 

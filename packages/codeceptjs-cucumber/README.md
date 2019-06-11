@@ -10,9 +10,9 @@
 
 Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md) to co-locate and quik start with CodeceptJS-Cucumber tests.
 
-## Use Master Configuration for your tests
+## Uses Master Configuration from CodeceptJS Shared module to simply the configuration file
 
-Follow this [Instructions]() to use the Master configuration for your project
+Follow this [Instructions](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-shared/README.md) to use the Master configuration for your project
 
 ## Usage
 
