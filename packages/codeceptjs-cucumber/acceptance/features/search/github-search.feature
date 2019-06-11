@@ -15,7 +15,7 @@ Feature: Search Github
  @search_results
   Scenario: Fred should see the highlighted results for the searched repository
 
-    When he searches for the "codeceptjs-quick-start"
+    When he searches for the "gkushang/codeceptjs-e2e"
     Then he sees all the detailed highlighted results including description or license info and many more
   
 
@@ -28,5 +28,5 @@ Feature: Search Github
   
     Scenarios:
     | repository |
-    | codeceptjs-quick-start |
-    | gkushang/codeceptjs-selenium |
+    | gkushang/codeceptjs-e2e       |
+    | gkushang/codeceptjs-selenium  |

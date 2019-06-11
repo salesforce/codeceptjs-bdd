@@ -8,14 +8,6 @@
 
 > This is the E2E framework with CodeceptJS and Cucumber. Integrates with Saucelabs, uses Should.js assertion library. Runs cross-browsers tests in Parallel on saucelabs.
 
-## Co-locate CodeceptJS-Cucumber E2E Framework to your existing project
-
-Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md) to co-locate and quik start with CodeceptJS-Cucumber tests.
-
-## Simplfied Configuration by re-using the Master Config
-
-Follow this [Instructions](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-shared/README.md) to use the Master configuration for your project
-
 ## Usage
 
 Prefer installing [yarn](https://yarnpkg.com/en/docs/install#mac-stable)
@@ -30,7 +22,16 @@ Prefer installing [yarn](https://yarnpkg.com/en/docs/install#mac-stable)
     yarn
 ```
 
-## Run Acceptance Tests
+## Co-locate CodeceptJS-Cucumber E2E Framework to your existing project
+
+Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md) to co-locate and quik start with CodeceptJS-Cucumber tests.
+
+## Simplfied Configuration by re-using the Master Config
+
+Follow this [Instructions](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-shared/README.md) to use the Master configuration for your project
+
+
+## How to Run your Acceptance Tests?
 
 ### Run all tests serially
 
