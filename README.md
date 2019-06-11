@@ -22,6 +22,15 @@
 
 ## CodceptJS-Cucumber : E2E Framework
 
+> CodeceptJS E2E Framework with Cucumber and Saucelabs Integration
+
+* Run Cucumber Scenarios on local browsers or chrome:headless
+* Run tests on Saucelabs
+  * Single Browser
+  * Multi Browsers in Parallel
+* Launch HTML report
+* Co-locate the E2E framework to your repository
+
 To get started, follow the instructions on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
