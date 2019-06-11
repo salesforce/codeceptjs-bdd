@@ -2,6 +2,8 @@
 
 > Shared library for the CodeceptJS
 
+[![License](https://img.shields.io/npm/l/codeceptjs-shared.svg)](LICENSE)
+
 ## Install
 
 ```
