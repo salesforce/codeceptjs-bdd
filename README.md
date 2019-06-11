@@ -25,6 +25,7 @@
 > CodeceptJS E2E Framework with Cucumber and Saucelabs Integration
 
 * Run Cucumber Scenarios on local browsers or chrome:headless
+* Run tests in Parallel
 * Run tests on Saucelabs
   * Single Browser
   * Multi Browsers in Parallel
@@ -34,5 +35,19 @@
 To get started, follow the instructions on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
+
+> Integration with Saucelabs with Sauce Config
+
+* Easy to run tests on Saucelabs with command 
+
+```bash
+  yarn acceptance --profile sauce:chrome
+```
+
+* Easy to run tests on Multibrowsers. All tests in Parallel with command 
+
+```bash
+  yarn acceptance:multibrowsers --profile sauce:chrome,ie,safari
+```
 
 Follow the instruction on [Codeceptjs-Saucelabs README](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
