@@ -32,7 +32,7 @@
 * Launch HTML report
 * Co-locate the E2E framework to your repository
 
-To get started, follow the instructions on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
+To get started, follow the instructions on [codeceptjs-cucumber](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
 ### Co-locate CodeceptJS-Cucumber E2E Framework to your existing project
 
@@ -54,4 +54,12 @@ Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/bl
   yarn acceptance:multibrowsers --profile sauce:chrome,ie,safari
 ```
 
-To get started, follow the instruction on [Codeceptjs-Saucelabs README](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
+To get started, follow the instructions on [codeceptjs-saucelabs](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
+
+
+## CodeceptJS-Shared : Shared configurations
+
+> Shared configurarions
+
+To get started, follow the instructions on [codeceptjs-shared](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-shared)
+
