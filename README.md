@@ -1,6 +1,7 @@
 # CodeceptJS E2E
 
 ***[CodeceptJS](https://codecept.io/) E2E Framework with Cucumber and Saucelabs cloud***
+
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
  
 ## About

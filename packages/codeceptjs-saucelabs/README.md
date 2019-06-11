@@ -1,6 +1,7 @@
 # codeceptjs-saucelabs
 
-> Run tests on Single or Multibrowsers in Parallel on Saucelabs
+***Run tests on Single or Multibrowsers in Parallel on Saucelabs***
+
 [![License](https://img.shields.io/npm/l/codeceptjs-saucelabs.svg)](LICENSE)
 
 ## Saucelabs: Single or Multibrowsers in Parallel

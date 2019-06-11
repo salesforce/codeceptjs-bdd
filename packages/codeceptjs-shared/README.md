@@ -1,6 +1,6 @@
 # `codeceptjs-shared`
 
-> Shared library for the CodeceptJS
+***Shared library for the CodeceptJS***
 
 [![License](https://img.shields.io/npm/l/codeceptjs-shared.svg)](LICENSE)
 
