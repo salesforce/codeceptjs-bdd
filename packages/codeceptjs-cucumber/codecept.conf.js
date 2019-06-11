@@ -1,7 +1,7 @@
 let debug = require('debug')('acceptance:config');
 let merge = require('deepmerge');
-let master = require('codeceptjs-shared');
-let sauce = require('codeceptjs-saucelabs');
+let codeceptJsShared = require('codeceptjs-shared');
+let codeceptJsSauce = require('codeceptjs-saucelabs');
 
 const DEFAULT_HOST = 'https://github.com';
 const RELATIVE_PATH = './acceptance/';
@@ -34,4 +34,4 @@ let conf = {
   name: 'Github Acceptance Tests'
 };
 
-exports.config = merge(merge(conf, master.conf), sauce.conf);
+exports.config = merge(merge(conf, codeceptJsShared.conf), codeceptJsSauce.conf);
