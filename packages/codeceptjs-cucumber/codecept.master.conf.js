@@ -19,14 +19,15 @@ const headlessCaps = {
 };
 
 let conf = {
-  helpers: {
-    Faker: {
-      require: RELATIVE_HELPERS_PATH + 'faker-helper.js'
-    },
-    Protractor_commands: {
-      require: RELATIVE_HELPERS_PATH + 'protractor-commands-helper.js'
-    }
-  },
+  helpers: {},
+  // helpers: {
+  //   Faker: {
+  //     require: RELATIVE_HELPERS_PATH + 'faker-helper.js'
+  //   },
+  //   Protractor_commands: {
+  //     require: RELATIVE_HELPERS_PATH + 'protractor-commands-helper.js'
+  //   }
+  // },
   plugins: {
     screenshotOnFail: {
       enabled: true
