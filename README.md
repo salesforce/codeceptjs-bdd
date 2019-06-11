@@ -29,28 +29,9 @@
 
 ## CodceptJS-Cucumber : E2E Framework
 
-### Co-locate CodeceptJS to your existing project
-
-Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md) to co-locate and quik start with CodeceptJS-Cucumber tests
-
-### Install & Run Cucumber Tests
-
-Follow the instruction on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
+To get it starte, follow the instructions on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
-
-Run tests in any requested Saucelabs browsers or can run Multibrowsers all in parallel.
-
-Pass your required Sauce browsers thru `--profile` param as described below.
-
-**Important:** Make sure to export your Sauce Username and Sauce Access Key as env variables
-
-```bash
-    export SAUCE_USERNAME=<sauce_username>
-    export SAUCE_KEY=<sauce_key>
-```
-
-### Run on Single browser on Saucelabs
 
 Follow the instruction on [Codeceptjs-Saucelabs README](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
 
