@@ -34,9 +34,7 @@
 
 To get started, follow the instructions on [codeceptjs-cucumber](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
-##### Co-locate CodeceptJS-Cucumber E2E Framework to your existing project
-
-Follow this [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md) to co-locate and quik start with CodeceptJS-Cucumber tests.
+##### Co-locate CodeceptJS-Cucumber E2E Framework to your existing project with [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md)
 
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
 
