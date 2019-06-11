@@ -1,5 +1,5 @@
 {
-  "name": "@codeceptjs/saucelabs",
+  "name": "codeceptjs-saucelabs",
   "version": "1.0.0",
   "description": "CodeceptJS Saucelabs Integration",
   "keywords": [
