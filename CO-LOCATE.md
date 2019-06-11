@@ -18,7 +18,7 @@
 
     cd <to_your_desired_project>
     
-    yarn add @wdio/selenium-standalone-service allure-commandline codeceptjs codeceptjs-selenium debug faker protractor rimraf should webdriverio deepmerge codeceptjs-saucelabs -D
+    yarn add codeceptjs-saucelabs codeceptjs-shared @wdio/selenium-standalone-service allure-commandline codeceptjs codeceptjs-selenium debug faker protractor rimraf should webdriverio deepmerge -D
 ```
 
 Update the following PATH's in `codeceptjs.config.js` with your actual paths,

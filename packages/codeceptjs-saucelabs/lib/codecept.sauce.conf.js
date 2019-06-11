@@ -1,4 +1,4 @@
-let debug = require('debug')('@codeceptjs:saucelabs:config');
+let debug = require('debug')('codeceptjs-saucelabs:config');
 let sauceBrowsers = require('./sauce.browsers').browsers;
 const SAUCE_DELIMITER = ':';
 const MULTIBROWSER_DELIMITER = ',';
@@ -15,7 +15,7 @@ function getBrowsers() {
         requestedBrowsers.forEach(browser => {
             multibrowsers.push(sauceBrowsers[browser]);
         });
-        debug('Saucelabs Confi for Multi-Browsers:', multibrowsers);
+        debug('Saucelabs Config for Multi-Browsers:', multibrowsers);
         return multibrowsers;
     }
 
