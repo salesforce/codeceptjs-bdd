@@ -1,6 +1,6 @@
 let debug = require('debug')('acceptance:config');
 let merge = require('deepmerge');
-let master = require('./codecept.master.conf');
+let master = require('codeceptjs-shared');
 let sauce = require('codeceptjs-saucelabs');
 
 const DEFAULT_HOST = 'https://github.com';
