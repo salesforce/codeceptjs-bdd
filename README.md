@@ -20,13 +20,6 @@
 
 * Step Definitions files follows `<name_of_step>.steps.js` naming pattern, and created under [step_definitions](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/step_definitions) directory
 
-## Quick Links
-* [CodeceptJS-Cucumber: E2E Framework](https://github.com/gkushang/codeceptjs-e2e#codceptjs-cucumber--e2e-framework)
-* [Co-locate CodeceptJS to your existing project](https://github.com/gkushang/codeceptjs-e2e#co-locate-codeceptjs-to-your-existing-project)
-* [Install & Run Cucumber Tests](https://github.com/gkushang/codeceptjs-e2e#install--run-cucumber-tests)
-* [CodeceptJS-Saucelabs: Single or Multibrowsers in Parallel](https://github.com/gkushang/codeceptjs-e2e#codeceptjs-saucelabs--single-or-multibrowsers-in-parallel)
-
-
 ## CodceptJS-Cucumber : E2E Framework
 
 To get it starte, follow the instructions on [Codeceptjs-Cucumber README](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
@@ -34,23 +27,3 @@ To get it starte, follow the instructions on [Codeceptjs-Cucumber README](https:
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
 
 Follow the instruction on [Codeceptjs-Saucelabs README](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
-
-## Sample Feature File
-
-```bash
-
-@search
-Feature: Search Github
-
-  In order to see Github Search works
-  As a Github user
-  I want to be able to search for repository
-
- @search_repository
-  Scenario: Fred should see the highlighted results for the searched repository
-
-    Given Fred is on Github Homepage
-    When he searches for the "codeceptjs-quick-start"
-    Then he sees all the detailed highlighted results including description or license info and many more
-  
-```
