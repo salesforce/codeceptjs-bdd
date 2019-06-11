@@ -29,6 +29,8 @@ In your `codeceptjs.conf.js`,
    exports.config = merge(<your_existing_codeceptjs_conf>, sauce.conf);
 ```
 
+You are all set!
+
 ## Run
 
 **Important:** Make sure to export your Sauce Username and Sauce Access Key as env variables
