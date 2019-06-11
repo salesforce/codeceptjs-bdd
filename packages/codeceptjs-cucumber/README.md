@@ -58,9 +58,23 @@ To run on `chrome:headless` browser
     yarn acceptance:report
 ```
 
-## Saucelabs: Single or Multibrowsers in Parallel
+## Saucelabs: Single or Cross-Browsers Testing in Parallel
 
-This framework integrates the Saucelabs to run the tests on cloud. Please follow the instructions on [CodeceptJS-Saucelabs](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-saucelabs/README.md) module to get started.
+This framework integrates the Saucelabs to run the tests on cloud. It runs tests on Single or Cros-browsers all in Parallel.
+
+* Easy to run tests on Saucelabs with command 
+
+```bash
+  yarn acceptance --profile sauce:chrome
+```
+
+* Easy to run tests on Multibrowsers/Cross-Browsers. All tests in Parallel with command 
+
+```bash
+  yarn acceptance:multibrowsers --profile sauce:chrome,ie,safari
+```
+
+For more information, please follow the instructions on [CodeceptJS-Saucelabs](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-saucelabs/README.md) module.
 
 ## Debug
 
