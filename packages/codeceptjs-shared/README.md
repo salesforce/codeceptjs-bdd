@@ -23,5 +23,5 @@ Exports below config,
     exports.config = merge(conf, codeceptjsShared.conf);
 ```
 
-Follow the example in [CodeceptJs-Cucumber](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber) E2E [codecept.conf.js](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/codecept.conf.js)
+Follow the example in [codecept.conf.js](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/codecept.conf.js) of [CodeceptJs-Cucumber](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber) E2E Framework.
 
