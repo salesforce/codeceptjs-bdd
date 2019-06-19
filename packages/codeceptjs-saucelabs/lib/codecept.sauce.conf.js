@@ -43,4 +43,17 @@ let conf = {
     }
 };
 
-exports.conf = isSauceRequested() ? conf : {};
+function authenticate(sauceUsername, sauceKey) {
+    if (isSauceRequested()) {
+        if(sauceUsername && sauceKey) {
+            process.env.SAUCE_USERNAME = sauceUsername;
+            process.env.SAUCE_KEY = sauceKey;
+            conf.plugins.wdio.user = sauceUsername;
+            conf.plugins.wdio.key = sauceKey;
+        }
+        return conf;
+    }
+    return {};
+}
+
+exports.conf = authenticate;
