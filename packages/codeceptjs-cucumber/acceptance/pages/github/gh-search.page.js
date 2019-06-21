@@ -8,14 +8,14 @@ module.exports = {
   },
 
   async grabHrefForResult() {
-    return await I.grabAttributeFrom(this.locators.resultLink, 'href');
+    return await I.grabAttributeFrom(I.grabCss(this.locators.resultLink), 'href');
   },
 
   async grabDescription() {
-    return await I.grabTextFrom(this.locators.description);
+    return await I.grabTextFrom(I.grabCss(this.locators.description));
   },
 
   async grabLicenseInfo() {
-    return await I.grabTextFrom(this.locators.licenseInfo);
+    return await I.grabTextFrom(I.grabCss(this.locators.licenseInfo));
   }
 };

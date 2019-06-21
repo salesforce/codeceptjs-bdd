@@ -6,7 +6,7 @@ module.exports = {
   },
 
   search(searchFor) {
-    I.fillField(this.locators.searchBox, searchFor);
+    I.fillField(I.grabCss(this.locators.searchBox), searchFor);
     I.pressKey('Enter');
   }
 };
