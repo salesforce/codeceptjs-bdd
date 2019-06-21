@@ -1,8 +1,8 @@
 let sauceBrowsers = require('./sauce.browsers').browsers;
-// let debug = require('debug')('codeceptjs-saucelabs:config');
+let debug = require('debug')('codeceptjs-saucelabs:config');
 
 const SAUCE_DELIMITER = ':';
-const MULTIBROWSER_DELIMITER = ',';
+const MULTI_BROWSER_DELIMITER = ',';
 
 function isSauceRequested() {
     return (process.profile && process.profile.match('sauce:[a-zA-Z]'));
@@ -11,17 +11,18 @@ function isSauceRequested() {
 function getBrowsers() {
     if (isSauceRequested()) {
         let multibrowsers = [];
-        let requestedBrowsers = process.profile.split(SAUCE_DELIMITER)[1].split(MULTIBROWSER_DELIMITER);
-        // debug('Tests are running on Saucelabs on Multi-Browsers:', requestedBrowsers);
+        let requestedBrowsers = process.profile.split(SAUCE_DELIMITER)[1].split(MULTI_BROWSER_DELIMITER);
+        debug('Tests are running on Saucelabs on Multi-Browsers:', requestedBrowsers);
         requestedBrowsers.forEach(browser => {
             multibrowsers.push(sauceBrowsers[browser]);
         });
-        // debug('Saucelabs Config for Multi-Browsers:', multibrowsers);
+        debug('Saucelabs Config for Multi-Browsers:', multibrowsers);
         return multibrowsers;
     }
 
     return [sauceBrowsers.chrome];
 }
+
 
 let conf = {
     helpers: {
@@ -44,6 +45,7 @@ let conf = {
         },
     }
 };
+
 
 function authenticate(sauceUsername, sauceKey) {
     if (isSauceRequested()) {
