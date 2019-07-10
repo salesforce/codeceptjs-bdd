@@ -1,5 +1,7 @@
 
-# Co-Locate/Add CodeceptJS-Cucumber E2E Framework to your existing Project
+# Get Started with CodeceptJS tests 
+
+>> Colocate the tests to your repository
 
 ### Step 1: Clone the repository
 
