@@ -26,27 +26,29 @@ In your `codeceptjs.conf.js`,
 
 ```bash
     let merge = require('deepmerge');
-    let sauce = require('codeceptjs-saucelabs');
+    let codeceptJsSauce = require('codeceptjs-saucelabs');
 ```
 
 2. Deep Merge and export your **Config** 
 
+Params to SauceLabs Config:
+* sauceUsername <required>
+* sauceKey <required>
+* userSpecificBrowsers <optional> //default browsers: `chrome`, `ie`, `edge`, `safari`, `firefox`
+
+Pass your Saucelabs Username, Access Key and UserSpecific Browser configuration 
 ```bash
-   exports.config = merge(<your_existing_codeceptjs_conf>, sauce.conf);
+   exports.config = merge(<your_existing_codeceptjs_conf>, codeceptJsSauce.conf({
+		<sauceUsername>, 		//required
+		<sauceKey>,				//required
+		<userSpecificBrowsers>	//optional otherwise uses the default browser configuration
+   }));
+
 ```
+
+* Take look at the User-specific browsers configuration below
 
 You are all set!
-
-## Run
-
-**Important:** Make sure to export your Sauce Username and Sauce Access Key as env variables
-
-```bash
-    export SAUCE_USERNAME=<sauce_username>
-    export SAUCE_KEY=<sauce_key>
-```
-
-It uses CodeceptJS `--profile` param to run tests on Saucelabs browsers as described below,
 
 ### Run on Single browser on Saucelabs
 
@@ -67,3 +69,25 @@ It uses CodeceptJS `--profile` param to run tests on Saucelabs browsers as descr
 ```bash
     yarn acceptance:multibrowsers --grep @search_results --profile sauce:chrome,ie
 ```
+
+## User Specific Browser Configuration
+
+```bash
+	const userSpecificBrowsers = {
+            chrome: {
+                browser: 'chrome',
+                // add more configuration for Saucelabs platform
+            },
+            firefox: {
+                browser: 'firefox',
+            },
+            safari: {
+                browser: 'safari',
+            },
+            edge: {
+                browser: 'MicrosoftEdge',
+            }
+	}
+```
+
+

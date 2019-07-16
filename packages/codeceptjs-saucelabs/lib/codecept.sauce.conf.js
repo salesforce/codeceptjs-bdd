@@ -4,50 +4,52 @@ let debug = require('debug')('codeceptjs-saucelabs:config');
 const SAUCE_DELIMITER = ':';
 const MULTI_BROWSER_DELIMITER = ',';
 
-function isSauceRequested() {
-    return (process.profile && process.profile.match('sauce:[a-zA-Z]'));
-}
+function config(sauceUsername, sauceKey, userSpecificBrowsers) {
 
-function getBrowsers() {
-    if (isSauceRequested()) {
-        let multibrowsers = [];
-        let requestedBrowsers = process.profile.split(SAUCE_DELIMITER)[1].split(MULTI_BROWSER_DELIMITER);
-        debug('Tests are running on Saucelabs on Multi-Browsers:', requestedBrowsers);
-        requestedBrowsers.forEach(browser => {
-            multibrowsers.push(sauceBrowsers[browser]);
-        });
-        debug('Saucelabs Config for Multi-Browsers:', multibrowsers);
-        return multibrowsers;
+    sauceBrowsers = userSpecificBrowsers || sauceBrowsers;
+
+    function isSauceRequested() {
+        return (process.profile && process.profile.match('sauce:[a-zA-Z]'));
     }
 
-    return [sauceBrowsers.chrome];
-}
+    function getBrowsers() {
 
-
-let conf = {
-    helpers: {
-        WebDriver: getBrowsers()[0],
-        REST: {}
-    },
-    plugins: {
-        wdio: {
-            enabled: true,
-            services: ['sauce'],
-            user: process.env.SAUCE_USERNAME,
-            key: process.env.SAUCE_KEY,
-            region: 'us'
+        if (isSauceRequested()) {
+            let multibrowsers = [];
+            let requestedBrowsers = process.profile.split(SAUCE_DELIMITER)[1].split(MULTI_BROWSER_DELIMITER);
+            debug('Tests are running on Saucelabs on Multi-Browsers:', requestedBrowsers);
+            requestedBrowsers.forEach(browser => {
+                multibrowsers.push(sauceBrowsers[browser]);
+            });
+            debug('Saucelabs Config for Multi-Browsers:', multibrowsers);
+            return multibrowsers;
         }
-    },
-    multiple: {
-        multibrowsers: {
-            chunks: getBrowsers().length,
-            browsers: getBrowsers()
-        },
+
+        return [sauceBrowsers.chrome];
     }
-};
 
+    let conf = {
+        helpers: {
+            WebDriver: getBrowsers()[0],
+            REST: {}
+        },
+        plugins: {
+            wdio: {
+                enabled: true,
+                services: ['sauce'],
+                user: process.env.SAUCE_USERNAME,
+                key: process.env.SAUCE_KEY,
+                region: 'us'
+            }
+        },
+        multiple: {
+            multibrowsers: {
+                chunks: getBrowsers().length,
+                browsers: getBrowsers()
+            },
+        }
+    };
 
-function authenticate(sauceUsername, sauceKey) {
     if (isSauceRequested()) {
         if (sauceUsername && sauceKey) {
             process.env.SAUCE_USERNAME = sauceUsername;
@@ -57,7 +59,8 @@ function authenticate(sauceUsername, sauceKey) {
         }
         return conf;
     }
+
     return {};
 }
 
-exports.conf = authenticate;
+exports.conf = config;
