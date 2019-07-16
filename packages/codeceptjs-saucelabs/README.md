@@ -33,9 +33,9 @@ In your `codeceptjs.conf.js`,
 
 Params to SauceLabs Config:
 
-* sauceUsername <required>
-* sauceKey <required>
-* userSpecificBrowsers <optional> //default browsers: `chrome`, `ie`, `edge`, `safari`, `firefox`
+* sauceUsername (required)
+* sauceKey (required)
+* userSpecificBrowsers (optional) //default browsers: `chrome`, `ie`, `edge`, `safari`, `firefox`
 
 Pass your Saucelabs Username, Access Key and UserSpecific Browser configuration 
 ```bash
