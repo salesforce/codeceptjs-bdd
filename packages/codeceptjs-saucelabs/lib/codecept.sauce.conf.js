@@ -9,8 +9,6 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
 
     sauceBrowsers = userSpecificBrowsers ? merge(userSpecificBrowsers, defaultBrowsers) : defaultBrowsers;
 
-    console.log(sauceBrowsers);
-
     function isSauceRequested() {
         return (process.profile && process.profile.match('sauce:[a-zA-Z]'));
     }
