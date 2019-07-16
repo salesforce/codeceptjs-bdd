@@ -32,17 +32,15 @@ In your `codeceptjs.conf.js`,
 2. Deep Merge and export your **Config** 
 
 Params to SauceLabs Config:
+
 * sauceUsername <required>
 * sauceKey <required>
 * userSpecificBrowsers <optional> //default browsers: `chrome`, `ie`, `edge`, `safari`, `firefox`
 
 Pass your Saucelabs Username, Access Key and UserSpecific Browser configuration 
 ```bash
-   exports.config = merge(<your_existing_codeceptjs_conf>, codeceptJsSauce.conf({
-		<sauceUsername>, 		//required
-		<sauceKey>,				//required
-		<userSpecificBrowsers>	//optional (otherwise uses the default browser configuration)
-   }));
+   
+   exports.config = merge(<your_existing_codeceptjs_conf>, codeceptJsSauce.conf(<sauceUsername>, <sauceKey>, <userSpecificBrowsers>));
 
 ```
 *Note:* The User Specific Browser configuration will be merged to the default configuration
