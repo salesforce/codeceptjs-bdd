@@ -41,11 +41,12 @@ Pass your Saucelabs Username, Access Key and UserSpecific Browser configuration
    exports.config = merge(<your_existing_codeceptjs_conf>, codeceptJsSauce.conf({
 		<sauceUsername>, 		//required
 		<sauceKey>,				//required
-		<userSpecificBrowsers>	//optional otherwise uses the default browser configuration
+		<userSpecificBrowsers>	//optional (otherwise uses the default browser configuration)
    }));
 
 ```
-
+*Note:* The User Specific Browser configuration will be merged to the default configuration
+ 
 * Take look at the User-specific browsers configuration below
 
 You are all set!

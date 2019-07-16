@@ -1,12 +1,15 @@
-let sauceBrowsers = require('./sauce.browsers').browsers;
+let defaultBrowsers = require('./sauce.browsers').browsers;
 let debug = require('debug')('codeceptjs-saucelabs:config');
+let merge = require('deepmerge');
 
 const SAUCE_DELIMITER = ':';
 const MULTI_BROWSER_DELIMITER = ',';
 
 function config(sauceUsername, sauceKey, userSpecificBrowsers) {
 
-    sauceBrowsers = userSpecificBrowsers || sauceBrowsers;
+    sauceBrowsers = userSpecificBrowsers ? merge(userSpecificBrowsers, defaultBrowsers) : defaultBrowsers;
+
+    console.log(sauceBrowsers);
 
     function isSauceRequested() {
         return (process.profile && process.profile.match('sauce:[a-zA-Z]'));
