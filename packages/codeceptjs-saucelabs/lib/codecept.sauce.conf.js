@@ -32,6 +32,9 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
     let conf = {
         helpers: {
             WebDriver: getBrowsers()[0],
+            SauceHelper: {
+                require: 'codeceptjs-saucehelper'
+            },
             REST: {}
         },
         plugins: {
@@ -57,6 +60,10 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
             process.env.SAUCE_KEY = sauceKey;
             conf.plugins.wdio.user = sauceUsername;
             conf.plugins.wdio.key = sauceKey;
+
+            // For supporting the codeceptjs-saucehelper module
+            conf.helpers.WebDriver.user = sauceUsername;
+            conf.helpers.WebDriver.key = sauceKey;
         }
         return conf;
     }
