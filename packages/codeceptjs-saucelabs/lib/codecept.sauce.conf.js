@@ -1,4 +1,4 @@
-let defaultBrowsers = require('./sauce.browsers').browsers;
+let defaultBrowsers = require('./browsers.conf').browsers;
 let debug = require('debug')('codeceptjs-saucelabs:config');
 let merge = require('deepmerge');
 
@@ -56,6 +56,7 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
 
     if (isSauceRequested()) {
         if (sauceUsername && sauceKey) {
+            console.log('***********************************************************************  in helper');
             process.env.SAUCE_USERNAME = sauceUsername;
             process.env.SAUCE_KEY = sauceKey;
             conf.plugins.wdio.user = sauceUsername;
