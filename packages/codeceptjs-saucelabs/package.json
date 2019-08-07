@@ -8,8 +8,11 @@
     "CodeceptJS",
     "Multibrowsers"
   ],
+
   "author": "Kushang Gajjar <g.kushang@gmail.com>",
+
   "license": "MIT",
+
   "dependencies": {
     "@wdio/sauce-service": "^5.9.3",
     "codeceptjs-saucehelper": "^1.3.0",
