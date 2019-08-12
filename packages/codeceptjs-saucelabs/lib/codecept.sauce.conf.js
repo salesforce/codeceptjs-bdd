@@ -56,7 +56,6 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
 
     if (isSauceRequested()) {
         if (sauceUsername && sauceKey) {
-            console.log('***********************************************************************  in helper');
             process.env.SAUCE_USERNAME = sauceUsername;
             process.env.SAUCE_KEY = sauceKey;
             conf.plugins.wdio.user = sauceUsername;
