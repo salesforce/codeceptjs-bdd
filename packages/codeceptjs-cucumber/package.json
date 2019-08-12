@@ -22,7 +22,6 @@
     "@wdio/selenium-standalone-service": "^5.8.4",
     "allure-commandline": "^2.9.0",
     "codeceptjs": "^2.2.0",
-    "codeceptjs-saucehelper": "github:gkushang/codeceptjs-saucehelper#feature/update-dashboard",
     "codeceptjs-saucelabs": "^1.1.1",
     "codeceptjs-selenium": "^1.0.2",
     "debug": "^4.1.1",
