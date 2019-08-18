@@ -1,7 +1,4 @@
 let debug = require('debug')('acceptance:config');
-const fs = require('fs');
-let copy = require('recursive-copy');
-
 const BROWSER = process.profile || 'chrome';
 
 const conf = {
