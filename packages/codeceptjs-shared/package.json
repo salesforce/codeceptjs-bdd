@@ -5,7 +5,7 @@
   "author": "Kushang Gajjar <g.kushang@gmail.com>",
   "homepage": "https://github.com/gkushang/codeceptjs-e2e#readme",
   "license": "MIT",
-  "main": "lib/codeceptjs-shared.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },

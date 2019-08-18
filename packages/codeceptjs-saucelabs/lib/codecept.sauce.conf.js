@@ -14,7 +14,6 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
     }
 
     function getBrowsers() {
-
         if (isSauceRequested()) {
             let multibrowsers = [];
             let requestedBrowsers = process.profile.split(SAUCE_DELIMITER)[1].split(MULTI_BROWSER_DELIMITER);
@@ -49,6 +48,9 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
         multiple: {
             multibrowsers: {
                 chunks: getBrowsers().length,
+                browsers: getBrowsers()
+            },
+            parallel: {
                 browsers: getBrowsers()
             },
         }

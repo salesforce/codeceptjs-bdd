@@ -12,7 +12,7 @@ Feature: Search Github
 
 
 ## If you have one Scenario
- @search_results
+  @search_results
   Scenario: Fred should see the highlighted results for the searched repository
 
     When he searches for the "gkushang/codeceptjs-e2e"
@@ -27,5 +27,5 @@ Feature: Search Github
     Then he is able to see the "<repository>" in search results
 
     Scenarios:
-    | repository |
-    | gkushang/codeceptjs-selenium  |
+      | repository                   |
+      | gkushang/codeceptjs-selenium |

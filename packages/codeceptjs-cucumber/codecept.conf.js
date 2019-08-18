@@ -18,33 +18,33 @@ const SAUCE_USERNAME = process.env.SAUCE_USERNAME ? process.env.SAUCE_USERNAME :
 const SAUCE_KEY = process.env.SAUCE_KEY ? process.env.SAUCE_KEY : '<sauce_key>';
 
 let conf = {
-  output: RELATIVE_PATH + 'report',
-  cleanup: true,
-  dev: {
-    host: HOST
-  },
-  helpers: {
-    WebDriver: {
-      url: HOST
+    output: RELATIVE_PATH + 'report',
+    cleanup: true,
+    dev: {
+        host: HOST
     },
-    Faker: {
-      require: RELATIVE_PATH + 'helpers/faker.helper.js'
+    helpers: {
+        WebDriver: {
+            url: HOST
+        },
+        Faker: {
+            require: RELATIVE_PATH + 'helpers/faker.helper.js'
+        },
+        REST: {}
     },
-    REST: {}
-  },
-  gherkin: {
-    features: RELATIVE_PATH + 'features/**/*.feature',
-    steps: [
-      STEPS_PATH + 'search/github.steps.js',
-      STEPS_PATH + 'hooks/hooks.js'
-    ]
-  },
-  include: {
-    I: RELATIVE_PATH + 'helpers/custom.methods.js',
-    ghHomePage: PAGES_PATH + 'github/gh-home.page.js',
-    ghSearchPage: PAGES_PATH + 'github/gh-search.page.js'
-  },
-  name: 'Github Acceptance Tests'
+    gherkin: {
+        features: RELATIVE_PATH + 'features/**/*.feature',
+        steps: [
+            STEPS_PATH + 'search/github.steps.js',
+            STEPS_PATH + 'hooks/hooks.js'
+        ]
+    },
+    include: {
+        I: RELATIVE_PATH + 'helpers/custom.methods.js',
+        ghHomePage: PAGES_PATH + 'github/gh-home.page.js',
+        ghSearchPage: PAGES_PATH + 'github/gh-search.page.js'
+    },
+    name: 'Github Acceptance Tests'
 };
 
 exports.config = merge(merge(conf, codeceptJsShared.conf), codeceptJsSauce.conf(SAUCE_USERNAME, SAUCE_KEY));

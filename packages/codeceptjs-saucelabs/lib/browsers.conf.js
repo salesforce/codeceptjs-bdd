@@ -2,7 +2,6 @@ let browsers = {
     chrome: {
         browser: 'chrome',
         capabilities: {
-            browserVersion: '75.0',
             'sauce:options': {
                 seleniumVersion: '3.11.0'
             }
