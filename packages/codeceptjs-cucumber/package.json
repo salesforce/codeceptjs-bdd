@@ -3,6 +3,7 @@
   "version": "1.1.6",
   "description": "CodeceptJs Cucumber ",
   "scripts": {
+    "cli": "node cli.js",
     "clean": "rimraf tests/acceptance/report/*.*",
     "acceptance": "yarn clean && ./node_modules/.bin/codeceptjs run --verbose --features",
     "acceptance:parallel": "yarn clean && ./node_modules/.bin/codeceptjs run-multiple parallel --verbose --features",
@@ -10,7 +11,10 @@
     "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",
     "bdd:snippets": "./node_modules/.bin/codeceptjs bdd:snippets"
   },
-  "main": "index.js",
+  "bin": {
+    "codeceptjs-e2e": "./cli.js"
+  },
+  "main": "cli.js",
   "keywords": [
     "Cucumber",
     "CodeceptJS",
@@ -32,6 +36,13 @@
     "selenium-standalone": "^6.16.0",
     "should": "^13.2.3",
     "webdriverio": "^5.8.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "figlet": "^1.2.3",
+    "inquirer": "^6.5.1",
+    "node-emoji": "^1.10.0",
+    "shelljs": "^0.8.3"
   },
   "license": "MIT"
 }

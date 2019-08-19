@@ -8,11 +8,7 @@
     "lerna": "^3.14.1"
   },
   "version": "1.0.0",
-  "description": "codeceptjs e2e solution",
-  "main": "index.js",
+  "description": "CodeceptJS Cucumber E2E Framework",
   "author": "Kushang Gajjar <g.kushang@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "codeceptjs-saucelabs": "^1.0.6"
-  }
+  "license": "MIT"
 }
