@@ -112,7 +112,7 @@ const run = async () => {
 
     shell.cd(ROOT_PATH);
 
-    if (shell.exec('yarn add codeceptjs-saucelabs codeceptjs-shared @wdio/selenium-standalone-service allure-commandline codeceptjs codeceptjs-selenium debug faker protractor rimraf should webdriverio deepmerge -D' ).code !== 0) {
+    if (shell.exec('yarn add codeceptjs-saucelabs@latest codeceptjs-shared@latest @wdio/selenium-standalone-service allure-commandline codeceptjs debug faker protractor rimraf should webdriverio deepmerge -D' ).code !== 0) {
         failure('Yarn command failed.');
     }
 

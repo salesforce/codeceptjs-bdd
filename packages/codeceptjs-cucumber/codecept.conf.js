@@ -36,6 +36,7 @@ let conf = {
         features: RELATIVE_PATH + 'features/**/*.feature',
         steps: [
             STEPS_PATH + 'search/github.steps.js',
+            STEPS_PATH + 'login/login.steps.js',
             STEPS_PATH + 'hooks/hooks.js'
         ]
     },
