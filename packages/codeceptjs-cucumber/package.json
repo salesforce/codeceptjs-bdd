@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-cucumber",
-  "version": "1.1.8",
+  "version": "2.0.0",
   "description": "CodeceptJs Cucumber ",
   "scripts": {
     "cli": "node cli.js",
@@ -28,8 +28,8 @@
     "allure-commandline": "^2.9.0",
     "chalk": "^2.4.2",
     "codeceptjs": "^2.3.0",
-    "codeceptjs-saucelabs": "^1.1.5",
-      "codeceptjs-shared": "^1.0.3",
+    "codeceptjs-saucelabs": "^2.0.0",
+    "codeceptjs-shared": "^2.0.0",
     "debug": "^4.1.1",
     "deepmerge": "^4.0.0",
     "faker": "^4.1.0",
