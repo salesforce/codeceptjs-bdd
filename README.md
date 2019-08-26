@@ -22,6 +22,22 @@
 
 * Step Definitions files follows `<name_of_step>.steps.js` naming pattern, and created under [step_definitions](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/step_definitions) directory
 
+
+## Interactive CLI: How to get Started? 
+
+This framework comes with the *Interactive CLI* which will setup the entire framework in one-go.
+
+Follow the below steps to launch CLI, and follow the CLI instructions. CLI also runs the Sample Github tests to test your setup (this step is optional)
+
+```bash
+
+    git clone git@github.com:gkushang/codeceptjs-e2e.git
+    cd codeceptjs-e2e
+    yarn
+    npx lerna bootstrap
+    node packages/codeceptjs-cucumber/cli.js
+```
+
 ## CodceptJS-Cucumber : E2E Framework
 
 > CodeceptJS E2E Framework with Cucumber and Saucelabs Integration
@@ -37,19 +53,6 @@
 
 To get started, follow the instructions on [codeceptjs-cucumber](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
-## How to get Started?
-
-This framework comes with the *Interactive CLI* which will setup the entire framework in one-go.
-
-Follow the below steps to launch CLI, and follow the CLI instructions. CLI also runs the Sample Github tests to test your setup (this step is optional)
-
-```bash
-
-    git clone git@github.com:gkushang/codeceptjs-e2e.git
-    cd codeceptjs-e2e
-    yarn
-    node packages/codeceptjs-cucumber/cli.js
-```
 
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
 

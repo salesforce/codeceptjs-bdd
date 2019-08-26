@@ -4,89 +4,58 @@
 
 [![npm](https://img.shields.io/npm/v/codeceptjs-saucelabs.svg)](https://www.npmjs.com/package/codeceptjs-saucelabs) [![License](https://img.shields.io/npm/l/codeceptjs-saucelabs.svg)](LICENSE)
 
-## Saucelabs: Single or Multibrowsers in Parallel
-
-This module uses WebDriverIO `wdio` to run tests on single/multi-browsers tests parallel on SauceLabs.
-
-If you are using [CodeceptJS-Cucumber](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber) E2E framework, please skip the `Install` and `Usage` part as it is already integrated with it. Please jump to [Run](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-saucelabs/README.md#run) to see how to execute tests on Saucelabs.
 
 ## Install
 
-Follow the instructions below to install individually on your project, 
-
-```bash
-    npm i codeceptjs-saucelabs --save-dev
+```
+    
+    yarn codeceptjs-saucelabs -D
+    export SAUCE_USERNAME = <your_sauce_username>
+    export SAUCE_KEY = <your_sauce_accesskey>
+    
 ```
 
-## Usage
+## Saucelabs Configuration
 
-In your `codeceptjs.conf.js`,
-
-1. Require following
-
-```bash
-    let merge = require('deepmerge');
-    let codeceptJsSauce = require('codeceptjs-saucelabs');
-```
-
-2. Deep Merge and export your **Config** 
-
-Params to SauceLabs Config:
-
-* sauceUsername (required)
-* sauceKey (required)
-* userSpecificBrowsers (optional) //default browsers: `chrome`, `ie`, `edge`, `safari`, `firefox`
-
-Pass your Saucelabs Username, Access Key and UserSpecific Browser configuration 
-```bash
-   
-   exports.config = merge(<your_existing_codeceptjs_conf>, codeceptJsSauce.conf(<sauceUsername>, <sauceKey>, <userSpecificBrowsers>));
+Simply use existing configuration in your project
 
 ```
-*Note:* The User Specific Browser configuration will be merged to the default configuration
- 
-* Take look at the User-specific browsers configuration below
-
-You are all set!
-
-### Run on Single browser on Saucelabs
-
-* command: `yarn acceptance`
-* param: `--profile sauce:<sauce_browser>`
-* available default browsers: `chrome`, `ie`, `edge`, `safari`, `firefox`
-
-```bash
-    yarn acceptance --grep @search_results --profile sauce:chrome
+    
+    const saucelabs_condfig = require('codeceptjs-saucelabs').cofing.saucelabs;
+    
 ```
 
-### Run Parallel on Multibrowsers on Saucelabs
+## Commands to execute your tests on Saucelabs
 
-* command: `yarn acceptance:multibrowsers`
-* param: `--profile sauce:<first_sauce_browser>,<second_sauce_browser>,<and_so_on>`
-* available default browsers: `chrome`, `ie`, `edge`, `safari`, `firefox`
+N.B: You must export your Sauce Username and Accesskey as described above.
 
-```bash
-    yarn acceptance:multibrowsers --grep @search_results --profile sauce:chrome,ie
-```
+#### `run on Single browser - serially`
 
-## User Specific Browser Configuration
+e.g. Runs all feature files serially on chrome on saucelabs
 
 ```bash
-	const userSpecificBrowsers = {
-            chrome: {
-                browser: 'chrome',
-                // add more configuration for Saucelabs platform
-            },
-            firefox: {
-                browser: 'firefox',
-            },
-            safari: {
-                browser: 'safari',
-            },
-            edge: {
-                browser: 'MicrosoftEdge',
-            }
-	}
+
+    npx run codeceptjs run --profile sauce:chrome
+
 ```
 
+#### `run on Single browser - all in Parallel`
+
+e.g. Runs all feature files in parallel on chrome on saucelabs
+
+```bash
+
+    npx run codeceptjs run-multiple parallel --profile sauce:chrome
+
+```
+
+#### `run on Multiple browsers - all in Parallel`
+
+e.g. Runs all feature files on Chrome, IE and Firefox on saucelabs
+
+```bash
+
+    npx run codeceptjs run-multiple multibrowsers --profile sauce:chrome,ie,firefox
+
+```
 

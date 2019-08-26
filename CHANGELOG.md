@@ -1,4 +1,4 @@
-## un-published
+## 2.2.0
 
 ### CodeceptJS-shared
 
@@ -11,7 +11,16 @@
 * Custom Methods
     * grabCss
     * takeNap
+    
+### CodeceptJS-saucelabs
 
+* Breaking Change: import the existing config as `require(codeceptjs-shared).config.saucelabs`
+* Updated README
+
+### CodeceptJS-cucumber
+
+* required updates to consume above shared modules
+* Updated README
 
 ## 1.1.3 (Aug-12-2019)
 

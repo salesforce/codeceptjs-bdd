@@ -1,7 +1,7 @@
 const debug = require('debug')('acceptance:config');
 const merge = require('deepmerge');
 const master_config = require('codeceptjs-shared').config.master;
-const codeceptjs_saucelabs = require('codeceptjs-saucelabs').config.sauce;
+const codeceptjs_saucelabs = require('codeceptjs-saucelabs').config.saucelabs;
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
