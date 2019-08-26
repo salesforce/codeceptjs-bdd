@@ -2,16 +2,13 @@
   "name": "codeceptjs-shared",
   "version": "1.0.3",
   "description": "Shared Configurations and Helpers for CodeceptJS",
-  "author": "Kushang Gajjar <g.kushang@gmail.com>",
+  "author": {
+    "name": "Kushang Gajjar",
+    "email": "g.kushang@gmail.com"
+  },
   "homepage": "https://github.com/gkushang/codeceptjs-e2e#readme",
   "license": "MIT",
   "main": "lib/index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gkushang/codeceptjs-e2e.git"
@@ -22,8 +19,9 @@
   "bugs": {
     "url": "https://github.com/gkushang/codeceptjs-e2e/issues"
   },
-  "dependencies": {
-    "@wdio/selenium-standalone-service": "^5.9.3",
-    "deepmerge": "^3.2.0"
+  "dependencies": {},
+  "devDependencies": {
+    "@wdio/selenium-standalone-service": "^5.12.1",
+    "debug": "^4.1.1"
   }
 }

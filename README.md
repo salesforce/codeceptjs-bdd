@@ -2,13 +2,13 @@
 
 ***[CodeceptJS](https://codecept.io/) E2E Framework with Cucumber and Saucelabs cloud***
 
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-e2e/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
  
 ## About
 
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
 
-* **Why BDD?** Read the Medium post [here](https://hackernoon.com/bdd-in-3-minutes-c3f8fc022237)
+* **Why BDD?** Read the Medium post [here](https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237)
 
 * Scenarios are written in **Cucumber Ghernkin BDD Syntax**, a.k.a `.feature` files. [Prefer writing Declartive Test Scenarios](https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Imperative+v.+Declarative+Testing+Scenarios)
 
@@ -26,17 +26,30 @@
 
 > CodeceptJS E2E Framework with Cucumber and Saucelabs Integration
 
+* Interactive CLI to get started
 * Run Cucumber Scenarios on local browsers or chrome:headless
-* Run tests in Parallel
+* Run all the Feature files in Parallel
 * Run tests on Saucelabs
   * Single Browser
-  * Multi Browsers in Parallel
+  * Multi Browsers. Runs all the Feature files in Parallel on Multibrowsers
 * Launch HTML report
-* Co-locate the E2E framework to your repository
+
 
 To get started, follow the instructions on [codeceptjs-cucumber](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
-##### Co-locate CodeceptJS-Cucumber E2E Framework to your existing project with [Easy 3-Steps process](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/CO-LOCATE.md)
+## How to get Started?
+
+This framework comes with the *Interactive CLI* which will setup the entire framework in one-go.
+
+Follow the below steps to launch CLI, and follow the CLI instructions. CLI also runs the Sample Github tests to test your setup (this step is optional)
+
+```bash
+
+    git clone git@github.com:gkushang/codeceptjs-e2e.git
+    cd codeceptjs-e2e
+    yarn
+    node packages/codeceptjs-cucumber/cli.js
+```
 
 ## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
 
@@ -57,9 +70,9 @@ To get started, follow the instructions on [codeceptjs-cucumber](https://github.
 To get started, follow the instructions on [codeceptjs-saucelabs](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
 
 
-## CodeceptJS-Shared : Shared configurations
+## CodeceptJS-Shared : Shared Master Configurations and Helpers
 
-> Shared configurarions
+> Shared Master Configurations & Helpers
 
 To get started, follow the instructions on [codeceptjs-shared](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-shared)
 

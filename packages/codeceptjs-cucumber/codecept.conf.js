@@ -1,7 +1,8 @@
-let debug = require('debug')('acceptance:config');
-let merge = require('deepmerge');
-let codeceptJsShared = require('codeceptjs-shared');
-let codeceptJsSauce = require('codeceptjs-saucelabs');
+const debug = require('debug')('acceptance:config');
+const merge = require('deepmerge');
+const master_config = require('codeceptjs-shared').config.master;
+const codeceptjs_saucelabs = require('codeceptjs-saucelabs').config.sauce;
+
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 const DEFAULT_HOST = 'https://github.com';
@@ -27,9 +28,6 @@ let conf = {
         WebDriver: {
             url: HOST
         },
-        Faker: {
-            require: RELATIVE_PATH + 'helpers/faker.helper.js'
-        },
         REST: {}
     },
     gherkin: {
@@ -45,7 +43,7 @@ let conf = {
         ghHomePage: PAGES_PATH + 'github/gh-home.page.js',
         ghSearchPage: PAGES_PATH + 'github/gh-search.page.js'
     },
-    name: 'Github Acceptance Tests'
+    name: '<name>'
 };
 
-exports.config = merge(merge(conf, codeceptJsShared.conf), codeceptJsSauce.conf(SAUCE_USERNAME, SAUCE_KEY));
+exports.config = merge(merge(conf, master_config), codeceptjs_saucelabs(SAUCE_USERNAME, SAUCE_KEY));

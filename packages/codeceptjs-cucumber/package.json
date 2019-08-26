@@ -20,29 +20,28 @@
     "CodeceptJS",
     "Gherkin"
   ],
-  "author": "Kushang Gajjar <kgajjar@salesforce.com>",
-  "devDependencies": {
-    "@wdio/sauce-service": "^5.9.3",
-    "@wdio/selenium-standalone-service": "^5.8.4",
-    "allure-commandline": "^2.9.0",
-    "codeceptjs": "^2.2.0",
-    "codeceptjs-saucelabs": "^1.1.5",
-    "codeceptjs-selenium": "^1.0.2",
-    "debug": "^4.1.1",
-    "deepmerge": "^3.2.0",
-    "faker": "^4.1.0",
-    "protractor": "^5.4.2",
-    "rimraf": "^2.6.3",
-    "selenium-standalone": "^6.16.0",
-    "should": "^13.2.3",
-    "webdriverio": "^5.8.1"
+  "author": {
+    "name": "Kushang Gajjar",
+    "email": "g.kushang@gmail.com"
   },
-  "dependencies": {
+  "devDependencies": {
+    "allure-commandline": "^2.9.0",
     "chalk": "^2.4.2",
+    "codeceptjs": "^2.3.0",
+    "codeceptjs-saucelabs": "^1.1.5",
+      "codeceptjs-shared": "^1.0.3",
+    "debug": "^4.1.1",
+    "deepmerge": "^4.0.0",
+    "faker": "^4.1.0",
     "figlet": "^1.2.3",
-    "inquirer": "^6.5.1",
+    "inquirer": "^7.0.0",
     "node-emoji": "^1.10.0",
-    "shelljs": "^0.8.3"
+    "protractor": "^5.4.2",
+    "rimraf": "^3.0.0",
+    "selenium-standalone": "^6.16.0",
+    "shelljs": "^0.8.3",
+    "should": "^13.2.3",
+    "webdriverio": "^5.12.4"
   },
   "license": "MIT"
 }

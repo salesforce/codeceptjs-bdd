@@ -4,11 +4,11 @@ module.exports = function () {
     }
 
     function grabCss(css) {
-        return {css: css};
+        return {css};
     }
 
     return actor({
-        takeNap: takeNap,
-        grabCss: grabCss
+        takeNap,
+        grabCss
     });
 };

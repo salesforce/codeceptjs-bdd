@@ -73,4 +73,4 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
     return {};
 }
 
-exports.conf = config;
+module.exports = config;

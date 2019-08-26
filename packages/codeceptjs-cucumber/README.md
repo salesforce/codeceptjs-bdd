@@ -2,7 +2,7 @@
 
 ***[CodeceptJS](https://codecept.io/) E2E framework with Cucumber and Saucelabs***
 
-[![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
+[![npm](https://img.shields.io/npm/v/codeceptjs-cucumber.svg)](https://www.npmjs.com/package/codeceptjs-cucumber) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 
 ## About
 

@@ -1,19 +1,22 @@
 {
   "name": "codeceptjs-saucelabs",
   "version": "1.1.5",
-  "main": "lib/index.js",
+  "main": "index.js",
   "description": "CodeceptJS Saucelabs Integration",
   "keywords": [
     "Saucelabs",
     "CodeceptJS",
     "Multibrowsers"
   ],
-  "author": "Kushang Gajjar <g.kushang@gmail.com>",
+  "author": {
+    "name": "Kushang Gajjar",
+    "email": "g.kushang@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
-    "@wdio/sauce-service": "^5.9.3",
+    "@wdio/sauce-service": "^5.12.1",
     "codeceptjs-saucehelper": "github:gkushang/codeceptjs-saucehelper#feature/update-dashboard",
     "debug": "^4.1.1",
-    "deepmerge": "^3.2.0"
+    "deepmerge": "^4.0.0"
   }
 }

@@ -1,4 +1,6 @@
-let debug = require('debug')('acceptance:config');
+const debug = require('debug')('acceptance:config');
+const web_driver_commands = require.resolve('../helpers/webdriver-commands.helper.js');
+const custom_methods = require.resolve('../helpers/custom-methods.js');
 const BROWSER = process.profile || 'chrome';
 
 const conf = {
@@ -12,6 +14,9 @@ const conf = {
                 script: 60000,
                 'page load': 10000
             }
+        },
+        WebDriver_commands: {
+            require: web_driver_commands
         }
     },
     plugins: {
@@ -39,7 +44,7 @@ const conf = {
                 let chunks = [];
                 files.forEach((file) => {
                     chunks.push([file]);
-                })
+                });
                 return chunks;
             }
         },
@@ -47,6 +52,9 @@ const conf = {
             grep: '@smoke',
             browsers: [BROWSER]
         }
+    },
+    include: {
+        I: custom_methods
     }
 };
 
@@ -65,4 +73,4 @@ if (!(process.profile && process.profile.match('sauce:[a-zA-Z]'))) {
     conf.multiple.parallel.browsers = [BROWSER];
 }
 
-exports.conf = conf;
+module.exports = conf;
