@@ -6,8 +6,6 @@
 
 [![Screen-Shot-2019-08-26-at-5-39-47-PM.png](https://i.postimg.cc/Y0M2cPwL/Screen-Shot-2019-08-26-at-5-39-47-PM.png)](https://postimg.cc/PpVnY2Jd)
  
-## About
-
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
 
 * **Why BDD?** Read the Medium post [here](https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237)
