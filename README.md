@@ -10,6 +10,10 @@
 
 * **Why BDD?** Read the Medium post [here](https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237)
 
+* Run All feature files in Parallel
+
+* Run All feature files on Multi-Browsers - run them all in Parallel
+
 * Scenarios are written in **Cucumber Ghernkin BDD Syntax**, a.k.a `.feature` files. [Prefer writing Declartive Test Scenarios](https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Imperative+v.+Declarative+Testing+Scenarios)
 
 * Run on **SauceLabs**. Single browser or Multibrowsers in Parallel
