@@ -3,6 +3,8 @@
 ***[CodeceptJS](https://codecept.io/) E2E Framework with Cucumber and Saucelabs cloud***
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-e2e/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+
+[![Screen-Shot-2019-08-26-at-5-39-47-PM.png](https://i.postimg.cc/Y0M2cPwL/Screen-Shot-2019-08-26-at-5-39-47-PM.png)](https://postimg.cc/PpVnY2Jd)
  
 ## About
 
