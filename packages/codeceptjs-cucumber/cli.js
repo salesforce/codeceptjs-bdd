@@ -18,8 +18,8 @@ const init = () => {
         )
     );
 
-    console.log(chalk.blue.underline.bold(
-        '\nWelcome to CodeceptJs-E2E CLI!'
+    console.log('\n\n' + emoji.emojify(':tada: ') + chalk.blue.underline.bold(
+        'Welcome to CodeceptJs-E2E CLI!'
     ));
 
     console.log(
@@ -31,6 +31,11 @@ const init = () => {
 
 const askQuestions_aboutLocations = () => {
     return inquirer.prompt([
+        {
+            name: 'PROJECT_NAME',
+            type: 'input',
+            message: 'Enter name of your acceptance tests (e.g. E2E Acceptance Tests): '
+        },
         {
             name: 'ROOT_PATH',
             type: 'input',
@@ -90,18 +95,20 @@ const failure = (message) => {
 const run = async () => {
     init();
 
-    const { ROOT_PATH, RELATIVE_PATH, INTEGRATE_SAUCE_LABS } =  await askQuestions_aboutLocations();
+    const { PROJECT_NAME, ROOT_PATH, RELATIVE_PATH, INTEGRATE_SAUCE_LABS } =  await askQuestions_aboutLocations();
 
     shell.cp('-R',  path.join(process.cwd(), 'acceptance'), path.join(ROOT_PATH, RELATIVE_PATH, 'acceptance'));
     shell.cp('-R', path.join(process.cwd(), 'codecept.conf.js'), path.join(ROOT_PATH));
 
     const configFile = path.join(ROOT_PATH, 'codecept.conf.js');
 
-    if(INTEGRATE_SAUCE_LABS === true) {
+    if(INTEGRATE_SAUCE_LABS) {
         const { SAUCE_USERNAME, SAUCE_KEY } =  await askQuestions_aboutSauceLabsAccount();
         shell.sed('-i', '<sauce_username>', SAUCE_USERNAME, configFile);
         shell.sed('-i', '<sauce_key>', SAUCE_KEY, configFile);
     }
+
+    shell.sed('-i', '<name>', PROJECT_NAME, configFile);
 
     shell.sed('-i', './acceptance/', './' + RELATIVE_PATH +'/acceptance/', configFile);
 
@@ -115,7 +122,18 @@ const run = async () => {
         failure('Yarn command failed.');
     }
 
-    if(SHOULD_EXECUTE === true) {
+    if(SHOULD_EXECUTE) {
+
+        console.log('\n' +
+            chalk.green(
+                figlet.textSync('Running Tests', {
+                    font: 'speed',
+                    horizontalLayout: 'default',
+                    verticalLayout: 'default'
+                })
+            )
+        );
+
         if (shell.exec('./node_modules/.bin/codeceptjs run --grep=@search_results' ).code !== 0) {
             failure('Execution of Acceptance Test Failed.');
         }
