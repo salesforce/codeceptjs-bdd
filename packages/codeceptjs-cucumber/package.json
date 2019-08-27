@@ -1,15 +1,16 @@
 {
   "name": "codeceptjs-cucumber",
   "version": "2.0.1",
-  "description": "CodeceptJs Cucumber ",
+  "description": "CodeceptJs Cucumber E2E Framework",
   "scripts": {
     "start": "node cli.js",
     "cli": "node cli.js",
     "clean": "rimraf tests/acceptance/report/*.*",
-    "acceptance": "yarn clean && ./node_modules/.bin/codeceptjs run --verbose --features",
-    "acceptance:multiple": "yarn clean && ./node_modules/.bin/codeceptjs run-multiple",
+    "acceptance": "./node_modules/.bin/codeceptjs run --verbose --features",
+    "acceptance:multiple": "./node_modules/.bin/codeceptjs run-multiple",
     "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",
-    "bdd:snippets": "./node_modules/.bin/codeceptjs bdd:snippets"
+    "bdd:snippets": "./node_modules/.bin/codeceptjs bdd:snippets",
+    "test": "yarn acceptance --profile chrome:headless"
   },
   "bin": {
     "codeceptjs-e2e": "./cli.js"
