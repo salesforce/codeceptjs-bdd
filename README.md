@@ -8,7 +8,7 @@
  
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
 
-* **Why BDD?** Read the Medium post [here](https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237)
+* **Why BDD?** Read my Medium post [here](https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237)
 
 * Run All feature files in **Parallel**
 
@@ -20,7 +20,7 @@
 
 * Uses [Should.js](https://shouldjs.github.io/) Assertions Library. Various assertions with examples are available [here](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/acceptance/step_definitions/search/github.steps.js)
 
-* Reduces Flakieness with **RetryFailedSteps** plugin and a Webdriver's **SmartWait**
+* Reduces Flakiness with **RetryFailedSteps** plugin and a Webdriver's **SmartWait**
 
 * Page objects follow `<name_of_page>.page.js` naming pattern, and created under [pages](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/pages/) directory
 
