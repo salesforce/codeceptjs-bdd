@@ -2,7 +2,9 @@
 
 ***[CodeceptJS](https://codecept.io/) E2E Framework with Cucumber and Saucelabs cloud***
 
-[![Build Status](https://travis-ci.org/gkushang/codeceptjs-e2e.svg?branch=develop)](https://travis-ci.org/gkushang/codeceptjs-e2e) [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-e2e/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![Screen-Shot-2019-08-26-at-5-39-47-PM.png](https://i.postimg.cc/Y0M2cPwL/Screen-Shot-2019-08-26-at-5-39-47-PM.png)](https://postimg.cc/PpVnY2Jd)
+[![Build Status](https://travis-ci.org/gkushang/codeceptjs-e2e.svg?branch=develop)](https://travis-ci.org/gkushang/codeceptjs-e2e) [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-e2e/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) 
+
+[![e2e-framework.png](https://i.postimg.cc/8cM6b7Fb/e2e-framework.png)](https://postimg.cc/CnM5hLsZ)
  
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
 
