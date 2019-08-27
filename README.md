@@ -43,6 +43,8 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
     npm run cli
 ```
 
+![](codeceptjs-cli.gif)
+
 ## CodceptJS-Cucumber : E2E Framework
 
 > CodeceptJS E2E Framework with Cucumber and Saucelabs Integration
