@@ -35,7 +35,7 @@ Follow the below steps to launch CLI, and follow the CLI instructions. CLI also 
 
 ```bash
 
-    git clone git@github.com:gkushang/codeceptjs-e2e.git
+    git clone https://github.com/gkushang/codeceptjs-e2e.git
     cd codeceptjs-e2e
     yarn
     npx lerna bootstrap
