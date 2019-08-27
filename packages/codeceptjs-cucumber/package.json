@@ -3,11 +3,11 @@
   "version": "2.0.0",
   "description": "CodeceptJs Cucumber ",
   "scripts": {
+    "start": "node cli.js",
     "cli": "node cli.js",
     "clean": "rimraf tests/acceptance/report/*.*",
     "acceptance": "yarn clean && ./node_modules/.bin/codeceptjs run --verbose --features",
-    "acceptance:parallel": "yarn clean && ./node_modules/.bin/codeceptjs run-multiple parallel --verbose --features",
-    "acceptance:multibrowsers": "yarn clean && ./node_modules/.bin/codeceptjs run-multiple multibrowsers --verbose",
+    "acceptance:multiple": "yarn clean && ./node_modules/.bin/codeceptjs run-multiple",
     "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",
     "bdd:snippets": "./node_modules/.bin/codeceptjs bdd:snippets"
   },
@@ -23,6 +23,10 @@
   "author": {
     "name": "Kushang Gajjar",
     "email": "g.kushang@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkushang/codeceptjs-e2e.git"
   },
   "devDependencies": {
     "allure-commandline": "^2.9.0",

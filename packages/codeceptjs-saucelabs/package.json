@@ -8,6 +8,10 @@
     "CodeceptJS",
     "Multibrowsers"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkushang/codeceptjs-e2e.git"
+  },
   "author": {
     "name": "Kushang Gajjar",
     "email": "g.kushang@gmail.com"
@@ -15,7 +19,8 @@
   "license": "MIT",
   "dependencies": {
     "@wdio/sauce-service": "^5.12.1",
-    "codeceptjs-saucehelper": "github:gkushang/codeceptjs-saucehelper#feature/update-dashboard",
+    "chalk": "^2.4.2",
+    "codeceptjs-saucehelper": "^1.4.0",
     "debug": "^4.1.1",
     "deepmerge": "^4.0.0"
   }

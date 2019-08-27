@@ -1,6 +1,7 @@
 let defaultBrowsers = require('./browsers.conf').browsers;
 let debug = require('debug')('codeceptjs-saucelabs:config');
 let merge = require('deepmerge');
+const chalk = require('chalk');
 
 const SAUCE_DELIMITER = ':';
 const MULTI_BROWSER_DELIMITER = ',';
@@ -57,11 +58,19 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
     };
 
     if (isSauceRequested()) {
+        if (sauceUsername) {
+            if (!sauceKey || !process.env.SAUCE_KEY) {
+                throw new Error('Sauce Key isn\'t defined. Please export as an environment variable "SAUCE_KEY".');
+            }
+        }
         if (sauceUsername && sauceKey) {
             process.env.SAUCE_USERNAME = sauceUsername;
             process.env.SAUCE_KEY = sauceKey;
             conf.plugins.wdio.user = sauceUsername;
             conf.plugins.wdio.key = sauceKey;
+
+            console.info(chalk.yellow.bold('Tests are running on Saucelabs account: ') + chalk.blue.bold(sauceUsername));
+            console.info(chalk.yellow.bold('Tests are running on Saucelabs browsers: ') + chalk.blue.bold(JSON.stringify(getBrowsers(), null, 2)));
 
             // For supporting the codeceptjs-saucehelper module
             conf.helpers.WebDriver.user = sauceUsername;
@@ -69,6 +78,10 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
         }
         return conf;
     }
+
+    const localBrowser = process.profile || '"default" browser';
+
+    console.info(chalk.yellow.bold('Tests are running locally on : ') + chalk.blue.bold(localBrowser));
 
     return {};
 }

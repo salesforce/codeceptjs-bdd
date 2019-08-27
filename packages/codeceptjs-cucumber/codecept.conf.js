@@ -16,7 +16,7 @@ const HOST = process.env.HOST
 
 // replace sauce_username & sauce_key with your SauceLabs Account
 const SAUCE_USERNAME = process.env.SAUCE_USERNAME ? process.env.SAUCE_USERNAME : '<sauce_username>';
-const SAUCE_KEY = process.env.SAUCE_KEY ? process.env.SAUCE_KEY : '<sauce_key>';
+const SAUCE_KEY = process.env.SAUCE_KEY;
 
 let conf = {
     output: RELATIVE_PATH + 'report',

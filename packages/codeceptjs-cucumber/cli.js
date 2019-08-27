@@ -8,6 +8,8 @@ const emoji = require('node-emoji');
 const path = require('path');
 
 const init = () => {
+    addScripts();
+
     console.log('\n' +
         chalk.yellow(
             figlet.textSync('E2E Codecept JS', {
@@ -79,9 +81,32 @@ const askQuestions_toExecuteScenarios = () => {
     ]);
 };
 
-const success = (filepath) => {
+const addInfo = (username, key) => {
+
     console.log('\n' +
-        chalk.white.bgRed.bold(emoji.emojify(':clap: :thumbsup:') + ` Done! Acceptance Tests Created at ${filepath}\n`)
+        chalk.bold.red(emoji.emojify(':warning:  ') + 'You must export Saucelabs Access Key through Environment Variable "SAUCE_KEY" to run your tests on Saucelabs. It is not recommend to store it on the Source Control.\n\n') +
+        chalk.bold.red(emoji.emojify(':information_desk_person:  ') + 'It is recommended to export your Saucelabs Username and Access Key through your ./bash_profile or ./zshrc. Add following to your profile:') +
+        chalk.bold.red('\n\n' +
+            'export SAUCE_USERNAME=' + username +'\n' +
+            'export SAUCE_KEY='+ key + '\n\n')
+    );
+
+};
+
+
+const addScripts = (packageJson) => {
+    const SCRIPTS = '"scripts": {\n' +
+        '\t"acceptance": "npx codeceptjs run --verbose",\n' +
+        '\t"acceptance:multiple": "npx codeceptjs run-multiple ",\n' +
+        '\t"acceptance:report": "npx allure serve ",';
+
+    shell.sed('-i','"scripts": {' , SCRIPTS , packageJson);
+};
+
+const success = (filepath) => {
+
+    console.log('\n' +
+        chalk.yellow.bold(emoji.emojify(':clap: :thumbsup:') + ` Done! Acceptance Tests Created at ${filepath}\n`)
     );
 };
 
@@ -101,16 +126,21 @@ const run = async () => {
     shell.cp('-R', path.join(process.cwd(), 'codecept.conf.js'), path.join(ROOT_PATH));
 
     const configFile = path.join(ROOT_PATH, 'codecept.conf.js');
+    const packageJson = path.join(ROOT_PATH, 'package.json');
+
+    shell.sed('-i', '<name>', PROJECT_NAME, configFile);
 
     if(INTEGRATE_SAUCE_LABS) {
         const { SAUCE_USERNAME, SAUCE_KEY } =  await askQuestions_aboutSauceLabsAccount();
         shell.sed('-i', '<sauce_username>', SAUCE_USERNAME, configFile);
-        shell.sed('-i', '<sauce_key>', SAUCE_KEY, configFile);
+        addInfo(SAUCE_USERNAME, SAUCE_KEY);
     }
 
     shell.sed('-i', '<name>', PROJECT_NAME, configFile);
 
     shell.sed('-i', './acceptance/', './' + RELATIVE_PATH +'/acceptance/', configFile);
+
+    addScripts(packageJson);
 
     const { SHOULD_EXECUTE } =  await askQuestions_toExecuteScenarios();
 
@@ -118,9 +148,22 @@ const run = async () => {
 
     shell.cd(ROOT_PATH);
 
+    console.info('Change Directory to: ', ROOT_PATH);
+
+    console.log('\n\n' +
+        chalk.white.bgBlue.bold(emoji.emojify(':rocket:') + ` Installing dependencies...\n\n`)
+    );
+
     if (shell.exec('yarn add codeceptjs-saucelabs@latest codeceptjs-shared@latest @wdio/selenium-standalone-service allure-commandline codeceptjs debug faker protractor rimraf should webdriverio deepmerge -D' ).code !== 0) {
         failure('Yarn command failed.');
     }
+
+
+    shell.cp('-R', path.join(ROOT_PATH, 'package.json'));
+
+    console.log('\n' +
+        chalk.white.bgBlue.bold(emoji.emojify(':coffee:') + ` Setup Completed!`)
+    );
 
     if(SHOULD_EXECUTE) {
 
@@ -134,7 +177,7 @@ const run = async () => {
             )
         );
 
-        if (shell.exec('./node_modules/.bin/codeceptjs run --grep=@search_results' ).code !== 0) {
+        if (shell.exec('yarn acceptance --grep=@search_results --verbose' ).code !== 0) {
             failure('Execution of Acceptance Test Failed.');
         }
     }
