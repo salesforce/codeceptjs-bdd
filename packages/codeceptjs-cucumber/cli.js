@@ -25,7 +25,7 @@ const init = () => {
     console.log(
         chalk.green.bold(
         '\nThe CodeceptJs-E2E CLI is a command-line interface tool that you use to Create and Initialize the base ' +
-            chalk.blue.bold.underline('CodeceptJS Cucumber E2E Frameowork') +
+            chalk.blue.bold.underline('CodeceptJS Cucumber E2E Framework') +
             ' to your workspace. It will create ' + chalk.blue.bold.underline('acceptance') + ' directory at your acceptance test location and ' + chalk.blue.bold.underline('configurations') + ' under your workspace.\n'));
 };
 
@@ -90,13 +90,10 @@ const failure = (message) => {
 const run = async () => {
     init();
 
-    console.log('pwd ', process.cwd());
     const { ROOT_PATH, RELATIVE_PATH, INTEGRATE_SAUCE_LABS } =  await askQuestions_aboutLocations();
 
-    shell.cp('-R',  path.join(process.cwd(), 'packages/codeceptjs-cucumber/acceptance'), path.join(ROOT_PATH, RELATIVE_PATH, 'acceptance'));
-    shell.cp('-R', path.join(process.cwd(), 'packages/codeceptjs-cucumber/codecept.conf.js'), path.join(ROOT_PATH));
-
-    console.log('ROOT_PATH ', ROOT_PATH);
+    shell.cp('-R',  path.join(process.cwd(), 'acceptance'), path.join(ROOT_PATH, RELATIVE_PATH, 'acceptance'));
+    shell.cp('-R', path.join(process.cwd(), 'codecept.conf.js'), path.join(ROOT_PATH));
 
     const configFile = path.join(ROOT_PATH, 'codecept.conf.js');
 
@@ -109,6 +106,8 @@ const run = async () => {
     shell.sed('-i', './acceptance/', './' + RELATIVE_PATH +'/acceptance/', configFile);
 
     const { SHOULD_EXECUTE } =  await askQuestions_toExecuteScenarios();
+
+    console.info('Change Directory to: ', ROOT_PATH);
 
     shell.cd(ROOT_PATH);
 

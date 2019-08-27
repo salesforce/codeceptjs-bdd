@@ -38,10 +38,9 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 ```bash
 
     git clone https://github.com/gkushang/codeceptjs-e2e.git
-    cd codeceptjs-e2e
+    cd codeceptjs-e2e/packages/codeceptjs-cucumber
     yarn
-    npx lerna bootstrap
-    node packages/codeceptjs-cucumber/cli.js
+    npm run cli
 ```
 
 ## CodceptJS-Cucumber : E2E Framework
