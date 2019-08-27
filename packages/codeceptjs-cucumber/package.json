@@ -5,7 +5,6 @@
   "scripts": {
     "start": "node cli.js",
     "cli": "node cli.js",
-    "clean": "rimraf tests/acceptance/report/*.*",
     "acceptance": "./node_modules/.bin/codeceptjs run --verbose --features",
     "acceptance:multiple": "./node_modules/.bin/codeceptjs run-multiple",
     "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",
@@ -42,7 +41,6 @@
     "inquirer": "^7.0.0",
     "node-emoji": "^1.10.0",
     "protractor": "^5.4.2",
-    "rimraf": "^3.0.0",
     "selenium-standalone": "^6.16.0",
     "shelljs": "^0.8.3",
     "should": "^13.2.3",
