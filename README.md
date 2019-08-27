@@ -33,6 +33,8 @@ This framework comes with the *Interactive CLI* which will setup the entire fram
 
 Follow the below steps to launch CLI, and follow the CLI instructions. CLI also runs the Sample Github tests to test your setup (this step is optional)
 
+Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
+
 ```bash
 
     git clone https://github.com/gkushang/codeceptjs-e2e.git
