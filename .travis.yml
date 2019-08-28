@@ -1,9 +1,18 @@
 language: node_js
+
+node_js:
+  - 12
+
 before_script:
   - curl -o- -L https://yarnpkg.com/install.sh
   - export PATH="$HOME/.yarn/bin:$PATH"
+
 addons: # get google-chrome-stable
   chrome: stable
+
+cache:
+  npm: false
+
 install:
   - wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/
   - unzip ~/chromedriver_linux64.zip -d ~/
@@ -12,10 +21,9 @@ install:
   - sudo chmod +x /usr/local/share/chromedriver
   - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
   - npm i lerna
+
 script:
   - whereis google-chrome-stable
   - whereis chromedriver
   - lerna bootstrap
   - lerna run --scope codeceptjs-cucumber test
-node_js:
-  - 12
