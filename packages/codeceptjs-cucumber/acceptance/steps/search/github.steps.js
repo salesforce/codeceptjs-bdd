@@ -3,7 +3,6 @@ const {I, ghHomePage, ghSearchPage} = inject();
 Given(/Fred is on Github Homepage/, () => {
     // navigate - genarally this should be part of Before hook.
     // But to explain Background in feature file, we have it in stepdef
-    I.amOnPage('/');
 });
 
 When(/he searches for the \"([^\"]*)\"/, searchFor => {

@@ -4,14 +4,14 @@ const codeceptjs_saucelabs = require('codeceptjs-saucelabs').config.saucelabs;
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
-const DEFAULT_HOST = 'https://github.com';
+const DEFAULT_HOST = 'github.com';
 const RELATIVE_PATH = './acceptance/';
 const PAGES_PATH = RELATIVE_PATH + 'pages/';
 const STEPS_PATH = RELATIVE_PATH + 'steps/';
 
-const HOST = process.env.HOST
+const HOST = 'https://' + (process.env.HOST
     ? process.env.HOST
-    : DEFAULT_HOST;
+    : DEFAULT_HOST);
 
 // replace sauce_username & sauce_key with your SauceLabs Account
 const SAUCE_USERNAME = process.env.SAUCE_USERNAME ? process.env.SAUCE_USERNAME : '<sauce_username>';

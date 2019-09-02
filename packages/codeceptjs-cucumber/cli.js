@@ -6,6 +6,7 @@ const figlet = require('figlet');
 const shell = require('shelljs');
 const emoji = require('node-emoji');
 const path = require('path');
+const fs = require('fs');
 
 const init = () => {
     addScripts();
@@ -41,7 +42,7 @@ const askQuestions_aboutLocations = () => {
         {
             name: 'ROOT_PATH',
             type: 'input',
-            message: 'Enter the path to your destination Root project (path to package.json): '
+            message: 'Enter the Full PATH to your destination Root project (full path to package.json): '
         },
         {
             name: 'RELATIVE_PATH',
@@ -106,7 +107,7 @@ const addScripts = (packageJson) => {
 const success = (filepath) => {
 
     console.log('\n' +
-        chalk.yellow.bold(emoji.emojify(':clap: :thumbsup:') + ` Done! Acceptance Tests Created at ${filepath}\n`)
+        chalk.yellow.bold(emoji.emojify(':clap: :thumbsup:') + ` Done! Acceptance Tests Created at ` + chalk.blue.bold(filepath) + '\n')
     );
 };
 
@@ -122,8 +123,18 @@ const run = async () => {
 
     const { PROJECT_NAME, ROOT_PATH, RELATIVE_PATH, INTEGRATE_SAUCE_LABS } =  await askQuestions_aboutLocations();
 
-    shell.cp('-R',  path.join(process.cwd(), 'acceptance'), path.join(ROOT_PATH, RELATIVE_PATH, 'acceptance'));
-    shell.cp('-R', path.join(process.cwd(), 'codecept.conf.js'), path.join(ROOT_PATH));
+    if(!fs.existsSync(ROOT_PATH)) {
+        shell.mkdir('-p', ROOT_PATH);
+    }
+
+    const acceptanceTestsPath = path.join(ROOT_PATH, RELATIVE_PATH, 'acceptance');
+
+    if(!fs.existsSync(acceptanceTestsPath)) {
+        shell.mkdir('-p', acceptanceTestsPath);
+    }
+
+    shell.cp('-R',  path.join(process.cwd(), 'acceptance'), path.join(ROOT_PATH, RELATIVE_PATH));
+    shell.cp('-R', path.join(process.cwd(), 'codecept.conf.js'), ROOT_PATH);
 
     const configFile = path.join(ROOT_PATH, 'codecept.conf.js');
     const packageJson = path.join(ROOT_PATH, 'package.json');
@@ -140,15 +151,27 @@ const run = async () => {
 
     shell.sed('-i', './acceptance/', './' + RELATIVE_PATH +'/acceptance/', configFile);
 
-    addScripts(packageJson);
-
     const { SHOULD_EXECUTE } =  await askQuestions_toExecuteScenarios();
 
-    console.info('Change Directory to: ', ROOT_PATH);
+
+    if(!fs.existsSync(path.join(ROOT_PATH, 'package.json'))) {
+        console.error(
+            '\n' +
+            emoji.emojify(':warning:  ') +
+            chalk.red.bold(`package.json does not exists at the ${ROOT_PATH}. Looks like the node project hasn't initialized yet.\n`) +
+            emoji.emojify(':point_right:  ') +
+            chalk.blue.bold(`Don't worry! We are copying the existing to continue the setup. Please update the file once the setup is done!`) +
+            emoji.emojify(':zap:  ')
+        );
+
+        shell.cp('-R',  path.join(process.cwd(), 'package.json'), ROOT_PATH);
+    }
+
+    console.info('\nChange Directory to: ', ROOT_PATH);
 
     shell.cd(ROOT_PATH);
 
-    console.info('Change Directory to: ', ROOT_PATH);
+    addScripts(packageJson);
 
     console.log('\n\n' +
         chalk.white.bgBlue.bold(emoji.emojify(':rocket:') + ` Installing dependencies...\n\n`)
@@ -167,6 +190,8 @@ const run = async () => {
 
     if(SHOULD_EXECUTE) {
 
+        shell.cd(ROOT_PATH);
+
         console.log('\n' +
             chalk.green(
                 figlet.textSync('Running Tests', {
@@ -177,7 +202,7 @@ const run = async () => {
             )
         );
 
-        if (shell.exec('yarn acceptance --grep=@search_results --verbose' ).code !== 0) {
+        if (shell.exec('./node_modules/.bin/codeceptjs run --grep=@search_results --verbose' ).code !== 0) {
             failure('Execution of Acceptance Test Failed.');
         }
     }
