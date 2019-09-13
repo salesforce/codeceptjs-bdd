@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-cucumber",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "CodeceptJs Cucumber E2E Framework",
   "scripts": {
     "start": "node cli.js",
@@ -33,7 +33,7 @@
     "chalk": "^2.4.2",
     "codeceptjs": "^2.3.0",
     "codeceptjs-saucelabs": "^2.0.1",
-    "codeceptjs-shared": "^2.0.0",
+    "codeceptjs-shared": "^2.0.1",
     "debug": "^4.1.1",
     "deepmerge": "^4.0.0",
     "faker": "^4.1.0",
