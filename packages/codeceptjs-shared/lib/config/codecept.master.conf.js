@@ -30,7 +30,7 @@ const conf = {
             enabled: true
         },
         retryFailedStep: {
-            enabled: false,
+            enabled: true,
             retries: 5
         },
         wdio: {
