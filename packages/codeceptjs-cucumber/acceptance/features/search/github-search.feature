@@ -11,7 +11,6 @@ Feature: Search Github
     Given Fred is on Github Homepage
 
 
-## If you have one Scenario
   @search_results
   Scenario: Fred should see the highlighted results for the searched repository
 
