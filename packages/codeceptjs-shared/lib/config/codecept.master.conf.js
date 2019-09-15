@@ -67,6 +67,8 @@ if (process.profile && process.profile === 'chrome:headless') {
             args: ['--headless', '--disable-gpu', '--window-size=1920,1080']
         }
     };
+} else if (process.profile && (process.profile === 'safari' ||  process.profile === 'firefox')) {
+    conf.helpers.WebDriver.windowSize = 'maximize';
 }
 
 if (!(process.profile && process.profile.match('sauce:[a-zA-Z]'))) {
