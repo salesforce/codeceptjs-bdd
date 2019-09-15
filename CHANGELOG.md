@@ -1,4 +1,10 @@
-## 2.2.0
+## 2.0.3
+
+### CodeceptJS-shared
+
+* Maximize Safari and Firefox browser when it launches
+   
+## 2.0.0
 
 ### CodeceptJS-shared
 
