@@ -27,7 +27,8 @@ const conf = {
             enabled: true
         },
         autoDelay: {
-            enabled: true
+            enabled: true,
+            delayBefore: 400
         },
         retryFailedStep: {
             enabled: true,
