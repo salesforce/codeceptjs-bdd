@@ -8,7 +8,7 @@ const conf = {
         WebDriver: {
             browser: BROWSER,
             smartWait: 5000,
-            waitForTimeout: 10000,
+            waitForTimeout: 20000,
             timeouts: {
                 implicit: 5000,
                 script: 60000,
