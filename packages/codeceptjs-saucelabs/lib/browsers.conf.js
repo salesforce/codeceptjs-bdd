@@ -23,7 +23,7 @@ let browsers = {
         }
     },
     edge: {
-        browser: 'MicrosoftEdg`e',
+        browser: 'MicrosoftEdge',
         capabilities: sauceOptions
     },
     ie: {
