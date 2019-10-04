@@ -24,7 +24,9 @@ let browsers = {
     },
     edge: {
         browser: 'MicrosoftEdge',
-        capabilities: sauceOptions
+        capabilities: {
+            'sauce:options': sauceOptions
+        }
     },
     ie: {
         browser: 'internet explorer',
