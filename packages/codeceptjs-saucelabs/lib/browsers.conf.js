@@ -18,11 +18,12 @@ let browsers = {
     safari: {
         browser: 'safari',
         capabilities: {
+            browserVersion: '12.0',
             'sauce:options': sauceOptions
         }
     },
     edge: {
-        browser: 'MicrosoftEdge',
+        browser: 'MicrosoftEdg`e',
         capabilities: sauceOptions
     },
     ie: {
