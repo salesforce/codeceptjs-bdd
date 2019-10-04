@@ -35,7 +35,7 @@ class WebDriver_commands extends Helper {
 
 	scrollToElement(locator) {
 		const I = this.helpers.WebDriver;
-		return I.scrollTo(locator, 0, -100);
+		return I.scrollTo(locator);
 	}
 }
 
