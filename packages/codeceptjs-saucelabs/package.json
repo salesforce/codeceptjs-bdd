@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-saucelabs",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "main": "index.js",
   "description": "CodeceptJS Saucelabs Integration",
   "keywords": [
@@ -24,7 +24,7 @@
     "debug": "^4.1.1",
     "deepmerge": "^4.0.0",
     "figlet": "^1.2.4",
-    "sauce-connect-launcher": "^1.2.7",
-    "node-emoji": "^1.10.0"
+    "node-emoji": "^1.10.0",
+    "sauce-connect-launcher": "^1.2.7"
   }
 }
