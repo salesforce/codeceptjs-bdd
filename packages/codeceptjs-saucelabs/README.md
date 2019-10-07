@@ -59,3 +59,25 @@ e.g. Runs all feature files on Chrome, IE and Firefox on saucelabs
 
 ```
 
+
+## Run localhost on Saucelabs Browsers
+
+Step 1: Start Tunnel
+
+```bash
+
+    npm i codeceptjs-saucelabs
+    cd codeceptjs-saucelabs
+    yarn
+    SAUCE_USERNAME=<sauce_username> SAUCE_KEY=<sauce_key> node lib/sauce.connect.launcher.js
+
+```
+Step 2: Run localhost on SauceLabs browser
+
+    1. Go to Saucelabs and launch manual session
+    2. Select Tunnel
+    3. Select Browser/OS
+    4. Enter URL and replace "localhost" with your Computer Name to connect to the code running locally
+
+
+
