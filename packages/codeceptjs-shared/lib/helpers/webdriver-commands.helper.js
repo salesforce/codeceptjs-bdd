@@ -28,9 +28,12 @@ class WebDriver_commands extends Helper {
 		return Array.isArray(isDisplayed) && (isDisplayed[0] === true);
 	}
 
-	scrollDownToPixel(locator, pixel) {
+	scrollDownToPixel(elementId, pixel) {
 		const I = this.helpers.WebDriver;
-		return I.executeScript('document.getElementById("' + locator + '").scrollTop = ' + pixel);
+		I.wait(2);
+		I.waitForElement('#' + elementId);
+		I.wait(1);
+		return I.executeScript('document.getElementById("' + elementId + '").scrollTop = ' + pixel);
 	}
 
 	scrollToElement(locator) {
