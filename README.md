@@ -85,3 +85,20 @@ To get started, follow the instructions on [codeceptjs-saucelabs](https://github
 
 To get started, follow the instructions on [codeceptjs-shared](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-shared)
 
+
+
+## Codeceptjs-e2e Docker & Jenkinsfile
+
+> Codecpetjs-e2e packed into the container with Node and Java. 
+
+Codecpetjs-e2e Docker makes it very simple to build your CI Job.
+
+To run your Codecptjs-e2e tests on Saucelabs thru Jenkins, add below stage to your Jenkinsfile:
+
+```bash
+
+	stage('CodeceptJS Acceptance') {
+      sh "docker run --env HOST --env PASSWORD --env SAUCE_KEY --env SAUCE_USERNAME -v ${env.WORKSPACE}/source/app_business_manager/:/acceptance --rm gkushang/codeceptjs-e2e --debug --profile sauce:${browser}"
+		}
+
+```
