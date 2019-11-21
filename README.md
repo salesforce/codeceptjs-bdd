@@ -87,7 +87,7 @@ To get started, follow the instructions on [codeceptjs-shared](https://github.co
 
 
 
-## Codeceptjs-e2e Docker & Jenkinsfile
+## Docker & Jenkinsfile
 
 > Codecpetjs-e2e packed into the container with Node and Java. 
 
