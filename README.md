@@ -99,6 +99,6 @@ To run your Codecptjs-e2e tests on Saucelabs thru Jenkins, add below stage to yo
 
 	stage('CodeceptJS Acceptance') {
             sh "docker run --env HOST --env PASSWORD --env SAUCE_KEY --env SAUCE_USERNAME -v ${env.WORKSPACE}/source/app_business_manager/:/acceptance --rm gkushang/codeceptjs-e2e --debug --profile sauce:${browser}"
-    }
+        }
 
 ```
