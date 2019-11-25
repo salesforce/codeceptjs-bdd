@@ -14,6 +14,4 @@ RUN yarn --version
 
 WORKDIR /acceptance
 
-RUN yarn install
-
 ENTRYPOINT [ "yarn" ]
