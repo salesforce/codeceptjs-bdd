@@ -16,4 +16,4 @@ WORKDIR /acceptance
 
 RUN yarn install
 
-ENTRYPOINT [ "yarn", "acceptance" ]
+ENTRYPOINT [ "yarn" ]
