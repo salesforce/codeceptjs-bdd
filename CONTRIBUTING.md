@@ -2,12 +2,12 @@
 
 First, I'd like to thank you for wanting to contribute and make the CodeceptJS Acceptance E2E Automation Framework experience better for the community. :+1::tada: -- [@gkushang](https://github.com/gkushang/)
 
-If you'd like to contribute, please make sure to discuss the intended changes either by creating a new [Issue](https://github.com/gkushang/codeceptjs-e2e/issues) or commenting an existing one.
+If you'd like to contribute, please make sure to discuss the intended changes either by creating a new [Issue](https://github.com/gkushang/codeceptjs-e2e/issues) or commenting on existing one.
 
 ## Submit the PR for new Feature or Bug fixes
 
 1. Fork this repository (button in upper right). Install [git](https://git-scm.com/) and clone your fork locally with `git clone git@github.com:[YOUR-USER]/codeceptjs-e2e.git`. This library only supports use of `git-bash` in Windows. The default command prompt may not work.
-1. Create a [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows) locally such as `feature/support-visual-testing`.
+1. Create a [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows) locally such as `feature/support-visual-testing` for new Feature or `bugfix/saucelabs-api` for Bug fixes.
 1. Install [Lerna](https://www.npmjs.com/package/lerna) globally.
 1. Install [Node and YARN](https://nodejs.org/en/).
 1. `cd codepceptjs-e2e` and run `learna bootstrap` to install dependencies.
