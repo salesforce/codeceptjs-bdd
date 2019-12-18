@@ -3,8 +3,8 @@
 ***[CodeceptJS](https://codecept.io/) E2E Framework with Cucumber and Saucelabs cloud***
 
 [![Build Status](https://travis-ci.org/gkushang/codeceptjs-e2e.svg?branch=develop)](https://travis-ci.org/gkushang/codeceptjs-e2e) [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-e2e/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
-[![Codecept-E2-ELogo-001.jpg](https://i.postimg.cc/Kj7DrQ8d/Codecept-E2-ELogo-001.jpg)](https://postimg.cc/sGXW3YSc)
- 
+[Codecept-E2-ELogo-001.jpg](https://postimg.cc/sGXW3YSc)
+
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
 
 * **Why BDD?** Read my Medium post [here](https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237)
