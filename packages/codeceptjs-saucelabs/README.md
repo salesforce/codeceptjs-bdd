@@ -15,7 +15,7 @@
     
 ```
 
-## Saucelabs Configuration
+## Sauce Labs Configuration
 
 Simply use existing configuration in your project
 
@@ -25,9 +25,23 @@ Simply use existing configuration in your project
     
 ```
 
-## Commands to execute your tests on Saucelabs
+## Sauce Labs Dashboard
 
-N.B: You must export your Sauce Username and Accesskey as described above.
+The Dashboard is the first page you'll see when you log into the Sauce Labs web interface. It provides you with information about the most recent tests you've run and your account usage, and provides links to other important pages such as the Archives of your previous test results and detailed account information. 
+
+This module creates Unique Dashboard for each build by passing Unique Key automatically. If you'd like to provide more information to the Sauce Dashboard ID, you can prepend your information thru environment variable `SAUCE_BUILD`.
+
+```
+    SAUCE_BUILD=release_1.0.1 yarn acceptance --profile sauce:chrome
+``` 
+
+Above command will create a unique Dashboard of Title `release_1.0.1 - <unique_number>`.
+
+If you do not provide `SAUCE_BUILD`, then this module will still create Dashboard with `<unique_number>`.
+
+## Commands to execute your tests on Sauce Labs
+
+N.B: You must export your Sauce Username and AccessKey as described above.
 
 #### `run on Single browser - serially`
 
@@ -60,7 +74,7 @@ e.g. Runs all feature files on Chrome, IE and Firefox on saucelabs
 ```
 
 
-## Run localhost on Saucelabs Browsers
+## Run localhost on Sauce Labs Browsers
 
 Step 1: Start Tunnel
 
@@ -69,6 +83,8 @@ Step 1: Start Tunnel
     git clone git@github.com:gkushang/codeceptjs-e2e.git
     export SAUCE_USERNAME=<sauce_username>
     export SAUCE_KEY=<sauce_key>
+    cd codeceptjs-e2e
+    lerna bootstrap
     node codeceptjs-e2e/packages/codeceptjs-saucelabs/lib/sauce.connect.launcher.js
 
 ```

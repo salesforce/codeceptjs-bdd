@@ -14,15 +14,23 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
         return (process.profile && process.profile.match('sauce:[a-zA-Z]'));
     }
 
+    function exportSauceBuildId() {
+        if ( process.env.SAUCE_BUILD ) {
+            process.env.SAUCE_BUILD += ' - ' + Date.now();
+        } else {
+            process.env.SAUCE_BUILD = Date.now();
+        }
+    }
+
     function getBrowsers() {
         if (isSauceRequested()) {
             let multibrowsers = [];
             let requestedBrowsers = process.profile.split(SAUCE_DELIMITER)[1].split(MULTI_BROWSER_DELIMITER);
-            debug('Tests are running on Saucelabs on Multi-Browsers:', requestedBrowsers);
+            debug('Tests are running on Sauce Labs on Multi-Browsers:', requestedBrowsers);
             requestedBrowsers.forEach(browser => {
                 multibrowsers.push(sauceBrowsers[browser]);
             });
-            debug('Saucelabs Config for Multi-Browsers:', multibrowsers);
+            debug('Sauce Labs Config for Multi-Browsers:', multibrowsers);
             return multibrowsers;
         }
 
@@ -66,11 +74,14 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
         if (sauceUsername && sauceKey) {
             process.env.SAUCE_USERNAME = sauceUsername;
             process.env.SAUCE_KEY = sauceKey;
+            exportSauceBuildId();
+
             conf.plugins.wdio.user = sauceUsername;
             conf.plugins.wdio.key = sauceKey;
 
-            console.info(chalk.yellow.bold('Tests are running on Saucelabs account: ') + chalk.blue.bold(sauceUsername));
-            console.info(chalk.yellow.bold('Tests are running on Saucelabs browsers: ') + chalk.blue.bold(JSON.stringify(getBrowsers(), null, 2)));
+            console.info(chalk.yellow.bold('Tests are running on Sauce Labs account: ') + chalk.blue.bold(sauceUsername));
+            console.info(chalk.yellow.bold('Sauce Labs Dashboard for the current build is : ') + chalk.blue.bold(process.env.SAUCE_BUILD));
+            console.info(chalk.yellow.bold('Tests are running on Sauce Labs browsers: ') + chalk.blue.bold(JSON.stringify(getBrowsers(), null, 2)));
 
             // For supporting the codeceptjs-saucehelper module
             conf.helpers.WebDriver.user = sauceUsername;
