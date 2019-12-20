@@ -25,8 +25,13 @@
 
 * Step Definitions files follows `<name_of_step>.steps.js` naming pattern, and created under [step_definitions](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/step_definitions) directory
 
+## Benefits of this Framework
 
-## Interactive CLI: How to get Started? 
+[![Screen-Shot-2019-12-19-at-8-33-02-PM.png](https://i.postimg.cc/k4p3LSnf/Screen-Shot-2019-12-19-at-8-33-02-PM.png)](https://postimg.cc/WFgHkhqk)
+[![Screen-Shot-2019-12-19-at-8-33-28-PM.png](https://i.postimg.cc/59X6yqF9/Screen-Shot-2019-12-19-at-8-33-28-PM.png)](https://postimg.cc/mhGb69wK)
+[![Screen-Shot-2019-12-19-at-8-32-29-PM.png](https://i.postimg.cc/FKPHs7rJ/Screen-Shot-2019-12-19-at-8-32-29-PM.png)](https://postimg.cc/7C2kKPTx)
+
+## Get Started : Interactive CLI
 
 This framework comes with the *Interactive CLI* which will setup the entire framework in one-go.
 
@@ -43,6 +48,7 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 ```
 
 ![](codeceptjs-cli.gif)
+
 
 ## CodceptJS-Cucumber : E2E Framework
 
