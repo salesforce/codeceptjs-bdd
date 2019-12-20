@@ -13,9 +13,9 @@
 
 * Run All feature files on **Multi-Browsers - run them all in Parallel**
 
-* Scenarios are written in **Cucumber Ghernkin BDD Syntax**, a.k.a `.feature` files. [Prefer writing Declartive Test Scenarios](https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Imperative+v.+Declarative+Testing+Scenarios)
+* Scenarios are written in **Cucumber Gherkin BDD Syntax**, a.k.a `.feature` files. [Prefer writing Declartive Test Scenarios](https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Imperative+v.+Declarative+Testing+Scenarios)
 
-* Run on **SauceLabs**. Single browser or Multibrowsers in Parallel
+* Run on **SauceLabs**. Single browser or Multi-Browsers in Parallel
 
 * Uses [Should.js](https://shouldjs.github.io/) Assertions Library. Various assertions with examples are available [here](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/acceptance/step_definitions/search/github.steps.js)
 
@@ -25,7 +25,7 @@
 
 * Step Definitions files follows `<name_of_step>.steps.js` naming pattern, and created under [step_definitions](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/step_definitions) directory
 
-* Soft Assertions: Collect more errors in a single run rather than failing test at first failure!
+* **Soft Assertions:** Collect more errors in a single run rather than failing test at first failure!
 
 ## Benefits of this Framework
 
