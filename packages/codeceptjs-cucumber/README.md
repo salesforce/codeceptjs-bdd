@@ -35,6 +35,8 @@ Collect all errors with Soft Assertions!
 Soft Assert collects errors during scenario. Soft Assert does not throw an exception when an assert fails and would continue with the next step after the assert statement.
 If there is any exception and you want to throw it then you need to use softAssertAll() method as a last statement in the scenario or with @after hook and it will report all the failures at once.
 
+The detailed example is in [Github Sample Search Tests](https://github.com/gkushang/codeceptjs-e2e/blob/develop/packages/codeceptjs-cucumber/acceptance/steps/search/github.steps.js#L17).
+
 ```nashorn js
 const verify = require('soft-assert');
 
@@ -45,5 +47,4 @@ verify.softAssert('actual-2', 'expected-2', 'message');
 // at any point throw all errors at once
 verify.softAssertAll();
 ```
-
 For more info, follow the [soft-assert](https://www.npmjs.com/package/soft-assert) library!

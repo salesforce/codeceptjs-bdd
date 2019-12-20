@@ -1,4 +1,5 @@
 const {I, ghHomePage, ghSearchPage} = inject();
+const verify = require('soft-assert');
 
 Given(/Fred is on Github Homepage/, () => {
     // navigate - genarally this should be part of Before hook.
@@ -22,4 +23,23 @@ Then(/he sees all the detailed highlighted results including description or lice
         // verify Partial Text
         // because there are two results for the same element, the result is in Array
         (await ghSearchPage.grabLicenseInfo())[0].should.containEql('MIT');
+
+        /**
+         * code is commented to have CI pass, uncomment below code to test
+         ***********************************
+            // USE OF SOFT ASSERTIONS
+         ***********************************
+
+            let licenseInfo = (await ghSearchPage.grabLicenseInfo())[0];
+            let description = await ghSearchPage.grabDescription();
+
+            // verify and if fails, do not fail test but grab all the errors
+
+            // uncomment below code to test - code is commented to have CI pass
+            verify.softAssert(licenseInfo, 'INVALID-STRING-SHOULD-FAIL', 'license info is not right');
+            verify.softAssert(description, 'INVALID-STRING-SHOULD-FAIL', 'description info is not right');
+
+            // throw all the errors at once, can be in after hooks
+            verify.softAssertAll();
+         **/
     });
