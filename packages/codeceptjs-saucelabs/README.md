@@ -73,6 +73,11 @@ e.g. Runs all feature files on Chrome, IE and Firefox on saucelabs
 
 ```
 
+## Supported Browsers
+
+chrome, firefox, safari, edge, ie, mobileSimulator, tabletSimulator
+
+N.B: Please raise an issue and submit a PR to add more browsers/platform support
 
 ## Run localhost on Sauce Labs Browsers
 
