@@ -31,7 +31,7 @@
 [![Screen-Shot-2019-12-19-at-8-33-28-PM.png](https://i.postimg.cc/59X6yqF9/Screen-Shot-2019-12-19-at-8-33-28-PM.png)](https://postimg.cc/mhGb69wK)
 [![Screen-Shot-2019-12-19-at-8-32-29-PM.png](https://i.postimg.cc/FKPHs7rJ/Screen-Shot-2019-12-19-at-8-32-29-PM.png)](https://postimg.cc/7C2kKPTx)
 
-## Interactive CLI: How to get Started? 
+## Get Started : Interactive CLI
 
 This framework comes with the *Interactive CLI* which will setup the entire framework in one-go.
 
