@@ -57,9 +57,10 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 * Interactive CLI to get started
 * Run Cucumber Scenarios on local browsers or chrome:headless
 * Run all the Feature files in Parallel
-* Run tests on Saucelabs
+* Run tests on Sauce Labs
   * Single Browser
   * Multi Browsers. Runs all the Feature files in Parallel on Multibrowsers
+* Soft Assertions: Collect more errors in a single run rather than failing test at first failure!
 * Launch HTML report
 
 
