@@ -1,4 +1,5 @@
 const sauceOptions = {
+        idleTimeout: 300,
         seleniumVersion: '3.14.0'
 };
 
