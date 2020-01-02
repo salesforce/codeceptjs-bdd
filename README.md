@@ -54,7 +54,7 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 ![](codeceptjs-cli.gif)
 
 
-## CodceptJS-Cucumber : E2E Framework
+## 🥒 CodceptJS-Cucumber : E2E Framework
 
 > CodeceptJS E2E Framework with Cucumber and Saucelabs Integration
 
@@ -87,7 +87,7 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 To get started, follow the instructions on [codeceptjs-cucumber](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
 
 
-## CodeceptJS-Saucelabs : Single or Multibrowsers in Parallel
+## ☁️ CodeceptJS-Sauce Labs : Single or Multi Browsers in Parallel
 
 > CodeceptJs Integration with Saucelabs. Ease of Configuration!
 
@@ -106,7 +106,7 @@ To get started, follow the instructions on [codeceptjs-cucumber](https://github.
 To get started, follow the instructions on [codeceptjs-saucelabs](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
 
 
-## CodeceptJS-Shared : Shared Master Configurations and Helpers
+## 🔎 CodeceptJS-Shared : Shared Master Configurations and Helpers
 
 > Shared Master Configurations & Helpers
 
@@ -114,7 +114,7 @@ To get started, follow the instructions on [codeceptjs-shared](https://github.co
 
 
 
-## Docker & Jenkinsfile
+## 🐬 Docker & Jenkinsfile
 
 > Codecpetjs-e2e packed into the container with Node and Java. 
 
