@@ -82,11 +82,6 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
     
     Example Usage of Soft Assertion is available [here](https://github.com/gkushang/codeceptjs-e2e/blob/develop/packages/codeceptjs-cucumber/acceptance/steps/search/github.steps.js#L18-L44)
 
-
-
-To get started, follow the instructions on [codeceptjs-cucumber](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
-
-
 ## ☁️ CodeceptJS-Sauce Labs : Single or Multi Browsers in Parallel
 
 > CodeceptJs Integration with Saucelabs. Ease of Configuration!
