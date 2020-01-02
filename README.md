@@ -7,6 +7,8 @@
 
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
 
+## 🧐 What's inside?
+
 * **Why BDD?** Read my Medium post [here](https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237)
 
 * Run All feature files in **Parallel**
@@ -27,13 +29,13 @@
 
 * **Soft Assertions:** Collect more errors in a single run rather than failing test at first failure!
 
-## Benefits of this Framework
+## 😇 Benefits of this Framework
 
 [![Screen-Shot-2019-12-19-at-8-33-02-PM.png](https://i.postimg.cc/k4p3LSnf/Screen-Shot-2019-12-19-at-8-33-02-PM.png)](https://postimg.cc/WFgHkhqk)
 [![Screen-Shot-2019-12-19-at-8-33-28-PM.png](https://i.postimg.cc/59X6yqF9/Screen-Shot-2019-12-19-at-8-33-28-PM.png)](https://postimg.cc/mhGb69wK)
 [![Screen-Shot-2019-12-19-at-8-32-29-PM.png](https://i.postimg.cc/FKPHs7rJ/Screen-Shot-2019-12-19-at-8-32-29-PM.png)](https://postimg.cc/7C2kKPTx)
 
-## Getting Started : Interactive CLI
+## 🚀 Getting Started : Interactive CLI
 
 This framework comes with the *Interactive CLI* which will setup the entire framework in one-go.
 
@@ -61,7 +63,8 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 * Run all the Feature files in Parallel
 * Run tests on Sauce Labs
   * Single Browser
-  * Multi Browsers. Runs all the Feature files in Parallel on Multibrowsers
+  * Multi Browsers. Runs all the Feature files in Parallel on Multi Browsers
+* HTML report
 * Soft Assertions: Collect more errors in a single run rather than failing test at first failure!
     1.  deepAssert(actual, expected, msg, ignoreKeys)
     2.  softAssert(actual, expected, msg, ignoreKeys)
@@ -76,8 +79,9 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
     11. deepAssertKeyAbsence(actual, key, msg)
     12. softAssertKeyAbsence(actual, key, msg)
     13. softAssertAll()
+    
+    Example Usage of Soft Assertion is available [here](https://github.com/gkushang/codeceptjs-e2e/blob/develop/packages/codeceptjs-cucumber/acceptance/steps/search/github.steps.js#L18-L44)
 
-* HTML report
 
 
 To get started, follow the instructions on [codeceptjs-cucumber](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
@@ -126,6 +130,6 @@ To run your Codecptjs-e2e tests on Saucelabs thru Jenkins, add below stage to yo
 
 ```
 
-* If you tests uses any enviornment variables, pass to the Docker image thru `--env` param as shown above
-* Select browser on Saucelabs thru `${browser}` environment variable
+* If you tests uses any environment variables, pass to the Docker image thru `--env` param as shown above
+* Select browser on Sauce Labs thru `${browser}` environment variable
 * Mount your workspace to the Docker container with `-v` param as shown above.
