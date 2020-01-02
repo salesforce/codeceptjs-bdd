@@ -33,7 +33,7 @@
 [![Screen-Shot-2019-12-19-at-8-33-28-PM.png](https://i.postimg.cc/59X6yqF9/Screen-Shot-2019-12-19-at-8-33-28-PM.png)](https://postimg.cc/mhGb69wK)
 [![Screen-Shot-2019-12-19-at-8-32-29-PM.png](https://i.postimg.cc/FKPHs7rJ/Screen-Shot-2019-12-19-at-8-32-29-PM.png)](https://postimg.cc/7C2kKPTx)
 
-## Get Started : Interactive CLI
+## Getting Started : Interactive CLI
 
 This framework comes with the *Interactive CLI* which will setup the entire framework in one-go.
 
@@ -63,7 +63,22 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
   * Single Browser
   * Multi Browsers. Runs all the Feature files in Parallel on Multibrowsers
 * Soft Assertions: Collect more errors in a single run rather than failing test at first failure!
-* Launch HTML report
+
+1.  deepAssert(actual, expected, msg, ignoreKeys)
+2.  softAssert(actual, expected, msg, ignoreKeys)
+3.  deepContains(actual, expected, msg, ignoreKeys)
+4.  softContains(actual, expected, msg, ignoreKeys)
+5.  deepAssertKey(actual, expected, key, msg, ignoreKeys)
+6.  softAssertKey(actual, expected, key, msg, ignoreKeys)
+7.  deepContainstKey(actual, expected, key, msg, ignoreKeys)
+8.  softContainsKey(actual, expected, key, msg, ignoreKeys)
+9.  deeptTrue(value, msg)
+10. softTrue(value, msg)
+11. deepAssertKeyAbsence(actual, key, msg)
+12. softAssertKeyAbsence(actual, key, msg)
+13. softAssertAll()
+
+* HTML report
 
 
 To get started, follow the instructions on [codeceptjs-cucumber](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/README.md)
