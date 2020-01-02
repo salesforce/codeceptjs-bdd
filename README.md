@@ -63,20 +63,19 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
   * Single Browser
   * Multi Browsers. Runs all the Feature files in Parallel on Multibrowsers
 * Soft Assertions: Collect more errors in a single run rather than failing test at first failure!
-
-1.  deepAssert(actual, expected, msg, ignoreKeys)
-2.  softAssert(actual, expected, msg, ignoreKeys)
-3.  deepContains(actual, expected, msg, ignoreKeys)
-4.  softContains(actual, expected, msg, ignoreKeys)
-5.  deepAssertKey(actual, expected, key, msg, ignoreKeys)
-6.  softAssertKey(actual, expected, key, msg, ignoreKeys)
-7.  deepContainstKey(actual, expected, key, msg, ignoreKeys)
-8.  softContainsKey(actual, expected, key, msg, ignoreKeys)
-9.  deeptTrue(value, msg)
-10. softTrue(value, msg)
-11. deepAssertKeyAbsence(actual, key, msg)
-12. softAssertKeyAbsence(actual, key, msg)
-13. softAssertAll()
+    1.  deepAssert(actual, expected, msg, ignoreKeys)
+    2.  softAssert(actual, expected, msg, ignoreKeys)
+    3.  deepContains(actual, expected, msg, ignoreKeys)
+    4.  softContains(actual, expected, msg, ignoreKeys)
+    5.  deepAssertKey(actual, expected, key, msg, ignoreKeys)
+    6.  softAssertKey(actual, expected, key, msg, ignoreKeys)
+    7.  deepContainstKey(actual, expected, key, msg, ignoreKeys)
+    8.  softContainsKey(actual, expected, key, msg, ignoreKeys)
+    9.  deeptTrue(value, msg)
+    10. softTrue(value, msg)
+    11. deepAssertKeyAbsence(actual, key, msg)
+    12. softAssertKeyAbsence(actual, key, msg)
+    13. softAssertAll()
 
 * HTML report
 
