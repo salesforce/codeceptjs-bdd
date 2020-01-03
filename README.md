@@ -29,6 +29,8 @@
 
 * **Soft Assertions:** Collect more errors in a single run rather than failing test at first failure!
 
+👉 HTML Docs are coming soon! Stay tuned for more updates!
+
 ## 😇 Benefits of this Framework
 
 [![Screen-Shot-2019-12-19-at-8-33-02-PM.png](https://i.postimg.cc/k4p3LSnf/Screen-Shot-2019-12-19-at-8-33-02-PM.png)](https://postimg.cc/WFgHkhqk)
