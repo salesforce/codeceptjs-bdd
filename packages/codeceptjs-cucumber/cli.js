@@ -47,7 +47,7 @@ const askQuestions_aboutLocations = () => {
         {
             name: 'RELATIVE_PATH',
             type: 'input',
-            message: 'Enter the Relative path to your tests folder: '
+            message: 'Enter a name for your tests folder: '
         },
         {
             name: 'INTEGRATE_SAUCE_LABS',
