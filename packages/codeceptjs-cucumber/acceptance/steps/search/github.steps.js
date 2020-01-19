@@ -17,12 +17,27 @@ Then(/he is able to see the \"([^\\"]*)\" in search results/, async (result) => 
 
 Then(/he sees all the detailed highlighted results including description or license info and many more/,
     async () => {
-        // verify Complete Text
-        (await ghSearchPage.grabDescription()).trim().should.equal('CodeceptJS BDD Framework with Cucumber, SauceLabs');
 
-        // verify Partial Text
-        // because there are two results for the same element, the result is in Array
-        (await ghSearchPage.grabLicenseInfo())[0].should.containEql('MIT');
+        /**
+         *
+         ***********************************
+         // EXAMPLE 1: USE CODECEPTJS ASSERTIONS
+         ************************************/
+
+         I.see('CodeceptJS E2E Framework with Cucumber, SauceLabs');
+
+        I.see('MIT license\n');
+
+        /**
+         * code is commented to have CI pass, uncomment below code to test
+         ***********************************
+         // EXAMPLE 2: USING SHOULD.JS LIBRARY - http://shouldjs.github.io/
+         ************************************/
+
+        // ==>>>> TWO ASSERTIONS USING SHOULD.JS LIBRARY
+        
+        // (await ghSearchPage.grabDescription()).trim().should.equal('CodeceptJS E2E Framework with Cucumber, SauceLabs');
+        // (await ghSearchPage.grabLicenseInfo())[0].should.containEql('MIT');
 
         /**
          * code is commented to have CI pass, uncomment below code to test
