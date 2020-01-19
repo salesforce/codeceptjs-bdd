@@ -1,5 +1,5 @@
 {
-  "name": "codeceptjs-e2e",
+  "name": "codeceptjs-bdd",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gkushang/codeceptjs-e2e.git"
+    "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
   },
   "bugs": {
     "url": "https://github.com/gkushang/cucumber-html-reporter/issues",
     "email": "g.kushang@gmail.com"
   },
   "version": "1.0.0",
-  "description": "CodeceptJS Cucumber E2E Framework",
+  "description": "CodeceptJS Cucumber BDD Framework",
   "author": "Kushang Gajjar <g.kushang@gmail.com>",
   "license": "MIT"
 }
