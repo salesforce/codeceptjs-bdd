@@ -14,5 +14,5 @@ Feature: Search Github
   @search_results
   Scenario: Fred should see the highlighted results for the searched repository
 
-    When he searches for the "gkushang/codeceptjs-e2e"
+    When he searches for the "gkushang/codeceptjs-bdd"
     Then he sees all the detailed highlighted results including description or license info and many more

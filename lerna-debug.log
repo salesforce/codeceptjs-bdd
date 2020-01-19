@@ -6,7 +6,7 @@
 0 silly argv   pkg: 'codeceptjs-cucumber'
 0 silly argv }
 1 notice cli v3.14.1
-2 verbose rootPath /Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-e2e
+2 verbose rootPath /Users/kgajjar/Documents/workspace/Salesforce/codeceptjs-bdd
 3 info versioning independent
 4 error Error: 404 Not Found - GET https://registry.npmjs.org/codeceptjs-cucumber - Not found
 4 error     at /usr/local/lib/node_modules/lerna/node_modules/npm-registry-fetch/check-response.js:104:15
