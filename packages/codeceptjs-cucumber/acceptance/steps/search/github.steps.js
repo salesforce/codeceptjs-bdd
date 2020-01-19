@@ -24,7 +24,7 @@ Then(/he sees all the detailed highlighted results including description or lice
          // EXAMPLE 1: USE CODECEPTJS ASSERTIONS
          ************************************/
 
-         I.see('CodeceptJS E2E Framework with Cucumber, SauceLabs');
+         I.see('CodeceptJS BDD Framework with Cucumber, SauceLabs');
 
         I.see('MIT license\n');
 
@@ -35,7 +35,7 @@ Then(/he sees all the detailed highlighted results including description or lice
          ************************************/
 
         // ==>>>> TWO ASSERTIONS USING SHOULD.JS LIBRARY
-        
+
         // (await ghSearchPage.grabDescription()).trim().should.equal('CodeceptJS E2E Framework with Cucumber, SauceLabs');
         // (await ghSearchPage.grabLicenseInfo())[0].should.containEql('MIT');
 
