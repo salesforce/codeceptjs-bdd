@@ -1,8 +1,8 @@
-# CodeceptJS E2E
+# CodeceptJS BDD
 
-***[CodeceptJS](https://codecept.io/) E2E Framework with Cucumber and Saucelabs cloud***
+***[CodeceptJS](https://codecept.io/) BDD Framework with Cucumber and Saucelabs cloud***
 
-[![Build Status](https://travis-ci.org/gkushang/codeceptjs-e2e.svg?branch=develop)](https://travis-ci.org/gkushang/codeceptjs-e2e) [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-e2e/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/gkushang/codeceptjs-bdd.svg?branch=develop)](https://travis-ci.org/gkushang/codeceptjs-bdd) [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-bdd/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 [![Codecept-Logo-001.jpg](https://i.postimg.cc/76tkPM4r/Codecept-Logo-001.jpg)](https://postimg.cc/wyNP0N3w)
 
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
@@ -19,13 +19,13 @@
 
 * Run on **SauceLabs**. Single browser or Multi-Browsers in Parallel
 
-* Uses [Should.js](https://shouldjs.github.io/) Assertions Library. Various assertions with examples are available [here](https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/acceptance/step_definitions/search/github.steps.js)
+* Uses [Should.js](https://shouldjs.github.io/) Assertions Library. Various assertions with examples are available [here](https://github.com/gkushang/codeceptjs-bdd/blob/master/packages/codeceptjs-cucumber/acceptance/step_definitions/search/github.steps.js)
 
 * Reduces Flakiness with **RetryFailedSteps** plugin and a Webdriver's **SmartWait**
 
-* Page objects follow `<name_of_page>.page.js` naming pattern, and created under [pages](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/pages/) directory
+* Page objects follow `<name_of_page>.page.js` naming pattern, and created under [pages](https://github.com/gkushang/codeceptjs-bdd/tree/master/packages/codeceptjs-cucumber/acceptance/pages/) directory
 
-* Step Definitions files follows `<name_of_step>.steps.js` naming pattern, and created under [step_definitions](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/step_definitions) directory
+* Step Definitions files follows `<name_of_step>.steps.js` naming pattern, and created under [step_definitions](https://github.com/gkushang/codeceptjs-bdd/tree/master/packages/codeceptjs-cucumber/acceptance/step_definitions) directory
 
 * **Soft Assertions:** Collect more errors in a single run rather than failing test at first failure!
 
@@ -47,8 +47,8 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 
 ```bash
 
-    git clone https://github.com/gkushang/codeceptjs-e2e.git
-    cd codeceptjs-e2e/packages/codeceptjs-cucumber
+    git clone https://github.com/gkushang/codeceptjs-bdd.git
+    cd codeceptjs-bdd/packages/codeceptjs-cucumber
     yarn
     npm run cli
 ```
@@ -56,9 +56,9 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 ![](codeceptjs-cli.gif)
 
 
-## 🥒 CodceptJS-Cucumber : E2E Framework
+## 🥒 CodceptJS-Cucumber : BDD Framework
 
-> CodeceptJS E2E Framework with Cucumber and Saucelabs Integration
+> CodeceptJS BDD Framework with Cucumber and Saucelabs Integration
 
 * Interactive CLI to get started
 * Run Cucumber Scenarios on local browsers or chrome:headless
@@ -82,7 +82,7 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
     12. softAssertKeyAbsence(actual, key, msg)
     13. softAssertAll()
     
-    Example Usage of Soft Assertion is available [here](https://github.com/gkushang/codeceptjs-e2e/blob/develop/packages/codeceptjs-cucumber/acceptance/steps/search/github.steps.js#L18-L44)
+    Example Usage of Soft Assertion is available [here](https://github.com/gkushang/codeceptjs-bdd/blob/develop/packages/codeceptjs-cucumber/acceptance/steps/search/github.steps.js#L18-L44)
 
 ## ☁️ CodeceptJS-Sauce Labs : Single or Multi Browsers in Parallel
 
@@ -100,29 +100,29 @@ Yarn is required. [Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
   yarn acceptance:multibrowsers --profile sauce:chrome,ie,safari
 ```
 
-To get started, follow the instructions on [codeceptjs-saucelabs](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-saucelabs)
+To get started, follow the instructions on [codeceptjs-saucelabs](https://github.com/gkushang/codeceptjs-bdd/tree/master/packages/codeceptjs-saucelabs)
 
 
 ## 🔎 CodeceptJS-Shared : Shared Master Configurations and Helpers
 
 > Shared Master Configurations & Helpers
 
-To get started, follow the instructions on [codeceptjs-shared](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-shared)
+To get started, follow the instructions on [codeceptjs-shared](https://github.com/gkushang/codeceptjs-bdd/tree/master/packages/codeceptjs-shared)
 
 
 
 ## 🐬 Docker & Jenkinsfile
 
-> Codecpetjs-e2e packed into the container with Node and Java. 
+> Codecpetjs-bdd packed into the container with Node and Java. 
 
-Codecpetjs-e2e Docker makes it very simple to build your CI Job. 
+Codecpetjs-bdd Docker makes it very simple to build your CI Job. 
 
-To run your Codecptjs-e2e tests on Saucelabs thru Jenkins, add below stage to your Jenkinsfile:
+To run your Codecptjs-bdd tests on Saucelabs thru Jenkins, add below stage to your Jenkinsfile:
 
 ```bash
 
 	stage('CodeceptJS Acceptance') {
-            sh "docker run --env SAUCE_KEY --env SAUCE_USERNAME -v ${env.WORKSPACE}/:/acceptance --rm gkushang/codeceptjs-e2e --debug --profile sauce:${browser}"
+            sh "docker run --env SAUCE_KEY --env SAUCE_USERNAME -v ${env.WORKSPACE}/:/acceptance --rm gkushang/codeceptjs-bdd --debug --profile sauce:${browser}"
         }
 
 ```
