@@ -6,7 +6,7 @@
 
 ## About
 
-> This is the E2E framework with CodeceptJS and Cucumber. Integrates with Sauce Labs, uses Should.js assertion library. Runs cross-browsers tests in Parallel on SauceLabs.
+> This is the BDD framework with CodeceptJS and Cucumber. Integrates with Sauce Labs, uses Should.js assertion library. Runs cross-browsers tests in Parallel on SauceLabs.
 
 ## Run
 

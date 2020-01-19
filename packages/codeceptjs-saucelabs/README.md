@@ -85,12 +85,12 @@ Step 1: Start Tunnel
 
 ```bash
 
-    git clone git@github.com:gkushang/codeceptjs-e2e.git
+    git clone git@github.com:gkushang/codeceptjs-bdd.git
     export SAUCE_USERNAME=<sauce_username>
     export SAUCE_KEY=<sauce_key>
-    cd codeceptjs-e2e
+    cd codeceptjs-bdd
     lerna bootstrap
-    node codeceptjs-e2e/packages/codeceptjs-saucelabs/lib/sauce.connect.launcher.js
+    node codeceptjs-bdd/packages/codeceptjs-saucelabs/lib/sauce.connect.launcher.js
 
 ```
 Step 2: Run localhost on SauceLabs browser

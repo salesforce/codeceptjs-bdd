@@ -20,7 +20,7 @@ Simply your existing configuration by Re-Using the Master Configuration.
     
 ```
 
-Follow the example in [codecept.conf.js](https://github.com/gkushang/codeceptjs-bdd/blob/master/packages/codeceptjs-cucumber/codecept.conf.js) of [CodeceptJs-Cucumber](https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber) E2E Framework.
+Follow the example in [codecept.conf.js](https://github.com/gkushang/codeceptjs-bdd/blob/master/packages/codeceptjs-cucumber/codecept.conf.js) of [CodeceptJs-Cucumber](https://github.com/gkushang/codeceptjs-bdd/tree/master/packages/codeceptjs-cucumber) E2E Framework.
 
 ## Shared Helpers
 

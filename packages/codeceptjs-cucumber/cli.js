@@ -13,7 +13,7 @@ const init = () => {
 
     console.log('\n' +
         chalk.yellow(
-            figlet.textSync('E2E Codecept JS', {
+            figlet.textSync('BDD Codecept JS', {
                 font: 'Ghost',
                 horizontalLayout: 'default',
                 verticalLayout: 'default'
@@ -22,13 +22,13 @@ const init = () => {
     );
 
     console.log('\n\n' + emoji.emojify(':tada: ') + chalk.blue.underline.bold(
-        'Welcome to CodeceptJs-E2E CLI!'
+        'Welcome to CodeceptJs-BDD CLI!'
     ));
 
     console.log(
         chalk.green.bold(
-        '\nThe CodeceptJs-E2E CLI is a command-line interface tool that you use to Create and Initialize the base ' +
-            chalk.blue.bold.underline('CodeceptJS Cucumber E2E Framework') +
+        '\nThe CodeceptJs-BDD CLI is a command-line interface tool that you use to Create and Initialize the base ' +
+            chalk.blue.bold.underline('CodeceptJS Cucumber BDD Framework') +
             ' to your workspace. It will create ' + chalk.blue.bold.underline('acceptance') + ' directory at your acceptance test location and ' + chalk.blue.bold.underline('configurations') + ' under your workspace.\n'));
 };
 
@@ -37,7 +37,7 @@ const askQuestions_aboutLocations = () => {
         {
             name: 'PROJECT_NAME',
             type: 'input',
-            message: 'Enter name of your acceptance tests (e.g. E2E Acceptance Tests): '
+            message: 'Enter name of your acceptance tests (e.g. BDD Acceptance Tests): '
         },
         {
             name: 'ROOT_PATH',

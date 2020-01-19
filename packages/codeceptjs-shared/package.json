@@ -6,18 +6,18 @@
     "name": "Kushang Gajjar",
     "email": "g.kushang@gmail.com"
   },
-  "homepage": "https://github.com/gkushang/codeceptjs-e2e#readme",
+  "homepage": "https://github.com/gkushang/codeceptjs-bdd#readme",
   "license": "MIT",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gkushang/codeceptjs-e2e.git"
+    "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/gkushang/codeceptjs-e2e/issues"
+    "url": "https://github.com/gkushang/codeceptjs-bdd/issues"
   },
   "devDependencies": {
     "@wdio/selenium-standalone-service": "^5.12.1",

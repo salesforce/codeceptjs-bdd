@@ -12,7 +12,7 @@
     "test": "yarn acceptance --profile chrome:headless"
   },
   "bin": {
-    "codeceptjs-e2e": "./cli.js"
+    "codeceptjs-bdd": "./cli.js"
   },
   "main": "cli.js",
   "keywords": [
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gkushang/codeceptjs-e2e.git"
+    "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
   },
   "devDependencies": {
     "allure-commandline": "^2.9.0",

@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gkushang/codeceptjs-e2e.git"
+    "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
   },
   "author": {
     "name": "Kushang Gajjar",
