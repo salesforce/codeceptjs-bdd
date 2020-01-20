@@ -7,9 +7,9 @@
 
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
 
-## 📖Guide
+## 📖 Complete Guide
 
-Framework Documentation: https://github.com/gkushang/codeceptjs-bdd
+Framework Documentation: http://gkushang.github.io/
 
 ## 🧐 What's inside?
 
