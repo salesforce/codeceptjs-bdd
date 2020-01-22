@@ -3,6 +3,9 @@
 ***[CodeceptJS](https://codecept.io/) BDD Framework with Cucumber and Saucelabs cloud***
 
 [![Build Status](https://travis-ci.org/gkushang/codeceptjs-bdd.svg?branch=develop)](https://travis-ci.org/gkushang/codeceptjs-bdd) [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-bdd/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
+
+### 📖 Complete Guide / User Documentations: http://gkushang.github.io/
+
 [![Codecept-Logo-001.jpg](https://i.postimg.cc/76tkPM4r/Codecept-Logo-001.jpg)](https://postimg.cc/wyNP0N3w)
 
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
