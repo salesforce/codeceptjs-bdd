@@ -98,7 +98,8 @@ const addInfo = (username, key) => {
 const addScripts = (packageJson) => {
     const SCRIPTS = '"scripts": {\n' +
         '\t"acceptance": "codeceptjs run --verbose",\n' +
-        '\t"acceptance:parallel": "codeceptjs run-multiple --all",\n' +
+        '\t"acceptance:parallel": "codeceptjs run-multiple parallel",\n' +
+        '\t"acceptance:parallel:multibrowser": "codeceptjs run-multiple multibrowsers",\n' +
         '\t"acceptance:report": "allure serve ",';
 
     shell.sed('-i','"scripts": {' , SCRIPTS , packageJson);

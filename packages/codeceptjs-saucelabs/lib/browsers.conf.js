@@ -14,7 +14,6 @@ let browsers = {
     firefox: {
         browser: 'firefox',
         capabilities: {
-            acceptInsecureCerts: true,
             'sauce:options': sauceOptions
         }
     },
@@ -22,28 +21,24 @@ let browsers = {
         browser: 'safari',
         capabilities: {
             browserVersion: '12.0',
-            acceptInsecureCerts: true,
             'sauce:options': sauceOptions
         }
     },
     edge: {
         browser: 'MicrosoftEdge',
         capabilities: {
-            acceptInsecureCerts: true,
             'sauce:options': sauceOptions
         }
     },
     ie: {
         browser: 'internet explorer',
         capabilities: {
-            acceptInsecureCerts: true,
             'sauce:options': sauceOptions
         }
     },
     mobileSimulator: {
         browser: 'chrome',
         desiredCapabilities: {
-            acceptInsecureCerts: true,
             chromeOptions: {
                 mobileEmulation: {
                     deviceName: "iPhone X"
@@ -54,7 +49,6 @@ let browsers = {
     tabletSimulator: {
         browser: 'chrome',
         desiredCapabilities: {
-            acceptInsecureCerts: true,
             chromeOptions: {
                 mobileEmulation: {
                     deviceName: "Kindle Fire HDX"
