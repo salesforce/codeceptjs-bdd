@@ -97,9 +97,9 @@ const addInfo = (username, key) => {
 
 const addScripts = (packageJson) => {
     const SCRIPTS = '"scripts": {\n' +
-        '\t"acceptance": "npx codeceptjs run --verbose",\n' +
-        '\t"acceptance:parallel": "npx codeceptjs run-multiple --all",\n' +
-        '\t"acceptance:report": "npx allure serve ",';
+        '\t"acceptance": "codeceptjs run --verbose",\n' +
+        '\t"acceptance:parallel": "codeceptjs run-multiple --all",\n' +
+        '\t"acceptance:report": "allure serve ",';
 
     shell.sed('-i','"scripts": {' , SCRIPTS , packageJson);
 };
