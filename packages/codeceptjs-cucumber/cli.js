@@ -134,7 +134,7 @@ const run = async () => {
         shell.mkdir('-p', acceptanceTestsPath);
     }
 
-    shell.cp('-R',  path.join(process.cwd(), 'acceptance'), path.join(ROOT_PATH, RELATIVE_PATH));
+    shell.cp('-R', path.join(process.cwd(), 'acceptance'), path.join(ROOT_PATH, RELATIVE_PATH));
     shell.cp('-R', path.join(process.cwd(), 'codecept.conf.js'), ROOT_PATH);
 
     const configFile = path.join(ROOT_PATH, 'codecept.conf.js');
