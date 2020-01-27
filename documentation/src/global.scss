@@ -1,0 +1,54 @@
+$code-background-color: #313131;
+$code-font-color: #EFEFEF;
+
+.MuiTypography-body1 {
+  color: #414141 !important;
+  letter-spacing: 0.5px;
+  img {
+    width: 100% !important;
+  }
+}
+
+
+.gatsby-highlight {
+  font-family: monospace, monospace !important;
+  background-color: $code-background-color;
+  border-radius: 0.3em;
+  margin: 0.8em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left;
+  min-width: 100%;
+  max-width: 100px;
+}
+
+code {
+  color: $code-font-color !important;
+  background-color: $code-background-color !important;
+  font-family: monospace, monospace !important;
+  padding: 0.2em 0.5em !important;
+}
+
+.anchor.before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  padding-right: 4px;
+}
+
+.main-body a.anchor {
+  color: inherit;
+  fill: #b17acc;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+

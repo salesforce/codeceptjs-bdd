@@ -1,59 +1,236 @@
-import React from "react"
-import Layout from "../components/layout"
-import logo from '../images/codecept-e2e-logo.jpg';
-import codeceptBenefit_1 from '../images/codecept-benefit-1.png';
-import codeceptBenefit_2 from '../images/codecept-benefit-2.png';
-import codeceptBenefit_3 from '../images/codecept-benefit-3.png';
+import React from "react";
+import AppLayout from "../components/AppLayout";
+import AppCard from "../components/AppCard";
+import codeceptjsBddFrameworkImage from "../images/codeceptbdd-arc.png";
+import BDD from "../images/BDD.png";
+import autoRetry from "../images/autoRetry.png";
+import driversImage from "../images/driverAgnostic.png";
+import quickSetupImage from "../images/quickSetup.png";
+import pluginBasedImage from "../images/pluginBased.png";
+import cucumber from "../images/cucumber1.png";
+import multibrowsers from "../images/multi-browsers.png";
+import saucelabs from "../images/saucelabs1.png";
+import { Divider } from "@material-ui/core";
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import Avatar from '@material-ui/core/Avatar';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import DomainIcon from '@material-ui/icons/Domain';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+      flexGrow: 1,
+  },
+
+  card: {
+    height: '100%',
+    width: '100%',
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
+  expand: {
+    transform: 'rotate(0deg)',
+    marginLeft: 'auto',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expandOpen: {
+    transform: 'rotate(180deg)',
+  },
+  avatar: {
+    backgroundColor: 'red',
+  },
+  title: {
+    fontSize: 18,
+    borderTopRightRadius: theme.spacing(2),
+    borderBottomRightRadius: theme.spacing(2),
+    paddingRight: theme.spacing(1),
+    fontWeight: theme.typography.fontWeightMedium,
+  },
+  arch: {
+    paddingTop: 30
+  }
+}));
 
 
-const imageStyles = {
-    maxWidth: '80%',
-    maxHeight: '50%'
-};
+const IndexPage = () => {
+  const classes = useStyles();
 
-const IndexPage = () => (
-  <Layout>
-      <h1>CodeceptJS E2E</h1>
-      <p>E2E Framework with Cucumber and Saucelabs cloud</p>
-      <img style={imageStyles} src={logo} alt="codeceptjs e2e logo"></img>
-      <p>This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel</p>
-      <ul>
-          <li>
-              <p><strong>Why BDD?</strong> Read my Medium post <a href="https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237" rel="nofollow">here</a></p>
-          </li>
-          <li>
-              <p>Run All feature files in <strong>Parallel</strong></p>
-          </li>
-          <li>
-              <p>Run All feature files on <strong>Multi-Browsers - run them all in Parallel</strong></p>
-          </li>
-          <li>
-              <p>Scenarios are written in <strong>Cucumber Gherkin BDD Syntax</strong>, a.k.a <code>.feature</code> files. <a href="https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Imperative+v.+Declarative+Testing+Scenarios" rel="nofollow">Prefer writing Declartive Test Scenarios</a></p>
-          </li>
-          <li>
-              <p>Run on <strong>SauceLabs</strong>. Single browser or Multi-Browsers in Parallel</p>
-          </li>
-          <li>
-              <p>Uses <a href="https://shouldjs.github.io/" rel="nofollow">Should.js</a> Assertions Library. Various assertions with examples are available <a href="https://github.com/gkushang/codeceptjs-e2e/blob/master/packages/codeceptjs-cucumber/acceptance/step_definitions/search/github.steps.js">here</a></p>
-          </li>
-          <li>
-              <p>Reduces Flakiness with <strong>RetryFailedSteps</strong> plugin and a Webdriver's <strong>SmartWait</strong></p>
-          </li>
-          <li>
-              <p>Page objects follow <code>&lt;name_of_page&gt;.page.js</code> naming pattern, and created under <a href="https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/pages/">pages</a> directory</p>
-          </li>
-          <li>
-              <p>Step Definitions files follows <code>&lt;name_of_step&gt;.steps.js</code> naming pattern, and created under <a href="https://github.com/gkushang/codeceptjs-e2e/tree/master/packages/codeceptjs-cucumber/acceptance/step_definitions">step_definitions</a> directory</p>
-          </li>
-          <li>
-              <p><strong>Soft Assertions:</strong> Collect more errors in a single run rather than failing test at first failure!</p>
-          </li>
-      </ul>
-      <h2>Benefits of this Framework</h2>
-      <img style={imageStyles} src={codeceptBenefit_1} alt="codeceptjs e2e benefit"></img>
-      <img style={imageStyles} src={codeceptBenefit_2} alt="codeceptjs e2e benefit"></img>
-      <img style={imageStyles} src={codeceptBenefit_3} alt="codeceptjs e2e benefit"></img>
-  </Layout>
-)
+  return (
+  
+  <AppLayout>
+    <div className={classes.root}>
+    <Typography variant="h4" component="h2" gutterBottom>
+      Codeceptjs BDD
+    </Typography>
+    <Typography variant="overline" display="block"  gutterBottom>
+      CODECEPTJS BDD Framework integrated with Cucumber and Saucelabs cloud
+    </Typography>
+  
+    <Divider/>
+    <br></br>
+
+    <Typography variant="h6" color="gray" display="block" className={classes.title} gutterBottom>
+      Codeceptjs-BDD makes acceptance and regression testing of modern web apps faster, more collaborative and easier to scale.
+    </Typography>
+    
+
+      <Grid container spacing={5} className={classes.arch}>
+
+      <Grid item sm={4}>
+          <AppCard 
+          title="Why BDD?" 
+          description="BDD is a great way to colloborate within teams & with stakeholders to create shared understanding of how the product should behave, capture concrete examples and create an executable & living specification on-the-fly."  
+          link="https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237" 
+          image={BDD}/>
+        </Grid>
+
+      <Grid item sm={4}>
+          <AppCard 
+          title="Write Feature Files" 
+          description="CodeceptJs BDD integrates Cucumber to write Gherkin Feature Files. Cucumber is a popular collaboration tool used by many teams practiving BDD to capture requirements and create executable specifications."  
+          link="https://cucumber.io/" 
+          image={cucumber}/>
+        </Grid>
+
+        <Grid item sm={4}>
+        <AppCard 
+          title="Execute On Cloud" 
+          description="CodeceptJs BDD integrates Sauce Labs to execute tests on 900+ Desktop/Mobile browses, OS & Devices combinations. Tests can be executed locally or on Sauce Labs Browsers for broader coverage."  
+          link="/execution/3-run-on-saucelabs/" 
+          image={saucelabs}/>
+        </Grid>
+      </Grid>
+
+      <Grid container spacing={5} className={classes.arch}>
+
+
+      <Grid item sm={3}>
+          <AppCard 
+          title="Driver Agnostic" 
+          description="Run your tests via WebDriver, Puppeteer, TestCafe, Protractor, Appium. The code is the same. It is easy to change the driver through configuration. Codecpetjs-BDD supports Pupetter, Headless Chrome, Selenium Webdriver and Webdriver IO."  
+          link="https://codecept.io/plugins/#retryfailedstep" 
+          image={driversImage}/>
+        </Grid>
+
+        <Grid item sm={3}>
+          <AppCard 
+          title="Reduced Flakiness" 
+          description="Codeceptjs has in-built Smart Wait and Auto Retry features for the elements that do not load in-time or elements that fails. Codeceptjs-BDD framework has configured these features that reduces the UI Test Flakiness at low level during DOM Element evaluation."  
+          link="https://codecept.io/plugins/#retryfailedstep" 
+          image={autoRetry}/>
+        </Grid>
+
+
+        <Grid item sm={3}>
+          <AppCard 
+          title="Plugin Based" 
+          description="Codeceptjs is a plugin based architecture. You can create helpers and plugins for your need and easily plug in to the framework. Codeceptjs-bdd implements two plugins: codeceptjs-share to share config and codeceptjs-saucelabs to integrate Sauce Labs."  
+          link="https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages" 
+          image={pluginBasedImage}/>
+        </Grid>
+
+
+        <Grid item sm={3}>
+        <AppCard 
+          title="Multibrowsers | Parallel" 
+          description="Codeceptjs BDD provides an ability to run BDD Feaure files all in Parallel on Single browser or can run same set of tests in Parallel but on different browsers/OS combo (multile browers) on Sauce Labs. It offers greate Test Execution Coverage for your App."  
+          link="/execution/sauce-labs/on-multiple-browsers/" 
+          image={multibrowsers}/>
+        </Grid>
+
+
+        <Grid item sm={3}>
+        <AppCard 
+          title="Quick Setup Wizard"
+          description="Quicky setup BDD framework for your App. Codecept-BDD implemetns the Interactive CLI to quickly setup the BDD Framework, integration with Sauce Labs and provides set of example Automated Feature files."
+          link="https://www.youtube.com/watch?v=OGrn1ejyb-k"
+          component="iframe"
+          firstLinkName="Watch in Action"
+          src="https://www.youtube.com/embed/OGrn1ejyb-k"
+          />
+        </Grid>
+
+
+      <Grid item sm={3}>
+        <AppCard 
+          title="Parallel Executions"
+          description="Run all your Feature files in Parallel. Codeceptjs-BDD automatically calculates number of threads to spun based on # of Features. You can choose to run them on either Sauce Labs or Locally installed browsers."
+          component="iframe"
+          firstLinkName="Watch in Action"
+          link="https://www.youtube.com/watch?v=he0_wn-xPGI&feature=emb_logo"
+          src="https://www.youtube.com/embed/he0_wn-xPGI"
+          />
+        </Grid>
+
+        <Grid item sm={3}>
+        <AppCard 
+          title="Multi Browsers | Parallel"
+          description="Run your scenarios on Multiple Browsers in Parallel, including multiple versions of same brwoser or different browsers and different OS combinations on Sauce Labs. Boost your Test Execution coverage."
+          link="https://www.youtube.com/watch?v=njOlOJ07Dxw"
+          component="iframe"
+          firstLinkName="Watch in Action"
+          src="https://www.youtube.com/embed/njOlOJ07Dxw"
+          />
+        </Grid>
+
+        <Grid item sm={3}>
+        <AppCard 
+          title="Run on Sauce Labs"
+          description="Codeceptjs-BDD framework integrates the cloud based platform Sauce Labs to execute scenarios on 900+ Desktop/Mobile browses, OS & Devices combinations, providing Greater Scenarios Execution Coverage."
+          link="https://www.youtube.com/watch?v=ugCjMOJlClc"
+          firstLinkName="Watch in Action"
+          component="iframe"
+          src="https://www.youtube.com/embed/ugCjMOJlClc"
+          />
+        </Grid>
+
+      </Grid>
+      
+
+      <Grid item xs={12} className={classes.arch}>
+        <Card className={classes.card}>
+          <CardHeader
+            avatar={
+              <Avatar aria-label="architecture" className={classes.avatar}>
+                <DomainIcon/>
+              </Avatar>
+            }
+            title="Framework Architecture"
+            subheader="Codeceptjs BDD"
+          />
+          <CardMedia
+            className={classes.media}
+            image={codeceptjsBddFrameworkImage}
+            title="Architecture"
+          />
+          <CardContent>
+            <Typography variant="body2" color="textSecondary" component="p">
+            </Typography>
+          </CardContent>
+
+          <CardActions>
+            <Button variant="contained"  size="large" color="primary" href="1-getting-started/installation/">
+              Getting Started
+            </Button>
+
+            <Button variant="contained"  size="large" color="secondary" href="1-getting-started/setup-framework/">
+              Quick Setup
+            </Button>
+          </CardActions>
+          </Card>
+      </Grid>
+      </div>
+  </AppLayout>
+)};
 
 export default IndexPage
