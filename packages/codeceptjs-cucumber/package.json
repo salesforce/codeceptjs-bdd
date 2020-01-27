@@ -7,7 +7,7 @@
     "cli": "node cli.js",
     "acceptance": "./node_modules/.bin/codeceptjs run --verbose --features",
     "acceptance:parallel": "./node_modules/.bin/codeceptjs run-multiple parallel",
-    "acceptance:parallel:multibrowser": "./node_modules/.bin/codeceptjs run-multiple multibrowsers",
+    "acceptance:parallel:multibrowsers": "./node_modules/.bin/codeceptjs run-multiple multibrowsers",
     "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",
     "bdd:snippets": "./node_modules/.bin/codeceptjs bdd:snippets",
     "test": "yarn acceptance --profile chrome:headless"
