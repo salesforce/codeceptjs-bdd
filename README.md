@@ -1,6 +1,6 @@
 # CodeceptJS BDD
 
-***[CodeceptJS](https://codecept.io/) BDD Framework with Cucumber and Saucelabs cloud***
+***[Codeceptjs-BDD](http://gkushang.github.io/) Framework with Cucumber and Saucelabs cloud***
 
 [![Build Status](https://travis-ci.org/gkushang/codeceptjs-bdd.svg?branch=develop)](https://travis-ci.org/gkushang/codeceptjs-bdd) [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-bdd/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 
