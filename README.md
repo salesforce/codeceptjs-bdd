@@ -10,7 +10,7 @@
 
 [Codecpetjs-BDD/Docs](http://gkushang.github.io/)
 
-<img src="https://i.postimg.cc/76tkPM4r/Codecept-Logo-001.jpg" alt="Smiley face" height="42" width="42">
+<img src="https://i.postimg.cc/76tkPM4r/Codecept-Logo-001.jpg" alt="Logo" height="500" width="500">
 
 ## 🧐 What's inside?
 
@@ -37,5 +37,4 @@
 
 ## 🎥 How to Videos
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL4i-APck4KuhawdeMqhREtuVf_14CBihm" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<a href="https://www.youtube.com/playlist?list=PL4i-APck4KuhawdeMqhREtuVf_14CBihm" rel="nofollow noreferrer"><img src="https://i.postimg.cc/3R3gddC3/quick-setup-yt.png" alt="YouTube How To Videsos"></a>
