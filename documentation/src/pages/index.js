@@ -8,6 +8,12 @@ import driversImage from "../images/driverAgnostic.png";
 import quickSetupImage from "../images/quickSetup.png";
 import pluginBasedImage from "../images/pluginBased.png";
 import cucumber from "../images/cucumber1.png";
+import quickStartYt from "../images/quick-setup-yt.png";
+import runParallelYt from "../images/run-parallel-yt.png";
+import runMultiYt from "../images/run-multi-yt.png";
+import runSauceYt from "../images/run-sauce-yt.png";
+import YouTubeIcon from '@material-ui/icons/YouTube';
+
 import multibrowsers from "../images/multi-browsers.png";
 import saucelabs from "../images/saucelabs1.png";
 import { Divider } from "@material-ui/core";
@@ -151,24 +157,24 @@ const IndexPage = () => {
 
         <Grid item sm={3}>
         <AppCard 
-          title="Quick Setup Wizard"
-          description="Quicky setup BDD framework for your App. Codecept-BDD implemetns the Interactive CLI to quickly setup the BDD Framework, integration with Sauce Labs and provides set of example Automated Feature files."
-          link="https://www.youtube.com/watch?v=OGrn1ejyb-k"
-          component="iframe"
-          firstLinkName="Watch in Action"
-          src="https://www.youtube.com/embed/OGrn1ejyb-k"
+             title="Quick Setup Wizard"
+             description="Quicky setup BDD framework for your App. Codecept-BDD implemetns the Interactive CLI to quickly setup the BDD Framework, integration with Sauce Labs and provides set of example Automated Feature files."
+             link="https://www.youtube.com/watch?time_continue=1&v=OGrn1ejyb-k&feature=emb_logo"
+             firstLinkName="Watch in Action"
+             icon={<YouTubeIcon color="secondary"/>}
+             image={quickStartYt}
           />
         </Grid>
 
 
       <Grid item sm={3}>
         <AppCard 
-          title="Parallel Executions"
-          description="Run all your Feature files in Parallel. Codeceptjs-BDD automatically calculates number of threads to spun based on # of Features. You can choose to run them on either Sauce Labs or Locally installed browsers."
-          component="iframe"
-          firstLinkName="Watch in Action"
-          link="https://www.youtube.com/watch?v=he0_wn-xPGI&feature=emb_logo"
-          src="https://www.youtube.com/embed/he0_wn-xPGI"
+        title="Parallel Executions"
+        description="Run all your Feature files in Parallel. Codeceptjs-BDD automatically calculates number of threads to spun based on # of Features. You can choose to run them on either Sauce Labs or Locally installed browsers."
+        link="https://www.youtube.com/watch?v=he0_wn-xPGI&feature=emb_logo"
+        firstLinkName="Watch in Action"
+        icon={<YouTubeIcon color="secondary" />}
+        image={runParallelYt}
           />
         </Grid>
 
@@ -177,9 +183,9 @@ const IndexPage = () => {
           title="Multi Browsers | Parallel"
           description="Run your scenarios on Multiple Browsers in Parallel, including multiple versions of same brwoser or different browsers and different OS combinations on Sauce Labs. Boost your Test Execution coverage."
           link="https://www.youtube.com/watch?v=njOlOJ07Dxw"
-          component="iframe"
           firstLinkName="Watch in Action"
-          src="https://www.youtube.com/embed/njOlOJ07Dxw"
+          icon={<YouTubeIcon color="secondary"/>}
+          image={runMultiYt}
           />
         </Grid>
 
@@ -189,8 +195,8 @@ const IndexPage = () => {
           description="Codeceptjs-BDD framework integrates the cloud based platform Sauce Labs to execute scenarios on 900+ Desktop/Mobile browses, OS & Devices combinations, providing Greater Scenarios Execution Coverage."
           link="https://www.youtube.com/watch?v=ugCjMOJlClc"
           firstLinkName="Watch in Action"
-          component="iframe"
-          src="https://www.youtube.com/embed/ugCjMOJlClc"
+          icon={<YouTubeIcon color="secondary"/>}
+          image={runSauceYt}
           />
         </Grid>
 
