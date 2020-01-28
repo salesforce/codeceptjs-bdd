@@ -1,6 +1,7 @@
 ---
 title: Docker & Jenkins CI
 sub_title: Docker Image to run your Codeceptjs-BDD Tests in Jenkins CI
+parents: ["Docker & Jenkins"]
 ---
 
 Codeceptjs-BDD is packed into the Docker Container that provides required images and commands to run your BDD Scenarios in Jenkins CI.
