@@ -6,11 +6,10 @@
 
 > This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
 
-# 📖 Complete Guide / User Documentations: 
+### 📖 Complete Guide / User Documentations: [Codecpetjs-BDD/Docs](http://gkushang.github.io/)
 
-[Codecpetjs-BDD/Docs](http://gkushang.github.io/)
+<a href="https://gkushang.github.io" rel="nofollow noreferrer" target="_blank"><img src="https://i.postimg.cc/8zDLzZRq/Screen-Shot-2020-01-28-at-6-27-28-PM.png" alt="docs"></a>
 
-<img src="https://i.postimg.cc/76tkPM4r/Codecept-Logo-001.jpg" alt="Logo" height="500" width="500">
 
 ## 🧐 What's inside?
 
@@ -37,4 +36,4 @@
 
 ## 🎥 How to Videos
 
-<a href="https://www.youtube.com/playlist?list=PL4i-APck4KuhawdeMqhREtuVf_14CBihm" rel="nofollow noreferrer"><img src="https://i.postimg.cc/3R3gddC3/quick-setup-yt.png" alt="YouTube How To Videsos"></a>
+<a href="https://www.youtube.com/playlist?list=PL4i-APck4KuhawdeMqhREtuVf_14CBihm" rel="nofollow noreferrer" target="_blank"><img src="https://i.postimg.cc/3R3gddC3/quick-setup-yt.png" alt="YouTube How To Videos"></a>
