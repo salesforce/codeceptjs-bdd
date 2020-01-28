@@ -31,7 +31,6 @@ Each step in th Scenario starts with **Given**, **When**, **Then**, **And** and 
 
 ```
 
-
 ### How Codeceptjs-BDD executes GWT Steps
 
 Codeceptjs-BDD executes each step in a scenario one at a time, in the sequence you’ve written them in. When Codeceptjs-BDD tries to execute a step, it looks for a matching step definition to execute, which are Java Script functions.
@@ -55,8 +54,4 @@ Each scenario can have a one or more Tags. Tags are very useful to group the fea
         When ...
         Then ...
 
-    
 ```
-
-
-
