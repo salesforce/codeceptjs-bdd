@@ -91,6 +91,8 @@ Given(/Fred logs in/, () => {
 
 ```
 
+For more information, please visit [Codeceptjs Page Objects](https://codecept.io/pageobjects/)
+
 
 
 

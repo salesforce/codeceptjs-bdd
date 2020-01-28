@@ -22,7 +22,7 @@ The Script assumes you will have following Jeniins Build Parameters,
 * HOST: host of your running app
 * SAUCE_USERNAME
 * SAUCE_KEY
-* BROWSER: choice paramenter for browser selection
+* BROWSER: choice parameter for Browser selection
 
 ```bash
 
