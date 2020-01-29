@@ -1,7 +1,7 @@
 ---
 title: Mutilple GWT
 sub_title: BDD Anti Patterns
-parents: ["Best Practices", "BDD Anti Patterns"]
+parents: ["Best Practices"]
 ---
 
 ### No clear separation between Given/When/Then
