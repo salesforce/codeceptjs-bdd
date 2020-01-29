@@ -1,7 +1,7 @@
 ---
 title: Beginners mistakes
 sub_title: BDD Anti Patterns
-parents: ["Best Practices", "BDD Anti Patterns"]
+parents: ["Best Practices"]
 ---
 
 There are some mistakes commonly done by beginners.
