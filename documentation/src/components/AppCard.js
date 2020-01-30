@@ -58,8 +58,6 @@ export default function AppCard({ image,
             <CardMedia
                 component={comp}
                 alt={title}
-                height="100%"
-                width="100%"
                 image={image}
                 src={src}
                 height={mediaHeight}
