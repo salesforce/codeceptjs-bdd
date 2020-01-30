@@ -29,6 +29,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import DomainIcon from '@material-ui/icons/Domain';
 import VisibilityIcon from '@material-ui/icons/Visibility';
+
 const useStyles = makeStyles(theme => ({
   root: {
       flexGrow: 1,
@@ -42,25 +43,8 @@ const useStyles = makeStyles(theme => ({
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
   avatar: {
     backgroundColor: 'red',
-  },
-  title: {
-    fontSize: 18,
-    borderTopRightRadius: theme.spacing(2),
-    borderBottomRightRadius: theme.spacing(2),
-    paddingRight: theme.spacing(1),
-    fontWeight: theme.typography.fontWeightMedium,
   },
   arch: {
     paddingTop: 30

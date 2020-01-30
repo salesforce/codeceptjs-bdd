@@ -8,9 +8,6 @@ import { makeStyles } from '@material-ui/core/styles';
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
-    root: {
-        flexGrow: 1,
-    },
     siteContainer: {
         height: '100%',
     },
@@ -25,10 +22,6 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         display: 'flex',
         flexDirection: 'column',
-    },
-    pageContent: {
-        padding: '1em 3em',
-        flexGrow: 1,
     },
     toolbar: theme.mixins.toolbar,
     content: {

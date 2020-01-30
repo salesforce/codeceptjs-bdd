@@ -32,8 +32,6 @@ const useTreeItemStyles = makeStyles(theme => ({
             paddingLeft: theme.spacing(2),
         },
     },
-    expanded: {
-    },
     label: {
         fontWeight: 'inherit',
         color: '#1976d2',
@@ -46,13 +44,6 @@ const useTreeItemStyles = makeStyles(theme => ({
         display: 'flex',
         alignItems: 'center',
         padding: theme.spacing(1.0, 0),
-    },
-    labelIcon: {
-        marginRight: theme.spacing(1),
-    },
-    labelText: {
-        fontWeight: 'inherit',
-        flexGrow: 1,
     }
 }));
 
@@ -103,7 +94,6 @@ const getTreeItemsFromData = (treeItems) => {
                 classes={{
                     root: classes.root,
                     content: classes.content,
-                    expanded: classes.expanded,
                     group: classes.group,
                     label: classes.label,
                     active: classes.selected
