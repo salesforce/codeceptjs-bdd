@@ -39,6 +39,7 @@
     "scroll-behavior": "^0.9.11"
   },
   "devDependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "babel-preset-gatsby": "^0.1.11",
     "prettier": "^1.19.1"
   },

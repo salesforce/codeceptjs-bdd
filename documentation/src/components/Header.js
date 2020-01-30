@@ -18,6 +18,7 @@ import Sidebar from "./Sidebar";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from '@material-ui/core/Hidden';
 import Avatar from '@material-ui/core/Avatar';
+import Search from "./Search";
 
 const drawerWidth = 240;
 const useStyles = makeStyles(theme => ({
@@ -109,13 +110,17 @@ function Header({ siteTitle, siteDescription }, props) {
               </Hidden>
 
               <Hidden mdUp>
-              <Link href="/" className={classes.title}>
-                <Typography variant="h6" className={classes.title}>
-                  Codeceptjs BDD
-                </Typography>
+                <Link href="/" className={classes.title}>
+                  <Typography variant="h6" className={classes.title}>
+                    Codeceptjs BDD
+                  </Typography>
                 </Link>
               </Hidden>
-            
+              
+              <Hidden xsDown>
+                <Search />
+              </Hidden>
+
             <Tooltip title="Go to Home">
               <GatsbyLink to="/">
                 <IconButton aria-label="Go to home page" color="inherit">

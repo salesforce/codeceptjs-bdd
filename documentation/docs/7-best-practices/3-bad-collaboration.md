@@ -1,6 +1,6 @@
 ---
 title: Bad Collaboration
-sub_title: BDD Anti Patterns
+sub_title: Best Practices > BDD Anti Patterns
 parents: ["Best Practices"]
 ---
 
