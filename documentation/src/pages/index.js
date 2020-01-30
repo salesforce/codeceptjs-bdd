@@ -104,7 +104,7 @@ const IndexPage = () => {
           <AppCard 
           title="Write Feature Files" 
           description="CodeceptJs BDD integrates Cucumber to write Gherkin Feature Files. Cucumber is a popular collaboration tool used by many teams practiving BDD to capture requirements and create executable specifications."  
-          link="https://cucumber.io/" 
+          link="/3-bdd-cucumber/1-feature/" 
           image={cucumber}/>
         </Grid>
 
@@ -150,7 +150,7 @@ const IndexPage = () => {
         <AppCard 
           title="Multibrowsers | Parallel" 
           description="Codeceptjs BDD provides an ability to run BDD Feaure files all in Parallel on Single browser or can run same set of tests in Parallel but on different browsers/OS combo (multile browers) on Sauce Labs. It offers greate Test Execution Coverage for your App."  
-          link="/execution/sauce-labs/on-multiple-browsers/" 
+          link="/5-execution/5-run-on-multi-browsers/" 
           image={multibrowsers}/>
         </Grid>
 
