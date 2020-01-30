@@ -2,6 +2,7 @@ import React from "react";
 import AppLayout from "../components/AppLayout";
 import AppCard from "../components/AppCard";
 import codeceptjsBddFrameworkImage from "../images/codeceptbdd-arch.png";
+import howImage from "../images/How.png";
 import BDD from "../images/BDD.png";
 import autoRetry from "../images/autoRetry.png";
 import driversImage from "../images/driverAgnostic.png";
@@ -27,7 +28,7 @@ import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import DomainIcon from '@material-ui/icons/Domain';
-
+import VisibilityIcon from '@material-ui/icons/Visibility';
 const useStyles = makeStyles(theme => ({
   root: {
       flexGrow: 1,
@@ -234,6 +235,41 @@ const IndexPage = () => {
           </CardActions>
           </Card>
       </Grid>
+
+
+      <Grid item xs={12} className={classes.arch}>
+        <Card className={classes.card}>
+          <CardHeader
+            avatar={
+              <Avatar aria-label="how to usage" className={classes.avatar}>
+                <VisibilityIcon/>
+              </Avatar>
+            }
+            title="Flow"
+            subheader="Framework"
+          />
+          <CardMedia
+            className={classes.media}
+            image={howImage}
+            title="How To"
+          />
+          <CardContent>
+            <Typography variant="body2" color="textSecondary" component="p">
+            </Typography>
+          </CardContent>
+
+          <CardActions>
+            <Button variant="contained"  size="large" color="primary" href="1-getting-started/installation/">
+              Getting Started
+            </Button>
+
+            <Button variant="contained"  size="large" color="secondary" href="1-getting-started/setup-framework/">
+              Quick Setup
+            </Button>
+          </CardActions>
+          </Card>
+      </Grid>
+
       </div>
   </AppLayout>
 )};
