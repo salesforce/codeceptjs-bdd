@@ -2,7 +2,7 @@
 title: Run in Parallel
 sub_title: Execute scenarios Parallel on Multi Browsers on Sauce Labs Cloud Platform
 parents: ["Execution"]
-keywords: [ "Parallel", "Execute", "WebDriver"]
+keywords: [ "Parallel", "Execute", "WebDriver", "videos"]
 ---
 
 ## 🌀 Run Scenarios in Parallel

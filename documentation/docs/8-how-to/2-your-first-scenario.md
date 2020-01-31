@@ -2,7 +2,7 @@
 title: Automate First Scenario
 sub_title: 4 steps to automate
 parents: ["How To"]
-keywords: [ "Videos", "Watch in action", "Automate"]
+keywords: [ "Videos", "Watch in action", "Automate", "how"]
 ---
 
 It very simple to start automating your first Codeceptjs-BDD Scenario. You can follow the Sample examples defined in the [codeceptjs-cucumber](https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/codeceptjs-cucumber/acceptance) framework.
