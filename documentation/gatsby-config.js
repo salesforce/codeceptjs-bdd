@@ -93,6 +93,21 @@ module.exports = {
         icon: `src/images/cucumber-logo.png`
       },
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    {
+      resolve: '@gatsby-contrib/gatsby-plugin-elasticlunr-search',
+      options: {
+        fields: ['title', 'sub_title', 'html', 'keywords'],
+        resolvers: {
+          MarkdownRemark: {
+            keywords: node => node.frontmatter.keywords,
+            title: node => node.frontmatter.title,
+            sub_title: node => node.frontmatter.sub_title,
+            html: node => node.internal.content,
+            slug: node => node.fields.slug
+          }
+        }
+      }
+    }
   ],
 };

@@ -2,6 +2,7 @@
 title: Installation
 sub_title: Install required dependencies to setup CodeceptJs BDD Framework
 parents: ["Getting Started"]
+keywords: ["setup", "framework"]
 ---
 
 # ⏳ codeceptjs-bdd

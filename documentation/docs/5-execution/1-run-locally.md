@@ -2,6 +2,7 @@
 title: Run Locally
 sub_title: Execute Features on Local Development Enviornment
 parents: ["Execution"]
+keywords: [ "Local", "Execute", "WebDriver", "videos"]
 ---
 
 ## 💻 Run on your local enviornment

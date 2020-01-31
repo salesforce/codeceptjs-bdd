@@ -8,17 +8,6 @@ import {makeStyles} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles(theme => ({
-    root: {
-        color: theme.palette.text.secondary,
-        '&:focus > $content': {
-            backgroundColor: `var(--tree-view-bg-color, ${theme.palette.grey[400]})`,
-            color: 'var(--tree-view-color)',
-        }
-    },
-    article: {
-      color:  '#444444',
-      fontSize: 16
-    },
     title: {
         color: '#444444',
         fontWeight: theme.typography.fontWeightMedium,
@@ -68,6 +57,7 @@ export const query = graphql`
       frontmatter {
         title
         sub_title
+        keywords
       }
     }
   }

@@ -39,6 +39,7 @@
     "scroll-behavior": "^0.9.11"
   },
   "devDependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "babel-preset-gatsby": "^0.1.11",
     "prettier": "^1.19.1"
   },
@@ -49,7 +50,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy": "gatsby build && gh-pages -d public -b master -r git@github.com:gkushang/gkushang.github.io.git",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
