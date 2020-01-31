@@ -2,6 +2,7 @@
 title: Setup Framework
 sub_title: Setup Codeceptjs-BDD Framework for your app
 parents: ["Getting Started"]
+keywords: ["setup", "framework", "quick start", "videos"]
 ---
 
 ## 🔳 Interactive CLI

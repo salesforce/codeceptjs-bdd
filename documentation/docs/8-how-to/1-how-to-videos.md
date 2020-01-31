@@ -2,6 +2,7 @@
 title: How to Videos
 sub_title: Watch in action
 parents: ["How To"]
+keywords: [ "Videos", "Watch in action"]
 ---
 
 ## 🎥 Codeceptjs-BDD Playlist

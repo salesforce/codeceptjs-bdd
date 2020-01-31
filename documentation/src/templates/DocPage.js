@@ -57,6 +57,7 @@ export const query = graphql`
       frontmatter {
         title
         sub_title
+        keywords
       }
     }
   }

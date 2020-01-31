@@ -2,6 +2,7 @@
 title: Feature
 sub_title: Write BDD Gherkin/Cucumber Feature Files
 parents: ["BDD Cucumber"]
+keywords: ["Feature files", "Feature", "cucumber", "bdd", "gherkin"]
 ---
 
 The purpose of the Feature is to provide a high-level description of a software feature, and to group related scenarios.

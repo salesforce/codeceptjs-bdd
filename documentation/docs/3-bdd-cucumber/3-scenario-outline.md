@@ -2,6 +2,7 @@
 title: Scenario Outline
 sub_title: Add more examples as Data Sets Iterations to your Scenario
 parents: ["BDD Cucumber"]
+keywords: ["Scenario Outline", "Datatable", "data driven", "cucumber", "bdd", "gherkin"]
 ---
 
 The Scenario Outline keyword can be used to run the same Scenario multiple times with different combinations of values.

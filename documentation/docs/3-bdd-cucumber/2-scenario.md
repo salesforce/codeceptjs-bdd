@@ -2,6 +2,7 @@
 title: Scenario
 sub_title: BDD Gherkin/Cucumber Scenario
 parents: ["BDD Cucumber"]
+keywords: ["Scenario", "Scenarios", "cucumber", "bdd", "gherkin"]
 ---
 
 Scenarios are defined in `.feature` files, which are stored in the features directory (or a subdirectory).

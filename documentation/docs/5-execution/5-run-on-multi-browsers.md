@@ -2,6 +2,7 @@
 title: Run Parallel on Multiple Browsers
 sub_title: Execute scen on Single browser locally
 parents: ["Execution"]
+keywords: [ "Parallel","Multibrowsers", "Execute", "WebDriver"]
 ---
 
 ## 🌀 Run Parallel on Multiple Browsers

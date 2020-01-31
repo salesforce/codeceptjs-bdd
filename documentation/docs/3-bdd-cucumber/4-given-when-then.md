@@ -2,6 +2,7 @@
 title: Given When Then
 sub_title: BDD Cucumber Keywords - "GWT"
 parents: ["BDD Cucumber"]
+keywords: ["Given", "When", "Then", "cucumber", "bdd", "gherkin", "gwt"]
 ---
 
 ## Given

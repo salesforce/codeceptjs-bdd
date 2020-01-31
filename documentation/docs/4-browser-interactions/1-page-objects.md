@@ -2,6 +2,7 @@
 title: Page Objects
 sub_title: Execute Features on Local Development Enviornment
 parents: ["Browser Interactions"]
+keywords: [ "Page Objects", "cucumber", "bdd", "gherkin", "gwt"]
 ---
 
 Page Objects contains all the Browser Interactions. It has become a standard for UI Automation. Page Objects contains the common `locators` and all the related `actions` related to the Page, and is sharable. The Reusability of Page Objects reduces the redundant code and increases maintainability.

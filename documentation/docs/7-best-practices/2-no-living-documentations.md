@@ -1,7 +1,8 @@
 ---
 title: No Living Documentations
-sub_title: Best Practices > BDD Anti Patterns
+sub_title: BDD Anti Patterns
 parents: ["Best Practices"]
+keywords: [ "Best Practices"]
 ---
 
 Cucumber is a documentation tool and can be used to create a good, living, documentation about a system.

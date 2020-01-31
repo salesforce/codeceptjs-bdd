@@ -2,6 +2,7 @@
 title: Architecture
 sub_title: Framework Architecture
 parents: ["Architecture"]
+keywords: ["videos"]
 ---
 
 [![codeceptbdd-arch.png](https://i.postimg.cc/MT7nj4kg/codeceptbdd-arch.png)](https://postimg.cc/k65J0Tgy)

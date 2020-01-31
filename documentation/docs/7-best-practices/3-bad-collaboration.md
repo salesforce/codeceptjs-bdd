@@ -1,7 +1,8 @@
 ---
 title: Bad Collaboration
-sub_title: Best Practices > BDD Anti Patterns
+sub_title: BDD Anti Patterns
 parents: ["Best Practices"]
+keywords: [ "Best Practices"]
 ---
 
 This a transcript and interpretation of a podcast where Aslak Hellesøy, Matt Wynne, and Steve Tooke from Cucumber Ltd have a chat about the BDD tool Cucumber and anti-patterns they have come across.
