@@ -19,8 +19,9 @@
   "bugs": {
     "url": "https://github.com/gkushang/codeceptjs-bdd/issues"
   },
-  "devDependencies": {
+  "dependencies": {
     "@wdio/selenium-standalone-service": "^5.12.1",
+    "codeceptjs": "^2.4.3",
     "debug": "^4.1.1"
   }
 }
