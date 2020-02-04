@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import { makeStyles } from "@material-ui/core/styles"
+import { Helmet } from "react-helmet"
 
 const drawerWidth = 240
 
@@ -49,6 +50,10 @@ export default function AppLayout({ children, location }) {
       `}
       render={data => (
         <div className={classes.siteContainer}>
+           <Helmet>
+            <meta charSet="utf-8" />
+            <title>Codeceptjs-BDD Docs</title>
+          </Helmet>
           <div className={classes.bodyContainer}>
             <main className={classes.mainSection}>
               <div className={classes.toolbar} />
