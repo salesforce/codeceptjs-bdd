@@ -19,16 +19,7 @@ const useStyles = makeStyles(theme => ({
     color: "#5e5e5e",
     fontWeight: theme.typography.fontWeightBold,
   },
-  right: {
-    float:'right',
-    marginLeft:'auto',
-    marginRight:'0px',
-    marginTop: 20,
-    flexWrap: 'nowrap',
-    flexDirection: 'row',
-},
-left: {
-  float:'left',
+button: {
   marginRight:'auto',
   marginLeft:'0px',
   marginTop: 20,
@@ -71,13 +62,13 @@ export default function DocPage({ data, location, pageContext }) {
       <Divider style={{marginTop: 50}} />
       <Divider />
         {prev.fields && (
-          <Button className={classes.left} color="primary" startIcon={<NavigateBeforeIcon />} href={prev.fields.slug} >
+          <Button className={classes.button} style={{float:'left'}} color="primary" startIcon={<NavigateBeforeIcon />} href={prev.fields.slug} >
             {prev.frontmatter.title}
           </Button>
         )}
 
         {next.fields && (
-          <Button className={classes.right} color="primary" endIcon={<NavigateNextIcon />} href={next.fields.slug}>
+          <Button className={classes.button} style={{float:'right'}} color="primary" endIcon={<NavigateNextIcon />} href={next.fields.slug}>
             {next.frontmatter.title}
           </Button>
         )}
