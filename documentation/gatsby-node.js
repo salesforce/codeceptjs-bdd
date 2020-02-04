@@ -33,21 +33,21 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   if (result.data) {
-    const posts = result.data.allMarkdownRemark.nodes;
-    console.log('posts: ', posts);
-    posts.forEach(({fields,frontmatter}, index) => {
+    const docs = result.data.allMarkdownRemark.nodes;
+  
+    docs.forEach(({fields,frontmatter}, index) => {
       createPage({
         path: fields.slug,
         component: path.resolve("./src/templates/DocPage.js"),
         context: {
           slug: fields.slug,
           prev: {
-            fields: index === 0 ? null : posts[index - 1].fields,
-            frontmatter: index === 0 ? null : posts[index - 1].frontmatter
+            fields: index === 0 ? null : docs[index - 1].fields,
+            frontmatter: index === 0 ? null : docs[index - 1].frontmatter
           },
           next: {
-            fields: index === posts.length - 1 ? null : posts[index + 1].fields,
-            frontmatter: index === posts.length -1 ? null : posts[index + 1].frontmatter
+            fields: index === docs.length - 1 ? null : docs[index + 1].fields,
+            frontmatter: index === docs.length -1 ? null : docs[index + 1].frontmatter
           }
         },
       })
