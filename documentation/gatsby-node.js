@@ -35,20 +35,14 @@ exports.createPages = async ({ graphql, actions }) => {
   if (result.data) {
     const docs = result.data.allMarkdownRemark.nodes;
   
-    docs.forEach(({fields,frontmatter}, index) => {
+    docs.forEach(({fields}, index) => {
       createPage({
         path: fields.slug,
         component: path.resolve("./src/templates/DocPage.js"),
         context: {
           slug: fields.slug,
-          prev: {
-            fields: index === 0 ? null : docs[index - 1].fields,
-            frontmatter: index === 0 ? null : docs[index - 1].frontmatter
-          },
-          next: {
-            fields: index === docs.length - 1 ? null : docs[index + 1].fields,
-            frontmatter: index === docs.length -1 ? null : docs[index + 1].frontmatter
-          }
+          prev: index === 0 ? null : docs[index - 1],
+          next: index === docs.length - 1 ? null : docs[index + 1]
         },
       })
     })
