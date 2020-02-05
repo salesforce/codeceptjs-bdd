@@ -38,10 +38,7 @@ export default function DocPage({ data, location, pageContext }) {
   const { next, prev } = pageContext
 
   return (
-    <AppLayout
-      title={post.frontmatter.title + " | " + data.site.siteMetadata.title}
-      location={location}
-    >
+    <AppLayout title={post.frontmatter.title + " | Codeceptjs-BDD"}>
       <Typography variant="h4" className={classes.title} gutterBottom>
         {post.frontmatter.title}
       </Typography>
@@ -59,7 +56,7 @@ export default function DocPage({ data, location, pageContext }) {
       </Typography>
 
       <Divider style={{ marginTop: 50 }} />
-      
+
       {prev && (
         <Button
           className={classes.button}

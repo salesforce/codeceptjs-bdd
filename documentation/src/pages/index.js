@@ -232,7 +232,7 @@ const IndexPage = () => {
   const classes = useStyles()
 
   return (
-    <AppLayout>
+    <AppLayout title="Codeceptjs-BDD">
       <div className={classes.root}>
         <Typography variant="h4" component="h2" gutterBottom>
           Codeceptjs BDD

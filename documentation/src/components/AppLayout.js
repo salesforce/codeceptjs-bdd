@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function AppLayout({ children, location }) {
+export default function AppLayout({ children, title }) {
   const classes = useStyles()
   return (
     <StaticQuery
@@ -52,7 +52,7 @@ export default function AppLayout({ children, location }) {
         <div className={classes.siteContainer}>
            <Helmet>
             <meta charSet="utf-8" />
-            <title>Codeceptjs-BDD Docs</title>
+            <title>{title}</title>
           </Helmet>
           <div className={classes.bodyContainer}>
             <main className={classes.mainSection}>
@@ -61,7 +61,6 @@ export default function AppLayout({ children, location }) {
                 <Header
                   siteTitle={data.site.siteMetadata.title}
                   siteDescription={data.site.siteMetadata.description}
-                  props={location}
                 />
                 <main className={classes.content}>{children}</main>
               </div>
