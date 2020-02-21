@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node cli.js",
     "cli": "node cli.js",
-    "acceptance": "./node_modules/.bin/codeceptjs run --verbose --features",
+    "acceptance": "./node_modules/.bin/codeceptjs run --verbose",
     "acceptance:parallel": "./node_modules/.bin/codeceptjs run-multiple parallel",
     "acceptance:parallel:multibrowsers": "./node_modules/.bin/codeceptjs run-multiple multibrowsers",
     "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",

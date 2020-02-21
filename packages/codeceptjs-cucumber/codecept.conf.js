@@ -36,6 +36,7 @@ let conf = {
     ghHomePage: PAGES_PATH + "github/gh-home.page.js",
     ghSearchPage: PAGES_PATH + "github/gh-search.page.js"
   },
+  tests: RELATIVE_PATH + "mocha/*.test.js",
   name: "<name>"
 };
 
