@@ -1,10 +1,14 @@
 const { I } = inject();
+const LightingComponent = require('./lighting-component.page');
 
-class HelloBinding {
+class HelloBinding extends LightingComponent {
 
   constructor() {
+    
+    super();
+
     // common elements for shadow locators
-    const parent =  ['my-app', 'recipe-hello-binding'];
+    const parent =  [...this.host, 'recipe-hello-binding'];
 
     // locators uses "shadowDom", and elements are sequentially defined
     this.locators = {

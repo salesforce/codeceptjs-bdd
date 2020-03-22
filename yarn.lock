@@ -1358,7 +1358,7 @@ blocking-proxy@^1.0.0:
   resolved "https://registry.yarnpkg.com/blocking-proxy/-/blocking-proxy-1.0.1.tgz#81d6fd1fe13a4c0d6957df7f91b75e98dac40cb2"
   integrity sha512-KE8NFMZr3mN2E0HcvCgRtX7DjhiIQrwle+nSVJVC/yqFb9+xznHl2ZcoBp2L9qzkI4t4cBFJ1efXF8Dwi132RA==
   dependencies:
-    minimist "^1.2.2"
+    minimist "^1.2.0"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -1743,41 +1743,6 @@ codeceptjs@^2.4.3:
   dependencies:
     "@codeceptjs/configure" "^0.4.0"
     "@types/mocha" "^5.2.7"
-    allure-js-commons "^1.3.2"
-    arrify "^2.0.1"
-    axios "^0.19.1"
-    chalk "^1.1.3"
-    commander "^2.20.3"
-    css-to-xpath "^0.1.0"
-    cucumber-expressions "^6.6.2"
-    envinfo "^7.3.1"
-    escape-string-regexp "^1.0.3"
-    figures "^2.0.0"
-    fn-args "^4.0.0"
-    fs-extra "^8.1.0"
-    gherkin "^5.1.0"
-    glob "^6.0.1"
-    inquirer "^6.5.2"
-    js-beautify "^1.10.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.merge "^4.6.2"
-    mkdirp "^0.5.1"
-    mocha "^6.2.2"
-    mocha-junit-reporter "^1.23.1"
-    ms "^2.1.2"
-    parse-function "^5.5.0"
-    promise-retry "^1.1.1"
-    requireg "^0.1.8"
-    resq "^1.7.0"
-    semver "^6.2.0"
-    sprintf-js "^1.1.1"
-
-codeceptjs@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/codeceptjs/-/codeceptjs-2.5.0.tgz#dee631ce18dd35d1237dbb28ee47a02f19a9a2ec"
-  integrity sha512-HVgUkBrgLzWy+R4O4VMHih4LymR0dn/c1IkY/JhAUx5xVHbwkTa+MeLInrNbPToURSBH6ZLKR7DRrqTmR1Fp5A==
-  dependencies:
-    "@codeceptjs/configure" "^0.4.0"
     allure-js-commons "^1.3.2"
     arrify "^2.0.1"
     axios "^0.19.1"
@@ -4181,6 +4146,11 @@ minimist@^1.1.3, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
   integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
+
+minimist@^1.2.2:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
+  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
 minimist@~0.0.1:
   version "0.0.10"

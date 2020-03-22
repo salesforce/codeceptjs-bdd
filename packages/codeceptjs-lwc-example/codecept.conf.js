@@ -33,7 +33,7 @@ let conf = {
   },
   include: {
     I: RELATIVE_PATH + "helpers/custom.methods.js",
-    helloBinding: PAGES_PATH + "lwc-recipes/hello-binding.page.js"
+    helloBinding: PAGES_PATH + "lwc-recipes/hello-binding.page.js",
   },
   tests: RELATIVE_PATH + "mocha/*.test.js",
   name: "Salesforce LWC Recipes Acceptance Tests"
