@@ -37,7 +37,7 @@ Feature: HelloBinding from Salesforce LWC Recipes
 
     As a LWC developer
     I want to be able to automate the LWC Shadow Dom Components
-    So that I can quicly create my UI Automated Suite using Selenium
+    So that I can quickly create my UI Automated Suite using Selenium
 
     => LWC Recipe Page: https://recipes.lwc.dev/#hello
 
@@ -52,11 +52,11 @@ Feature: HelloBinding from Salesforce LWC Recipes
 
 The work is still in-progress for the changes to be accepted at CodeceptJS. Here is the proposal on how to select the element when it's chained with custom elements. 
 
-In the page object, you can define your locators as a special `shadowDom` locator. 
+In the page object, you can define your locators as a special `shadow` locator. 
 
 ```sh
     // input field on helloBinding component
-    inputField: { shadowDom: { elements: [...parent,'ui-input', 'input.input' ]}}
+    inputField: { shadow: [...parent,'ui-input', 'input.input' ]}
 ```
 
 ### Page Objects
@@ -74,14 +74,14 @@ class HelloBinding extends LightingComponent {
     // common elements for shadow locators
     const parent =  [...this.host, 'recipe-hello-binding'];
 
-    // locators uses "shadowDom", and elements are sequentially defined
+    // locators uses "shadow", and elements are sequentially defined
     this.locators = {
       
       // input field on helloBinding component
-      inputField: { shadowDom: { elements: [...parent, 'ui-input', 'input.input' ]}},
+      inputField: { shadow: [...parent, 'ui-input', 'input.input' ]},
       
       // card title on helloBinding component
-      cardTitle: { shadowDom: { elements: [...parent, 'div p'] }}
+      cardTitle: { shadow: [...parent, 'div p']}
 
     }
   }

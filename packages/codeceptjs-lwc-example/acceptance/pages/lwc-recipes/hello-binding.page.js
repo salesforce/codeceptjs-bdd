@@ -14,18 +14,10 @@ class HelloBinding extends LightingComponent {
     this.locators = {
       
       // input field on helloBinding component
-      inputField: {
-        shadowDom: {
-          elements: [...parent,'ui-input', 'input.input' ]
-        }
-      },
+      inputField: { shadow: [...parent,'ui-input', 'input.input']},
       
       // card title on helloBinding component
-      cardTitle: {
-        shadowDom: {
-          elements: [...parent, 'div p']
-        }
-      }
+      cardTitle: { shadow: [...parent, 'div p']}
     }
   }
 
