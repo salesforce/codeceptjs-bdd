@@ -95,6 +95,15 @@ class HelloBinding extends LightingComponent {
     }
   }
 
+    enterName(name) {
+    return I.fillField(this.locators.inputField, name);
+  }
+
+  async grabTitle() {
+    return await I.grabTextFrom(this.locators.cardTitle);
+  }
+}
+
 ```
 
 
