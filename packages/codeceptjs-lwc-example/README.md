@@ -45,3 +45,57 @@ Feature: HelloBinding from Salesforce LWC Recipes
         When Fred types "Kushang Gajjar" into the Hello Binding Component
         Then he sees the title is updated accordingly
 ```
+
+### Locating LWC Element
+
+The work is still in-progress for the changes to be accepted at CodeceptJS. Here is the proposal on how to select the element when it's chained with custom elements. 
+
+In the page object, you can define your locators as a special `shadowDom` locator. 
+
+```sh
+    // input field on helloBinding component
+    inputField: {
+    shadowDom: {
+        elements: [...parent,'ui-input', 'input.input' ]
+    }
+    },
+```
+
+### Page Objects
+
+Since it inherits the elements from the host/parent, you can define your Page Objects as a Class and take benefits of inheritance in your page objects. This makes a lot of your code/locators Re-usable across the app.
+
+```sh
+
+class HelloBinding extends LightingComponent {
+
+  constructor() {
+    
+    super();
+
+    // common elements for shadow locators
+    const parent =  [...this.host, 'recipe-hello-binding'];
+
+    // locators uses "shadowDom", and elements are sequentially defined
+    this.locators = {
+      
+      // input field on helloBinding component
+      inputField: {
+        shadowDom: {
+          elements: [...parent,'ui-input', 'input.input' ]
+        }
+      },
+      
+      // card title on helloBinding component
+      cardTitle: {
+        shadowDom: {
+          elements: [...parent, 'div p']
+        }
+      }
+    }
+  }
+
+```
+
+
+
