@@ -80,11 +80,11 @@ class HelloBinding extends LightingComponent {
       
       // card title on helloBinding component
       cardTitle: { shadowDom: { elements: [...parent, 'div p'] }}
-      
+
     }
   }
 
-    enterName(name) {
+  enterName(name) {
     return I.fillField(this.locators.inputField, name);
   }
 
