@@ -2,6 +2,8 @@
 
 This repository automates the LWC Recipes page using Selenium WebDriver thru Codeceptjs-BDD framework. It uses **Cucumber BDD Feature** files to automate the LWC Features. You can also choose to automate with **Mocha styles** traditional tests. For more info, take a look at [Codeceptjs-BDD Docs](http://gkushang.github.io/).
 
+This example automates the HelloBinding LWC Component on LWC Recipe - https://recipes.lwc.dev/#hello
+
 ### Pre-requisite
 * Yarn 
 * Node > 10
