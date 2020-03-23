@@ -54,11 +54,7 @@ In the page object, you can define your locators as a special `shadowDom` locato
 
 ```sh
     // input field on helloBinding component
-    inputField: {
-    shadowDom: {
-        elements: [...parent,'ui-input', 'input.input' ]
-    }
-    },
+    inputField: { shadowDom: { elements: [...parent,'ui-input', 'input.input' ]}}
 ```
 
 ### Page Objects
