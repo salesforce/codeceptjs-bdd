@@ -1,2 +1,3 @@
 node_modules
 packages/codeceptjs-cucumber/acceptance/report/
+packages/codeceptjs-lwc-example/acceptance/report/
