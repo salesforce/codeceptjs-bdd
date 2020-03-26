@@ -1,12 +1,18 @@
-const {I} = inject();
+const { I } = inject();
 
-module.exports = {
-    locators: {
-        searchBox: '.header-search-input'
-    },
+// page class can be extended
+class HomePage {
+  constructor() {
+    // page locators
+    this.locators = {
+      searchBox: '.header-search-input'
+    };
+  }
 
-    search(searchFor) {
-        I.fillField(I.grabCss(this.locators.searchBox), searchFor);
-        I.pressKey('Enter');
-    }
-};
+  search(searchFor) {
+    I.fillField(I.grabCss(this.locators.searchBox), searchFor);
+    I.pressKey('Enter');
+  }
+}
+
+module.exports = new HomePage();
