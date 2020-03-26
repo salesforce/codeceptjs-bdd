@@ -930,6 +930,15 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
+"@wdio/config@5.22.4":
+  version "5.22.4"
+  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.22.4.tgz#053d4ba0a8b0dae6be740b1b7b9ab25abac2799e"
+  integrity sha512-i5dJQWb80darcRA//tfG0guMeQCeRUXroZNnHjGNb1qzvTRZmcIIhdxaD+DbK/5dWEx6aoMfoi6wjVp/CXwdAg==
+  dependencies:
+    "@wdio/logger" "5.16.10"
+    deepmerge "^4.0.0"
+    glob "^7.1.2"
+
 "@wdio/logger@5.16.10":
   version "5.16.10"
   resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-5.16.10.tgz#45d0ea485d52c8a7c526954ccc980d54c3e29e56"
@@ -966,7 +975,7 @@
     sauce-connect-launcher "^1.2.3"
     saucelabs "^3.0.0"
 
-"@wdio/selenium-standalone-service@^5.12.1", "@wdio/selenium-standalone-service@^5.16.10":
+"@wdio/selenium-standalone-service@5.16.10", "@wdio/selenium-standalone-service@^5.12.1", "@wdio/selenium-standalone-service@^5.16.10":
   version "5.16.10"
   resolved "https://registry.yarnpkg.com/@wdio/selenium-standalone-service/-/selenium-standalone-service-5.16.10.tgz#1d76a9e2334a54abaae32ed5b414624a56112e9d"
   integrity sha512-IudfrPgFoejkM+UT4sPv9g5pAGax7+CyHDZkbPDl2XXsct3gdAXDVe57KWuNYX+s0jFu8MSR/4nLnvJjdydNjw==
@@ -6449,7 +6458,20 @@ webdriver@5.22.3:
     lodash.merge "^4.6.1"
     request "^2.83.0"
 
-webdriverio@^5.12.4, webdriverio@^5.15.2:
+webdriver@5.22.4:
+  version "5.22.4"
+  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.22.4.tgz#d86ff997429c8a4084d35badfe00f17e861f8595"
+  integrity sha512-IrSb8UUt6MDgBIDaSWyh/kP4VJsHyqnubCTxKi2cEZjOQdxPwnxUfvbSQlMDCHXrcgsPaXwAPjRJVTEt6PzArQ==
+  dependencies:
+    "@types/request" "^2.48.4"
+    "@wdio/config" "5.22.4"
+    "@wdio/logger" "5.16.10"
+    "@wdio/protocols" "5.22.1"
+    "@wdio/utils" "5.18.6"
+    lodash.merge "^4.6.1"
+    request "^2.83.0"
+
+webdriverio@^5.15.2:
   version "5.18.6"
   resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.18.6.tgz#a86000fc65bf4c33e7f089dd86e97932ad4d5e3a"
   integrity sha512-eJ7bIpjAqxHkeRvsf+fysqv98e4mNQ/9Zn+CBRDbS/+/EcmOKHghLdFSFEh019JoglMY7xYj3+mBDCsC7+aGLA==
@@ -6469,6 +6491,27 @@ webdriverio@^5.12.4, webdriverio@^5.15.2:
     rgb2hex "^0.1.0"
     serialize-error "^5.0.0"
     webdriver "5.18.6"
+
+webdriverio@^5.2.2:
+  version "5.22.4"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.22.4.tgz#56819998196d86f5a405a76fb41cae10e7dcd641"
+  integrity sha512-6/Qi1/N8wK5r7Mp2aEwB+1FkDQiyiuwQn8lm+dfYhrfWs3kLOKKt3MPeM4I6j2Yv2/mGpYf7WKu2xTj/vkJzBA==
+  dependencies:
+    "@wdio/config" "5.22.4"
+    "@wdio/logger" "5.16.10"
+    "@wdio/repl" "5.18.6"
+    "@wdio/utils" "5.18.6"
+    archiver "^3.0.0"
+    css-value "^0.0.1"
+    grapheme-splitter "^1.0.2"
+    lodash.clonedeep "^4.5.0"
+    lodash.isobject "^3.0.2"
+    lodash.isplainobject "^4.0.6"
+    lodash.zip "^4.2.0"
+    resq "^1.6.0"
+    rgb2hex "^0.1.0"
+    serialize-error "^5.0.0"
+    webdriver "5.22.4"
 
 webdriverio@^5.22.3:
   version "5.22.3"

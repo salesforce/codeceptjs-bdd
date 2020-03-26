@@ -65,11 +65,11 @@ let master_conf = {
   }
 };
 
-if (DRIVER === 'webdriver') {
+if (DRIVER.toLowerCase() === 'webdriver') {
   master_conf = webdriverConf.get(master_conf);
   logInfo(master_conf, 'WebDriver');
 }
-if (DRIVER === 'playwright') {
+if (DRIVER.toLocaleLowerCase() === 'playwright') {
   master_conf = playwrightConf.get(master_conf);
   logInfo(master_conf, 'Playwright');
 }
