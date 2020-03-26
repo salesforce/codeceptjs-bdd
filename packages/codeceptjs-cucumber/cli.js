@@ -105,8 +105,9 @@ const askQuestions_selectDriver = () => {
       name: 'DRIVER',
       type: 'list',
       choices: ['WebDriver', 'Playwright'],
-      message: 'Select your Driver'
+      message: 'Choose Default Driver. Framework comes with both WebDriver and Playwright drivers and you can run your tests on any driver through `DRIVER` env param, e.g. DRIVER=playwright yarn acceptance or DRIVER=webdriver yarn acceptance. For now, you can choose your default driver.'
     }
+
   ]);
 };
 
