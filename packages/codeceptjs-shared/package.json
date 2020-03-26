@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-shared",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Shared Configurations and Helpers for CodeceptJS",
   "author": {
     "name": "Kushang Gajjar",

@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-cucumber",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "CodeceptJs Cucumber E2E Framework",
   "scripts": {
     "start": "node cli.js",
@@ -32,8 +32,8 @@
     "allure-commandline": "^2.9.0",
     "chalk": "^2.4.2",
     "codeceptjs": "^2.5.0",
-    "codeceptjs-saucelabs": "^3.0.0",
-    "codeceptjs-shared": "^3.0.0",
+    "codeceptjs-saucelabs": "^4.0.0",
+    "codeceptjs-shared": "^4.0.0",
     "debug": "^4.1.1",
     "deepmerge": "^4.0.0",
     "faker": "^4.1.0",
