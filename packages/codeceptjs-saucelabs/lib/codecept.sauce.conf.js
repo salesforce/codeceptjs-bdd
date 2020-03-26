@@ -89,11 +89,7 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
         }
         return conf;
     }
-
-    const localBrowser = process.profile || '"default" browser';
-
-    console.info(chalk.yellow.bold('Tests are running locally on : ') + chalk.blue.bold(localBrowser));
-
+    
     return {};
 }
 

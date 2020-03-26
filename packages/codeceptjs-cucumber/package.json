@@ -5,12 +5,11 @@
   "scripts": {
     "start": "node cli.js",
     "cli": "node cli.js",
-    "acceptance": "./node_modules/.bin/codeceptjs run --verbose",
-    "acceptance:parallel": "./node_modules/.bin/codeceptjs run-multiple parallel",
-    "acceptance:parallel:multibrowsers": "./node_modules/.bin/codeceptjs run-multiple multibrowsers",
-    "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",
-    "bdd:snippets": "./node_modules/.bin/codeceptjs bdd:snippets",
-    "test": "yarn acceptance --profile chrome:headless"
+    "acceptance": "codeceptjs run --verbose",
+    "acceptance:parallel": "codeceptjs run-multiple parallel",
+    "acceptance:parallel:multibrowsers": "codeceptjs run-multiple multibrowsers",
+    "acceptance:report": "allure serve ./acceptance/report",
+    "test": "yarn acceptance --profile chrome:headless && DRIVER=playwright yarn acceptance"
   },
   "bin": {
     "codeceptjs-bdd": "./cli.js"
@@ -32,7 +31,7 @@
   "devDependencies": {
     "allure-commandline": "^2.9.0",
     "chalk": "^2.4.2",
-    "codeceptjs": "^2.3.0",
+    "codeceptjs": "^2.5.0",
     "codeceptjs-saucelabs": "^3.0.0",
     "codeceptjs-shared": "^3.0.0",
     "debug": "^4.1.1",
@@ -48,5 +47,8 @@
     "soft-assert": "^0.2.0",
     "webdriverio": "^5.12.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^0.12.1"
+  }
 }
