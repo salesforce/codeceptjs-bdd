@@ -69,7 +69,7 @@ if (DRIVER.toLowerCase() === 'webdriver') {
   master_conf = webdriverConf.get(master_conf);
   logInfo(master_conf, 'WebDriver');
 }
-if (DRIVER.toLocaleLowerCase() === 'playwright') {
+if (DRIVER.toLowerCase() === 'playwright') {
   master_conf = playwrightConf.get(master_conf);
   logInfo(master_conf, 'Playwright');
 }

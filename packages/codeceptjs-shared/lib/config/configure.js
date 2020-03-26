@@ -7,7 +7,7 @@ const master_conf = require('./master/codecept.master.conf').master_conf;
  * @param {object} conf
  */
 const create = function(conf) {
-  if (process.env.DRIVER === 'playwright') {
+  if (process.env.DRIVER.toLowerCase()  === 'playwright') {
     delete conf.helpers.WebDriver;
   } else {
     delete conf.helpers.Playwright;
