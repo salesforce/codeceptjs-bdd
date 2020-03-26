@@ -13,7 +13,7 @@ Headless is supported for all the browsers on all platforms.
 
 Codeceptjs-BDD integrates the Playwright with WebDriver. 
 
-## To run on Playwright
+## 🚀 To run on Playwright
 
 If you have setup framework through the Codeceptjs-BDD [CLI](1-getting-started/setup-framework/), then you'd have an option to select Default driver. If it is default, then you can follow the [execution](/5-execution/1-run-locally/) documentation. If it is not default, then you can pass `DRIVER` command shown below,
 
@@ -44,16 +44,16 @@ To run on Playwright's Firefox,
 yarn acceptance --profile firefox
 ```
 
-#### Please note: Playwright support was added from the version 4
+#### 👉 Please note: Playwright support was added from the version 4
 
-### Add Playwright support for existing framework before version 4
+### + Add Playwright support for existing framework before version 4
 
 Please note: The Playwright support was included with the `codeceptjs-shared@4` version. If you have previous version installed, please  update your `codecept.conf.js` declaration and dependencies as defined [here](https://github.com/gkushang/codeceptjs-bdd/blob/develop/packages/codeceptjs-cucumber/codecept.conf.js#L1-L7) and update your config creation as defined [here](https://github.com/gkushang/codeceptjs-bdd/blob/develop/packages/codeceptjs-cucumber/codecept.conf.js#L42).
 
 And, install below dependencies
 
 ```bash
-yarn add codeceptjs-shared@^4 playwright webdriverio@^5.2.2 @wdio/selenium-standalone-service@5.16.10 -D
+yarn add codeceptjs-shared@^4 -D
 ```
 
 
