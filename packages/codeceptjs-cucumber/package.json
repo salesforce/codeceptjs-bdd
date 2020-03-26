@@ -5,10 +5,10 @@
   "scripts": {
     "start": "node cli.js",
     "cli": "node cli.js",
-    "acceptance": "codeceptjs run --verbose",
-    "acceptance:parallel": "codeceptjs run-multiple parallel",
-    "acceptance:parallel:multibrowsers": "codeceptjs run-multiple multibrowsers",
-    "acceptance:report": "allure serve ./acceptance/report",
+    "acceptance": "./node_modules/.bin/codeceptjs run --verbose",
+    "acceptance:parallel": "./node_modules/.bin/codeceptjs run-multiple parallel",
+    "acceptance:parallel:multibrowsers": "./node_modules/.bin/codeceptjs run-multiple multibrowsers",
+    "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",
     "test": "yarn acceptance --profile chrome:headless && DRIVER=playwright yarn acceptance"
   },
   "bin": {

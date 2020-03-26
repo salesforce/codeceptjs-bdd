@@ -14,9 +14,6 @@ cache:
   npm: false
 
 install:
-  - git clone https://github.com/$TRAVIS_REPO_SLUG.git $TRAVIS_REPO_SLUG
-  - cd $TRAVIS_REPO_SLUG
-  - git checkout -qf $TRAVIS_COMMIT
   - wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/
   - unzip ~/chromedriver_linux64.zip -d ~/
   - rm ~/chromedriver_linux64.zip
