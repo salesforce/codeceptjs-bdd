@@ -263,7 +263,7 @@ const run = async () => {
 
   if (
     shell.exec(
-      'yarn add codeceptjs-saucelabs@latest codeceptjs-shared@latest webdriverio@^5.2.2 @wdio/selenium-standalone-service@5.16.10 allure-commandline codeceptjs playwright debug faker protractor rimraf should deepmerge soft-assert -D'
+      'yarn add codeceptjs-saucelabs@latest codeceptjs-shared@latest allure-commandline codeceptjs debug faker protractor rimraf should deepmerge soft-assert -D'
     ).code !== 0
   ) {
     failure('Yarn command failed.');
