@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-cucumber",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "CodeceptJs Cucumber E2E Framework",
   "scripts": {
     "start": "node cli.js",
@@ -29,12 +29,12 @@
     "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
   },
   "devDependencies": {
-    "@wdio/selenium-standalone-service" :"5.16.10",
+    "@wdio/selenium-standalone-service": "5.16.10",
     "allure-commandline": "^2.9.0",
     "chalk": "^2.4.2",
     "codeceptjs": "^2.5.0",
-    "codeceptjs-saucelabs": "^4.0.0",
-    "codeceptjs-shared": "^4.0.0",
+    "codeceptjs-saucelabs": "^4.0.1",
+    "codeceptjs-shared": "^4.0.1",
     "debug": "^4.1.1",
     "deepmerge": "^4.0.0",
     "faker": "^4.1.0",

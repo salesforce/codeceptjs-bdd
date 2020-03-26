@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-lwc-example",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Salesforce's LWC Recipes Acceptance Tests",
   "main": "index.js",
   "scripts": {
@@ -39,8 +39,8 @@
     "@wdio/selenium-standalone-service": "^5.16.10",
     "allure-commandline": "^2.13.0",
     "codeceptjs": "https://github.com/gkushang/CodeceptJS#feature/shadow-dom",
-    "codeceptjs-saucelabs": "^4.0.0",
-    "codeceptjs-shared": "^4.0.0",
+    "codeceptjs-saucelabs": "^4.0.1",
+    "codeceptjs-shared": "^4.0.1",
     "debug": "^4.1.1",
     "deepmerge": "^4.2.2",
     "faker": "^4.1.0",
