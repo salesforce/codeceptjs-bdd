@@ -9,6 +9,21 @@ keywords: ["setup", "framework", "quick start", "videos"]
 
 This framework provides an Interactive CLI to quickly setup the framework for your App. 
 
+## 🚀 Quick Setup your framework
+
+Below steps assumes you have already installed all the required dependencies from _Getting Started > Installation_
+
+```bash
+
+   git clone https://github.com/gkushang/codeceptjs-bdd.git
+    cd codeceptjs-bdd/packages/codeceptjs-cucumber
+    yarn
+    npm run cli
+
+```
+
+## ➤ About CLI
+
 The CLI,
 1. Creates a Codeceptjs BDD Framework for your App
 2. Automatically updates your `package.json` with all required dependencies.
@@ -24,17 +39,5 @@ This Framework comes with the Sample BDD Feature files with examples. Please fol
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OGrn1ejyb-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 🚀 Quick Setup
-
-Below steps assumes you have already installed all the required dependencies from _Getting Started > Installation_
-
-```bash
-
-   git clone https://github.com/gkushang/codeceptjs-bdd.git
-    cd codeceptjs-bdd/packages/codeceptjs-cucumber
-    yarn
-    npm run cli
-
-```
 
 💯Follow the instructions on CLI. Once done, you're ready to start writing automated Feature files for your app 🎉
