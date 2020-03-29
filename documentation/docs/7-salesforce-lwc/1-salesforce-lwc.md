@@ -9,28 +9,15 @@ keywords: [ "LWC", "Salesforce", "Web Components", "Shadow", "Shadow DOM"]
 
 [Lightning Web Components](https://developer.salesforce.com/docs/component-library/documentation/en/lwc) is open source, empowering you to explore the source code, customize the behavior for your needs, and build enterprise-ready web components on any platform, not just Salesforce.
 
-As per the [docs](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.testing_dom_api), LWC uses a shadow DOM polyfill. To Automate with Selenium WebDriver, the global global queries via `WebDriver.findElement()` won't work. 
+As per the [LWC Testing Docs](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.testing_dom_api), LWC uses a shadow DOM polyfill. To Automate with Selenium WebDriver, the global queries via **WebDriver.findElement()** won't work. It becomes complicated when you need to handle the Elements under Shadow DOM. 
 
-CodeceptJS has resolved the issue by introducing support for the [ShadowDom](https://github.com/Codeception/CodeceptJS/blob/master/docs/shadow.md). If you're looking to automate the Shadow DOM or Salesforce's Lighting Web Components, follow the below example of [Salesforce's Lighting Recipes](https://recipes.lwc.dev/) HelloBinding Component,
+The great news is, CodeceptJS has simplified the E2E Automation of Shadow Elements, by introducing the [ShadowDom](https://github.com/Codeception/CodeceptJS/blob/master/docs/shadow.md) support. 
 
-## Example
+## Example of LWC E2E Automation
 
-```js
- 
-Feature('Shadow Dom Locators');
+The Codeceptjs-BDD provids the complete example of to Automated the Salesforce LWC with WebDriver. Please take a look at the example below,
 
-Scenario('should fill input field within shadow elements', I => {
+⏩ https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/codeceptjs-lwc-example
 
-  // navigate to LWC webpage containing shadow dom
-  I.amOnPage('https://recipes.lwc.dev/');
+If you have any questions regarding automating Saleforce LWC or Web Components or Shadow DOM, please reach out to us by submitting an issue [here](https://github.com/gkushang/codeceptjs-bdd/issues).
 
-  // click Click Me! button
-  I.click({ shadow: ['my-app', 'recipe-hello', 'button'] });
-
-  // fill the input field
-  I.fillField({ shadow: ['my-app', 'recipe-hello-binding', 'ui-input', 'input.input'] }, 'value');
-
-});
-
-
-```
