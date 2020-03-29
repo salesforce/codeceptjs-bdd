@@ -9,7 +9,7 @@ keywords: [ "LWC", "Salesforce", "Web Components", "Shadow", "Shadow DOM"]
 
 [Lightning Web Components](https://developer.salesforce.com/docs/component-library/documentation/en/lwc) is open source, empowering you to explore the source code, customize the behavior for your needs, and build enterprise-ready web components on any platform, not just Salesforce.
 
-As per the [LWC Testing Docs](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.testing_dom_api), LWC uses a shadow DOM polyfill. To Automate with Selenium WebDriver, the global queries via **WebDriver.findElement()** won't work. It becomes complicated when you need to handle the Elements under Shadow DOM. 
+As per the [LWC Testing Docs](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.testing_dom_api), LWC uses a shadow DOM polyfill. To Automate with Selenium WebDriver, the global queries via *WebDriver.findElement()* won't work. It becomes complicated when you need to handle the Elements under Shadow DOM. 
 
 The great news is, CodeceptJS has simplified the E2E Automation of Shadow Elements, by introducing the [ShadowDom](https://github.com/Codeception/CodeceptJS/blob/master/docs/shadow.md) support. 
 
