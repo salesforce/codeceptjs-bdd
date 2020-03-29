@@ -13,11 +13,18 @@ As per the [LWC Testing Docs](https://developer.salesforce.com/docs/component-li
 
 The great news is, CodeceptJS has simplified the E2E Automation of Shadow Elements, by introducing the [ShadowDom](https://github.com/Codeception/CodeceptJS/blob/master/docs/shadow.md) support. 
 
-## Example of LWC E2E Automation
+### 🚀Codeceptjs-LWC-Example
+##### Complete Example of LWC E2E Automation 
 
 The Codeceptjs-BDD provids the complete example of to Automated the Salesforce LWC with WebDriver. Please take a look at the example below,
 
 ⏩ https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/codeceptjs-lwc-example
+
+#### An example of element locator,
+
+```sh
+    I.click({ shadow: ['my-app', 'recipe-hello', 'button'] });
+```
 
 If you have any questions regarding automating Saleforce LWC or Web Components or Shadow DOM, please reach out to us by submitting an issue [here](https://github.com/gkushang/codeceptjs-bdd/issues).
 
