@@ -16,11 +16,11 @@ The great news is, CodeceptJS has simplified the E2E Automation of Shadow Elemen
 ### 🚀Codeceptjs-LWC-Example
 ##### ➨ Complete Example of LWC E2E Automation 
 
-The Codeceptjs-BDD provids the complete example of to Automated the Salesforce LWC with WebDriver. Please take a look at the example below,
+The Codeceptjs-BDD provides the complete example to **Automate the Salesforce LWC with WebDriver**. Please take a look at the example below,
 
 ⏩ https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/codeceptjs-lwc-example
 
-##### Quick example of how to click the button in Shadow DOM,
+##### Quick example of "how to click the button in Shadow DOM",
 
 ```sh
     I.click({ shadow: ['my-app', 'recipe-hello', 'button'] });
