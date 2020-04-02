@@ -1,20 +1,19 @@
-const merge = require("deepmerge");
-const master_config = require("codeceptjs-shared").config.master;
-const codeceptjs_saucelabs = require("codeceptjs-saucelabs").config.saucelabs;
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+// update to 'webdriver' or 'playwright' for the selective browser
+process.env.DRIVER = process.env.DRIVER || 'webdriver';
+process.env.DEFAULT_WEBDRIVER_BROWSER = 'chrome';
+process.env.DEFAULT_PLAYWRIGHT_BROWSER = 'chromium';
+
+const configure = require('codeceptjs-shared').configure;
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 const DEFAULT_HOST = "recipes.lwc.dev/";
-const RELATIVE_PATH = ".//acceptance/";
+const RELATIVE_PATH = "./acceptance/";
 const PAGES_PATH = RELATIVE_PATH + "pages/";
 
-const HOST = "https://" + (process.env.HOST ? process.env.HOST : DEFAULT_HOST);
-
-// replace sauce_username & sauce_key with your SauceLabs Account
-const SAUCE_USERNAME = process.env.SAUCE_USERNAME
-  ? process.env.SAUCE_USERNAME
-  : "<sauce_username>";
-const SAUCE_KEY = process.env.SAUCE_KEY;
+const HOST = configure.buildHost(DEFAULT_HOST);
 
 let conf = {
   output: RELATIVE_PATH + "report",
@@ -39,7 +38,4 @@ let conf = {
   name: "Salesforce LWC Recipes Acceptance Tests"
 };
 
-exports.config = merge(
-  merge(conf, master_config),
-  codeceptjs_saucelabs(SAUCE_USERNAME, SAUCE_KEY)
-);
+exports.config = configure.create(conf);
