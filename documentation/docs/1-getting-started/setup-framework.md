@@ -14,8 +14,8 @@ This framework provides an Interactive CLI to quickly setup the framework for yo
 Below steps assumes you have already installed all the required dependencies from _Getting Started > Installation_
 
 ```bash
-
-   git clone https://github.com/gkushang/codeceptjs-bdd.git
+ 
+    git clone https://github.com/gkushang/codeceptjs-bdd.git
     cd codeceptjs-bdd/packages/codeceptjs-cucumber
     yarn
     npm run cli

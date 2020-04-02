@@ -22,8 +22,49 @@ The Codeceptjs-BDD provides the complete example to **Automate the Salesforce LW
 
 ##### Quick example of "how to click the button in Shadow DOM",
 
-```sh
+```js
     I.click({ shadow: ['my-app', 'recipe-hello', 'button'] });
+```
+
+## BDD or Mocha styles tests
+
+With Codeceptjs-bdd, you can choose to write your tests in any format. BDD and/or Mocha styles tests OR mix/match both styles - all are supported!
+
+### BDD Scenarios
+
+```js
+ 
+@hello_binding @lwc_recipes
+Feature: HelloBinding from Salesforce LWC Recipes
+
+    As a LWC developer
+    I want to be able to automate the LWC Shadow Dom Components
+    So that I can quicly create my UI Automated Suite using Selenium
+
+    => LWC Recipe Page: https://recipes.lwc.dev/#hello
+
+    @hello_binding_component
+    Scenario: Fred successfully types in and verifies the title in Hello Binding LWC Component
+
+        When Fred types "Kushang Gajjar" into the Hello Binding Component
+        Then he sees the title is updated accordingly
+
+```
+
+### Mocha Scenarios
+
+```js
+ 
+Feature('HelloBinding from Salesforce LWC Recipes (mocha)');
+
+Scenario('Fred successfully types in and verifies the title in Hello Binding LWC Component', async (I, helloBinding) => {
+
+    const name = 'Salesforce LWC';
+    I.amOnPage('/#hello/');
+    helloBinding.enterName(name);
+    (await helloBinding.grabTitle()).should.equal(`Hello, ${name}!`);
+    
+}).tag('@hello-binding-mocha').tag('smoke');
 ```
 
 If you have any questions regarding automating Saleforce LWC or Web Components or Shadow DOM, please reach out to us by submitting an issue [here](https://github.com/gkushang/codeceptjs-bdd/issues).
