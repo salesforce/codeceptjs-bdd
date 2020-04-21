@@ -13,6 +13,7 @@ import runParallelYt from "../images/run-parallel-yt.png"
 import runMultiYt from "../images/run-multi-yt.png"
 import runSauceYt from "../images/run-sauce-yt.png"
 import YouTubeIcon from "@material-ui/icons/YouTube"
+import Hidden from "@material-ui/core/Hidden"
 
 import multibrowsers from "../images/multi-browsers.png"
 import saucelabs from "../images/saucelabs1.png"
@@ -29,12 +30,21 @@ import Grid from "@material-ui/core/Grid"
 import Button from "@material-ui/core/Button"
 import DomainIcon from "@material-ui/icons/Domain"
 import VisibilityIcon from "@material-ui/icons/Visibility"
+import Paper from "@material-ui/core/Paper"
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
-
+  paper: {
+    display: "flex",
+    flexWrap: "wrap",
+    "& > *": {
+      margin: theme.spacing(1),
+      width: theme.spacing(16),
+      height: theme.spacing(16),
+    },
+  },
   card: {
     height: "100%",
     width: "100%",
@@ -159,43 +169,48 @@ const renderAppCards = () => {
   ))
 }
 
-const renderCardDataWithActions = (classes) => {
+const renderCardDataWithActions = classes => {
   const cardDataWithActions = [
     {
       cardHeader: {
-        avatar:  <Avatar aria-label="architecture" className={classes.avatar}> <DomainIcon /> </Avatar>,
+        avatar: (
+          <Avatar aria-label="architecture" className={classes.avatar}>
+            {" "}
+            <DomainIcon />{" "}
+          </Avatar>
+        ),
         title: "Framework Architecture",
-        subheader: "Codeceptjs BDD"
+        subheader: "Codeceptjs BDD",
       },
       cardMedia: {
         className: classes.media,
         image: codeceptjsBddFrameworkImage,
-        title: "Architecture"
-      }
+        title: "Architecture",
+      },
     },
     {
       cardHeader: {
-        avatar:  <Avatar aria-label="how to usage" className={classes.avatar}><VisibilityIcon /> </Avatar>,
+        avatar: (
+          <Avatar aria-label="how to usage" className={classes.avatar}>
+            <VisibilityIcon />{" "}
+          </Avatar>
+        ),
         title: "Flow",
-        subheader: "Framework"
+        subheader: "Framework",
       },
       cardMedia: {
         className: classes.media,
         image: howImage,
-        title: "How To"
-      }
-    }
+        title: "How To",
+      },
+    },
   ]
 
   return cardDataWithActions.map(cardData => (
     <Grid item xs={12} className={classes.arch}>
       <Card className={classes.card}>
-        <CardHeader
-        {...cardData.cardHeader}
-        />
-        <CardMedia
-        {...cardData.cardMedia}
-        />
+        <CardHeader {...cardData.cardHeader} />
+        <CardMedia {...cardData.cardMedia} />
         <CardContent>
           <Typography
             variant="body2"
@@ -224,7 +239,7 @@ const renderCardDataWithActions = (classes) => {
           </Button>
         </CardActions>
       </Card>
-  </Grid>
+    </Grid>
   ))
 }
 
@@ -251,16 +266,86 @@ const IndexPage = () => {
           className={classes.title}
           gutterBottom
         >
-          Codeceptjs-BDD makes acceptance and regression testing of modern web
-          apps faster, more collaborative and easier to scale.
+          <div
+            style={{
+              color: "#2F4B4B",
+              fontSize: "1em",
+
+              marginTop: "1px",
+              fontStyle: "regular",
+            }}
+          >
+            Quickly create your Codeceptjs-BDD Acceptance tests through open
+            source
+            <span
+              style={{
+                color: "#253C3C",
+                fontFamily: "monospace, monospace, monospace",
+                fontStyle: "bold",
+              }}
+            >
+              {" "}
+              create-codecepjts-bdd-tests{" "}
+            </span>
+            tool.
+          </div>
         </Typography>
 
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={12}>
+            <Paper
+              elevation={8}
+              style={{
+                backgroundColor: "#2F4B4B",
+                height: "5em",
+                fontColor: "yelllow",
+              }}
+            >
+              <Hidden smUp>
+                <div
+                  style={{
+                    color: "#e1e31a",
+                    fontSize: "15px",
+                    marginTop: "5px",
+                    fontFamily: "monospace, monospace, monospace",
+                    paddingTop: "1.6em",
+                    paddingLeft: "10px",
+                  }}
+                >
+                  <span style={{ color: "#e1e31a" }}>$ </span>
+                  <span style={{ color: "white" }}>npx </span>
+                  <span style={{ color: "#ffe59a" }}>
+                    create-codeceptjs-bdd-tests{" "}
+                  </span>
+                </div>
+              </Hidden>
+
+              <Hidden xsDown>
+                <div
+                  style={{
+                    color: "#e1e31a",
+                    fontSize: "1.7em",
+                    marginTop: "5px",
+                    fontFamily: "monospace, monospace, monospace",
+                    paddingTop: "0.8em",
+                    paddingLeft: "1em",
+                  }}
+                >
+                  <span style={{ color: "#e1e31a" }}>$ </span>
+                  <span style={{ color: "white" }}>npx </span>
+                  <span style={{ color: "#ffe59a" }}>
+                    create-codeceptjs-bdd-tests{" "}
+                  </span>
+                </div>
+              </Hidden>
+            </Paper>
+          </Grid>
+        </Grid>
         <Grid container spacing={5} className={classes.arch}>
           {renderAppCards()}
         </Grid>
 
         {renderCardDataWithActions(classes)}
-
       </div>
     </AppLayout>
   )
