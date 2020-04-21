@@ -13,7 +13,7 @@ To create your Codecpejs BDD Tests and install dependencies, use the open source
 
 Below steps assumes you have already installed all the required dependencies from _Getting Started > Installation_
 
-```shell
+```bash
    $ npx create-codecpetjs-bdd-tests
 ```
 
