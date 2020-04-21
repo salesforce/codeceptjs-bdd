@@ -308,7 +308,7 @@ const IndexPage = () => {
                     fontSize: "14px",
                     marginTop: "5px",
                     fontFamily: "monospace, monospace, monospace",
-                    paddingTop: "1.6em",
+                    paddingTop: "1.7em",
                     paddingLeft: "10px",
                     overflowX: "scroll",
                     whiteSpace: "nowrap",
