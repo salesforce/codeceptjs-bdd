@@ -305,11 +305,13 @@ const IndexPage = () => {
                 <div
                   style={{
                     color: "#e1e31a",
-                    fontSize: "15px",
+                    fontSize: "14px",
                     marginTop: "5px",
                     fontFamily: "monospace, monospace, monospace",
                     paddingTop: "1.6em",
                     paddingLeft: "10px",
+                    overflowX: "scroll",
+                    whiteSpace: "nowrap",
                   }}
                 >
                   <span style={{ color: "#e1e31a" }}>$ </span>
