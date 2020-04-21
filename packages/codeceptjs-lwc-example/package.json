@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-lwc-example",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "description": "Salesforce's LWC Recipes Acceptance Tests",
   "main": "index.js",
   "scripts": {
