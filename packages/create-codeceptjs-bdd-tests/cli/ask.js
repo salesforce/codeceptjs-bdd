@@ -11,8 +11,9 @@ exports.aboutProjectPaths = () => {
         {
             name: 'ROOT_PATH',
             type: 'input',
+            default: process.cwd(),
             message:
-                'Enter the Full PATH to your destination Root project (full path to /package.json): ',
+                "Enter the Full PATH to your Project's source-code location (full path to /package.json): ",
         },
         {
             name: 'RELATIVE_PATH',
