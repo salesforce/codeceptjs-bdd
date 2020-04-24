@@ -1,21 +1,23 @@
-let defaultBrowsers = require('./browsers.conf').browsers;
-let debug = require('debug')('codeceptjs-saucelabs:config');
-let merge = require('deepmerge');
+const defaultBrowsers = require('./browsers.conf').browsers;
+const debug = require('debug')('codeceptjs-saucelabs:config');
+const merge = require('deepmerge');
 const chalk = require('chalk');
+const emoji = require('node-emoji');
 
 const SAUCE_DELIMITER = ':';
 const MULTI_BROWSER_DELIMITER = ',';
 
 function config(sauceUsername, sauceKey, userSpecificBrowsers) {
-
-    sauceBrowsers = userSpecificBrowsers ? merge(userSpecificBrowsers, defaultBrowsers) : defaultBrowsers;
+    sauceBrowsers = userSpecificBrowsers
+        ? merge(userSpecificBrowsers, defaultBrowsers)
+        : defaultBrowsers;
 
     function isSauceRequested() {
-        return (process.profile && process.profile.match('sauce:[a-zA-Z]'));
+        return process.profile && process.profile.match('sauce:[a-zA-Z]');
     }
 
     function exportSauceBuildId() {
-        if ( process.env.SAUCE_BUILD ) {
+        if (process.env.SAUCE_BUILD) {
             process.env.SAUCE_BUILD += ' - ' + Date.now();
         } else {
             process.env.SAUCE_BUILD = Date.now();
@@ -25,9 +27,14 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
     function getBrowsers() {
         if (isSauceRequested()) {
             let multibrowsers = [];
-            let requestedBrowsers = process.profile.split(SAUCE_DELIMITER)[1].split(MULTI_BROWSER_DELIMITER);
-            debug('Tests are running on Sauce Labs on Multi-Browsers:', requestedBrowsers);
-            requestedBrowsers.forEach(browser => {
+            let requestedBrowsers = process.profile
+                .split(SAUCE_DELIMITER)[1]
+                .split(MULTI_BROWSER_DELIMITER);
+            debug(
+                'Tests are running on Sauce Labs on Multi-Browsers:',
+                requestedBrowsers
+            );
+            requestedBrowsers.forEach((browser) => {
                 multibrowsers.push(sauceBrowsers[browser]);
             });
             debug('Sauce Labs Config for Multi-Browsers:', multibrowsers);
@@ -41,9 +48,9 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
         helpers: {
             WebDriver: getBrowsers()[0],
             SauceHelper: {
-                require: 'codeceptjs-saucehelper'
+                require: 'codeceptjs-saucehelper',
             },
-            REST: {}
+            REST: {},
         },
         plugins: {
             wdio: {
@@ -51,24 +58,26 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
                 services: ['sauce'],
                 user: process.env.SAUCE_USERNAME,
                 key: process.env.SAUCE_KEY,
-                region: 'us'
-            }
+                region: 'us',
+            },
         },
         multiple: {
             multibrowsers: {
                 chunks: getBrowsers().length,
-                browsers: getBrowsers()
+                browsers: getBrowsers(),
             },
             parallel: {
-                browsers: getBrowsers()
+                browsers: getBrowsers(),
             },
-        }
+        },
     };
 
     if (isSauceRequested()) {
         if (sauceUsername) {
             if (!sauceKey || !process.env.SAUCE_KEY) {
-                throw new Error('Sauce Key isn\'t defined. Please export as an environment variable "SAUCE_KEY".');
+                throw new Error(
+                    'Sauce Key isn\'t defined. Please export as an environment variable "SAUCE_KEY".'
+                );
             }
         }
         if (sauceUsername && sauceKey) {
@@ -79,9 +88,25 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
             conf.plugins.wdio.user = sauceUsername;
             conf.plugins.wdio.key = sauceKey;
 
-            console.info(chalk.yellow.bold('Tests are running on Sauce Labs account: ') + chalk.blue.bold(sauceUsername));
-            console.info(chalk.yellow.bold('Sauce Labs Dashboard for the current build is : ') + chalk.blue.bold(process.env.SAUCE_BUILD));
-            console.info(chalk.yellow.bold('Tests are running on Sauce Labs browsers: ') + chalk.blue.bold(JSON.stringify(getBrowsers(), null, 2)));
+            console.info(
+                `${emoji.get('sun_behind_cloud')}  ` +
+                    chalk.yellow.bold(
+                        'Tests are running on Sauce Labs account: '
+                    ) +
+                    chalk.blue.bold(sauceUsername)
+            );
+            console.info(
+                chalk.yellow.bold(
+                    'Sauce Labs Dashboard for the current build is : '
+                ) + chalk.blue.bold(process.env.SAUCE_BUILD)
+            );
+            console.info(
+                chalk.yellow.bold(
+                    'Tests are running on Sauce Labs browsers: '
+                ) +
+                    chalk.blue.bold(JSON.stringify(getBrowsers(), null, 2)) +
+                    '\n'
+            );
 
             // For supporting the codeceptjs-saucehelper module
             conf.helpers.WebDriver.user = sauceUsername;
@@ -89,7 +114,7 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
         }
         return conf;
     }
-    
+
     return {};
 }
 

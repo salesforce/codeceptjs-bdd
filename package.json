@@ -1,22 +1,22 @@
 {
-  "name": "codeceptjs-bdd",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "devDependencies": {
-    "lerna": "^3.14.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gkushang/cucumber-html-reporter/issues",
-    "email": "g.kushang@gmail.com"
-  },
-  "version": "1.0.0",
-  "description": "CodeceptJS Cucumber BDD Framework",
-  "author": "Kushang Gajjar <g.kushang@gmail.com>",
-  "license": "MIT"
+    "name": "codeceptjs-bdd",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "lerna": "^3.14.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gkushang/cucumber-html-reporter/issues",
+        "email": "g.kushang@gmail.com"
+    },
+    "version": "1.0.0",
+    "description": "CodeceptJS Cucumber BDD Framework",
+    "author": "Kushang Gajjar <g.kushang@gmail.com>",
+    "license": "MIT"
 }

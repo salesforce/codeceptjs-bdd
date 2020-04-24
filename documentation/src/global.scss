@@ -1,9 +1,18 @@
 $code-background-color: #1c2d2d;
 $code-font-color: #efefef;
 
+body {
+  font-size: 100px;
+}
+
 .MuiTypography-body1 {
   color: #414141 !important;
-  letter-spacing: 0.5px;
+  font-family: helveticaneue-light, helvetica neue light, helvetica neue,
+    Helvetica, Arial, lucida grande, sans-serif !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1.6 !important;
+  font-weight: 300;
+  font-size: 1.2rem !important;
   img {
     width: 100% !important;
   }
@@ -18,7 +27,7 @@ $code-font-color: #efefef;
   overflow: auto;
 }
 
-.gatsby-highlight pre[class*="language-"] {
+.gatsby-highlight pre[class*='language-'] {
   background-color: transparent;
   margin: 0;
   padding: 0;

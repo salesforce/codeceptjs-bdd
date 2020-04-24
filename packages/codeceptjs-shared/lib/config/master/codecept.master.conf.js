@@ -1,77 +1,77 @@
-const webdriverConf = require('../drivers/webdriver.conf');
-const playwrightConf = require('../drivers/playwright.conf');
-const chalk = require('chalk');
-const figlet = require('figlet');
-const emoji = require('node-emoji');
+const driversConf = require('../drivers/drivers.conf');
+const host = require('../../host/host');
 
-const web_driver_commands = require.resolve(
-  '../../helpers/webdriver-commands.helper.js'
+const driver_commands = require.resolve(
+    '../../helpers/driver-commands.helper.js'
 );
+
 const custom_methods = require.resolve('../../helpers/custom-methods.js');
 const { steps } = require('../bdd/steps');
+const { pageObjects } = require('../bdd/pageObjects');
 
-const DRIVER = process.env.DRIVER || 'webdriver';
-
-const logInfo = (master_conf, driver) => {
-  console.info(
-    '\n' +
-      chalk.bgBlue.bold(emoji.emojify(':rocket: ') + `Launching browser '${master_conf.helpers[driver].browser}' on ${driver} ...\n`)
-  );
-  // console.info(chalk.gray.bold('Tests are running on : ') + chalk.blue.bold(master_conf.helpers[driver].browser  + '\n'));
+let masterConf = {
+    output: process.env.CODECEPT_RELATIVE_PATH + 'report',
+    cleanup: true,
+    helpers: {
+        Driver_commands: {
+            require: driver_commands,
+        },
+        REST: {
+            endpoint: host.get(),
+            timeout: 300000,
+        },
+    },
+    plugins: {
+        screenshotOnFail: {
+            enabled: true,
+        },
+        allure: {
+            enabled: true,
+        },
+        autoDelay: {
+            enabled: true,
+            delayBefore: 400,
+        },
+        retryFailedStep: {
+            enabled: true,
+            retries: 5,
+        },
+    },
+    multiple: {
+        parallel: {
+            chunks: (files) => {
+                let chunks = [];
+                files.forEach((file) => {
+                    chunks.push([file]);
+                });
+                return chunks;
+            },
+        },
+        smoke: {
+            grep: '@smoke',
+            browsers: [process.env.WEBDRIVER_BROWSER],
+        },
+    },
+    gherkin: {
+        steps: steps(),
+        features: process.env.CODECEPT_RELATIVE_PATH + 'features/**/*.feature',
+    },
+    include: {
+        ...pageObjects(),
+        I: custom_methods,
+    },
 };
 
-let master_conf = {
-  helpers: {
-    WebDriver_commands: {
-      require: web_driver_commands
-    }
-  },
-  plugins: {
-    screenshotOnFail: {
-      enabled: true
-    },
-    allure: {
-      enabled: true
-    },
-    autoDelay: {
-      enabled: true,
-      delayBefore: 400
-    },
-    retryFailedStep: {
-      enabled: true,
-      retries: 5
-    }
-  },
-  multiple: {
-    parallel: {
-      chunks: files => {
-        let chunks = [];
-        files.forEach(file => {
-          chunks.push([file]);
-        });
-        return chunks;
-      }
-    },
-    smoke: {
-      grep: '@smoke',
-      browsers: [process.env.WEBDRIVER_BROWSER]
-    }
-  },
-  gherkin: {
-    steps: steps()
-  },
-  include: {
-    I: custom_methods
-  }
-};
+const driverConf =
+    driversConf[
+        Object.keys(driversConf).find(
+            (driver) =>
+                driver.toLowerCase() === process.env.DRIVER.toLowerCase()
+        )
+    ];
 
-if (DRIVER.toLowerCase() === 'webdriver') {
-  master_conf = webdriverConf.get(master_conf);
-  logInfo(master_conf, 'WebDriver');
-}
-if (DRIVER.toLowerCase() === 'playwright') {
-  master_conf = playwrightConf.get(master_conf);
-  logInfo(master_conf, 'Playwright');
+if (driverConf) {
+    masterConf = driverConf.get(masterConf);
 }
 
-module.exports = { master_conf };
+module.exports = { master_conf: masterConf };
