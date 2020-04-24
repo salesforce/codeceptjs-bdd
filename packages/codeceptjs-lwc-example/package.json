@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-lwc-example",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Salesforce's LWC Recipes Acceptance Tests",
   "main": "index.js",
   "scripts": {
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@wdio/selenium-standalone-service": "^5.16.10",
     "allure-commandline": "^2.13.0",
-    "codeceptjs-saucelabs": "^5.0.0",
+    "codeceptjs-saucelabs": "^5.0.1",
     "debug": "^4.1.1",
     "deepmerge": "^4.2.2",
     "faker": "^4.1.0",
@@ -50,6 +50,6 @@
   },
   "dependencies": {
     "codeceptjs": "^2.6.0",
-    "codeceptjs-shared": "^5.0.1"
+    "codeceptjs-shared": "^5.0.2"
   }
 }
