@@ -86,5 +86,5 @@ module.exports = {
 
 ### More about Page Objects
 
-- [About Locators](/4-page-objects/2-locators)
-- [About Naming Conventions](4-page-objects/3-naming-conventions)
+- [About Locators](/05-page-objects/2-locators/)
+- [About Naming Conventions](/05-page-objects/3-naming-conventions/)
