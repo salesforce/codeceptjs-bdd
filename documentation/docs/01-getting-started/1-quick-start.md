@@ -1,8 +1,8 @@
 ---
-title: CLI
-sub_title: create-codecpetjs-bdd-tests
-parents: ["Getting Started"]
-keywords: ["setup", "framework", "quick start", "videos"]
+title: Quick Start
+sub_title: CLI to create-codecpetjs-bdd-tests
+parents: ['Getting Started']
+keywords: ['setup', 'framework', 'quick start', 'videos']
 ---
 
 ## 🖥 Interactive CLI

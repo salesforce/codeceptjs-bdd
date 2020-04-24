@@ -1,32 +1,32 @@
-import PropTypes from "prop-types"
-import React from "react"
-import CssBaseline from "@material-ui/core/CssBaseline"
-import { makeStyles, useTheme } from "@material-ui/core/styles"
-import AppBar from "@material-ui/core/AppBar"
-import Toolbar from "@material-ui/core/Toolbar"
-import Typography from "@material-ui/core/Typography"
-import IconButton from "@material-ui/core/IconButton"
-import GitHubIcon from "@material-ui/icons/GitHub"
-import HomeIcon from "@material-ui/icons/Home"
-import MenuIcon from "@material-ui/icons/Menu"
-import Tooltip from "@material-ui/core/Tooltip"
-import { Link as GatsbyLink } from "gatsby"
-import Link from "@material-ui/core/Link"
-import logo from "../images/codeceptjs-logo.png"
-import cucumberLogo from "../images/cucumber-logo.png"
-import Sidebar from "./Sidebar"
-import Drawer from "@material-ui/core/Drawer"
-import Hidden from "@material-ui/core/Hidden"
-import Avatar from "@material-ui/core/Avatar"
-import Search from "./Search"
+import PropTypes from 'prop-types';
+import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import HomeIcon from '@material-ui/icons/Home';
+import MenuIcon from '@material-ui/icons/Menu';
+import Tooltip from '@material-ui/core/Tooltip';
+import { Link as GatsbyLink } from 'gatsby';
+import Link from '@material-ui/core/Link';
+import logo from '../images/codeceptjs-logo.png';
+import cucumberLogo from '../images/cucumber-logo.png';
+import Sidebar from './Sidebar';
+import Drawer from '@material-ui/core/Drawer';
+import Hidden from '@material-ui/core/Hidden';
+import Avatar from '@material-ui/core/Avatar';
+import Search from './Search';
 
-const drawerWidth = 240
+const drawerWidth = 240;
 const useStyles = makeStyles(theme => ({
   root: {
-    display: "flex",
+    display: 'flex',
   },
   drawer: {
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
       flexShrink: 0,
     },
@@ -36,8 +36,8 @@ const useStyles = makeStyles(theme => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    [theme.breakpoints.up("md")]: {
-      display: "none",
+    [theme.breakpoints.up('md')]: {
+      display: 'none',
     },
   },
   toolbar: theme.mixins.toolbar,
@@ -51,41 +51,41 @@ const useStyles = makeStyles(theme => ({
 
   title: {
     flexGrow: 1,
-    color: "white",
-    "&:hover": {
-      textDecoration: "none",
-      color: "lightgray",
+    color: 'white',
+    '&:hover': {
+      textDecoration: 'none',
+      color: 'lightgray',
     },
   },
 
   logoSection: {
-    height: "65px",
-    width: "65px",
+    height: '65px',
+    width: '65px',
   },
   image: {
-    width: "3%",
-    height: "3%",
-    "margin-right": "10px",
+    width: '3%',
+    height: '3%',
+    'margin-right': '10px',
     opacity: 0.9,
   },
   cucumberImage: {
-    width: "3.4%",
-    height: "3.4%",
-    "margin-right": "10px",
-    "margin-left": "-30px",
+    width: '3.4%',
+    height: '3.4%',
+    'margin-right': '10px',
+    'margin-left': '-30px',
     zIndex: -1,
   },
-}))
+}));
 
 function Header({ siteTitle, siteDescription }, props) {
-  const { container, location } = props
-  const classes = useStyles()
-  const theme = useTheme()
-  const [mobileOpen, setMobileOpen] = React.useState(false)
+  const { container, location } = props;
+  const classes = useStyles();
+  const theme = useTheme();
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen)
-  }
+    setMobileOpen(!mobileOpen);
+  };
 
   return (
     <div className={classes.root}>
@@ -134,7 +134,7 @@ function Header({ siteTitle, siteDescription }, props) {
           <Tooltip title="Go to Home">
             <GatsbyLink to="/">
               <IconButton aria-label="Go to home page" color="inherit">
-                <HomeIcon style={{ fill: "white" }} />
+                <HomeIcon style={{ fill: 'white' }} />
               </IconButton>
             </GatsbyLink>
           </Tooltip>
@@ -146,12 +146,12 @@ function Header({ siteTitle, siteDescription }, props) {
               edge="end"
               onClick={() => {
                 window.open(
-                  "https://github.com/gkushang/codeceptjs-bdd",
-                  "_blank"
-                )
+                  'https://github.com/gkushang/codeceptjs-bdd',
+                  '_blank'
+                );
               }}
             >
-              <GitHubIcon style={{ fill: "white" }} />
+              <GitHubIcon style={{ fill: 'white' }} />
             </IconButton>
           </Tooltip>
         </Toolbar>
@@ -163,7 +163,7 @@ function Header({ siteTitle, siteDescription }, props) {
           <Drawer
             container={container}
             variant="temporary"
-            anchor={theme.direction === "rtl" ? "right" : "left"}
+            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
             open={mobileOpen}
             onClose={handleDrawerToggle}
             classes={{
@@ -189,18 +189,18 @@ function Header({ siteTitle, siteDescription }, props) {
         </Hidden>
       </nav>
     </div>
-  )
+  );
 }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
   container: PropTypes.instanceOf(
-    typeof Element === "undefined" ? Object : Element
+    typeof Element === 'undefined' ? Object : Element
   ),
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

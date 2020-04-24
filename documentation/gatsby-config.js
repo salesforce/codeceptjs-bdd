@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `CodeceptJs BDD Framework Documentation Hub`,
     description: `This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel`,
-    author: 'Kushang Gajjar'
+    author: 'Kushang Gajjar',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,21 +21,21 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'docs',
-        path: `${__dirname}/docs`
-      }
+        path: `${__dirname}/docs`,
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        classPrefix: "language-",
+        classPrefix: 'language-',
         inlineCodeMarker: null,
         aliases: {},
         showLineNumbers: false,
         noInlineHighlight: false,
         languageExtensions: [
           {
-            language: "superscript",
-            extend: "javascript",
+            language: 'superscript',
+            extend: 'javascript',
             definition: {
               superscript_types: /(SuperType)/,
             },
@@ -47,8 +47,8 @@ module.exports = {
           },
         ],
         prompt: {
-          user: "root",
-          host: "localhost",
+          user: 'root',
+          host: 'localhost',
           global: false,
         },
         escapeEntities: {},
@@ -75,11 +75,11 @@ module.exports = {
               ],
             },
           },
-        ]
-      }
+        ],
+      },
     },
     {
-      resolve: 'gatsby-transformer-json'
+      resolve: 'gatsby-transformer-json',
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -90,7 +90,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/images/cucumber-logo.png`
+        icon: `src/images/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -104,10 +104,10 @@ module.exports = {
             title: node => node.frontmatter.title,
             sub_title: node => node.frontmatter.sub_title,
             html: node => node.internal.content,
-            slug: node => node.fields.slug
-          }
-        }
-      }
-    }
+            slug: node => node.fields.slug,
+          },
+        },
+      },
+    },
   ],
 };
