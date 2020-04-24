@@ -11,9 +11,9 @@ This post walks you through creating and using environment variables, aka Test P
 
 ### Types of ENV files
 
-1. **dev.codecept.defaults**
+1. `dev.codecept.defaults`
    - Common configuration defaults across all environments
-2. **dev.codecept.secrets**
+2. `dev.codecept.secrets`
    - The Environment specific configurations or properties
 
 The format is a series of key-value pairs. Any line starting with # or ; are commented out and ignored.
