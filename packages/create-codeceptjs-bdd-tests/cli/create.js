@@ -160,7 +160,7 @@ const run = async () => {
 
     executeScenario();
 
-    log.success(path.join(ROOT_PATH, RELATIVE_PATH));
+    log.success(path.join(ROOT_PATH, RELATIVE_PATH, 'acceptance'));
 };
 
 run();
