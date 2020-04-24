@@ -76,7 +76,7 @@ const renderAppCards = () => {
       title: 'Write Feature Files',
       description:
         'CodeceptJs BDD integrates Cucumber to write Gherkin Feature Files. Cucumber is a popular collaboration tool used by many teams practiving BDD to capture requirements and create executable specifications.',
-      link: '/3-bdd-cucumber/1-feature/',
+      link: '/03-bdd-cucumber/1-feature/',
       image: cucumber,
     },
     {
@@ -84,7 +84,7 @@ const renderAppCards = () => {
       title: 'Execute On Cloud',
       description:
         'CodeceptJs BDD integrates Sauce Labs to execute tests on 900+ Desktop/Mobile browses, OS & Devices combinations. Tests can be executed locally or on Sauce Labs Browsers for broader coverage.',
-      link: '/execution/3-run-on-saucelabs/',
+      link: '/06-execution/3-run-on-saucelabs/',
       image: saucelabs,
     },
     {
@@ -116,7 +116,7 @@ const renderAppCards = () => {
       title: 'Multibrowsers | Parallel',
       description:
         'Codeceptjs BDD provides an ability to run BDD Feaure files all in Parallel on Single browser or can run same set of tests in Parallel but on different browsers/OS combo (multile browers) on Sauce Labs. It offers greate Test Execution Coverage for your App.',
-      link: '/5-execution/5-run-on-multi-browsers/',
+      link: '/06-execution/5-run-on-multi-browsers/',
       image: multibrowsers,
     },
     {
@@ -224,18 +224,18 @@ const renderCardDataWithActions = classes => {
             variant="contained"
             size="large"
             color="primary"
-            href="1-getting-started/installation/"
+            href="01-getting-started/1-quick-start/"
           >
-            Getting Started
+            Quick Start
           </Button>
 
           <Button
             variant="contained"
             size="large"
             color="secondary"
-            href="1-getting-started/setup-framework/"
+            href="2-your-first-scenario/"
           >
-            Quick Setup
+            Automate First Scenario
           </Button>
         </CardActions>
       </Card>
