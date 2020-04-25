@@ -11,12 +11,14 @@ To create your Codecpejs BDD Tests and install dependencies, use the open source
 
 ## 🚀 Quick Setup your framework
 
-Below steps assumes you have already installed all the required dependencies from _Getting Started > Installation_
+⚠ prequesite [Installation Guide](/01-getting-started/2-installation/).
 
-*prequesite [Installation Guide](/01-getting-started/2-installation/).
+**Optional**: If you are looking to Colocate your Acceptance Tests with your Source Code repository then **cd \<to-your-source-code-repository-folder\>** before running below step. This step is optional, the CLI will ask to provide the path you want to create the Codeceptjs-BDD tests.
 
 ```bash
-   $ npx create-codecpetjs-bdd-tests
+
+$ npx create-codecpetjs-bdd-tests
+
 ```
 
 ## ➤ About CLI
