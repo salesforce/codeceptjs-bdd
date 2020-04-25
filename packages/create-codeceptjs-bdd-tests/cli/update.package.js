@@ -23,7 +23,7 @@ exports.installDepedencies = () => {
 
     if (
         shell.exec(
-            'yarn add prettier dotenv-extended codeceptjs-saucelabs@latest codeceptjs-shared@latest allure-commandline codeceptjs debug faker playwright protractor rimraf should deepmerge soft-assert -D --registry https://registry.npmjs.org/'
+            'yarn add prettier dotenv-extended codeceptjs-saucelabs@latest codeceptjs-shared@latest allure-commandline codeceptjs@2.6.1 debug faker playwright protractor rimraf should deepmerge soft-assert -D --registry https://registry.npmjs.org/'
         ).code !== 0
     ) {
         failure('Yarn command failed.');
