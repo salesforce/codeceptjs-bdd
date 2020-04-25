@@ -27,7 +27,7 @@ const error = (ROOT_PATH) => {
             chalk.blue.bold(
                 `Don't worry! We are copying the existing to continue the setup. Please update the file once the setup is done!`
             ) +
-            emoji.emojify(':zap:  ')
+            emoji.emojify(':zap:  ') + '\n\n'
     );
 };
 
