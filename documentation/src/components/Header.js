@@ -7,6 +7,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import NewReleases from '@material-ui/icons/NewReleases';
 import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -130,13 +131,26 @@ function Header({ siteTitle, siteDescription }, props) {
           <Hidden xsDown>
             <Search />
           </Hidden>
+          <Hidden xsDown>
+            <Tooltip title="Go to Home">
+              <GatsbyLink to="/">
+                <IconButton aria-label="Go to home page" color="inherit">
+                  <HomeIcon style={{ fill: 'white' }} />
+                </IconButton>
+              </GatsbyLink>
+            </Tooltip>
+          </Hidden>
 
-          <Tooltip title="Go to Home">
-            <GatsbyLink to="/">
-              <IconButton aria-label="Go to home page" color="inherit">
-                <HomeIcon style={{ fill: 'white' }} />
-              </IconButton>
-            </GatsbyLink>
+          <Tooltip title="New Releases">
+            <IconButton
+              aria-label="New Releases"
+              color="inherit"
+              onClick={() => {
+                window.open('/CHANGELOG', '_self');
+              }}
+            >
+              <NewReleases style={{ fill: 'white' }} />
+            </IconButton>
           </Tooltip>
 
           <Tooltip title="Github Repository">

@@ -1,12 +1,12 @@
 ---
 title: CHANGELOG
-sub_title: Codeceptjs-BDD Releases for codeceptjs-shared & codeceptjs-saucelabs
+sub_title: Codeceptjs-BDD Releases for @codeceptjs-shared & @codeceptjs-saucelabs
 keywords: ['changelog', 'releases', 'release']
 ---
 
 ## 5.0.x
 
-- Add a Developer's Configuration to the framework, and Simplify the configruation.
+- Simplify the Configuration. Introducing Developer's Configuration
   - Add `.defaults` config: Contains all default Test Properties across all environments
   - Add `.secrets` config: Contains all sensitive information such as Secrets, Password, Username and will not be commited to the source control. [More info](http://localhost:8981/04-configurations/1-env-variables/)
 - Automatically injects Page Objects to the tests. [More info](http://localhost:8981/05-page-objects/3-naming-conventions/)
@@ -16,6 +16,7 @@ keywords: ['changelog', 'releases', 'release']
 
 - New Look to Codeceptjs-BDD CLI
 - Created the Binary to create the BDD Tests. Now, you do not need to Clone the repo but simply run the below command to setup the Tests. [More info](https://gkushang.github.io/01-getting-started/1-quick-start/)
+- Update docs and add link to [New Releases](/CHANGELOG/)
 
 ```bash
 $ npx create-codeceptjs-bdd-tests
