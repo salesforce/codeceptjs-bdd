@@ -1,58 +1,61 @@
 {
-  "name": "codeceptjs-lwc-example",
-  "version": "4.0.2",
-  "description": "Salesforce's LWC Recipes Acceptance Tests",
-  "main": "index.js",
-  "scripts": {
-    "acceptance": "codeceptjs run --verbose",
-    "acceptance:report": "allure serve ./acceptance/report",
-    "test": "yarn acceptance"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
-  },
-  "keywords": [
-    "lwc",
-    "web",
-    "components",
-    "salesforce",
-    "end",
-    "to",
-    "end",
-    "tests",
-    "e2e",
-    "codeceptjs",
-    "cucumber",
-    "bdd",
-    "lighting",
-    "web",
-    "components"
-  ],
-  "author": "Kushang Gajjar <g.kushang@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gkushang/codeceptjs-bdd/issues"
-  },
-  "homepage": "https://github.com/gkushang/codeceptjs-bdd#readme",
-  "devDependencies": {
-    "@wdio/selenium-standalone-service": "^5.16.10",
-    "allure-commandline": "^2.13.0",
-    "codeceptjs": "2.6.1",
-    "codeceptjs-saucelabs": "^5.0.1",
-    "codeceptjs-shared": "^5.0.2",
-    "debug": "^4.1.1",
-    "deepmerge": "^4.2.2",
-    "faker": "^4.1.0",
-    "protractor": "^5.4.3",
-    "rimraf": "^3.0.2",
-    "should": "^13.2.3",
-    "soft-assert": "^0.2.0",
-    "webdriverio": "^5.22.3"
-  },
-  "dependencies": {
-    "codeceptjs": "^2.6.0",
-    "codeceptjs-shared": "^5.0.2",
-    "dotenv-extended": "^2.8.0"
-  }
+    "name": "codeceptjs-lwc-example",
+    "version": "4.0.2",
+    "description": "Salesforce's LWC Recipes Acceptance Tests",
+    "main": "index.js",
+    "scripts": {
+        "acceptance": "codeceptjs run --verbose",
+        "acceptance:report": "allure serve ./acceptance/report",
+        "test": "yarn acceptance"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
+    },
+    "keywords": [
+        "lwc",
+        "web",
+        "components",
+        "salesforce",
+        "end",
+        "to",
+        "end",
+        "tests",
+        "e2e",
+        "codeceptjs",
+        "cucumber",
+        "bdd",
+        "lighting",
+        "web",
+        "components"
+    ],
+    "author": "Kushang Gajjar <g.kushang@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gkushang/codeceptjs-bdd/issues"
+    },
+    "homepage": "https://github.com/gkushang/codeceptjs-bdd#readme",
+    "devDependencies": {
+        "@wdio/selenium-standalone-service": "^5.16.10",
+        "allure-commandline": "^2.13.0",
+        "codeceptjs": "2.6.1",
+        "codeceptjs-saucelabs": "^5.0.1",
+        "codeceptjs-shared": "^5.0.2",
+        "debug": "^4.1.1",
+        "deepmerge": "^4.2.2",
+        "faker": "^4.1.0",
+        "protractor": "^5.4.3",
+        "rimraf": "^3.0.2",
+        "should": "^13.2.3",
+        "soft-assert": "^0.2.0",
+        "webdriverio": "^5.22.3"
+    },
+    "resolutions": {
+        "minimist": "^1.2.5"
+    },
+    "dependencies": {
+        "codeceptjs": "^2.6.0",
+        "codeceptjs-shared": "^5.0.2",
+        "dotenv-extended": "^2.8.0"
+    }
 }
