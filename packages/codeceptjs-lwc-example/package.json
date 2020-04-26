@@ -38,7 +38,9 @@
   "devDependencies": {
     "@wdio/selenium-standalone-service": "^5.16.10",
     "allure-commandline": "^2.13.0",
+    "codeceptjs": "2.6.1",
     "codeceptjs-saucelabs": "^5.0.1",
+    "codeceptjs-shared": "^5.0.2",
     "debug": "^4.1.1",
     "deepmerge": "^4.2.2",
     "faker": "^4.1.0",
@@ -50,6 +52,7 @@
   },
   "dependencies": {
     "codeceptjs": "^2.6.0",
-    "codeceptjs-shared": "^5.0.2"
+    "codeceptjs-shared": "^5.0.2",
+    "dotenv-extended": "^2.8.0"
   }
 }

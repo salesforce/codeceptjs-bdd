@@ -1,0 +1,20 @@
+
+#############################################################################################
+#                                                                                           #
+#           DEFINE THE DEFAULTS ENV VARIABLE, COMMON TO EVERY ENVIRONMENT                   #
+#                                                                                           #
+#############################################################################################
+
+
+# CODECEPT ENV
+NODE_TLS_REJECT_UNAUTHORIZED = 0
+CODECEPT_RELATIVE_PATH = ./acceptance/
+
+# DRIVER ENV
+DRIVER = webdriver
+DEFAULT_WEBDRIVER_BROWSER = chrome
+DEFAULT_PLAYWRIGHT_BROWSER = chromium
+
+# APP ENV
+HOST = recipes.lwc.dev
+END_POINT = /

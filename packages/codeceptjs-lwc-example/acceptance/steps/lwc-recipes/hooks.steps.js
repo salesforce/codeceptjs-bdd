@@ -1,5 +1,4 @@
-const {I} = inject();
-const should = require('should/should');
+const { I } = inject();
 
 Before(() => {
     I.amOnPage('/#hello/');

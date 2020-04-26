@@ -1,10 +1,10 @@
-const {I, helloBinding} = inject();
+const { I, helloBindingPage } = inject();
 
-When('Fred types {string} into the Hello Binding Component' , (name) => {
+When('Fred types {string} into the Hello Binding Component', (name) => {
     this.name = name;
-    helloBinding.enterName(name);
+    helloBindingPage.enterName(name);
 });
 
-Then('he sees the title is updated accordingly' , async () => {
-    (await helloBinding.grabTitle()).should.equal(`Hello, ${this.name}!`);
+Then('he sees the title is updated accordingly', async () => {
+    (await helloBindingPage.grabTitle()).should.equal(`Hello, ${this.name}!`);
 });
