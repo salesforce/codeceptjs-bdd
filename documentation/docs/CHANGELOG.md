@@ -21,6 +21,8 @@ keywords: ['changelog', 'releases', 'release']
 $ npx create-codeceptjs-bdd-tests
 ```
 
+- Fix `minimist` security violation in the package
+
 ## 4.0.x
 
 - Run with Microsoft [Playwrite](https://github.com/microsoft/playwright). [More info](https://gkushang.github.io/06-execution/6-run-with-playright/)

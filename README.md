@@ -10,7 +10,7 @@
 
 <a href="https://gkushang.github.io" rel="nofollow noreferrer" target="_blank"><img src="https://i.postimg.cc/8zDLzZRq/Screen-Shot-2020-01-28-at-6-27-28-PM.png" alt="docs"></a>
 
-## 🚚 [Changelog](http://gkushang.github.io/CHANGELOG/)
+## 🚚 [Changelog](https://github.com/gkushang/codeceptjs-bdd/blob/develop/documentation/docs/CHANGELOG.md)
 
 ## 🧐 What's inside?
 
