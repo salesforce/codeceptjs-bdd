@@ -1,8 +1,18 @@
-$code-background-color: #1c2d2d;
-$code-font-color: #efefef;
+$code-background-color: #2e3f3f;
+$code-font-color: #fff2cd;
 
 body {
   font-size: 100px;
+}
+
+.language-text .language-javascript {
+  background-color: #fff2cd !important;
+  color: #4c483d !important;
+  font-family: monospace, monospace !important;
+}
+
+.language-bash {
+  font-family: Droid Sans Mono, monospace !important;
 }
 
 .MuiTypography-body1 {
@@ -25,6 +35,8 @@ body {
   margin: 0.8em 0;
   padding: 1em;
   overflow: auto;
+  -webkit-box-shadow: -2px 4px 4px -1px #757575;
+  box-shadow: -2px 4px 4px -1px #757575;
 }
 
 .gatsby-highlight pre[class*='language-'] {

@@ -1,8 +1,8 @@
 ---
 title: Installation
 sub_title: Install required dependencies to setup CodeceptJs BDD Framework
-parents: ["Getting Started"]
-keywords: ["setup", "framework"]
+parents: ['Getting Started']
+keywords: ['setup', 'framework']
 ---
 
 # ⏳ codeceptjs-bdd
@@ -11,7 +11,7 @@ Clone Codeceptjs-BDD framework libraries for getting started
 
 ```bash
 
-    git clone https://github.com/gkushang/codeceptjs-bdd.git
+git clone https://github.com/gkushang/codeceptjs-bdd.git
 
 ```
 
@@ -23,7 +23,7 @@ You can install Yarn through the [Homebrew package manager](https://brew.sh/). T
 
 ```bash
 
-    brew install yarn
+brew install yarn
 
 ```
 
@@ -35,7 +35,7 @@ Install Lerna through the [Lerna](https://lerna.js.org/).
 
 ```bash
 
-    yarn add lerna
+yarn add lerna
 
 ```
 
@@ -43,8 +43,7 @@ Install Lerna through the [Lerna](https://lerna.js.org/).
 
 ```bash
 
-   cd codeceptjs-bdd
-    lerna bootstrap
+cd codeceptjs-bdd
+ lerna bootstrap
 
 ```
-

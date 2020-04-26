@@ -11,7 +11,7 @@ It very simple to start automating your first Codeceptjs-BDD Scenario. You can f
 Create Codeceptjs-BDD Test for your Application Under Test. This is one time step,
 
 ```javascript
-   $ npx create-codecpetjs-bdd-tests
+$ npx create-codecpetjs-bdd-tests
 ```
 
 ###🧩 4 Steps to Automate your App
@@ -34,10 +34,11 @@ Feature Files should be placed under `features` directory or sub-directories.
 
 @add_to_cart
 Scenario: John can add shoes to shopping cart
-    
+
     Given John searches for the "red pump" shoes from home page
     When he adds "2" shoes to the cart
     Then the cart has "2" pairs of "red pump" shoes
+
 
 ```
 
@@ -64,6 +65,8 @@ When(/the cart has {string} pairs of {string} shoes/, (quantity, productTitle) =
     (await cartPage.grabProductTitle()).trim().should.equal(productTitle);
     (await cartPage.grabQuanity()).should.equal(quantity);
 });
+
+
 ```
 
 The above **steps.js** assumes, the Navigation is handled in the **hooks.steps.js** file, as described in the [example](https://github.com/gkushang/codeceptjs-bdd/blob/develop/packages/create-codeceptjs-bdd-tests/acceptance/steps/hooks/hooks.js)
@@ -71,7 +74,6 @@ The above **steps.js** assumes, the Navigation is handled in the **hooks.steps.j
 ### Step 3: Implement Page Object
 
 Page Objects should be placed under `pages` directory, and should follow the naming convention `<pagename>.page.js`.
-
 
 ```javascript
 // pages/shopping-home.page.js
@@ -93,6 +95,7 @@ class ShoppingHomePage {
 
 module.exports = new ShoppingHomePage();
 
+
 ```
 
 ### Step 4: Assert your application
@@ -100,9 +103,7 @@ module.exports = new ShoppingHomePage();
 Codeceptjs-BDD supports [should.js](http://shouldjs.github.io/) library to veriy assertions.
 
 ```javascript
-
- (await cartPage.grabQuanity()).should.equal(quantity);
-
+(await cartPage.grabQuanity()).should.equal(quantity);
 ```
 
- 💯 Done. Follow the [Setup your Test Environment Variables](/04-configurations/1-env-variables/) & [Execution](/06-execution/1-run-locally/) instructions to execute your first scenario.
+💯 Done. Follow the [Setup your Test Environment Variables](/04-configurations/1-env-variables/) & [Execution](/06-execution/1-run-locally/) instructions to execute your first scenario.
