@@ -15,8 +15,8 @@ Codeceptjs has created the [Page Objects Depedency Injection](https://codecept.i
 
 #### 🌈 Two conventions of Page Objects
 
-1. All the Page Objects must be under **pages/** directory
-2. Page Objects file name must have **\*.page.js** extension
+1. All the Page Objects must be under `pages` directory
+2. Page Objects file name must have `*.page.js` extension
 
 ```bash
     pages/<page-name>.page.js

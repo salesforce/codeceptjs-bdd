@@ -5,14 +5,17 @@ body {
   font-size: 100px;
 }
 
-.language-text .language-javascript {
+.language-text {
   background-color: #fff2cd !important;
   color: #4c483d !important;
-  font-family: monospace, monospace !important;
+  font-size: 0.8em !important;
+  font-family: Droid Sans Mono, monospace !important;
 }
 
-.language-bash {
+.language-bash,
+.language-javascript {
   font-family: Droid Sans Mono, monospace !important;
+  font-size: 0.9em !important;
 }
 
 .MuiTypography-body1 {
