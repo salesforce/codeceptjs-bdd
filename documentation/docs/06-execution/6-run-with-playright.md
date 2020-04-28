@@ -17,8 +17,27 @@ Codeceptjs-BDD integrates the Playwright with WebDriver.
 
 If you have setup framework through the Codeceptjs-BDD [CLI](/01-getting-started/1-quick-start/), then you'd have an option to select Default driver. If it is default, then you can follow the [execution](/06-execution/1-run-locally/) documentation. If it is not default, then you can pass `DRIVER` command shown below,
 
+You can also define `DRIVER` environment variable in your `dev.codecept.secrets` file which won't be commmitted to the source contol and becomes your personalized local development environment.
+
 ```bash
+
+# file: config/dev.codecept.defaults
+
+# ... Other ENV variables
+
+# DRIVER ENV
+DRIVER = playwright
+
+# ... Other ENV variables
+
+```
+
+Alternatively, you can pass `DRIVER` value at the runtime,
+
+```bash
+
 DRIVER=Playwright yarn acceptance
+
 ```
 
 Default browser for Playwright is `chromium`
