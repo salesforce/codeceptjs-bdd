@@ -57,7 +57,7 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
                 enabled: true,
                 services: ['sauce'],
                 user: process.env.SAUCE_USERNAME,
-                key: process.env.SAUCE_KEY,
+                key: process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY,
                 region: 'us',
             },
         },

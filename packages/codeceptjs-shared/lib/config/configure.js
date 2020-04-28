@@ -43,7 +43,7 @@ const create = (conf) => {
         merge(conf, master_conf),
         require('codeceptjs-saucelabs').config.saucelabs(
             process.env.SAUCE_USERNAME,
-            process.env.SAUCE_KEY
+            process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY
         )
     );
 };
