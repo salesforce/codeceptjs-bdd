@@ -11,9 +11,9 @@ This post walks you through creating and using environment variables, aka Test P
 
 ### Types of ENV files
 
-1. `dev.codecept.defaults`
+1. `codecept.env`
    - Common configuration defaults across all environments
-2. `dev.codecept.secrets`
+2. `codecept.dev.env`
    - The Environment specific configurations or properties
 
 The format is a series of key-value pairs. Any line starting with # or ; are commented out and ignored.
@@ -25,17 +25,17 @@ HOST=https://localhost
 
 ```
 
-## dev.codecept.defaults
+## codecept.env
 
 This file contains all your default environment variables, such as common Environment Variables across all your test environements, such as DRIVER, CODECEPT_RELATIVE_PATH etc.
 
-It contains overall app configuration values that would be common across environments. The **dev.codecept.defaults** file is loaded first and then the **dev.codecept.secrets** file is loaded and will overwrite any values from the _dev.codecept.defaults_ file.
+It contains overall app configuration values that would be common across environments. The **codecept.env** file is loaded first and then the **codecept.dev.env** file is loaded and will overwrite any values from the _codecept.env_ file.
 
 **Example:**
 
 ```bash
 
-# // config/dev.codecept.defaults
+# // config/codecept.env
 
 #############################################################################################
 #                                                                                           #
@@ -59,7 +59,9 @@ END_POINT=/
 
 ```
 
-## dev.codecept.secrets
+## codecept.dev.env
+
+Your Local Development Environmental Variables. Personalize your Execution Environment.
 
 This file contains all the Secrets and Password for your App. You must not commit this file to the Source Control because it contains sensitive information such as usernames, passwords, api keys, etc. The format is a series of key-value pairs. Any line starting with # or ; are commented out and ignored.
 
@@ -67,9 +69,9 @@ Because you do not committ this file to the source control, how do your teammate
 
 #### Sharing With Your Team
 
-**dev.codecept.secrets.example**
+**codecept.dev.env.example**
 
-When your _dev.codecept.secrets_ file is not pushed to source control (which it shouldn’t be), it is important to make it clear to everyone what the shape of that file should look like. The technique we recommend is to create a file named **dev.codecept.secrets.example** that contains the variables, but with fake values. This file might look something like the following template.
+When your _codecept.dev.env_ file is not pushed to source control (which it shouldn’t be), it is important to make it clear to everyone what the shape of that file should look like. The technique we recommend is to create a file named **codecept.dev.env.example** that contains the variables, but with fake values. This file might look something like the following template.
 
 **Example:**
 
@@ -77,11 +79,11 @@ When your _dev.codecept.secrets_ file is not pushed to source control (which it 
 
 #############################################################################################
 #                                                                                           #
-#   THIS IS THE EXAMPLE ENV FILE, EDIT THE VALUES AND SAVE AS `dev.codecept.secrets` file   #
+#   THIS IS THE EXAMPLE ENV FILE, EDIT THE VALUES AND SAVE AS `codecept.dev.env` file   #
 #                                                                                           #
 #############################################################################################
 
-# // config/dev.codecept.secrets.example
+# // config/codecept.dev.env.example
 
 # SAUCE LABS SECRETS
 SAUCE_USERNAME=<enter-your-saucelabs-username>

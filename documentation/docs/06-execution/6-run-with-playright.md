@@ -21,7 +21,7 @@ You can also define `DRIVER` environment variable in your `dev.codecept.secrets`
 
 ```bash
 
-# file: config/dev.codecept.defaults
+# file: config/dev.codecept.secrets
 
 # ... Other ENV variables
 

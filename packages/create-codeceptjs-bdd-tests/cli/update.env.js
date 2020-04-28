@@ -9,7 +9,7 @@ class UpdateEnvironments {
             envs.relativePath,
             `acceptance`,
             'config',
-            'dev.codecept.secrets.example'
+            'codecept.dev.env.example'
         );
 
         const destinationSecrets = path.join(
@@ -17,7 +17,7 @@ class UpdateEnvironments {
             envs.relativePath,
             `acceptance`,
             'config',
-            'dev.codecept.secrets'
+            'codecept.dev.env'
         );
 
         fs.copyFileSync(sourceSecrets, destinationSecrets);
@@ -27,7 +27,7 @@ class UpdateEnvironments {
             envs.relativePath,
             `acceptance`,
             'config',
-            'dev.codecept.defaults'
+            'codecept.env'
         );
 
         this.codeceptSecrets = path.join(
@@ -35,7 +35,7 @@ class UpdateEnvironments {
             envs.relativePath,
             `acceptance`,
             'config',
-            'dev.codecept.secrets'
+            'codecept.dev.env'
         );
     }
 
