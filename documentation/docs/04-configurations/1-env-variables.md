@@ -9,12 +9,12 @@ Test Envioronmental Variables are a fundamental part of developing Automated tes
 
 This post walks you through creating and using environment variables, aka Test Properties.
 
-### Types of ENV files
+### ⚙️ Types of ENV files
 
 1. `codecept.env`
    - Common configuration defaults across all environments
 2. `codecept.dev.env`
-   - The Environment specific configurations or properties
+   - Personalized ENV Configurations for local development
 
 The format is a series of key-value pairs. Any line starting with # or ; are commented out and ignored.
 
@@ -27,9 +27,9 @@ HOST=https://localhost
 
 ## codecept.env
 
-This file contains all your default environment variables, such as common Environment Variables across all your test environements, such as DRIVER, CODECEPT_RELATIVE_PATH etc.
+This file contains all your default environment variables, such as common Environment Variables across all your test environements.
 
-It contains overall app configuration values that would be common across environments. The **codecept.env** file is loaded first and then the **codecept.dev.env** file is loaded and will overwrite any values from the _codecept.env_ file.
+It contains overall app configuration values that would be common across environments. The **codecept.env** file is loaded first and then the **codecept.dev.env** file is loaded and will overwrite any values from the **codecept.env** file.
 
 **Example:**
 
@@ -67,11 +67,11 @@ This file contains all the Secrets and Password for your App. You must not commi
 
 Because you do not committ this file to the source control, how do your teammates know what are the keys and how to define them?
 
-#### Sharing With Your Team
+####🧩Sharing With Your Team
 
 **codecept.dev.env.example**
 
-When your _codecept.dev.env_ file is not pushed to source control (which it shouldn’t be), it is important to make it clear to everyone what the shape of that file should look like. The technique we recommend is to create a file named **codecept.dev.env.example** that contains the variables, but with fake values. This file might look something like the following template.
+When your `codecept.dev.env` file is not pushed to source control (which it shouldn’t be), it is important to make it clear to everyone what the shape of that file should look like. The technique we recommend is to create a file named `codecept.dev.env.example` that contains the variables, but with fake values. This file might look something like the following template.
 
 **Example:**
 
