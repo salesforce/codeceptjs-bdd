@@ -1,8 +1,8 @@
 ---
 title: Given When Then
 sub_title: BDD Cucumber Keywords - "GWT"
-parents: ["BDD Cucumber"]
-keywords: ["Given", "When", "Then", "cucumber", "bdd", "gherkin", "gwt"]
+parents: ['BDD Cucumber']
+keywords: ['Given', 'When', 'Then', 'cucumber', 'bdd', 'gherkin', 'gwt']
 ---
 
 ## Given
@@ -18,7 +18,7 @@ It’s okay to have several Given steps (use And or But for number 2 and upwards
 #### Examples
 
 ```bash
-    
+
     Given Mickey and Minnie have started a game
     Given I am logged in
     Given Fred has a balance of $42
@@ -70,7 +70,7 @@ If you have successive Given’s, When’s, or Then’s, you could write:
 ```bash
 
 Example: Multiple Givens
-  
+
   Given one thing
   Given another thing
   Given yet another thing
@@ -90,7 +90,4 @@ Example: Multiple Givens
   When I open my eyes
   Then I should see something
   But I shouldn't see something else
-```  
-
-
-
+```

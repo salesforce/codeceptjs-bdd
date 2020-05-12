@@ -60,6 +60,7 @@ let masterConf = {
         ...pageObjects(),
         I: custom_methods,
     },
+    tests: process.env.CODECEPT_RELATIVE_PATH + '**/*.spec.js',
 };
 
 const driverConf =
