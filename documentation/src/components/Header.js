@@ -52,6 +52,7 @@ const useStyles = makeStyles(theme => ({
 
   title: {
     flexGrow: 1,
+    textDecoration: 'none',
     color: 'white',
     '&:hover': {
       textDecoration: 'none',
@@ -103,9 +104,9 @@ function Header({ siteTitle, siteDescription }, props) {
             <MenuIcon />
           </IconButton>
           <Hidden smDown>
-            <Link href="/">
+            <GatsbyLink href="/">
               <Avatar alt="Codeceptjs" src={logo} />
-            </Link>
+            </GatsbyLink>
 
             <Avatar
               alt="Cucumber"
@@ -113,19 +114,19 @@ function Header({ siteTitle, siteDescription }, props) {
               src={cucumberLogo}
             />
 
-            <Link href="/" className={classes.title}>
+            <GatsbyLink href="/" className={classes.title}>
               <Typography variant="h6" className={classes.title}>
                 Codeceptjs BDD Framework Documentation Hub
               </Typography>
-            </Link>
+            </GatsbyLink>
           </Hidden>
 
           <Hidden mdUp>
-            <Link href="/" className={classes.title}>
+            <GatsbyLink href="/" className={classes.title}>
               <Typography variant="h6" className={classes.title}>
                 Codeceptjs BDD
               </Typography>
-            </Link>
+            </GatsbyLink>
           </Hidden>
 
           <Hidden xsDown>
