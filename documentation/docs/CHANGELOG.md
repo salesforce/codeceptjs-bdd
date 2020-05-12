@@ -4,6 +4,11 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-shared & @codeceptjs-saucelab
 keywords: ['changelog', 'releases', 'release']
 ---
 
+## 5.0.4
+
+- Add Mocha-styled acceptance scenario support (May-12-20)
+- Add [Documentations](https://gkushang.github.io/03-mocha-styled/1-mocha-style/) about Writing Mocha-styled scenarios along with BDD-features (May-12-20)
+
 ## 5.0.x
 
 - Simplify the Configuration. Introducing Developer's Configuration
