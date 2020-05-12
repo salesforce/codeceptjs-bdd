@@ -52,6 +52,11 @@ body {
   max-width: 100px;
 }
 
+::selection {
+  color: black;
+  background-color: #bcdeff !important;
+}
+
 code {
   color: $code-font-color !important;
   background-color: $code-background-color !important;
