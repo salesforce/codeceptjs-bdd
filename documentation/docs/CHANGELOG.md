@@ -9,7 +9,7 @@ keywords: ['changelog', 'releases', 'release']
 - Add Mocha-styled acceptance scenario support (May-12-20)
 - Add [Documentations](https://gkushang.github.io/03-mocha-styled/1-mocha-style/) about Writing Mocha-styled scenarios along with BDD-features (May-12-20)
 
-## 5.0.1|2|3
+## 5.0.3
 
 - Simplify the Configuration. Introducing Developer's Configuration
   - Add `.defaults` config: Contains all default Test Properties across all environments
