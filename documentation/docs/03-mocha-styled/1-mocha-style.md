@@ -54,13 +54,15 @@ Scenario('Fred sees captcha for consecutive invalid attempts to login', I => {
 
 ##### Execute
 
-Execution of Mocha-styled scenario are dong thru the same script. Below command runs both BDD-Fearures, if exists, and all your Mocha-styled scenarios. Please note, BDD-Features will run before the Mocha-styled scenarios.
+Execution of Mocha-styled scenario are done thru the same script. Below command runs both BDD-Fearures, if exists, and all your Mocha-styled scenarios. Please note, BDD-Features will run before the Mocha-styled scenarios.
 
 ```javascript
 
 yarn acceptance
 
 ```
+
+e.g. to run above Mocha-styled feature,
 
 ```javascript
 
