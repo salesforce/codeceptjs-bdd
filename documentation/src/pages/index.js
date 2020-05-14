@@ -14,6 +14,7 @@ import runMultiYt from '../images/run-multi-yt.png';
 import runSauceYt from '../images/run-sauce-yt.png';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import Hidden from '@material-ui/core/Hidden';
+import { Link as GatsbyLink } from 'gatsby';
 
 import multibrowsers from '../images/multi-browsers.png';
 import saucelabs from '../images/saucelabs1.png';
@@ -248,14 +249,34 @@ const IndexPage = () => {
 
   return (
     <AppLayout title="Codeceptjs-BDD">
-      <div className={classes.root}>
-        <Typography variant="h4" component="h2" gutterBottom>
-          Codeceptjs BDD
-        </Typography>
-        <Typography variant="overline" display="block" gutterBottom>
-          CODECEPTJS BDD Framework integrated with Cucumber and Saucelabs cloud.
-        </Typography>
+      <Grid container className={classes.root} spacing={2}>
+        <Grid item xs={12}>
+          <Grid container justify="space-between" spacing={1}>
+            <Grid key={1} item>
+              <Typography variant="h4" component="h2" gutterBottom>
+                Codeceptjs BDD
+              </Typography>
+              <Typography variant="overline" display="block" gutterBottom>
+                CODECEPTJS BDD Framework integrated with Cucumber and Saucelabs
+                cloud.
+              </Typography>
+            </Grid>
 
+            <Hidden xsDown>
+              <Grid key={2} item>
+                <GatsbyLink to="01-getting-started/1-quick-start/">
+                  <Button variant="contained" size="large" color="primary">
+                    Quick Start
+                  </Button>
+                </GatsbyLink>
+              </Grid>
+            </Hidden>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <div className={classes.root}>
+        <br></br>
         <Divider />
         <br></br>
 

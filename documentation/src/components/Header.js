@@ -20,6 +20,7 @@ import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import Avatar from '@material-ui/core/Avatar';
 import Search from './Search';
+import TelegramIcon from '@material-ui/icons/Telegram';
 
 const drawerWidth = 240;
 const useStyles = makeStyles(theme => ({
@@ -142,17 +143,23 @@ function Header({ siteTitle, siteDescription }, props) {
             </Tooltip>
           </Hidden>
 
-          <Tooltip title="New Releases">
-            <IconButton
-              aria-label="New Releases"
-              color="inherit"
-              onClick={() => {
-                window.open('/CHANGELOG', '_self');
-              }}
-            >
-              <NewReleases style={{ fill: 'white' }} />
-            </IconButton>
+          <Tooltip title="Quick Start">
+            <GatsbyLink to="/01-getting-started/1-quick-start/">
+              <IconButton aria-label="Quick Start" color="inherit">
+                <TelegramIcon style={{ fill: 'white' }} />
+              </IconButton>
+            </GatsbyLink>
           </Tooltip>
+
+          <Hidden xsDown>
+            <Tooltip title="New Releases">
+              <GatsbyLink to="/CHANGELOG">
+                <IconButton aria-label="New Releases" color="inherit">
+                  <NewReleases style={{ fill: 'white' }} />
+                </IconButton>
+              </GatsbyLink>
+            </Tooltip>
+          </Hidden>
 
           <Tooltip title="Github Repository">
             <IconButton
