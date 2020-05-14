@@ -29,14 +29,13 @@ The mocha-style tests should have extention `*.spec.js` for default configuratio
 // acceptance/mocha/login.spec.js
 
 /* FEATURE */
-Feature('Login Tests (mocha)').tag('@login);
-
+Feature('Login Tests (mocha)').tag('@login');
 
 /* BEFORE */
-Before((I) => { // or Background
+Before(I => {
+  // or Background
   I.amOnPage('/login');
 });
-
 
 /* SCENARIOS */
 Scenario('Fred logs in successfully', I => {
@@ -51,7 +50,6 @@ Scenario('Fred cannot login with invalid credentials', I => {
 Scenario('Fred sees captcha for consecutive invalid attempts to login', I => {
   // login and assertions
 });
-
 ```
 
 ##### Override the default \*.spec.js extention
