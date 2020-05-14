@@ -52,6 +52,22 @@ Scenario('Fred sees captcha for consecutive invalid attempts to login', I => {
 });
 ```
 
+##### Execute
+
+Execution of Mocha-styled scenario are dong thru the same script. Below command runs both BDD-Fearures, if exists, and all your Mocha-styled scenarios. Please note, BDD-Features will run before the Mocha-styled scenarios.
+
+```javascript
+
+yarn acceptance
+
+```
+
+```javascript
+
+yarn acceptance --grep @login
+
+```
+
 ##### Override the default \*.spec.js extention
 
 If you decide to change the mocha-style scenarios extention to different than `*.spec.js`, then you are required to update your Projects configuration as shown below,
