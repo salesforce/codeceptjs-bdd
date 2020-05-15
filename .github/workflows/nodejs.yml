@@ -24,7 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: action-lerna
-      uses: johno/actions-yarn@master
+    - name: bootstrap
+      uses: MrBoolean/action-lerna@master
     - run: lerna bootstrap
  
