@@ -25,7 +25,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: action-lerna
-      uses: m19c/action-lerna@1.0.
-    
+      uses: johno/actions-yarn@master
     - run: lerna bootstrap
  
