@@ -10,20 +10,7 @@ on:
   pull_request:
     branches: [ develop ]
 
-jobs:
-  wget:
-    runs-on: ubuntu-latest
-    steps:
-    - name: wget
-      uses: wei/wget@v1
-      with:
-        args: -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/    
-    - run: unzip ~/chromedriver_linux64.zip -d ~/
-    - run: rm ~/chromedriver_linux64.zip
-    - run: sudo mv -f ~/chromedriver /usr/local/share/
-    - run: sudo chmod +x /usr/local/share/chromedriver
-    - run: sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-   
+jobs:   
   build:
 
     runs-on: ubuntu-latest
@@ -38,6 +25,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: wget-N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/
+    - run: unzip ~/chromedriver_linux64.zip -d ~/
+    - run: rm ~/chromedriver_linux64.zip
+    - run: sudo mv -f ~/chromedriver /usr/local/share/
+    - run: sudo chmod +x /usr/local/share/chromedriver
+    - run: sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
     - run: yarn && yarn bootstrap
     - name: Test on Chrome Headless and with Playwright Browsers
       run: yarn test
