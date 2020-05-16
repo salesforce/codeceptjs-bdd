@@ -18,6 +18,9 @@
     "resolutions": {
         "minimist": "^1.2.5"
     },
+    "scripts": {
+        "bootstrap": "lerna bootstrap"
+    },
     "version": "1.0.0",
     "description": "CodeceptJS Cucumber BDD Framework",
     "author": "Kushang Gajjar <g.kushang@gmail.com>",
