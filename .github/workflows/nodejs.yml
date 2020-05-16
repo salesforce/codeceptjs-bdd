@@ -28,12 +28,6 @@ jobs:
     - uses: nanasess/setup-chromedriver@master
       with:
        chromedriver-version: '77.0.3865.40'
-    - run: wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/
-    - run: unzip ~/chromedriver_linux64.zip -d ~/
-    - run: rm ~/chromedriver_linux64.zip
-    - run: sudo mv -f ~/chromedriver /usr/local/share/
-    - run: sudo chmod +x /usr/local/share/chromedriver
-    - run: sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
     - run: yarn && yarn bootstrap
     - name: Test on Chrome Headless and with Playwright Browsers
       run: yarn test
