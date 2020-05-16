@@ -19,7 +19,8 @@
         "minimist": "^1.2.5"
     },
     "scripts": {
-        "bootstrap": "lerna bootstrap"
+        "bootstrap": "lerna bootstrap",
+        "test": "lerna run --scope create-codeceptjs-bdd-tests test"
     },
     "version": "1.0.0",
     "description": "CodeceptJS Cucumber BDD Framework",
