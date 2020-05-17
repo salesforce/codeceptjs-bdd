@@ -1,0 +1,42 @@
+version: 2.1
+orbs:
+  node: circleci/node@2.0.2
+jobs:
+  ci-on-chrome-playwright:
+    executor:
+      name: node/default
+
+    docker: # run the steps with Docker
+      - image: circleci/node:12-browsers
+        environment:
+          HOST: github.com
+          DRIVER: webdriver
+          CODECEPT_RELATIVE_PATH: ./acceptance/
+          DEFAULT_WEBDRIVER_BROWSER: chrome
+          DEFAULT_PLAYWRIGHT_BROWSER: chromium
+          NODE_TLS_REJECT_UNAUTHORIZED: "0"
+    steps:
+      - checkout
+
+      - run:
+          name: Installation
+          command: |
+            curl -sSL "https://nodejs.org/dist/v13.0.0/node-v13.0.0-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v13.0.0-linux-x64/bin/node
+            curl https://www.npmjs.com/install.sh | sudo bash
+            wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/
+            unzip ~/chromedriver_linux64.zip -d ~/
+            rm ~/chromedriver_linux64.zip
+            sudo mv -f ~/chromedriver /usr/local/share/
+            sudo chmod +x /usr/local/share/chromedriver
+            yarn install
+      - run:
+          name: Bootstrap
+          command: yarn bootstrap
+      - run:
+          name: Run on Chrome & Playwright Browsers
+          command: yarn acceptance
+
+workflows:
+  acceptance-tests:
+    jobs:
+      - ci-on-chrome-playwright
