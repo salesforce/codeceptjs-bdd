@@ -7,7 +7,10 @@ const path = require('path');
 const fs = require('fs');
 const UpdateEnvironments = require('./update.env');
 
-const { addNpmScripts, installDepedencies } = require('./update.package');
+const {
+    addNpmScripts,
+    installDepedencies
+} = require('./update.package');
 const log = require('./logger');
 const {
     aboutProjectPaths,
@@ -45,7 +48,9 @@ const run = async () => {
      **********************************************/
     const updateDriver = async () => {
         if (DRIVER === 'WebDriver') {
-            const { INTEGRATE_SAUCE_LABS } = await aboutSauceLabs();
+            const {
+                INTEGRATE_SAUCE_LABS
+            } = await aboutSauceLabs();
 
             if (INTEGRATE_SAUCE_LABS) {
                 const {
@@ -72,13 +77,13 @@ const run = async () => {
 
             console.log(
                 '\n' +
-                    chalk.green(
-                        figlet.textSync('Running Tests', {
-                            font: 'speed',
-                            horizontalLayout: 'default',
-                            verticalLayout: 'default',
-                        })
-                    )
+                chalk.green(
+                    figlet.textSync('Running Tests', {
+                        font: 'speed',
+                        horizontalLayout: 'default',
+                        verticalLayout: 'default',
+                    })
+                )
             );
 
             if (
@@ -103,7 +108,9 @@ const run = async () => {
 
     log.infoAboutPaths(path.join(ROOT_PATH, RELATIVE_PATH, ACCEPTANCE));
 
-    const { DRIVER } = await aboutDriver();
+    const {
+        DRIVER
+    } = await aboutDriver();
 
     log.tipsToExecuteOnDriver();
 
@@ -136,7 +143,9 @@ const run = async () => {
         relativePath: RELATIVE_PATH,
     });
 
-    updateEnvs.relativePath({ relativePath: RELATIVE_PATH });
+    updateEnvs.relativePath({
+        relativePath: RELATIVE_PATH
+    });
 
     // create package.json if not exists
     if (!fs.existsSync(path.join(ROOT_PATH, 'package.json'))) {
@@ -148,13 +157,17 @@ const run = async () => {
 
     await updateDriver();
 
-    updateEnvs.driver({ driver: DRIVER });
+    updateEnvs.driver({
+        driver: DRIVER
+    });
 
     log.scenarioExecutions();
 
-    const { SHOULD_EXECUTE } = await aboutScenarioExeuctions();
+    const {
+        SHOULD_EXECUTE
+    } = await aboutScenarioExeuctions();
 
-    addNpmScripts(packageJson);
+    addNpmScripts(packageJson, RELATIVE_PATH);
 
     installDepedencies();
 

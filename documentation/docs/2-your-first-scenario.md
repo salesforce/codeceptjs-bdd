@@ -6,20 +6,24 @@ keywords: ['Videos', 'Watch in action', 'Automate', 'how']
 
 It very simple to start automating your first Codeceptjs-BDD Scenario. You can follow the Sample examples defined in the [create-codeceptjs-bdd-tests](https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/create-codeceptjs-bdd-tests/acceptance) framework.
 
-###🚀 Quick Start
+### 🚀 Quick Start
 
 Create Codeceptjs-BDD Test for your Application Under Test. This is one time step,
 
-```javascript
+```bash
+
 $ npx create-codecpetjs-bdd-tests
+
 ```
 
-###🧩 4 Steps to Automate your App
+### 🧩 4 Steps to Automate your App
 
 1. Write a **Feature**
 2. Implement **Steps**
 3. Implement **Page Object**
-4. And **Assert** your application
+4. **Assert** your application
+
+And Launch **HTML Report**
 
 Let's automate the **Add to Cart** scenario for the Shopping App.
 
@@ -104,6 +108,14 @@ Codeceptjs-BDD supports [should.js](http://shouldjs.github.io/) library to veriy
 
 ```javascript
 (await cartPage.grabQuanity()).should.equal(quantity);
+```
+
+### Step 5: Launch HTML Acceptance Report
+
+Codeceptjs-BDD integrates the Allure HTML Reporting.
+
+```javascript
+yarn acceptance:report
 ```
 
 💯 Done. Follow the [Setup your Test Environment Variables](/04-configurations/1-env-variables/) & [Execution](/06-execution/1-run-locally/) instructions to execute your first scenario.

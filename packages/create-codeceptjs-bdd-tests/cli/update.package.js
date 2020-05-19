@@ -2,13 +2,13 @@ const shell = require('shelljs');
 const chalk = require('chalk');
 const emoji = require('node-emoji');
 
-exports.addNpmScripts = (packageJson) => {
+exports.addNpmScripts = (packageJson, RELATIVE_PATH) => {
     const SCRIPTS =
         '"scripts": {\n' +
         '\t"acceptance": "codeceptjs run --verbose",\n' +
         '\t"acceptance:parallel": "codeceptjs run-multiple parallel",\n' +
         '\t"acceptance:parallel:multibrowsers": "codeceptjs run-multiple multibrowsers",\n' +
-        '\t"acceptance:report": "allure serve ",';
+        '\t"acceptance:report": "allure serve ./' + RELATIVE_PATH + '/report",';
 
     shell.sed('-i', '"scripts": {', SCRIPTS, packageJson);
 };
@@ -16,9 +16,9 @@ exports.addNpmScripts = (packageJson) => {
 exports.installDepedencies = () => {
     console.log(
         '\n\n' +
-            chalk.white.bgBlue.bold(
-                emoji.emojify(':rocket:') + ` Installing dependencies...\n\n`
-            )
+        chalk.white.bgBlue.bold(
+            emoji.emojify(':rocket:') + ` Installing dependencies...\n\n`
+        )
     );
 
     if (
@@ -31,8 +31,8 @@ exports.installDepedencies = () => {
 
     console.log(
         '\n' +
-            chalk.white.bgBlue.bold(
-                emoji.emojify(':coffee:') + ` Setup Completed!`
-            )
+        chalk.white.bgBlue.bold(
+            emoji.emojify(':coffee:') + ` Setup Completed!`
+        )
     );
 };

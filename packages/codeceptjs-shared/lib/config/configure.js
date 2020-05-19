@@ -48,4 +48,6 @@ const create = (conf) => {
     );
 };
 
-module.exports = { create };
+module.exports = {
+    create
+};
