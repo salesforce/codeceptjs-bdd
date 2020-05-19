@@ -3,11 +3,24 @@ title: CHANGELOG
 sub_title: Codeceptjs-BDD Releases for @codeceptjs-shared & @codeceptjs-saucelabs
 keywords: ['changelog', 'releases', 'release']
 ---
+## 5.0.5 (MAY-19-2020)
 
-## 5.0.4
+- "npx create-codeceptjs-bdd-tests" will now create npm script to launch HTML report
 
-- Add Mocha-styled acceptance scenario support (May-12-20)
-- Add [Documentations](https://gkushang.github.io/03-mocha-styled/1-mocha-style/) about Writing Mocha-styled scenarios along with BDD-features (May-12-20)
+To Launch Report,
+
+```bash
+
+$ yarn acceptance:report
+
+```
+
+- Check incldued to verify if `config/codecet.dev.env` file exists.
+
+## 5.0.4 ((MAY-12-2020))
+
+- Add Mocha-styled acceptance scenario support
+- Add [Documentations](https://gkushang.github.io/03-mocha-styled/1-mocha-style/) about Writing Mocha-styled scenarios along with BDD-features
 
 ## 5.0.3
 
