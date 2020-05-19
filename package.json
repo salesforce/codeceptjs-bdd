@@ -7,6 +7,7 @@
     "dependencies": {
         "lerna": "^3.14.1"
     },
+    "homepage": "https://gkushang.github.io/",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"

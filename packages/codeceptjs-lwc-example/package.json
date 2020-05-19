@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-lwc-example",
-    "version": "4.0.6",
+    "version": "4.0.5",
     "description": "Salesforce's LWC Recipes Acceptance Tests",
     "main": "index.js",
     "scripts": {
@@ -8,6 +8,7 @@
         "acceptance:report": "allure serve ./acceptance/report",
         "test": "yarn acceptance"
     },
+    "homepage": "https://gkushang.github.io/",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
@@ -34,7 +35,6 @@
     "bugs": {
         "url": "https://github.com/gkushang/codeceptjs-bdd/issues"
     },
-    "homepage": "https://github.com/gkushang/codeceptjs-bdd#readme",
     "devDependencies": {
         "@wdio/selenium-standalone-service": "^5.16.10",
         "allure-commandline": "^2.13.0",

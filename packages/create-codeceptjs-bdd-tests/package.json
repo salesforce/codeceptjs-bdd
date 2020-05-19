@@ -6,6 +6,7 @@
         "email": "g.kushang@gmail.com"
     },
     "description": "Create Codeceptjs BDD Tests",
+    "homepage": "https://gkushang.github.io/",
     "scripts": {
         "acceptance": "./node_modules/.bin/codeceptjs run --verbose",
         "acceptance:parallel": "./node_modules/.bin/codeceptjs run-multiple parallel",
@@ -17,6 +18,7 @@
     "bin": {
         "create-codeceptjs-bdd-tests": "./cli/create.js"
     },
+    "license": "MIT",
     "main": "./cli/create.js",
     "keywords": [
         "Cucumber",
@@ -52,6 +54,5 @@
         "should": "^13.2.3",
         "soft-assert": "^0.2.0",
         "webdriverio": "^5.2.2"
-    },
-    "license": "MIT"
+    }
 }
