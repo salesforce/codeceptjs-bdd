@@ -3,7 +3,8 @@ title: CHANGELOG
 sub_title: Codeceptjs-BDD Releases for @codeceptjs-shared & @codeceptjs-saucelabs
 keywords: ['changelog', 'releases', 'release']
 ---
-## 5.0.5 (MAY-19-2020)
+
+## 5.0.6 (MAY-19-2020)
 
 - "npx create-codeceptjs-bdd-tests" will now create npm script to launch HTML report
 
