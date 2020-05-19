@@ -6,7 +6,7 @@ keywords: ['changelog', 'releases', 'release']
 
 ## 5.0.6 (MAY-19-2020)
 
-- "npx create-codeceptjs-bdd-tests" will now create npm script to launch HTML report
+- `npx create-codeceptjs-bdd-tests` will now create npm script to launch HTML report
 
 To Launch Report,
 
@@ -18,7 +18,7 @@ $ yarn acceptance:report
 
 - Check incldued to verify if `config/codecept.dev.env` file exists.
 
-## 5.0.4 ((MAY-12-2020))
+## 5.0.4 (MAY-12-2020)
 
 - Add Mocha-styled acceptance scenario support
 - Add [Documentations](https://gkushang.github.io/03-mocha-styled/1-mocha-style/) about Writing Mocha-styled scenarios along with BDD-features
