@@ -16,7 +16,7 @@ $ yarn acceptance:report
 
 ```
 
-- Check incldued to verify if `config/codecet.dev.env` file exists.
+- Check incldued to verify if `config/codecept.dev.env` file exists.
 
 ## 5.0.4 ((MAY-12-2020))
 
