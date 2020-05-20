@@ -1,6 +1,6 @@
 {
     "name": "create-codeceptjs-bdd-tests",
-    "version": "5.0.21",
+    "version": "5.0.20",
     "author": {
         "name": "Kushang Gajjar",
         "email": "g.kushang@gmail.com"
@@ -8,10 +8,10 @@
     "description": "Create Codeceptjs BDD Tests",
     "homepage": "https://gkushang.github.io/",
     "scripts": {
-        "acceptance": "./node_modules/.bin/codeceptjs run --verbose",
-        "acceptance:parallel": "./node_modules/.bin/codeceptjs run-multiple parallel",
-        "acceptance:parallel:multibrowsers": "./node_modules/.bin/codeceptjs run-multiple multibrowsers",
-        "acceptance:report": "./node_modules/.bin/allure serve ./acceptance/report",
+        "acceptance": "npx codeceptjs run --verbose",
+        "acceptance:parallel": "npx codeceptjs run-workers --suites 10",
+        "acceptance:parallel:multibrowsers": "npx  run-multiple multibrowsers",
+        "acceptance:report": "allure serve ./acceptance/report",
         "test": "yarn acceptance --profile chrome:headless && DRIVER=playwright yarn acceptance",
         "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
     },

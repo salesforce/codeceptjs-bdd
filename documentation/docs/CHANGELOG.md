@@ -4,9 +4,32 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-shared & @codeceptjs-saucelab
 keywords: ['changelog', 'releases', 'release']
 ---
 
-## 5.0.6 (MAY-19-2020)
+## 5.0.6 (MAY-20-2020)
 
-- `npx create-codeceptjs-bdd-tests` will now create npm script to launch HTML report
+- Playwright Parallel Support
+By default, `yarn acceptance:parallel` commands will run 10 suites in parallel. You can add more threads by editing the number. 
+
+```bash
+  "acceptance:parallel": "npx codeceptjs run-workers --suites 10",
+```
+
+You can also run all the scenarios in parallel with below script
+
+```bash
+  "acceptance:parallel": "npx codeceptjs run-workers 10",
+```
+
+- Add `SHOW` mode for Playwright browsers - Show the running Playwright Browsers
+
+```bash
+DRIVER=playwright SHOW=true yarn acceptance
+```
+
+- Update CLI to update the Name of the Tests Project
+
+## 5.0.5 (MAY-19-2020)
+
+- "npx create-codeceptjs-bdd-tests" will now create npm script to launch HTML report
 
 To Launch Report,
 

@@ -2,13 +2,18 @@ const shell = require('shelljs');
 const chalk = require('chalk');
 const emoji = require('node-emoji');
 
-exports.addNpmScripts = (packageJson, RELATIVE_PATH) => {
+exports.addNpmScripts = (packageJson, RELATIVE_PATH, DRIVER) => {
+    let parallelScript = '"codeceptjs run-multiple parallel"';
+
+    if (DRIVER.toLowerCase() === 'playwright') {
+        parallelScript = '"codeceptjs run-workers --suites 10"'
+    }
+
     const SCRIPTS =
         '"scripts": {\n' +
         '\t"acceptance": "codeceptjs run --verbose",\n' +
-        '\t"acceptance:parallel": "codeceptjs run-multiple parallel",\n' +
-        '\t"acceptance:parallel:multibrowsers": "codeceptjs run-multiple multibrowsers",\n' +
-        '\t"acceptance:report": "allure serve ./' + RELATIVE_PATH + '/report",';
+        '\t"acceptance:parallel": ' + parallelScript + ',\n' +
+        '\t"acceptance:report": "allure serve ./' + RELATIVE_PATH + '/acceptance/report",';
 
     shell.sed('-i', '"scripts": {', SCRIPTS, packageJson);
 };

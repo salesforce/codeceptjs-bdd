@@ -10,7 +10,7 @@ const should = require('should');
 const configure = require('codeceptjs-shared').configure;
 
 let conf = {
-    name: 'Codeceptjs BDD Acceptance Tests',
+    name: '<your-acceptance-tests-name>',
     // add more configuration as required
 };
 

@@ -25,8 +25,9 @@ const playwright_conf = {
     helpers: {
         Playwright: {
             url: host.get(),
-            waitForNavigation: 'networkidle0',
+            waitForNavigation: 'domcontentloaded',
             waitForAction: 1000,
+            show: process.env.SHOW,
             emulate: {
                 ignoreHTTPSErrors: true,
                 acceptDownloads: true,
@@ -36,4 +37,6 @@ const playwright_conf = {
     },
 };
 
-module.exports = { get };
+module.exports = {
+    get
+};

@@ -44,6 +44,8 @@ Default browser for Playwright is `chromium`
 
 But, if you have defined your default driver as Playwright, then you do not need to pass `DRIVER` command, and you can simply run your tests with below commands,
 
+**Run Headless**
+
 ```bash
 yarn acceptance
 ```
@@ -61,6 +63,15 @@ To run on Playwright's Firefox,
 
 ```bash
 yarn acceptance --profile firefox
+```
+**Run with Head: SHOW**
+
+Add `SHOW` enviornment varialbel to run with the Head. It will launch the browser.
+
+```bash
+
+SHOW=true yarn acceptance
+
 ```
 
 #### 👉 Please note: Playwright support was added from the version 4

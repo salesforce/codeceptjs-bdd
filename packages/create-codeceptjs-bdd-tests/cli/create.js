@@ -130,7 +130,7 @@ const run = async () => {
     const packageJson = path.join(ROOT_PATH, 'package.json');
 
     // update project name
-    shell.sed('-i', '<name>', PROJECT_NAME, configFile);
+    shell.sed('-i', '<your-acceptance-tests-name>', PROJECT_NAME, configFile);
     shell.sed(
         '-i',
         './acceptance',
@@ -167,7 +167,7 @@ const run = async () => {
         SHOULD_EXECUTE
     } = await aboutScenarioExeuctions();
 
-    addNpmScripts(packageJson, RELATIVE_PATH);
+    addNpmScripts(packageJson, RELATIVE_PATH, DRIVER);
 
     installDepedencies();
 
