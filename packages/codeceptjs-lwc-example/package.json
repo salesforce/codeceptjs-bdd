@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-lwc-example",
-    "version": "5.1.0",
+    "version": "5.1.1",
     "description": "Salesforce's LWC Recipes Acceptance Tests",
     "main": "index.js",
     "scripts": {
@@ -55,7 +55,7 @@
     },
     "dependencies": {
         "codeceptjs": "^2.6.0",
-        "codeceptjs-shared": "^5.0.6",
+        "codeceptjs-shared": "^5.0.7",
         "dotenv-extended": "^2.8.0"
     }
 }
