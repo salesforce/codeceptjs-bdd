@@ -1,31 +1,31 @@
 {
-    "name": "codeceptjs-saucelabs",
-    "version": "5.1.0",
-    "main": "index.js",
-    "description": "CodeceptJS Saucelabs Integration",
-    "homepage": "https://gkushang.github.io/",
-    "keywords": [
-        "Saucelabs",
-        "CodeceptJS",
-        "Multibrowsers"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
-    },
-    "author": {
-        "name": "Kushang Gajjar",
-        "email": "g.kushang@gmail.com"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "@wdio/sauce-service": "^5.12.1",
-        "chalk": "^2.4.2",
-        "codeceptjs-saucehelper": "^1.4.0",
-        "debug": "^4.1.1",
-        "deepmerge": "^4.0.0",
-        "figlet": "^1.2.4",
-        "node-emoji": "^1.10.0",
-        "sauce-connect-launcher": "^1.2.7"
-    }
+  "name": "codeceptjs-saucelabs",
+  "version": "5.0.2",
+  "main": "index.js",
+  "description": "CodeceptJS Saucelabs Integration",
+  "homepage": "https://gkushang.github.io/",
+  "keywords": [
+    "Saucelabs",
+    "CodeceptJS",
+    "Multibrowsers"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
+  },
+  "author": {
+    "name": "Kushang Gajjar",
+    "email": "g.kushang@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@wdio/sauce-service": "^5.12.1",
+    "chalk": "^2.4.2",
+    "codeceptjs-saucehelper": "^1.4.0",
+    "debug": "^4.1.1",
+    "deepmerge": "^4.0.0",
+    "figlet": "^1.2.4",
+    "node-emoji": "^1.10.0",
+    "sauce-connect-launcher": "^1.2.7"
+  }
 }

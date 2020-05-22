@@ -26,7 +26,6 @@ const playwright_conf = {
         Playwright: {
             url: host.get(),
             waitForNavigation: 'domcontentloaded',
-            waitForAction: 2000,
             show: process.env.SHOW,
             emulate: {
                 ignoreHTTPSErrors: true,
