@@ -43,6 +43,7 @@
         "codeceptjs-shared": "^5.0.2",
         "debug": "^4.1.1",
         "deepmerge": "^4.2.2",
+        "dotenv-extended": "^2.8.0",
         "faker": "^4.1.0",
         "protractor": "^5.4.3",
         "rimraf": "^3.0.2",
@@ -52,10 +53,5 @@
     },
     "resolutions": {
         "minimist": "^1.2.5"
-    },
-    "dependencies": {
-        "codeceptjs": "^2.6.0",
-        "codeceptjs-shared": "^5.0.8",
-        "dotenv-extended": "^2.8.0"
     }
 }
