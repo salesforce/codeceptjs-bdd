@@ -11,6 +11,8 @@ keywords: ['LWC', 'Salesforce', 'Web Components', 'Shadow', 'Shadow DOM']
 
 💯 **ADVANTANGE:** The Shadow Locators are equivalent to [Document.querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector). Makes it simpler to Automate WebComponents or LWC Apps.
 
+[![playwright.gif](https://i.postimg.cc/6qLvyR8Z/playwright.gif)](https://postimg.cc/T51wsKq2)
+
 ### 💁‍♂️ About LWC
 
 [Lightning Web Components](https://developer.salesforce.com/docs/component-library/documentation/en/lwc) is open source, empowering you to explore the source code, customize the behavior for your needs, and build enterprise-ready web components on any platform, not just Salesforce.
