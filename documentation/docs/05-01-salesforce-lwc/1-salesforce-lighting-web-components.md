@@ -5,7 +5,7 @@ parents: ['Salesforce LWC']
 keywords: ['LWC', 'Salesforce', 'Web Components', 'Shadow', 'Shadow DOM']
 ---
 
-Complete Example of E2E Tests with Selenium is available on github: [salesforce-lwc-e2e-selenium](https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/salesforce-lwc-codecept-example/salesforce-lwc-e2e-selenium)
+⭐️ Complete Example of E2E Tests with Selenium is available on github: [salesforce-lwc-e2e-selenium](https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/salesforce-lwc-codecept-example/salesforce-lwc-e2e-selenium)
 
 ## ☁︎ Automate Salesforce Lighting Web Components with Selenium WebDriver
 
@@ -21,55 +21,12 @@ The great news is, CodeceptJS has simplified the E2E Automation of Shadow Elemen
 
 The Codeceptjs-BDD provides the complete example to **Automate the Salesforce LWC with WebDriver**. Please take a look at the example below,
 
-⏩ https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/codeceptjs-lwc-example
+⏩ https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/salesforce-lwc-codecept-example/
 
 ##### Quick example of "how to click the button in Shadow DOM",
 
 ```js
 I.click({ shadow: ['my-app', 'recipe-hello', 'button'] });
-```
-
-## BDD or Mocha styles tests
-
-With Codeceptjs-bdd, you can choose to write your tests in any format. BDD and/or Mocha styles tests OR mix/match both styles - all are supported!
-
-### BDD Scenarios
-
-```js
-
-@hello_binding @lwc_recipes
-Feature: HelloBinding from Salesforce LWC Recipes
-
-    As a LWC developer
-    I want to be able to automate the LWC Shadow Dom Components
-    So that I can quicly create my UI Automated Suite using Selenium
-
-    => LWC Recipe Page: https://recipes.lwc.dev/#hello
-
-    @hello_binding_component
-    Scenario: Fred successfully types in and verifies the title in Hello Binding LWC Component
-
-        When Fred types "Kushang Gajjar" into the Hello Binding Component
-        Then he sees the title is updated accordingly
-
-```
-
-### Mocha Scenarios
-
-```js
-Feature('HelloBinding from Salesforce LWC Recipes (mocha)');
-
-Scenario(
-  'Fred successfully types in and verifies the title in Hello Binding LWC Component',
-  async (I, helloBinding) => {
-    const name = 'Salesforce LWC';
-    I.amOnPage('/#hello/');
-    helloBinding.enterName(name);
-    (await helloBinding.grabTitle()).should.equal(`Hello, ${name}!`);
-  }
-)
-  .tag('@hello-binding-mocha')
-  .tag('smoke');
 ```
 
 If you have any questions regarding automating Saleforce LWC or Web Components or Shadow DOM, please reach out to us by submitting an issue [here](https://github.com/gkushang/codeceptjs-bdd/issues).
