@@ -1,12 +1,15 @@
 # Salesforce's LWC E2E Automation Example
 
+[![c-selenium.gif](https://i.postimg.cc/d05z9RXg/c-selenium.gif)](https://postimg.cc/B81YSFJC)
+
 This repository automates the LWC Recipes page using Selenium WebDriver thru Codeceptjs-BDD framework. It uses **Cucumber BDD Feature** files to automate the LWC Features. You can also choose to automate with **Mocha styles** traditional tests. For more info, take a look at [Codeceptjs-BDD Docs](http://gkushang.github.io/).
 
 This example automates the HelloBinding LWC Component on LWC Recipe - https://recipes.lwc.dev/#hello
 
 ### Pre-requisite
-* Yarn 
-* Node > 10
+
+-   Yarn
+-   Node > 10
 
 ### Getting Started
 
@@ -15,6 +18,7 @@ git clone git@github.com:gkushang/codeceptjs-bdd.git
 cd codeceptjs-bdd/packages/codeceptjs-lwc-example
 yarn
 ```
+
 ### Run Acceptance Tests
 
 ```sh
@@ -27,7 +31,7 @@ yarn acceptance
 yarn acceptance:report
 ```
 
-### Feature 
+### Feature
 
 This example automates the `Hello Binding` component from the LWC Recipes Page.
 
@@ -50,9 +54,9 @@ Feature: HelloBinding from Salesforce LWC Recipes
 
 ### Locating LWC Element
 
-The work is still in-progress for the changes to be accepted at CodeceptJS. Here is the proposal on how to select the element when it's chained with custom elements. 
+The work is still in-progress for the changes to be accepted at CodeceptJS. Here is the proposal on how to select the element when it's chained with custom elements.
 
-In the page object, you can define your locators as a special `shadow` locator. 
+In the page object, you can define your locators as a special `shadow` locator.
 
 ```sh
     // input field on helloBinding component
@@ -68,7 +72,7 @@ Since it inherits the elements from the host/parent, you can define your Page Ob
 class HelloBinding extends LightingComponent {
 
   constructor() {
-    
+
     super();
 
     // common elements for shadow locators
@@ -76,10 +80,10 @@ class HelloBinding extends LightingComponent {
 
     // locators uses "shadow", and elements are sequentially defined
     this.locators = {
-      
+
       // input field on helloBinding component
       inputField: { shadow: [...parent, 'ui-input', 'input.input' ]},
-      
+
       // card title on helloBinding component
       cardTitle: { shadow: [...parent, 'div p']}
 
@@ -96,6 +100,3 @@ class HelloBinding extends LightingComponent {
 }
 
 ```
-
-
-

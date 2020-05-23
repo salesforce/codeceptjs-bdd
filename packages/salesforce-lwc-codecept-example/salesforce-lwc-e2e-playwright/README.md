@@ -2,6 +2,8 @@
 
 [More info ](http://localhost:8846/05-01-salesforce-lwc/1-salesforce-lighting-web-components-playwright/)
 
+[![c-selenium.gif](https://i.postimg.cc/d05z9RXg/c-selenium.gif)](https://postimg.cc/B81YSFJC)
+
 ## Run Tests
 
 #### Clone
@@ -39,7 +41,7 @@
 
 ```bash
 
-   yarn acceptance:parallel
+   yarn acceptance:parallels
 
 ```
 
