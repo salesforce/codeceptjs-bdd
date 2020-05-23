@@ -1988,20 +1988,6 @@ codeceptjs-saucehelper@^1.4.0:
   resolved "https://registry.yarnpkg.com/codeceptjs-saucehelper/-/codeceptjs-saucehelper-1.4.0.tgz#1b94dd73670d93194b2dcfbb7824a8730b0a391a"
   integrity sha512-ZsEuSJFqHhQxKymWjcrYeZqj/tlEX7jbpN8VhXJRb5EEfCLPQxDjzRzNNlY6pugcReoJ/Hy/aflfQKbS80BlQg==
 
-codeceptjs-saucelabs@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/codeceptjs-saucelabs/-/codeceptjs-saucelabs-5.1.0.tgz#e2c8134a979ebff842d29399489bcec5bb3ec589"
-  integrity sha512-uWDnryV8YyMJuZjvWW31orPvZAF0z23qkmnFksQ7MjY6uXd5Qk9+rkd/0Mu3fgsnGmTYLx25DTWOItpvyCkd5A==
-  dependencies:
-    "@wdio/sauce-service" "^5.12.1"
-    chalk "^2.4.2"
-    codeceptjs-saucehelper "^1.4.0"
-    debug "^4.1.1"
-    deepmerge "^4.0.0"
-    figlet "^1.2.4"
-    node-emoji "^1.10.0"
-    sauce-connect-launcher "^1.2.7"
-
 codeceptjs@^2.5.0, codeceptjs@^2.6.0, codeceptjs@^2.6.1:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/codeceptjs/-/codeceptjs-2.6.2.tgz#aba58c7872ef4de01fe04a3e924694f431cef4b5"

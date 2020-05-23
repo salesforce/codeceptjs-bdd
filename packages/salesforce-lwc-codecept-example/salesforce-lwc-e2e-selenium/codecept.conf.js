@@ -10,7 +10,7 @@ const should = require('should');
 const configure = require('codeceptjs-shared').configure;
 
 let conf = {
-    name: 'Codeceptjs BDD Acceptance Tests',
+    name: 'LWC Acceptance Tests with Selenium - BDD Feature Flavor',
     // add more configuration as required
 };
 

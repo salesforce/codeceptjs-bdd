@@ -1,7 +1,7 @@
 ---
-title: Mocha-styled Acceptance Scenarios
+title: Integration Tests - Mocha
 sub_title: Write Mocha-styled classical acceptance scenarios along with BDD Features
-parents: ['Mocha-styled']
+parents: ['Acceptance Tests', 'Integration Tests']
 keywords: ['mocha', 'classical']
 ---
 
@@ -23,13 +23,15 @@ Codeceptjs-BDD provides a directory called `acceptance/mocha`, where you usually
 
 The mocha-style tests should have extention `*.spec.js` for default configuration to pick up and run the tests. However, if you decide to change the extention, e.g. to `*.test.js`, then you can definitly do so by updating your Projects root configuration which is explained later in this section.
 
+By default, the CLI will create the foler named `mocha` but you can rename it to your choice. e.g. `__tests__`.
+
 #### 🚦Example
 
 ```javascript
-// acceptance/mocha/login.spec.js
+// acceptance/__tests__/login.spec.js
 
 /* FEATURE */
-Feature('Login Tests (mocha)').tag('@login');
+Feature('Login').tag('@login');
 
 /* BEFORE */
 Before(I => {

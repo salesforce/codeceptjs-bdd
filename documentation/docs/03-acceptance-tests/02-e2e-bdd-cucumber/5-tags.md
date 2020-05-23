@@ -1,7 +1,7 @@
 ---
 title: Tags
 sub_title: Group features and sceanarios with Tags
-parents: ['BDD Cucumber']
+parents: ['Acceptance Tests', 'E2E BDD Tests']
 keywords: ['Tag', 'Tags', 'cucumber', 'bdd', 'gherkin', 'gwt']
 ---
 

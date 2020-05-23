@@ -1,5 +1,5 @@
 ---
-title: Salesforce Lightning Web Components
+title: LWC with Selenium
 sub_title: End to End Test Automation with CodeceptJS - Selenium WebDriver
 parents: ['Salesforce LWC']
 keywords: ['LWC', 'Salesforce', 'Web Components', 'Shadow', 'Shadow DOM']

@@ -1,8 +1,8 @@
 ---
 title: Scenario
 sub_title: BDD Gherkin/Cucumber Scenario
-parents: ["BDD Cucumber"]
-keywords: ["Scenario", "Scenarios", "cucumber", "bdd", "gherkin"]
+parents: ['Acceptance Tests', 'E2E BDD Tests']
+keywords: ['Scenario', 'Scenarios', 'cucumber', 'bdd', 'gherkin']
 ---
 
 Scenarios are defined in `.feature` files, which are stored in the features directory (or a subdirectory).
@@ -38,8 +38,8 @@ Codeceptjs-BDD executes each step in a scenario one at a time, in the sequence y
 
 Keywords are not taken into account when looking for a step definition. This means you cannot have a Given, When, Then, And or But step with the same text as another step.
 
-
 ### Tag a Scenario
+
 ---
 
 It is always recommended to `Tag` a Scenario.
