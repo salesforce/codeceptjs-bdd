@@ -151,15 +151,13 @@ function Header({ siteTitle, siteDescription }, props) {
             </GatsbyLink>
           </Tooltip>
 
-          <Hidden xsDown>
-            <Tooltip title="New Releases">
-              <GatsbyLink to="/CHANGELOG">
-                <IconButton aria-label="New Releases" color="inherit">
-                  <NewReleases style={{ fill: 'white' }} />
-                </IconButton>
-              </GatsbyLink>
-            </Tooltip>
-          </Hidden>
+          <Tooltip title="New Releases">
+            <GatsbyLink to="/CHANGELOG">
+              <IconButton aria-label="New Releases" color="inherit">
+                <NewReleases style={{ fill: 'white' }} />
+              </IconButton>
+            </GatsbyLink>
+          </Tooltip>
 
           <Tooltip title="Github Repository">
             <IconButton

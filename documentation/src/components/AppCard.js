@@ -1,19 +1,19 @@
-import React from "react"
-import Typography from "@material-ui/core/Typography"
-import { makeStyles } from "@material-ui/core/styles"
-import Card from "@material-ui/core/Card"
-import CardMedia from "@material-ui/core/CardMedia"
-import CardContent from "@material-ui/core/CardContent"
-import CardActions from "@material-ui/core/CardActions"
-import CardActionArea from "@material-ui/core/CardActionArea"
-import Button from "@material-ui/core/Button"
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    height: "100%",
-    width: "100%",
+    height: '100%',
+    width: '100%',
   },
-}))
+}));
 
 export default function AppCard({
   image,
@@ -29,9 +29,9 @@ export default function AppCard({
   mediaWidth,
   icon,
 }) {
-  const classes = useStyles()
-  const comp = component || "img"
-  const fLinkName = firstLinkName || "Learn More"
+  const classes = useStyles();
+  const comp = component || 'img';
+  const fLinkName = firstLinkName || 'Learn More';
 
   return (
     <Card className={classes.card}>
@@ -46,7 +46,7 @@ export default function AppCard({
           title={title}
         />
 
-        <CardContent>
+        <CardContent gutterBottom>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
@@ -56,7 +56,7 @@ export default function AppCard({
         </CardContent>
       </CardActionArea>
 
-      <CardActions disableSpacing>
+      <CardActions disableSpacing="true">
         {icon}
 
         <Button size="small" color="primary" target="_blank" href={link}>
@@ -66,12 +66,12 @@ export default function AppCard({
         <Button
           size="small"
           color="primary"
-          style={secondLink ? {} : { display: "none" }}
+          style={secondLink ? {} : { display: 'none' }}
           href={secondLink}
         >
           {secondLinkName}
         </Button>
       </CardActions>
     </Card>
-  )
+  );
 }

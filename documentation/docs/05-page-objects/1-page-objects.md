@@ -1,6 +1,6 @@
 ---
 title: Page Objects
-sub_title: Execute Features on Local Development Enviornment
+sub_title: Modularize your Automation with Page Object Classes
 parents: ['Page Objects']
 keywords: ['Page Objects', 'cucumber', 'bdd', 'gherkin', 'gwt']
 ---

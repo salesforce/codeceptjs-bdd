@@ -122,6 +122,45 @@ const renderAppCards = () => {
     },
     {
       size: 3,
+      title: 'Automate Web Components',
+      description:
+        'Simplified Locators for Web Components or Shadow Root elements. Codeceptjs-BDD automates your application built with Web Components or Salesforce LWC.',
+      secondLinkName: 'Selenium Example',
+      secondLink: '/05-01-salesforce-lwc/1-salesforce-lighting-web-components/',
+      firstLinkName: 'Playwright Example',
+      link:
+        '/05-01-salesforce-lwc/1-salesforce-lighting-web-components-playwright/',
+      image: require('../images/lwc-sf.png'),
+    },
+    {
+      size: 3,
+      title: 'Integration Tests',
+      description:
+        'One framework, mulitple solutions. Use Codeceptjs-BDD to automate both of your Integration tests and E2E Tests. Codecetpsj-BDD can run both, Mocha and Cucumber BDD, with the single common command.',
+      firstLinkName: 'Learn More',
+      link: '/03-acceptance-tests/01-integration-tests/1-integration-tests/',
+      image: require('../images/imocha.png'),
+    },
+    {
+      size: 3,
+      title: 'E2E BDD Tests',
+      description:
+        'Choose to write your E2E Tests either with Classical Mocha styled tests or modern Cucumber BDD Feature files acceptance tests. Codeceptjs-BDD supports both, mixed of, Mocha-style accetpance tests and Cucumber Fetures.',
+      firstLinkName: 'Learn More',
+      link: '/03-acceptance-tests/02-e2e-bdd-cucumber/1-feature/',
+      image: require('../images/e2e.png'),
+    },
+    {
+      size: 3,
+      title: 'Page Objects',
+      description:
+        'Modularize your UI Automation with Page Objects. Each page of your App can be represented as a Page Object Class, and Class can be extended as needed.',
+      firstLinkName: 'Learn More',
+      link: '/05-page-objects/1-page-objects/',
+      image: require('../images/po.png'),
+    },
+    {
+      size: 3,
       title: 'Quick Setup Wizard',
       description:
         'Quicky setup BDD framework for your App. Codecept-BDD implemetns the Interactive CLI to quickly setup the BDD Framework, integration with Sauce Labs and provides set of example Automated Feature files.',
@@ -257,8 +296,8 @@ const IndexPage = () => {
                 Codeceptjs BDD
               </Typography>
               <Typography variant="overline" display="block" gutterBottom>
-                CODECEPTJS BDD Framework integrated with Cucumber and Saucelabs
-                cloud.
+                CODECEPTJS BDD Framework integrated with Cucumber, Mocha and
+                Saucelabs cloud.
               </Typography>
             </Grid>
 
