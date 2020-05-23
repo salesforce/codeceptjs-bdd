@@ -4,7 +4,7 @@
     "description": "Salesforce's LWC Recipes Acceptance Tests",
     "main": "index.js",
     "scripts": {
-        "acceptance": "yarn acceptance:clean && codeceptjs run --debug",
+        "acceptance": "codeceptjs run --debug",
         "acceptance:parallel": "codeceptjs run-workers --suites 2 --debug",
         "acceptance:report": "allure serve ./acceptance/report",
         "acceptance:clean": "allure generate -c -o ./acceptance/report",
