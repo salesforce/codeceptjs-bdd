@@ -5,6 +5,8 @@ parents: ['Salesforce LWC']
 keywords: ['LWC', 'Salesforce', 'Web Components', 'Shadow', 'Shadow DOM']
 ---
 
+Complete Example of E2E Tests with Selenium is available on github: [salesforce-lwc-e2e-selenium](https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/salesforce-lwc-codecept-example/salesforce-lwc-e2e-selenium)
+
 ## ☁︎ Automate Salesforce Lighting Web Components with Selenium WebDriver
 
 [Lightning Web Components](https://developer.salesforce.com/docs/component-library/documentation/en/lwc) is open source, empowering you to explore the source code, customize the behavior for your needs, and build enterprise-ready web components on any platform, not just Salesforce.

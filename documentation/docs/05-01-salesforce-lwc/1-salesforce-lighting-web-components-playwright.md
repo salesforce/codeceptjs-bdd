@@ -5,6 +5,8 @@ parents: ['Salesforce LWC']
 keywords: ['LWC', 'Salesforce', 'Web Components', 'Shadow', 'Shadow DOM']
 ---
 
+Complete Example of E2E Tests with Playwright is available on github: [salesforce-lwc-e2e-playwright](https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/salesforce-lwc-codecept-example/salesforce-lwc-e2e-playwright)
+
 ## ☁︎ Automate Salesforce Lighting Web Components with [Micorsoft's Playwright](https://github.com/microsoft/playwright) Browsers
 
 💯 **ADVANTANGE:** The Shadow Locators are equivalent to [Document.querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector). Makes it simpler to Automate WebComponents or LWC Apps.
