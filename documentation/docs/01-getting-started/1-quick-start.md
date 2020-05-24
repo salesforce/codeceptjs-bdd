@@ -21,6 +21,10 @@ $ npx create-codeceptjs-bdd-tests
 
 ```
 
+### 🎥 Watch Quick Setup in Action
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=-x9kFV66-X4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## ➤ About CLI
 
 The CLI,
@@ -33,9 +37,5 @@ The CLI,
 6. Runs existing Sample BDD Feature Files to test your setup
 
 This Framework comes with the Sample BDD Feature files with examples. Please follow through the [Examples](https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/codeceptjs-cucumber/acceptance/features) to create your own Feature Files & Scenarios.
-
-### 🎥 Watch Quick Setup in Action
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OGrn1ejyb-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 💯Follow the instructions on CLI. Once done, you're ready to start writing automated Feature files for your app 🎉

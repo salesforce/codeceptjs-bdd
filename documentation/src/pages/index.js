@@ -165,7 +165,7 @@ const renderAppCards = () => {
       description:
         'Quicky setup BDD framework for your App. Codecept-BDD implemetns the Interactive CLI to quickly setup the BDD Framework, integration with Sauce Labs and provides set of example Automated Feature files.',
       link:
-        'https://www.youtube.com/watch?time_continue=1&v=OGrn1ejyb-k&feature=emb_logo',
+        'https://www.youtube.com/watch?time_continue=1&v=-x9kFV66-X4&feature=emb_logo',
       firstLinkName: 'Watch in Action',
       icon: <YouTubeIcon color="secondary" />,
       image: quickStartYt,
