@@ -93,7 +93,7 @@ const renderAppCards = () => {
       title: 'Driver Agnostic',
       description:
         'Run your tests via WebDriver and Playwright. The code is the same. It is easy to change the driver through configuration. Codecpetjs-BDD supports Pupetter, Headless Chrome, Selenium Webdriver and Webdriver IO.',
-      link: 'https://codecept.io/plugins/#retryfailedstep',
+      link: 'https://codecept.io/basics/#architecture',
       image: driversImage,
     },
     {
