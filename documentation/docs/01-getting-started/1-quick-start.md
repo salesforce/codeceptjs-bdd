@@ -23,7 +23,7 @@ $ npx create-codeceptjs-bdd-tests
 
 ### 🎥 Watch Quick Setup in Action
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=-x9kFV66-X4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-x9kFV66-X4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ➤ About CLI
 
