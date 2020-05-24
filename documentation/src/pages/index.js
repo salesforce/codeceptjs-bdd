@@ -77,7 +77,7 @@ const renderAppCards = () => {
       title: 'Write Feature Files',
       description:
         'CodeceptJs BDD integrates Cucumber to write Gherkin Feature Files. Cucumber is a popular collaboration tool used by many teams practiving BDD to capture requirements and create executable specifications.',
-      link: '/03-bdd-cucumber/1-feature/',
+      link: '/03-acceptance-tests/02-e2e-bdd-cucumber/1-feature/',
       image: cucumber,
     },
     {
