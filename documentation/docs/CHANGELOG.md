@@ -14,12 +14,10 @@ keywords: ['changelog', 'releases', 'release']
 
 - CircleCI runs more tests for Chrome, Firefox, Safari and Run in Parallal foe each commit
 
-By default, `yarn acceptance:parallel` commands will run 10 suites in parallel. You can add more threads by editing the number.
-
 ## 5.0.6 (MAY-20-2020)
 
 - Playwright Parallel Support
-  By default, `yarn acceptance:parallel` commands will run 10 suites in parallel. You can add more threads by editing the number.
+  By default, `yarn acceptance:parallel` commands will run 3 suites in parallel. You can add more threads by editing the number.
 
 ```bash
   "acceptance:parallel": "npx codeceptjs run-workers --suites 10",
