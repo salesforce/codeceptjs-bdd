@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-saucelabs",
-  "version": "5.1.2",
+  "version": "5.1.4",
   "main": "index.js",
   "description": "CodeceptJS Saucelabs Integration",
   "homepage": "https://gkushang.github.io/",
