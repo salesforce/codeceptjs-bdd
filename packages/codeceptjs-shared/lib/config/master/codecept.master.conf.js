@@ -42,6 +42,7 @@ let masterConf = {
             chunks: (files) => {
                 let chunks = [];
                 files.forEach((file) => {
+                    
                     chunks.push([file]);
                 });
                 return chunks;

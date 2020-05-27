@@ -21,7 +21,11 @@
     },
     "scripts": {
         "bootstrap": "lerna bootstrap",
-        "acceptance": "lerna run --scope create-codeceptjs-bdd-tests test"
+        "acceptance": "lerna run --scope create-codeceptjs-bdd-tests test",
+        "circleci:test:playwright": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright",
+        "circleci:test:playwright:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright:parallel",
+        "circleci:test:webdriver": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver",
+        "circleci:test:webdriver:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver:parallel"
     },
     "version": "1.0.0",
     "description": "CodeceptJS Cucumber BDD Framework",

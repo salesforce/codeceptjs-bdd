@@ -33,9 +33,15 @@ jobs:
           name: Bootstrap
           command: yarn bootstrap
       - run:
-          name: Run on Chrome & Playwright Browsers
-          command: yarn acceptance
-
+          name: Run on Playwright
+          command: yarn circleci:test:playwright
+      - run:
+          name: Run on Playwright - Parallel
+          command: yarn circleci:test:playwright:parallel
+      - run:
+          name: Run on WebDriver
+          command: yarn circleci:test:webdriver
+            
 workflows:
   acceptance-tests:
     jobs:

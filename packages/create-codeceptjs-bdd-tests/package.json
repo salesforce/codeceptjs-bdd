@@ -9,10 +9,14 @@
     "homepage": "https://gkushang.github.io/",
     "scripts": {
         "acceptance": "npx codeceptjs run --verbose",
-        "acceptance:parallel": "npx codeceptjs run-workers --suites 10",
+        "acceptance:parallel": "npx codeceptjs run-workers --suites 3",
         "acceptance:parallel:multibrowsers": "npx  run-multiple multibrowsers",
         "acceptance:report": "allure serve ./acceptance/report",
-        "test": "yarn acceptance --profile chrome:headless && DRIVER=playwright yarn acceptance",
+        "test": "yarn circleci:test:playwright:chromium && yarn circleci:test:playwright:firefox && yarn circleci:test:playwright:safari && circleci:test:webdriver && circleci:test:playwright:parallel && circleci:test:webdriver:parallel",
+        "circleci:test:playwright": "DRIVER=playwright yarn acceptance",
+        "circleci:test:playwright:parallel": "DRIVER=playwright yarn acceptance:parallel",
+        "circleci:test:webdriver": "yarn acceptance --profile chrome:headless",
+        "circleci:test:webdriver:parallel": "yarn acceptance:parallel --profile chrome:headless",
         "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
     },
     "bin": {
@@ -30,7 +34,6 @@
         "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
     },
     "dependencies": {
-        "allure": "^0.0.0",
         "chalk": "^2.4.2",
         "cli-ux": "^5.4.5",
         "figlet": "^1.2.3",

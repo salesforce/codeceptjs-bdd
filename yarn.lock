@@ -1993,10 +1993,45 @@ codeceptjs-saucehelper@^1.4.0:
   resolved "https://registry.yarnpkg.com/codeceptjs-saucehelper/-/codeceptjs-saucehelper-1.4.0.tgz#1b94dd73670d93194b2dcfbb7824a8730b0a391a"
   integrity sha512-ZsEuSJFqHhQxKymWjcrYeZqj/tlEX7jbpN8VhXJRb5EEfCLPQxDjzRzNNlY6pugcReoJ/Hy/aflfQKbS80BlQg==
 
-codeceptjs@^2.5.0, codeceptjs@^2.6.1:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/codeceptjs/-/codeceptjs-2.6.2.tgz#aba58c7872ef4de01fe04a3e924694f431cef4b5"
-  integrity sha512-wVH+NpL2umtsart++rrNuVY8itsNBEnr+naXbFC3Owkc3RJ4Bhd9L7Re9OJHUIaqxZ8P8pFbLexIicD/cuRXDw==
+codeceptjs@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/codeceptjs/-/codeceptjs-2.5.0.tgz#dee631ce18dd35d1237dbb28ee47a02f19a9a2ec"
+  integrity sha512-HVgUkBrgLzWy+R4O4VMHih4LymR0dn/c1IkY/JhAUx5xVHbwkTa+MeLInrNbPToURSBH6ZLKR7DRrqTmR1Fp5A==
+  dependencies:
+    "@codeceptjs/configure" "^0.4.0"
+    allure-js-commons "^1.3.2"
+    arrify "^2.0.1"
+    axios "^0.19.1"
+    chalk "^1.1.3"
+    commander "^2.20.3"
+    css-to-xpath "^0.1.0"
+    cucumber-expressions "^6.6.2"
+    envinfo "^7.3.1"
+    escape-string-regexp "^1.0.3"
+    figures "^2.0.0"
+    fn-args "^4.0.0"
+    fs-extra "^8.1.0"
+    gherkin "^5.1.0"
+    glob "^6.0.1"
+    inquirer "^6.5.2"
+    js-beautify "^1.10.2"
+    lodash.clonedeep "^4.5.0"
+    lodash.merge "^4.6.2"
+    mkdirp "^0.5.1"
+    mocha "^6.2.2"
+    mocha-junit-reporter "^1.23.1"
+    ms "^2.1.2"
+    parse-function "^5.5.0"
+    promise-retry "^1.1.1"
+    requireg "^0.1.8"
+    resq "^1.7.0"
+    semver "^6.2.0"
+    sprintf-js "^1.1.1"
+
+codeceptjs@^2.6.5:
+  version "2.6.5"
+  resolved "https://registry.yarnpkg.com/codeceptjs/-/codeceptjs-2.6.5.tgz#fde1e544d91151d4676d20667810e093921a09ec"
+  integrity sha512-v0Lrbr3BtbzNHPPQi07cVDx/fiwVsukiXRdMkqU0qMdCEQIyVRjNIxn2l2pD/LzevTCq2jrfGjesbcDGeP3GcA==
   dependencies:
     "@codeceptjs/configure" "^0.4.0"
     allure-js-commons "^1.3.2"
@@ -5817,6 +5852,15 @@ require-main-filename@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
   integrity sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
+
+requireg@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/requireg/-/requireg-0.1.8.tgz#75c1d495294fa5ddfd51e4fcca4965c44f1ed8b1"
+  integrity sha512-qjbwnviLXg4oZiAFEr1ExbevkUPaEiP1uPGSoFCVgCCcbo4PXv9SmiJpXNYmgTBCZ8fY1Jy+sk7F9/kPNepeDw==
+  dependencies:
+    nested-error-stacks "~2.0.1"
+    rc "~1.2.7"
+    resolve "~1.7.1"
 
 requireg@^0.2.2:
   version "0.2.2"
