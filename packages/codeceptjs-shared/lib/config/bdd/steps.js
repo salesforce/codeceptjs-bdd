@@ -3,9 +3,7 @@ const path = require('path');
 
 const steps = () => {
     let steps = [];
-    glob.sync(path.join(process.cwd(), '/**/*steps.js')).map((file) =>
-        steps.push(file)
-    );
+    glob.sync(path.join(process.cwd(), '/**/steps/**/*.steps.js')).map((file) => steps.push(file));
     return steps;
 };
 
