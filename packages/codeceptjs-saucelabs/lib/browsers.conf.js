@@ -1,6 +1,6 @@
 const sauceOptions = {
-        idleTimeout: 300,
-        seleniumVersion: '3.14.0'
+    idleTimeout: 300,
+    seleniumVersion: '3.14.0'
 };
 
 let browsers = {
@@ -36,26 +36,16 @@ let browsers = {
             'sauce:options': sauceOptions
         }
     },
-    mobileSimulator: {
-        browser: 'chrome',
+
+    androidchrome: {
+        browser: 'Chrome',
         desiredCapabilities: {
-            chromeOptions: {
-                mobileEmulation: {
-                    deviceName: "iPhone X"
-                }
-            }
+            appiumVersion: '1.9.1',
+            platformName: 'Android',
+            platformVersion: '8.0',
+            deviceName: 'Android Emulator'
         }
-    },
-    tabletSimulator: {
-        browser: 'chrome',
-        desiredCapabilities: {
-            chromeOptions: {
-                mobileEmulation: {
-                    deviceName: "Kindle Fire HDX"
-                }
-            }
-        }
-    },
+    }
 };
 
 exports.browsers = browsers;
