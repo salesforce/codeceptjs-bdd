@@ -6,7 +6,7 @@ let get = function (getBrowsers, sauceBrowsers) {
                 port: 80,
                 user: process.env.SAUCE_USERNAME,
                 key: process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY,
-                tunnelIdentifier: '416a84493b0a465ea6347c3252701984',
+                tunnelIdentifier: process.env.SAUCE_TUNNEL_ID || process.env.SAUCE_PARENT_TUNNEL_ID,
                 region: 'us'
             },
             SauceHelper: {
