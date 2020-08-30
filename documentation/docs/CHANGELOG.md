@@ -4,9 +4,18 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-shared & @codeceptjs-saucelab
 keywords: ['changelog', 'releases', 'release']
 ---
 
+## 5.2.1 (AUG-30-2020)
+
+- Feature:
+  - Test Washer for CI
+  ```bash
+    yarn acceptance:washer <--grep required scenarios>
+  ```
+
 ## 5.2.0 (AUG-30-2020)
 
-- Now, run your tests on Appium on SauceLabs - Mobile Browsers. Only WebDriver Supported.
+- Feature:
+  - Now, run your tests on Appium on SauceLabs - Mobile Browsers. Only WebDriver Supported.
 
 Pass your profile with `sauce:appium:<mobile-browser-profile>`
 
