@@ -29,11 +29,11 @@ let masterConf = {
         },
         autoDelay: {
             enabled: true,
-            delayBefore: 400
+            delayBefore: 600
         },
         retryFailedStep: {
             enabled: true,
-            retries: 5
+            retries: 10
         }
     },
     multiple: {
