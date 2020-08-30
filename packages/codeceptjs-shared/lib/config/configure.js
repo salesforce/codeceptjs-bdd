@@ -23,9 +23,9 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
     const browser = driver.browser;
     let driverMessage;
     if (process.env.PLAYWRIGHT_DEVICE) {
-        driverMessage = `Launching '${browser}' on mobile device '${process.env.PLAYWRIGHT_DEVICE}' with ${gDriver}.\n${JSON.stringify(driver, undefined, 2)}\n`;
+        driverMessage = `Launching '${browser}' on mobile device '${process.env.PLAYWRIGHT_DEVICE}' with ${gDriver}.`;
     } else {
-        driverMessage = `Launching '${browser}' on ${gDriver}.\n Caps: \n ${JSON.stringify(driver, undefined, 2)}\n`;
+        driverMessage = `Launching '${browser}' on ${gDriver}.`;
     }
 
     logger.log({
@@ -37,6 +37,8 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         message: `Host: ${process.env.HOST}`,
         emoji: 'earth_americas'
     });
+
+    console.log(`>>> ${gDriver} conf: ${JSON.stringify(driver)} <<<\n`);
 
     return merge(
         merge(master_conf, conf),
