@@ -4,6 +4,31 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-shared & @codeceptjs-saucelab
 keywords: ['changelog', 'releases', 'release']
 ---
 
+## 5.2.0 (AUG-30-2020)
+
+- Now, run your tests on Appium on SauceLabs - Mobile Browsers. Only WebDriver Supported.
+
+Pass your profile with `sauce:appium:<mobile-browser-profile>`
+
+```bash
+  yarn acceptance --profile sauce:appium:androidchrome
+
+  yarn acceptance --profile sauce:appium:iphonesafari
+```
+
+You can add more user-specific browsers in your config
+
+- Run your Playwright tests on Mobile Devices. Only Playwright Supported.
+
+Pass your profile with `device:<device-name>:<browser-name>`
+
+```bash
+  yarn acceptance --profile device:'iPhone 11 pro':safari
+  yarn acceptance --profile device:'Pixel 2':chrome
+```
+
+More devices are available [here](https://github.com/microsoft/playwright/blob/master/src/server/deviceDescriptors.ts)
+
 ## 5.1.1 (MAY-27-2020)
 
 - Fix Parallel issue with SauceLabs for Workers

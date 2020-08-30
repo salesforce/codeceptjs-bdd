@@ -23,7 +23,7 @@ const error = (errorMessage) => {
 };
 
 const welcome = () => {
-    console.clear();
+    // console.clear();
 
     let message = '\n';
     const i = 3;
