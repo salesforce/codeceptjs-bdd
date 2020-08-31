@@ -4,7 +4,7 @@ const host = require('../../host/host');
 const { devices } = require('playwright');
 
 const getPlaywrightBrowser = function () {
-    if (BROWSER && BROWSER.match('device:[a-zA-Z]')) {
+    if (BROWSER.match('device:[a-zA-Z]')) {
         let profileInfo = BROWSER.split(':');
         profileInfo.shift();
         process.env.PLAYWRIGHT_DEVICE = profileInfo.shift();
@@ -37,7 +37,7 @@ const playwright_conf = {
         Playwright: {
             url: host.get(),
             waitForNavigation: 'domcontentloaded',
-            show: process.env.SHOW,
+            show: process.env.HEADLESS === 'false',
             emulate: {
                 ignoreHTTPSErrors: true,
                 acceptDownloads: true

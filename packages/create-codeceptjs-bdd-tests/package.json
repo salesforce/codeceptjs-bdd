@@ -8,7 +8,7 @@
     "description": "Create Codeceptjs BDD Tests",
     "homepage": "https://gkushang.github.io/",
     "scripts": {
-        "acceptance": "npx codeceptjs run --verbose",
+        "acceptance": "npx codeceptjs run ",
         "acceptance:parallel": "npx codeceptjs run-workers --suites 3",
         "acceptance:washer": "npx codeceptjs run-rerun",
         "acceptance:report": "allure serve ./acceptance/report",
@@ -37,6 +37,7 @@
         "allure-commandline": "^2.9.0",
         "chalk": "^2.4.2",
         "cli-ux": "^5.4.5",
+        "codeceptjs": "^2.6.10",
         "dotenv-extended": "^2.8.0",
         "figlet": "^1.2.3",
         "inquirer": "^7.0.0",
