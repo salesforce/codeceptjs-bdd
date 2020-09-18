@@ -50,7 +50,7 @@
         "allure-commandline": "^2.9.0",
         "codeceptjs": "^2.6.1",
         "codeceptjs-saucelabs": "^5.2.0",
-        "codeceptjs-shared": "^6.0.1",
+        "codeceptjs-configure": "^6.0.1",
         "debug": "^4.1.1",
         "deepmerge": "^4.0.0",
         "dotenv-extended": "^2.8.0",

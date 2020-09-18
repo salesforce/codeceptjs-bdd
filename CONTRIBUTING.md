@@ -17,9 +17,9 @@ If you'd like to contribute, please make sure to discuss the intended changes ei
 
 ## Contributing Guidelines
 
-* Explain your changes in the PR description, that could be new feature or bug fixes
-* Follow the coding standard 
-* Format your code with default ES Lint of your editor
-* If you are making a change in the SauceLabs integration, make changes under `codepcetjs-bdd/packages/codeceptjs-saucelabs`
-* If you are making a change in the CodeceptJs Configuration, make changes under `codepcetjs-bdd/packages/codeceptjs-shared`
-* If you are making a change in the CodeceptJs Cucumber framework, make changes under `codepcetjs-bdd/packages/codeceptjs-cucumber`
+-   Explain your changes in the PR description, that could be new feature or bug fixes
+-   Follow the coding standard
+-   Format your code with default ES Lint of your editor
+-   If you are making a change in the SauceLabs integration, make changes under `codepcetjs-bdd/packages/codeceptjs-saucelabs`
+-   If you are making a change in the CodeceptJs Configuration, make changes under `codepcetjs-bdd/packages/codeceptjs-configure`
+-   If you are making a change in the CodeceptJs Cucumber framework, make changes under `codepcetjs-bdd/packages/codeceptjs-cucumber`

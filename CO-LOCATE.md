@@ -1,7 +1,6 @@
+# Get Started with CodeceptJS tests
 
-# Get Started with CodeceptJS tests 
-
->> Colocate the tests to your repository
+> > Colocate the tests to your repository
 
 ### Step 1: Clone the repository
 
@@ -15,12 +14,12 @@
     cd codeceptjs-e2e
 
     cp -a packages/codeceptjs-cucumber/ <relative_path_to_your_desired_acceptance_folder>
-    
-    cp packages/codeceptjs-cucumber/codecept.conf.js <relative_path_to_root_of_your_desired_project_or_your_monorepo> 
+
+    cp packages/codeceptjs-cucumber/codecept.conf.js <relative_path_to_root_of_your_desired_project_or_your_monorepo>
 
     cd <to_your_desired_project>
-    
-    yarn add codeceptjs-saucelabs codeceptjs-shared @wdio/selenium-standalone-service allure-commandline codeceptjs codeceptjs-selenium debug faker protractor rimraf should webdriverio deepmerge -D
+
+    yarn add codeceptjs-saucelabs codeceptjs-configure @wdio/selenium-standalone-service allure-commandline codeceptjs codeceptjs-selenium debug faker protractor rimraf should webdriverio deepmerge -D
 ```
 
 Update the following PATH's in `codeceptjs.config.js` with your actual paths,
@@ -36,10 +35,9 @@ Run existing tests
 ```bash
     ./node_modules/.bin/codeceptjs run --config=<path_to_codeceptjs.conf.js_file> --grep=@search_results
 ```
+
 Launch HTML Report
 
 ```bash
     ./node_modules/.bin/allure serve <relative_path_to_report_folder_under_acceptance_folder>
 ```
-
-

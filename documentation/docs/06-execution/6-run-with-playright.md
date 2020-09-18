@@ -64,6 +64,7 @@ To run on Playwright's Firefox,
 ```bash
 yarn acceptance --profile firefox
 ```
+
 **Run with Head: SHOW**
 
 Add `SHOW` enviornment varialbel to run with the Head. It will launch the browser.
@@ -78,10 +79,10 @@ SHOW=true yarn acceptance
 
 ### + Add Playwright support for existing framework before version 4
 
-Please note: The Playwright support was included with the `codeceptjs-shared@4` version. If you have previous version installed, please update your `codecept.conf.js` declaration and dependencies as defined [here](https://github.com/gkushang/codeceptjs-bdd/blob/develop/packages/codeceptjs-cucumber/codecept.conf.js#L1-L7) and update your config creation as defined [here](https://github.com/gkushang/codeceptjs-bdd/blob/develop/packages/codeceptjs-cucumber/codecept.conf.js#L42).
+Please note: The Playwright support was included with the `codeceptjs-configure@4` version. If you have previous version installed, please update your `codecept.conf.js` declaration and dependencies as defined [here](https://github.com/gkushang/codeceptjs-bdd/blob/develop/packages/codeceptjs-cucumber/codecept.conf.js#L1-L7) and update your config creation as defined [here](https://github.com/gkushang/codeceptjs-bdd/blob/develop/packages/codeceptjs-cucumber/codecept.conf.js#L42).
 
 And, install below dependencies
 
 ```bash
-yarn add codeceptjs-shared@^4 -D
+yarn add codeceptjs-configure@^4 -D
 ```

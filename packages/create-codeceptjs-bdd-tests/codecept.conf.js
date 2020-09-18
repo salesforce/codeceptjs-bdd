@@ -8,10 +8,10 @@ dotenv.config({
 // this is globally defined here, and used across all step definitions for BDD Assertions
 const should = require('should');
 
-const configure = require('codeceptjs-shared').configure;
+const configure = require('codeceptjs-configure').configure;
 
 let conf = {
-    name: '<your-acceptance-tests-name>',   
+    name: '<your-acceptance-tests-name>',
     // add more configuration as required
     rerun: {
         // how many times all tests should pass

@@ -2,15 +2,15 @@
 const dotenv = require('dotenv-extended');
 dotenv.config({
     path: './acceptance/config/codecept.env',
-    defaults: './acceptance/config/codecept.dev.env',
+    defaults: './acceptance/config/codecept.dev.env'
 });
 // this is globally defined here, and used across all step definitions for BDD Assertions
 const should = require('should');
 
-const configure = require('codeceptjs-shared').configure;
+const configure = require('codeceptjs-configure').configure;
 
 let conf = {
-    name: 'LWC Acceptance Tests with Playwright - MochaStyled Integration Flavor',
+    name: 'LWC Acceptance Tests with Playwright - MochaStyled Integration Flavor'
     // add more configuration as required
 };
 

@@ -1,6 +1,6 @@
 ---
 title: CHANGELOG
-sub_title: Codeceptjs-BDD Releases for @codeceptjs-shared & @codeceptjs-saucelabs
+sub_title: Codeceptjs-BDD Releases for @codeceptjs-configure & @codeceptjs-saucelabs
 keywords: ['changelog', 'releases', 'release']
 ---
 
