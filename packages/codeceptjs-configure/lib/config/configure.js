@@ -1,8 +1,10 @@
+global.expect = require('expect');
 require('./master/set.driver')();
 const merge = require('deepmerge');
 const master_conf = require('./master/codecept.master.conf').master_conf;
 const logger = require('../logger/logger');
 const driversConf = require('./drivers/drivers.conf');
+require('expect-playwright');
 
 const gDriver = process.env.DRIVER;
 
@@ -38,7 +40,10 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         emoji: 'earth_americas'
     });
 
-    console.log(`>>> ${gDriver} conf: ${JSON.stringify(driver)} <<<\n`);
+    logger.log({
+        message: `${gDriver}: ${JSON.stringify(driver)}`,
+        chalk: require('chalk').gray
+    });
 
     return merge(
         merge(master_conf, conf),

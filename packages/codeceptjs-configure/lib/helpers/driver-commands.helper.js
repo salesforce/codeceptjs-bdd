@@ -27,9 +27,7 @@ class Driver_commands extends Helper {
 
     async seeVisible(locator) {
         const el = await this.driver()._locate(locator, false);
-        let isDisplayed = await this._forEachAsync(el, async (el) =>
-            el.isDisplayed()
-        );
+        let isDisplayed = await this._forEachAsync(el, async (el) => el.isDisplayed());
         return Array.isArray(isDisplayed) && isDisplayed[0] === true;
     }
 
@@ -38,9 +36,7 @@ class Driver_commands extends Helper {
         I.wait(2);
         I.waitForElement('#' + elementId);
         I.wait(1);
-        return I.executeScript(
-            'document.getElementById("' + elementId + '").scrollTop = ' + pixel
-        );
+        return I.executeScript('document.getElementById("' + elementId + '").scrollTop = ' + pixel);
     }
 
     scrollToElement(locator) {

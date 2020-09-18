@@ -11,7 +11,11 @@ const log = (logMessage) => {
 
     message = message.concat(logMessage.message);
 
-    cli.default.log(chalk.bgBlue.bold(message.concat('\n')));
+    if (logMessage.chalk) {
+        cli.default.log(logMessage.chalk(message.concat('\n')));
+    } else {
+        cli.default.log(chalk.bgBlue.bold(message.concat('\n')));
+    }
 };
 
 const host = () => {
