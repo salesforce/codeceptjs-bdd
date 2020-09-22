@@ -33,7 +33,7 @@ let masterConf = {
         },
         retryFailedStep: {
             enabled: true,
-            retries: 10
+            retries: 15
         }
     },
     multiple: {
@@ -57,7 +57,8 @@ let masterConf = {
     },
     include: {
         ...pageObjects(),
-        I: custom_methods
+        I: custom_methods,
+        page: custom_methods
     },
     tests: process.env.CODECEPT_RELATIVE_PATH + '**/*.spec.js'
 };
