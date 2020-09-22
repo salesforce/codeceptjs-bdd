@@ -55,7 +55,7 @@
         "deepmerge": "^4.0.0",
         "dotenv-extended": "^2.8.0",
         "faker": "^4.1.0",
-        "playwright": "^0.12.1",
+        "playwright": "^1.4.1",
         "protractor": "^5.4.2",
         "selenium-standalone": "^6.16.0",
         "should": "^13.2.3",
