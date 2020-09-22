@@ -1,0 +1,8 @@
+49 warn complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
+50 error Error: Command failed: git tag codeceptjs-configure@6.0.3 -m codeceptjs-configure@6.0.3
+50 error fatal: tag 'codeceptjs-configure@6.0.3' already exists
+50 error
+50 error     at makeError (/Users/kgajjar/Documents/workspace/codeceptjs-bdd/node_modules/execa/index.js:174:9)
+50 error     at /Users/kgajjar/Documents/workspace/codeceptjs-bdd/node_modules/execa/index.js:278:16
+50 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+50 error     at async Promise.all (index 0)

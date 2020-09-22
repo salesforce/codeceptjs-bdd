@@ -1,6 +1,6 @@
 # Codeceptjs-Shared
 
-### Replaced with `codeceptjs-configure`
+## Replaced with `codeceptjs-configure`
 
 ```bash
 
