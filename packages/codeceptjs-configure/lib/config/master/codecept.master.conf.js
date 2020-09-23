@@ -29,7 +29,8 @@ let masterConf = {
         },
         autoDelay: {
             enabled: true,
-            delayBefore: 600
+            delayBefore: 400,
+            delayAfter: 400
         },
         retryFailedStep: {
             enabled: true,
