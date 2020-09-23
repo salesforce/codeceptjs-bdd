@@ -33,7 +33,7 @@ let masterConf = {
         },
         retryFailedStep: {
             enabled: true,
-            retries: 15
+            retries: 10
         }
     },
     multiple: {
