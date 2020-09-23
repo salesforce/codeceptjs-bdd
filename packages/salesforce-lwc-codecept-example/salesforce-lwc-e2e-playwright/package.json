@@ -47,7 +47,7 @@
         "deepmerge": "^4.2.2",
         "dotenv-extended": "^2.8.0",
         "faker": "^4.1.0",
-        "playwright": "^1.0.2",
+        "playwright": "^1.4.1",
         "rimraf": "^3.0.2",
         "should": "^13.2.3",
         "soft-assert": "^0.2.0",
