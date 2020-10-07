@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-configure",
-    "version": "6.0.3",
+    "version": "6.0.9",
     "description": "Shared Configurations for CodeceptJS-BDD",
     "author": {
         "name": "Kushang Gajjar",
@@ -26,13 +26,13 @@
         "chalk": "^4.0.0",
         "cli-ux": "^5.4.5",
         "codeceptjs": "^2.5.0",
+        "codeceptjs-saucelabs": "^5.2.0",
         "debug": "^4.1.1",
         "deepmerge": "^4.2.2",
         "expect": "^26.4.2",
         "expect-playwright": "^0.2.5",
         "figlet": "^1.3.0",
         "node-emoji": "^1.10.0",
-        "playwright": "^0.12.1",
         "prettier": "^2.0.4",
         "webdriverio": "^5.2.2"
     }

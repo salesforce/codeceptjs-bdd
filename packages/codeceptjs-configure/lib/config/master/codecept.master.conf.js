@@ -29,7 +29,8 @@ let masterConf = {
         },
         autoDelay: {
             enabled: true,
-            delayBefore: 600
+            delayBefore: 400,
+            delayAfter: 400
         },
         retryFailedStep: {
             enabled: true,
@@ -57,7 +58,8 @@ let masterConf = {
     },
     include: {
         ...pageObjects(),
-        I: custom_methods
+        I: custom_methods,
+        page: custom_methods
     },
     tests: process.env.CODECEPT_RELATIVE_PATH + '**/*.spec.js'
 };
