@@ -11,7 +11,7 @@ exports.addNpmScripts = (packageJson, RELATIVE_PATH, DRIVER) => {
 
     const SCRIPTS =
         '"scripts": {\n' +
-        '\t"acceptance": "yarn acceptance:clean && codeceptjs run --verbose",\n' +
+        '\t"acceptance": "yarn acceptance:clean && codeceptjs run --steps",\n' +
         '\t"acceptance:parallel": ' +
         parallelScript +
         ',\n' +
