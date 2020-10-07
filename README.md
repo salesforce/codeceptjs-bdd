@@ -2,11 +2,11 @@
 
 **_[Codeceptjs-BDD](http://gkushang.github.io/) Framework with Cucumber and Saucelabs cloud_**
 
-[![CircleCI](https://circleci.com/gh/gkushang/codeceptjs-bdd.svg?style=svg)](https://circleci.com/gh/gkushang/codeceptjs-bdd) [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/gkushang/codeceptjs-bdd/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
+[![CircleCI](https://circleci.com/gh/salesforce/codeceptjs-bdd.svg?style=svg)](https://circleci.com/gh/salesforce/codeceptjs-bdd) [![Maintainability](https://api.codeclimate.com/v1/badges/348efbea54ac5670b73f/maintainability)](https://codeclimate.com/github/salesforce/codeceptjs-bdd/maintainability) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 
-> This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Intgrated with Saucelabs to run on Multibrowsers in Parallel
+> This framework contains Gherkin BDD Tests with CodeceptJS & uses Should.JS assertion library. Integrated with Saucelabs to run on Multi browsers in Parallel
 
-### 📖 User Docs / Website: [Codecpetjs-BDD/Docs](http://gkushang.github.io/)
+### 📖 User Docs / Website: [Codeceptjs-BDD/Docs](http://gkushang.github.io/)
 
 <a href="https://gkushang.github.io" rel="nofollow noreferrer" target="_blank"><img src="https://i.postimg.cc/8zDLzZRq/Screen-Shot-2020-01-28-at-6-27-28-PM.png" alt="docs"></a>
 
@@ -20,7 +20,7 @@
 
 -   Run All feature files on **Multi-Browsers - run them all in Parallel**
 
--   Scenarios are written in **Cucumber Gherkin BDD Syntax**, a.k.a `.feature` files. [Prefer writing Declartive Test Scenarios](https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Imperative+v.+Declarative+Testing+Scenarios)
+-   Scenarios are written in **Cucumber Gherkin BDD Syntax**, a.k.a `.feature` files. [Prefer writing Declarative Test Scenarios](https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Imperative+v.+Declarative+Testing+Scenarios)
 
 -   Run on **SauceLabs**. Single browser or Multi-Browsers in Parallel
 
