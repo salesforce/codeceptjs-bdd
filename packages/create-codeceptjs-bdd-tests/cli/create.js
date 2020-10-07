@@ -88,7 +88,7 @@ const run = async () => {
 
             if (
                 shell.exec(
-                    `DRIVER=${DRIVER} ./node_modules/.bin/codeceptjs run --grep=@search_results --verbose`
+                    `DRIVER=${DRIVER} ./node_modules/.bin/codeceptjs run --grep=@search_results --steps`
                 ).code !== 0
             ) {
                 log.failure('Execution of Acceptance Test Failed.');
