@@ -1,45 +1,45 @@
 version: 2.1
 orbs:
-  node: circleci/node@4.1.0
+    node: circleci/node@4.1.0
 jobs:
-  ci-on-chrome-playwright:
-    executor:
-      name: node/default
+    ci-on-webdriver-and-playwright:
+        executor:
+            name: node/default
 
-    docker: # run the steps with Docker
-      - image: circleci/node:14-browsers
-        environment:
-          HOST: github.com
-          DRIVER: webdriver
-          CODECEPT_RELATIVE_PATH: ./acceptance/
-          DEFAULT_WEBDRIVER_BROWSER: chrome
-          DEFAULT_PLAYWRIGHT_BROWSER: chromium
-          NODE_TLS_REJECT_UNAUTHORIZED: "0"
-    steps:
-      - checkout
+        docker: # run the steps with Docker
+            - image: circleci/node:14-browsers
+              environment:
+                  HOST: github.com
+                  DRIVER: webdriver
+                  CODECEPT_RELATIVE_PATH: ./acceptance/
+                  DEFAULT_WEBDRIVER_BROWSER: chrome
+                  DEFAULT_PLAYWRIGHT_BROWSER: chromium
+                  NODE_TLS_REJECT_UNAUTHORIZED: '0'
+        steps:
+            - checkout
 
-      - run:
-          name: Installation
-          command: |
-            curl -sSL "https://nodejs.org/dist/v13.12.0/node-v13.12.0-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v13.12.0-linux-x64/bin/node
-            curl https://www.npmjs.com/install.sh | sudo bash
-            node --version
-            npm --version
-            yarn install
-      - run:
-          name: Bootstrap
-          command: yarn bootstrap
-      - run:
-          name: Run on Playwright
-          command: yarn circleci:test:playwright
-      - run:
-          name: Run on Playwright - Parallel
-          command: yarn circleci:test:playwright:parallel
-      - run:
-          name: Run on WebDriver
-          command: yarn circleci:test:webdriver
-            
+            - run:
+                  name: Installation
+                  command: |
+                      curl -sSL "https://nodejs.org/dist/v13.12.0/node-v13.12.0-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v13.12.0-linux-x64/bin/node
+                      curl https://www.npmjs.com/install.sh | sudo bash
+                      node --version
+                      npm --version
+                      yarn install
+            - run:
+                  name: Bootstrap
+                  command: yarn bootstrap
+            - run:
+                  name: Run on Playwright
+                  command: yarn circleci:test:playwright
+            - run:
+                  name: Run on Playwright - Parallel
+                  command: yarn circleci:test:playwright:parallel
+            - run:
+                  name: Run on WebDriver
+                  command: yarn circleci:test:webdriver
+
 workflows:
-  acceptance-tests:
-    jobs:
-      - ci-on-chrome-playwright
+    acceptance-tests:
+        jobs:
+            - ci-on-webdriver-and-playwright
