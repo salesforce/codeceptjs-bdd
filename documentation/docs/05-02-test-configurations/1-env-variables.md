@@ -1,7 +1,7 @@
 ---
 title: Test Environment Variables
 sub_title: How Codeceptjs-BDD maintains your Test Environment Variables
-parents: ['Configurations']
+parents: ['Test Configurations']
 keywords: ['config', 'test properties', 'env vars', 'env', 'vars']
 ---
 

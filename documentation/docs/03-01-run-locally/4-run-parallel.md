@@ -1,13 +1,13 @@
 ---
 title: Run in Parallel
 sub_title: Execute scenarios Parallel on Multi Browsers on Sauce Labs Cloud Platform
-parents: ["Execution"]
+parents: ["Run Locally"]
 keywords: [ "Parallel", "Execute", "WebDriver", "videos"]
 ---
 
 ## 🌀 Run Scenarios in Parallel
 
-Codecpetjs-BDD can run all your Feature files in Parallel. You can choose to run Parallel on either Sauce Labs or Locally installed browsers. Please note, Codeceptjs-BDD does not support running all Scenarios on Parallel but only Feature Files in parallel.
+Codeceptjs-BDD can run all your Feature files in Parallel. You can choose to run Parallel on either Sauce Labs or Locally installed browsers. Please note, Codeceptjs-BDD does not support running all Scenarios on Parallel but only Feature Files in parallel.
 
 ## 🎥 Watch in Action
 

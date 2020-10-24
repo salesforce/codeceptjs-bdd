@@ -1,13 +1,13 @@
 ---
-title: Run Subset of Scenarios
-sub_title: Run subset of Scenarios through @Tags
-parents: ["Execution"]
-keywords: [ "Local", "Execute", "WebDriver", "videos"]
+title: Tags
+sub_title: Filter Tags to run Scenarios
+parents: ["Tags"]
+keywords: [ "Tag", "Execute", "filter", "scenarios"]
 ---
 
 ## 🌀Tags
 
-Tags are a great way to organise your features and scenarios. Cucumber features and scenarios can contain Tags marked with `@`. Tags can be used to run Subset of Scenarios.
+Tags are a great way to organize your features and scenarios. Cucumber features and scenarios can contain Tags marked with `@`. Tags can be used to run Subset of Scenarios.
 
 ```bash
    @checkout
@@ -57,7 +57,7 @@ Use regex for more flexible filtering:
 * **\--grep** '(?=.*@smoke2)^(?!.*@smoke3)' - run tests with @smoke2 but without @smoke3 in name
 * **\--grep** '(?=.*)^(?!.*@smoke4)' - run all tests except @smoke4
 
-More information is available on [codecpet.io](https://codecept.io/bdd/#tags)
+More information is available on [codecept.io](https://codecept.io/bdd/#tags)
 
 ## 🎥 Watch in Action
 

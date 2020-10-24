@@ -77,7 +77,7 @@ const renderAppCards = () => {
       title: 'Write Feature Files',
       description:
         'CodeceptJs BDD integrates Cucumber to write Gherkin Feature Files. Cucumber is a popular collaboration tool used by many teams practiving BDD to capture requirements and create executable specifications.',
-      link: '/03-acceptance-tests/02-e2e-bdd-cucumber/1-feature/',
+      link: '/03-00-acceptance-tests/02-e2e-bdd-cucumber/1-feature/',
       image: cucumber,
     },
     {
@@ -85,7 +85,7 @@ const renderAppCards = () => {
       title: 'Execute On Cloud',
       description:
         'CodeceptJs BDD integrates Sauce Labs to execute tests on 900+ Desktop/Mobile browses, OS & Devices combinations. Tests can be executed locally or on Sauce Labs Browsers for broader coverage.',
-      link: '/06-execution/3-run-on-saucelabs/',
+      link: '/03-02-run-on-saucelabs/3-run-on-saucelabs/',
       image: saucelabs,
     },
     {
@@ -109,7 +109,7 @@ const renderAppCards = () => {
       title: 'Plugin Based',
       description:
         'Codeceptjs is a plugin based architecture. You can create helpers and plugins for your need and easily plug in to the framework. Codeceptjs-bdd implements two plugins: codeceptjs-share to share config and codeceptjs-saucelabs to integrate Sauce Labs.',
-      link: 'https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages',
+      link: 'https://github.com/salesforce/codeceptjs-bdd/tree/develop/packages',
       image: pluginBasedImage,
     },
     {
@@ -117,19 +117,19 @@ const renderAppCards = () => {
       title: 'Multibrowsers | Parallel',
       description:
         'Codeceptjs BDD provides an ability to run BDD Feaure files all in Parallel on Single browser or can run same set of tests in Parallel but on different browsers/OS combo (multile browers) on Sauce Labs. It offers greate Test Execution Coverage for your App.',
-      link: '/06-execution/5-run-on-multi-browsers/',
+      link: '/03-01-run-locally/5-run-on-multi-browsers/',
       image: multibrowsers,
-    },
+    },  
     {
       size: 3,
       title: 'Automate Web Components',
       description:
         'Simplified Locators for Web Components or Shadow Root elements. Codeceptjs-BDD automates your application built with Web Components or Salesforce LWC.',
       secondLinkName: 'Selenium Example',
-      secondLink: '/05-01-salesforce-lwc/1-salesforce-lighting-web-components/',
+      secondLink: '/07-salesforce-lwc/1-salesforce-lighting-web-components/',
       firstLinkName: 'Playwright Example',
       link:
-        '/05-01-salesforce-lwc/1-salesforce-lighting-web-components-playwright/',
+        '/07-salesforce-lwc/1-salesforce-lighting-web-components-playwright/',
       image: require('../images/lwc-sf.png'),
     },
     {
@@ -138,7 +138,7 @@ const renderAppCards = () => {
       description:
         'One framework, mulitple solutions. Use Codeceptjs-BDD to automate both of your Integration tests and E2E Tests. Codecetpsj-BDD can run both, Mocha and Cucumber BDD, with the single common command.',
       firstLinkName: 'Learn More',
-      link: '/03-acceptance-tests/01-integration-tests/1-integration-tests/',
+      link: '/03-00-acceptance-tests/01-integration-tests/1-integration-tests/',
       image: require('../images/imocha.png'),
     },
     {
@@ -147,7 +147,7 @@ const renderAppCards = () => {
       description:
         'Choose to write your E2E Tests either with Classical Mocha styled tests or modern Cucumber BDD Feature files acceptance tests. Codeceptjs-BDD supports both, mixed of, Mocha-style accetpance tests and Cucumber Fetures.',
       firstLinkName: 'Learn More',
-      link: '/03-acceptance-tests/02-e2e-bdd-cucumber/1-feature/',
+      link: '/03-00-acceptance-tests/02-e2e-bdd-cucumber/1-feature/',
       image: require('../images/e2e.png'),
     },
     {

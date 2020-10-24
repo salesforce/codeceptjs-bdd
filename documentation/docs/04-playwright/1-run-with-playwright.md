@@ -1,8 +1,8 @@
 ---
 title: Run with Playwright
 sub_title: Execute your tests with Microsoft Playwright
-parents: ['Execution']
-keywords: ['headless', 'Playwright', 'puppeteer']
+parents: ['Playwright']
+keywords: ['headless', 'Playwright']
 ---
 
 ## 🌀 About Playwright

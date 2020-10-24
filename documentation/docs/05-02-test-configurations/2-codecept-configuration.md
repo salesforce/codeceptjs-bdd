@@ -1,7 +1,7 @@
 ---
 title: Codecept Configurations
 sub_title: Codeceptjs root configuration
-parents: ['Configurations']
+parents: ['Test Configurations']
 keywords: ['conf']
 ---
 

@@ -1,15 +1,15 @@
 ---
 title: Run on Sauce Labs
 sub_title: Execute BDD Scenarios on Sauce Labs
-parents: ['Execution']
+parents: ['Run On Saucelabs']
 keywords: ['Saucelabs', 'sauce', 'Execute', 'WebDriver', 'videos']
 ---
 
-## ⚡️ Sauce Labs
+### ⚡️ Sauce Labs
 
 Codeceptjs-BDD framework integrates the cloud based platform [Sauce Labs](https://saucelabs.com) to execute scenarios on **900+** Desktop/Mobile browses, OS & Devices combinations, providing Greater Scenarios Execution Coverage.
 
-### \*\* Prerequsite
+#### \*\* Prerequisites
 
 1. In order to run on Sauce Labs, you should have an account with Sauce Labs.
 
@@ -23,13 +23,14 @@ Codeceptjs-BDD framework integrates the cloud based platform [Sauce Labs](https:
     export SAUCE_KEY=<your_sauce_accesskey>
 ```
 
-Once you provide your Sauce username and accesskey during [quick setup](/01-getting-started/1-quick-start/), Codeceptjs-BDD will do the rest of the job for you, and integrates all required libraries, plugins and helpers to get started.
+Once you provide your Sauce username and access-
+key during [quick setup](/01-getting-started/1-quick-start/), Codeceptjs-BDD will do the rest of the job for you, and integrates all required libraries, plugins and helpers to get started.
 
-## 🎥 Watch in Action
+### 🎥 Watch in Action
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ugCjMOJlClc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 🏃 Run Scenarios on Sauce Labs
+### 🏃 Run Scenarios on Sauce Labs
 
 ---
 
@@ -39,7 +40,7 @@ Codeceptjs-BDD implements the quick way to run your tests on Sauce Labs. Please 
 
 <br>
 
-### ✔️ Run all scenarios
+#### ✔️ Run all scenarios
 
 Below command runs all scenarios on Sauce Labs' _chrome_ browser
 
@@ -49,7 +50,7 @@ Below command runs all scenarios on Sauce Labs' _chrome_ browser
 
 <br>
 
-### ✔️ Run subset of scenarios
+#### ✔️ Run subset of scenarios
 
 Below command runs all scenarios marked with tag _@my_tag_ on Sauce Labs' _firefox_ browser
 
@@ -59,7 +60,7 @@ Below command runs all scenarios marked with tag _@my_tag_ on Sauce Labs' _firef
 
 <br>
 
-## 📋 Sauce Labs Dashboard
+### 📋 Sauce Labs Dashboard
 
 ---
 
@@ -78,7 +79,7 @@ Below command will create unique dashboard on sauce with title **release-1.0-{ra
 
 <br>
 
-## ➕ Supported Sauce Labs Browsers/OS Combinations
+### ➕ Supported Sauce Labs Browsers/OS Combinations
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Run Locally
 sub_title: Execute Features on Local Development Enviornment
-parents: ["Execution"]
+parents: ["Run Locally"]
 keywords: [ "Local", "Execute", "WebDriver", "videos"]
 ---
 
