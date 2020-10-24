@@ -4,7 +4,7 @@ const merge = require('deepmerge');
 const chalk = require('chalk');
 const emoji = require('node-emoji');
 const getAppiumConfig = require('./codecept.sauce.appium.conf').get;
-const getWebDriverConf = require('./codecept.sauce.webdriver.conf').get;
+const getWebDriverConf = require('./webdriver.sauce.conf').get;
 
 const SAUCE_DELIMITER = ':';
 const MULTI_BROWSER_DELIMITER = ',';

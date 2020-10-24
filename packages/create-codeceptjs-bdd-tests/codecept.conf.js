@@ -23,8 +23,8 @@ let conf = {
 };
 
 /**
- * This is an example of passing user-specific Sauce Browser. Kept empty intetionally, but you can add your required custom Sauce Browsers.
- * To configure Sacuelabs Browser, pls take a look codeceptjs-saucelabs/packages/codeceptjs-saucelabs/lib/browsers.conf.js
+ * This is an example of passing user-specific Sauce Browser. Kept empty intentionally, but you can add your required custom Sauce Browsers.
+ * To configure Saucelabs Browser, pls take a look codeceptjs-saucelabs/packages/codeceptjs-saucelabs/lib/browsers.conf.js
  */
 
 const customSauceBrowsers = {};

@@ -45,9 +45,10 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         chalk: require('chalk').gray
     });
 
-    return merge(
+    return merge(merge(
         merge(master_conf, conf),
-        require('codeceptjs-saucelabs').config.saucelabs(process.env.SAUCE_USERNAME, process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY, userSpecifiedSauceBrowsers || {})
+        require('codeceptjs-saucelabs').config.saucelabs(process.env.SAUCE_USERNAME, process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY, userSpecifiedSauceBrowsers || {})),
+        require('codeceptjs-selenoid').config.selenoid()
     );
 };
 
