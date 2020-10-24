@@ -2,7 +2,7 @@
     "name": "codeceptjs-selenoid",
     "version": "0.0.2",
     "main": "index.js",
-    "description": "CodeceptJS Selenoid Integration",
+    "description": "CodeceptJS-BDD Selenoid Integration",
     "homepage": "https://gkushang.github.io/",
     "keywords": [
         "Selenoid",
