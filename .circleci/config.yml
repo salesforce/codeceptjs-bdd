@@ -21,7 +21,7 @@ jobs:
             - run:
                   name: Installation
                   command: |
-                      curl -sSL "https://nodejs.org/dist/v13.12.0/node-v13.12.0-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v13.12.0-linux-x64/bin/node
+                      curl -sSL "https://nodejs.org/dist/v12.19.0/node-v12.19.0-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v12.19.0-linux-x64/bin/node
                       curl https://www.npmjs.com/install.sh | sudo bash
                       node --version
                       npm --version
@@ -42,4 +42,4 @@ jobs:
 workflows:
     acceptance-tests:
         jobs:
-            - ci-on-webdriver-and-playwright
+            - ci-on-webdriver-and-playwright            
