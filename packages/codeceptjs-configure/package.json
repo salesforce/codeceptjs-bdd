@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-configure",
-    "version": "7.0.5",
+    "version": "7.0.6",
     "description": "Shared Configurations for CodeceptJS-BDD",
     "author": {
         "name": "Kushang Gajjar",
