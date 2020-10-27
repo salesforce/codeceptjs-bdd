@@ -3,6 +3,9 @@ require('./master/set.driver')();
 const merge = require('deepmerge');
 const master_conf = require('./master/codecept.master.conf').master_conf;
 const logger = require('../logger/logger');
+const chalk = require('chalk');
+const debug = require('debug')('config');
+
 const driversConf = require('./drivers/drivers.conf');
 require('expect-playwright');
 
@@ -45,11 +48,17 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         chalk: require('chalk').gray
     });
 
-    return merge(merge(
-        merge(master_conf, conf),
-        require('codeceptjs-saucelabs').config.saucelabs(process.env.SAUCE_USERNAME, process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY, userSpecifiedSauceBrowsers || {})),
+    const config = merge(
+        merge(
+            merge(master_conf, conf),
+            require('codeceptjs-saucelabs').config.saucelabs(process.env.SAUCE_USERNAME, process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY, userSpecifiedSauceBrowsers || {})
+        ),
         require('codeceptjs-selenoid').config.selenoid()
     );
+
+    debug(chalk.gray(JSON.stringify(config, undefined, 2)));
+
+    return config;
 };
 
 module.exports = {

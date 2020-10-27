@@ -12,16 +12,16 @@ const webdriver_conf = {
             timeouts: {
                 implicit: 5000,
                 script: 60000,
-                'page load': 10000,
-            },
-        },
+                'page load': 10000
+            }
+        }
     },
     plugins: {
         wdio: {
             enabled: true,
-            services: ['selenium-standalone'],
-        },
-    },
+            services: ['selenium-standalone']
+        }
+    }
 };
 
 const get = function (conf) {
@@ -32,22 +32,19 @@ const get = function (conf) {
         conf.helpers.WebDriver.browser = 'chrome';
         conf.helpers.WebDriver.capabilities = {
             chromeOptions: {
-                args: [
-                    '--headless',
-                    '--disable-gpu',
-                    '--window-size=1920,1080',
-                ],
-            },
+                args: ['--headless', '--disable-gpu', '--window-size=1920,1080']
+            }
         };
-    } else if (
-        profile &&
-        (profile === 'safari' || profile === 'firefox')
-    ) {
+    } else if (profile && (profile === 'safari' || profile === 'firefox')) {
         conf.helpers.WebDriver.windowSize = 'maximize';
     }
 
     if (!(profile && profile.match('sauce:[a-zA-Z]'))) {
         conf.multiple.parallel.browsers = [BROWSER];
+    }
+
+    if (profile && profile.match('selenoid:[a-zA-Z]') && conf.plugins.wdio) {
+        delete conf.plugins.wdio;
     }
 
     return conf;
