@@ -49,7 +49,7 @@ const get = function (conf) {
     }
 
     if (profile && profile.match('sauce:') && conf.plugins.wdio) {
-        if (conf.plugins.wdio.services && conf.plugins.wdio.services.length > 1) {
+        if (conf.plugins.wdio.services && Array.isArray(conf.plugins.wdio.services)) {
             conf.plugins.wdio.services = conf.plugins.wdio.services.filter((item) => {
                 return item !== STANDALONE_SERVICE;
             });
