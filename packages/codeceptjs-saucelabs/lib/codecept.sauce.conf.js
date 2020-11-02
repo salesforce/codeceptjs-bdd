@@ -1,4 +1,5 @@
 const defaultBrowsers = require('./browsers.conf').browsers;
+const customConfig = require('./browsers.conf').customConfig;
 const debug = require('debug')('codeceptjs-saucelabs:config');
 const merge = require('deepmerge');
 const chalk = require('chalk');
@@ -38,25 +39,30 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
 
     function getBrowsers() {
         if (isSauceRequested()) {
-            let multibrowsers = [];
-            let requestedBrowsers = getRequestedBrowser();
-            debug('Tests are running on Sauce Labs on Multi-Browsers:', requestedBrowsers);
-            requestedBrowsers.forEach((browser) => {
-                let sauceBrowser = sauceBrowsers[browser];
-                if (!sauceBrowser) {
-                    throw new Error(
-                        `'${browser}' is not defined in Sauce Browsers. Please update your '--profile' argument to choose from below available browsers.\n Available Sauce Browsers: ${JSON.stringify(
-                            sauceBrowsers,
-                            undefined,
-                            2
-                        )}\n`
-                    );
-                }
-                multibrowsers.push(sauceBrowsers[browser]);
-            });
+            if (gProfile.match('sauce:config:')) {
+                console.log('customConfig: ', customConfig);
+                return [customConfig(gProfile)];
+            } else {
+                let multibrowsers = [];
+                let requestedBrowsers = getRequestedBrowser();
+                debug('Tests are running on Sauce Labs on Multi-Browsers:', requestedBrowsers);
+                requestedBrowsers.forEach((browser) => {
+                    let sauceBrowser = sauceBrowsers[browser];
+                    if (!sauceBrowser) {
+                        throw new Error(
+                            `'${browser}' is not defined in Sauce Browsers. Please update your '--profile' argument to choose from below available browsers.\n Available Sauce Browsers: ${JSON.stringify(
+                                sauceBrowsers,
+                                undefined,
+                                2
+                            )}\n`
+                        );
+                    }
+                    multibrowsers.push(sauceBrowsers[browser]);
+                });
 
-            debug('Sauce Labs Config for Multi-Browsers:', multibrowsers);
-            return multibrowsers;
+                debug('Sauce Labs Config for Multi-Browsers:', multibrowsers);
+                return multibrowsers;
+            }
         }
 
         return [sauceBrowsers.chrome];

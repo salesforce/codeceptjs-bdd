@@ -48,4 +48,31 @@ let browsers = {
     }
 };
 
-exports.browsers = browsers;
+let customConfig = (conf) => {
+    let sauceCustomConf = {
+        capabilities: {
+            'sauce:options': sauceOptions
+        }
+    };
+
+    customConf = conf.split(':');
+    customConf.shift();
+    customConf.shift();
+
+    if (customConf.length < 2) {
+        throw new Error('Sauce Custom Config in the "--profile" was not defined correctly. It should be in the format of "sauce:config:\'plaformName\':browserName:brwoserVersion"');
+    }
+
+    sauceCustomConf.capabilities.platformName = customConf[0];
+    sauceCustomConf.browser = customConf[1];
+
+    if (customConf.length > 2) {
+        sauceCustomConf.capabilities.browserVersion = customConf[2];
+    } else {
+        sauceCustomConf.capabilities.browserVersion = 'latest';
+    }
+
+    return sauceCustomConf;
+};
+
+module.exports = { browsers, customConfig };
