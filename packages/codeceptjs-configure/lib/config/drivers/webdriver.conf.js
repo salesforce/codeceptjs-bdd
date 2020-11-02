@@ -23,7 +23,7 @@ const isRunningLocally = (profile) => {
     return profile && !(profile.match('sauce:') || profile.match('selenoid:'));
 };
 
-const get = function (conf) {
+const get = (conf) => {
     conf = merge(conf, webdriver_conf);
     let profile = process.env.profile;
 
