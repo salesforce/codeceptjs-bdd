@@ -40,7 +40,6 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
     function getBrowsers() {
         if (isSauceRequested()) {
             if (gProfile.match('sauce:config:')) {
-                console.log('customConfig: ', customConfig);
                 return [customConfig(gProfile)];
             } else {
                 let multibrowsers = [];
