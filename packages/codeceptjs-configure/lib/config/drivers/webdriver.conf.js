@@ -1,6 +1,7 @@
 const BROWSER = process.env.profile === 'undefined' ? process.env.DEFAULT_WEBDRIVER_BROWSER : process.env.profile;
 const merge = require('deepmerge');
 const host = require('../../host/host');
+const STANDALONE_SERVICE = 'selenium-standalone';
 
 const webdriver_conf = {
     helpers: {
@@ -19,7 +20,7 @@ const webdriver_conf = {
     plugins: {
         wdio: {
             enabled: true,
-            services: ['selenium-standalone']
+            services: [STANDALONE_SERVICE]
         }
     }
 };
@@ -45,6 +46,14 @@ const get = function (conf) {
 
     if (profile && profile.match('selenoid:[a-zA-Z]') && conf.plugins.wdio) {
         delete conf.plugins.wdio;
+    }
+
+    if (profile && profile.match('sauce:') && conf.plugins.wdio) {
+        if (conf.plugins.wdio.services && conf.plugins.wdio.services.length > 1) {
+            conf.plugins.wdio.services = conf.plugins.wdio.services.filter((item) => {
+                return item !== STANDALONE_SERVICE;
+            });
+        }
     }
 
     return conf;
