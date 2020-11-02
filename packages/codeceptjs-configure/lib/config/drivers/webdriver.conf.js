@@ -16,13 +16,11 @@ const webdriver_conf = {
                 'page load': 10000
             }
         }
-    },
-    plugins: {
-        wdio: {
-            enabled: true,
-            services: [STANDALONE_SERVICE]
-        }
     }
+};
+
+const isRunningLocally = (profile) => {
+    return profile && !(profile.match('sauce:') || profile.match('selenoid:'));
 };
 
 const get = function (conf) {
@@ -44,16 +42,13 @@ const get = function (conf) {
         conf.multiple.parallel.browsers = [BROWSER];
     }
 
-    if (profile && profile.match('selenoid:[a-zA-Z]') && conf.plugins.wdio) {
-        delete conf.plugins.wdio;
-    }
-
-    if (profile && profile.match('sauce:') && conf.plugins.wdio) {
-        if (conf.plugins.wdio.services && Array.isArray(conf.plugins.wdio.services)) {
-            conf.plugins.wdio.services = conf.plugins.wdio.services.filter((item) => {
-                return item !== STANDALONE_SERVICE;
-            });
-        }
+    if (isRunningLocally(profile)) {
+        conf.plugins = {
+            wdio: {
+                enabled: true,
+                services: [STANDALONE_SERVICE]
+            }
+        };
     }
 
     return conf;
