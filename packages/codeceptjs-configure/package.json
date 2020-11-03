@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-configure",
-    "version": "7.0.9",
+    "version": "7.0.8",
     "description": "Shared Configurations for CodeceptJS-BDD",
     "author": {
         "name": "Kushang Gajjar",
@@ -11,14 +11,14 @@
     "main": "lib/index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
+        "url": "git+https://github.com/salesforce/codeceptjs-bdd.git"
     },
     "scripts": {
         "test": "echo \"Error: run tests from root\" && exit 1",
         "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
     },
     "bugs": {
-        "url": "https://github.com/gkushang/codeceptjs-bdd/issues"
+        "url": "https://github.com/salesforce/codeceptjs-bdd/issues"
     },
     "dependencies": {
         "@wdio/selenium-standalone-service": "5.16.10",
