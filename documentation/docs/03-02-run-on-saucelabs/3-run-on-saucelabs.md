@@ -1,5 +1,5 @@
 ---
-title: Run on Sauce Labs
+title: Sauce Labs
 sub_title: Execute BDD Scenarios on Sauce Labs
 parents: ['Run On Saucelabs']
 keywords: ['Saucelabs', 'sauce', 'Execute', 'WebDriver', 'videos']
@@ -79,36 +79,23 @@ Below command will create unique dashboard on sauce with title **release-1.0-{ra
 
 <br>
 
-### ➕ Supported Sauce Labs Browsers/OS Combinations
+### ➕ Run on Desired Sauce Labs Platform/Browser configuration
 
 ---
 
-The supported browsers/OS is listed [here](https://github.com/gkushang/codeceptjs-bdd/blob/master/packages/codeceptjs-saucelabs/lib/browsers.conf.js).
+The Sauce Labs Platform Configurator is available [here](https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/). 
 
-**Can I run on my own Customized browser/os?**
-Yes, you can override any existing configruation or provide new Browser configuration through your `codecept.conf.js` file.
 
-Follow the below steps,
-
-1. Go to your codecept.conf.js
-2. Go to last line of the config and look for
-
-```bash
-    codeceptjs_saucelabs(SAUCE_USERNAME, SAUCE_KEY)
-```
-
-3. Pass your customized Browser/OS combination JSON as a **third** argument in above function.
-
-Below call will add `opera` browser to your Sauce configuration at runtime.
+1. Go to [Sauce Labs Platform Configurator](https://wiki.saucelabs.com/display/DOCS/Platform)
+2. Select WebDriver
+3. Select your desired configuration
+4. Click on `node.js` tab
+5. Pass the combinations to the `--profile` variable as shown below
 
 ```bash
-codeceptjs_saucelabs(SAUCE_USERNAME, SAUCE_KEY, {opera: {
-        browser: 'opera',
-        capabilities: {
-            'sauce:options': {
-                seleniumVersion: '3.11.0'
-            }
-        }
-    }
-})
+--profile sauce:config:<platform-name>:<browser-name>:<browser-version>
 ```
+
+e.g. `yarn acceptance --profile sauce:config:'Windows 10':firefox:80.0`
+
+All set!
