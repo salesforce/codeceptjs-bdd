@@ -1,5 +1,5 @@
 ---
-title: Run on Selenoid
+title: Selenoid
 sub_title: Execute BDD Scenarios on Selenoid Grid
 parents: ['Run On Selenoid']
 keywords: ['Selenoid', 'Execute', 'WebDriver']
