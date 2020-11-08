@@ -22,7 +22,7 @@
     "scripts": {
         "bootstrap": "lerna bootstrap",
         "acceptance": "lerna run --scope create-codeceptjs-bdd-tests test",
-        "publish": "lerna bootstrap && lerna publish --registry https://registry.npmjs.org",
+        "lerna:publish": "lerna bootstrap && lerna publish --registry https://registry.npmjs.org",
         "circleci:test:playwright": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright",
         "circleci:test:playwright:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright:parallel",
         "circleci:test:webdriver": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver",
