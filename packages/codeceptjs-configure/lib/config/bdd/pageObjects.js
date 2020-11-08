@@ -2,10 +2,13 @@ const glob = require('glob');
 const path = require('path');
 const camelCase = require('camelcase');
 
-const pageObjects = () => {
+const pageObjects = (pathToPages) => {
     let pages = {};
+    if (!pathToPages) {
+        pathToPages = '/pages/**/*.page.js';
+    }
 
-    glob.sync(path.join(process.cwd(), process.env.CODECEPT_RELATIVE_PATH, '/pages/**/*.page.js')).map((file) => {
+    glob.sync(path.join(process.cwd(), process.env.CODECEPT_RELATIVE_PATH, pathToPages)).map((file) => {
         pages[camelCase(path.parse(file).name)] = file;
     });
 

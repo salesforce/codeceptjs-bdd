@@ -13,4 +13,6 @@ module.exports = {
     cleanReports,
     configure,
     host,
+    pageObjects: require('./lib/config/bdd/pageObjects').pageObjects,
+    steps: require('./lib/config/bdd/steps').steps
 };
