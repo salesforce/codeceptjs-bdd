@@ -13,7 +13,11 @@ const cleanReports = function (options) {
         throw Error('Report Path is not defined');
     }
 
-    fs.rmdir(path.join(process.cwd(), process.env.CODECEPT_RELATIVE_PATH, options.path), { recursive: true }, (err) => {
+    if (!options.relativePath) {
+        options.relativePath = process.env.CODECEPT_RELATIVE_PATH
+    }
+
+    fs.rmdir(path.join(process.cwd(), options.relativePath, options.path), { recursive: true }, (err) => {
         if (err) {
             throw Error('Error cleaning the Report directory', err);
         }
