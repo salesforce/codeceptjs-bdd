@@ -12,6 +12,7 @@
         "acceptance:parallel": "npx codeceptjs run-workers --suites 3",
         "acceptance:washer": "npx codeceptjs run-rerun",
         "acceptance:report": "allure serve ./acceptance/report",
+        "acceptance:all": "yarn acceptance && yarn acceptance:parallel && DRIVER=webdriver yarn acceptance --profile sauce:chrome && DRIVER=webdriver yarn acceptance",
         "test": "yarn circleci:test:playwright:chromium && yarn circleci:test:playwright:firefox && yarn circleci:test:playwright:safari && circleci:test:webdriver && circleci:test:playwright:parallel && circleci:test:webdriver:parallel",
         "circleci:test:playwright": "DRIVER=playwright yarn acceptance",
         "circleci:test:playwright:parallel": "DRIVER=playwright yarn acceptance:parallel",
