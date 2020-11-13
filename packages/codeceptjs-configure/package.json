@@ -21,6 +21,7 @@
         "url": "https://github.com/salesforce/codeceptjs-bdd/issues"
     },
     "dependencies": {
+        "@codeceptjs/helper": "^1.0.1",
         "@wdio/selenium-standalone-service": "5.16.10",
         "camelcase": "^6.0.0",
         "chalk": "^4.0.0",
