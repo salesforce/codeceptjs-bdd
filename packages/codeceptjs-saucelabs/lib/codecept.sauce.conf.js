@@ -13,7 +13,7 @@ const MULTI_BROWSER_DELIMITER = ',';
 const gProfile = process.env.profile || process.profile;
 
 function config(sauceUsername, sauceKey, userSpecificBrowsers) {
-    sauceBrowsers = userSpecificBrowsers ? merge(userSpecificBrowsers, defaultBrowsers) : defaultBrowsers;
+    let sauceBrowsers = userSpecificBrowsers ? merge(userSpecificBrowsers, defaultBrowsers) : defaultBrowsers;
 
     function isSauceRequested() {
         return gProfile && gProfile.match('sauce:[a-zA-Z]');

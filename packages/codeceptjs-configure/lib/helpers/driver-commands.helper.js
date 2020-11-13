@@ -1,4 +1,4 @@
-const Helper = codeceptjs.helper;
+const Helper = require('@codeceptjs/helper');
 
 class Driver_commands extends Helper {
     driver() {
