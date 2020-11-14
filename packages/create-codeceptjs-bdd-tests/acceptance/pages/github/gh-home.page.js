@@ -10,7 +10,7 @@ class HomePage {
     }
 
     search(searchFor) {
-        I.fillField(I.grabCss(this.locators.searchBox), searchFor);
+        I.fillField(this.locators.searchBox, searchFor);
         I.pressKey('Enter');
     }
 }

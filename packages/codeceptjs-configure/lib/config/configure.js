@@ -48,6 +48,14 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         chalk: require('chalk').gray
     });
 
+    if (gDriver && gDriver.toLowerCase() === 'playwright') {
+        logger.log({
+            message: chalk.greenBright.bold((process.env.HEADLESS === 'true') ? `Running Headless ...` : `Running non-Headless ...`),
+            emoji: 'running',
+            chalk: chalk.bgBlack
+        });
+    }
+
     const config = merge(
         merge(
             merge(master_conf, conf),

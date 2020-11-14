@@ -1,7 +1,5 @@
 // load env variables - this should be the first line of config
-const dotenv = require('dotenv-extended');
-
-dotenv.config({
+require('dotenv-extended').config({
     path: './acceptance/config/codecept.dev.env',
     defaults: './acceptance/config/codecept.env'
 });
