@@ -9,7 +9,7 @@ const UpdateEnvironments = require('./update.env');
 
 const {
     addNpmScripts,
-    installDepedencies
+    installDependencies
 } = require('./update.package');
 const log = require('./logger');
 const {
@@ -169,7 +169,7 @@ const run = async () => {
 
     addNpmScripts(packageJson, RELATIVE_PATH, DRIVER);
 
-    installDepedencies();
+    installDependencies();
 
     executeScenario();
 

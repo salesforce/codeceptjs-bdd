@@ -2,11 +2,16 @@ const driversConf = require('../drivers/drivers.conf');
 const host = require('../../host/host');
 require('./set.driver')();
 
-const driver_commands = require.resolve('../../helpers/driver-commands.helper.js');
-
-const custom_methods = require.resolve('../../helpers/custom-methods.js');
 const { steps } = require('../bdd/steps');
 const { pageObjects } = require('../bdd/pageObjects');
+
+let driver_commands = 'codeceptjs-configure/lib/helpers/driver-commands.helper.js'
+let custom_methods = 'codeceptjs-configure/lib/helpers/custom-methods.helper.js';
+
+if (process.env.CODECEPT_BDD_LERNA) {
+    driver_commands = require.resolve('../../helpers/driver-commands.helper.js');	
+    custom_methods = require.resolve('../../helpers/custom-methods.helper.js');;
+}
 
 let masterConf = {
     output: process.env.CODECEPT_RELATIVE_PATH + 'report',
@@ -14,6 +19,9 @@ let masterConf = {
     helpers: {
         Driver_commands: {
             require: driver_commands
+        },
+        custom_methods: {
+            require: custom_methods
         },
         REST: {
             endpoint: host.get(),
@@ -58,8 +66,7 @@ let masterConf = {
     },
     include: {
         ...pageObjects(),
-        I: custom_methods,
-        page: custom_methods
+        page: 'codeceptjs-configure/lib/helpers/global.page.js'
     },
     tests: process.env.CODECEPT_RELATIVE_PATH + '**/*.spec.js'
 };
