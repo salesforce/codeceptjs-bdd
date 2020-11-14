@@ -38,6 +38,7 @@
         "allure-commandline": "^2.9.0",
         "chalk": "^2.4.2",
         "cli-ux": "^5.4.5",
+        "codeceptjs": "^3.0.2",
         "dotenv-extended": "^2.8.0",
         "figlet": "^1.2.3",
         "inquirer": "^7.0.0",
