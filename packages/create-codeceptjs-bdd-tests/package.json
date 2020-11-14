@@ -1,6 +1,6 @@
 {
     "name": "create-codeceptjs-bdd-tests",
-    "version": "6.1.15",
+    "version": "6.1.16",
     "author": {
         "name": "Kushang Gajjar",
         "email": "g.kushang@gmail.com"
@@ -51,8 +51,8 @@
         "@wdio/selenium-standalone-service": "5.16.10",
         "allure-commandline": "^2.9.0",
         "codeceptjs": "^2.6.1",
-        "codeceptjs-configure": "^7.0.14",
-        "codeceptjs-saucelabs": "^5.2.4",
+        "codeceptjs-configure": "^7.0.15",
+        "codeceptjs-saucelabs": "^5.2.5",
         "debug": "^4.1.1",
         "deepmerge": "^4.0.0",
         "dotenv-extended": "^2.8.0",
