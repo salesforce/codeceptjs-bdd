@@ -5,7 +5,7 @@ const camelCase = require('camelcase');
 const pageObjects = (pathToPages) => {
     let pages = {};
     if (!pathToPages) {
-        pathToPages = '/pages/**/*.page.js';
+        pathToPages = '/pages/**/*.page.{js,ts}';
     }
 
     glob.sync(path.join(process.env.CODECEPT_RELATIVE_PATH, pathToPages)).map((file) => {

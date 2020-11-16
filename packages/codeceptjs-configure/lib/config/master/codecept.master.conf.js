@@ -68,7 +68,7 @@ let masterConf = {
         ...pageObjects(),
         page: 'codeceptjs-configure/lib/helpers/global.page.js'
     },
-    tests: process.env.CODECEPT_RELATIVE_PATH + '**/*.spec.js'
+    tests: process.env.CODECEPT_RELATIVE_PATH + '**/*.spec.{js,ts}'
 };
 
 const driverConf = driversConf[Object.keys(driversConf).find((driver) => driver.toLowerCase() === process.env.DRIVER.toLowerCase())];
