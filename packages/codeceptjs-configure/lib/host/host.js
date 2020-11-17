@@ -13,7 +13,7 @@ const get = function (defaultHost, scheme) {
         throw Error(
             'HOST is not defined in ENV variable. Check if "HOST" is defined in either "./acceptance/config/codecept.env" or "./acceptance/config/codecept.dev.env" file. More info https://gkushang.github.io/04-configurations/1-env-variables/'
         );
-        }
+    }
 
     if (!host.match(/^[a-zA-Z]+:\/\//)) {
         host = scheme + '://' + host;
