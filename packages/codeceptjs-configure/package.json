@@ -15,7 +15,7 @@
     },
     "scripts": {
         "test": "echo \"Error: run tests from root\" && exit 1",
-        "lint": "eslint src/**/*.ts",
+        "lint": "eslint lib/**/*.js",
         "prettier": "prettier --write -ignore-unknown ."
     },
     "bugs": {
@@ -33,7 +33,6 @@
         "codeceptjs-selenoid": "^1.0.0",
         "debug": "^4.1.1",
         "deepmerge": "^4.2.2",
-        "eslint": "^7.13.0",
         "expect": "^26.4.2",
         "expect-playwright": "^0.2.5",
         "figlet": "^1.3.0",
@@ -41,6 +40,7 @@
         "lint-staged": "^10.5.1",
         "node-emoji": "^1.10.0",
         "prettier": "^2.1.2",
+        "typescript": "^4.0.5",
         "webdriverio": "^5.2.2"
     },
     "husky": {
@@ -49,7 +49,7 @@
         }
     },
     "lint-staged": {
-        "*.{ts}": [
+        "*.{js}": [
             "eslint --fix",
             "git add"
         ],
@@ -57,5 +57,11 @@
             "yarn prettier",
             "git add"
         ]
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.7",
+        "@typescript-eslint/eslint-plugin": "^4.8.0",
+        "@typescript-eslint/parser": "^4.8.0",
+        "eslint": "^7.13.0"
     }
 }

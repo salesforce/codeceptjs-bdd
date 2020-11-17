@@ -16,7 +16,7 @@ class Driver_commands extends Helper {
         const values = [];
         for (let index = 0; index < inputArray.length; index++) {
             let res = await callback(inputArray[index], index, inputArray);
-            if (Array.isArray(res) && expandArrayResults) {
+            if (Array.isArray(res)) {
                 res.forEach((val) => values.push(val));
             } else if (res) {
                 values.push(res);
