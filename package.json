@@ -43,7 +43,7 @@
     },
     "lint-staged": {
         "packages/package-one/**/*.{js,ts}": [
-            "eslint --fix",
+            "npm run --silent lerna:lint:js",
             "git add"
         ],
         "packages/package-one/**/*.{js,ts,md,json}": [

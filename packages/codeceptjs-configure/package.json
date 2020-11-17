@@ -16,7 +16,8 @@
     "scripts": {
         "test": "echo \"Error: run tests from root\" && exit 1",
         "lint": "eslint lib/**/*.js",
-        "prettier": "prettier --write -ignore-unknown ."
+        "prettier": "prettier --write -ignore-unknown .",
+        "lint:js:fix": "npm run eslint . --ext .js,.ts --fix"
     },
     "bugs": {
         "url": "https://github.com/salesforce/codeceptjs-bdd/issues"
