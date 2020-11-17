@@ -38,7 +38,7 @@
     "author": "Kushang Gajjar <g.kushang@gmail.com>",
     "license": "MIT",
     "lint-staged": {
-        "**/*.{js}": [
+        "packages/**/*.{js}": [
             "lerna run lint:js:fix",
             "git add"
         ],
