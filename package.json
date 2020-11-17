@@ -30,7 +30,8 @@
         "circleci:test:playwright": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright",
         "circleci:test:playwright:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright:parallel",
         "circleci:test:webdriver": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver",
-        "circleci:test:webdriver:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver:parallel"
+        "circleci:test:webdriver:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver:parallel",
+        "lerna:lint:js": "lerna run lint:js:fix"
     },
     "version": "1.0.0",
     "description": "CodeceptJS Cucumber BDD Framework",
@@ -42,11 +43,11 @@
         }
     },
     "lint-staged": {
-        "packages/**/*.{js,ts}": [
-            "yarn --silent lerna:lint:js",
+        "packages/**/*.{js}": [
+            "lerna run lint:js:fix",
             "git add"
         ],
-        "packages/**/*.{js,ts,md,json}": [
+        "packages/codeceptjs-configure/**/*.{js,ts,md,json}": [
             "yarn prettier",
             "git add"
         ]
