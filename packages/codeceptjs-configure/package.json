@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-configure",
-    "version": "8.0.1",
+    "version": "8.0.2",
     "description": "Shared Configurations for CodeceptJS-BDD",
     "author": {
         "name": "Kushang Gajjar",
@@ -29,8 +29,8 @@
         "check-yarn-lock": "^0.2.1",
         "cli-ux": "^5.4.5",
         "codeceptjs": "^3.0.2",
-        "codeceptjs-saucelabs": "^5.2.4",
-        "codeceptjs-selenoid": "^1.0.0",
+        "codeceptjs-saucelabs": "^5.2.6",
+        "codeceptjs-selenoid": "^1.0.1",
         "debug": "^4.1.1",
         "deepmerge": "^4.2.2",
         "expect": "^26.4.2",

@@ -1,6 +1,6 @@
 {
     "name": "create-codeceptjs-bdd-tests",
-    "version": "7.0.0",
+    "version": "7.0.1",
     "author": {
         "name": "Kushang Gajjar",
         "email": "g.kushang@gmail.com"
@@ -52,7 +52,7 @@
     "devDependencies": {
         "@wdio/selenium-standalone-service": "5.16.10",
         "allure-commandline": "^2.9.0",
-        "codeceptjs-saucelabs": "^5.2.4",
+        "codeceptjs-saucelabs": "^5.2.6",
         "debug": "^4.1.1",
         "deepmerge": "^4.0.0",
         "dotenv-extended": "^2.8.0",
