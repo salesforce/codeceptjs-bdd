@@ -2,8 +2,8 @@
  * get host
  *
  */
-const fs = require('fs');
 const path = require('path');
+const fs = require('fs');
 
 const get = function (defaultHost, scheme) {
     let host = process.env.HOST ? process.env.HOST : defaultHost;
