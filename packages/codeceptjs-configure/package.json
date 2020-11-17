@@ -15,7 +15,8 @@
     },
     "scripts": {
         "test": "echo \"Error: run tests from root\" && exit 1",
-        "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+        "lint": "eslint src/**/*.ts",
+        "prettier": "prettier --write -ignore-unknown ."
     },
     "bugs": {
         "url": "https://github.com/salesforce/codeceptjs-bdd/issues"

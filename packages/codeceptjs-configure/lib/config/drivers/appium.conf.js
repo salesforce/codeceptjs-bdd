@@ -7,7 +7,7 @@ const appium_conf = {
         Appium: {
             url: host.get(),
         },
-            },
+    },
 };
 const get = function (conf) {
     conf = merge(conf, appium_conf);
