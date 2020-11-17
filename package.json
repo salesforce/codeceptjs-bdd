@@ -42,11 +42,11 @@
         }
     },
     "lint-staged": {
-        "packages/package-one/**/*.{js,ts}": [
-            "npm run --silent lerna:lint:js",
+        "packages/**/*.{js,ts}": [
+            "yarn --silent lerna:lint:js",
             "git add"
         ],
-        "packages/package-one/**/*.{js,ts,md,json}": [
+        "packages/**/*.{js,ts,md,json}": [
             "yarn prettier",
             "git add"
         ]
