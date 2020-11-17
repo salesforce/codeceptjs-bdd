@@ -31,19 +31,15 @@
         "circleci:test:playwright:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright:parallel",
         "circleci:test:webdriver": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver",
         "circleci:test:webdriver:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver:parallel",
-        "lerna:lint:js": "lerna run lint:js:fix"
+        "lerna:lint:prettier": "lerna run lint:prettier"
     },
     "version": "1.0.0",
     "description": "CodeceptJS Cucumber BDD Framework",
     "author": "Kushang Gajjar <g.kushang@gmail.com>",
     "license": "MIT",
     "lint-staged": {
-        "packages/**/*.{js}": [
-            "lerna run lint:js:fix",
-            "git add"
-        ],
-        "packages/**/*.{js,ts,md,json}": [
-            "yarn prettier",
+        "*.{js,ts}": [
+            "lerna run lint:prettier",
             "git add"
         ]
     },
