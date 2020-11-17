@@ -5,9 +5,9 @@ const host = require('../../host/host');
 const appium_conf = {
     helpers: {
         Appium: {
-            url: host.get()
-        }
-    }
+            url: host.get(),
+        },
+    },
 };
 const get = function (conf) {
     conf = merge(conf, appium_conf);

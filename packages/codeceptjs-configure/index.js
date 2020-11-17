@@ -3,10 +3,7 @@ const cleanReports = require('./lib/reports/clean.reports').cleanReports;
 const configure = require('./lib/config/configure');
 const host = require('./lib/host/host');
 
-
-const Driver_commands = require.resolve(
-    './lib/helpers/driver-commands.helper.js'
-);
+const Driver_commands = require.resolve('./lib/helpers/driver-commands.helper.js');
 
 module.exports = {
     config: { master },
@@ -15,5 +12,5 @@ module.exports = {
     configure,
     host,
     pageObjects: require('./lib/config/bdd/pageObjects').pageObjects,
-    steps: require('./lib/config/bdd/steps').steps
+    steps: require('./lib/config/bdd/steps').steps,
 };

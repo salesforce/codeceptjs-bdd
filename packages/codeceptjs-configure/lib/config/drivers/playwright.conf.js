@@ -40,13 +40,13 @@ const playwright_conf = {
             show: process.env.HEADLESS === 'false',
             emulate: {
                 ignoreHTTPSErrors: true,
-                acceptDownloads: true
+                acceptDownloads: true,
             },
-            browser: getPlaywrightBrowser()
-        }
-    }
+            browser: getPlaywrightBrowser(),
+        },
+    },
 };
 
 module.exports = {
-    get
+    get,
 };
