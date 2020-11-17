@@ -17,7 +17,9 @@ const cleanReports = function (options) {
         options.relativePath = process.env.CODECEPT_RELATIVE_PATH
     }
 
-    fs.rmdir(path.join(process.cwd(), options.relativePath, options.path), { recursive: true }, (err) => {
+    const dir = path.join(process.cwd(), options.relativePath, options.path);
+    
+    fs.rmdir(dir, { recursive: true }, (err) => {
         if (err) {
             throw Error('Error cleaning the Report directory', err);
         }
@@ -27,7 +29,7 @@ const cleanReports = function (options) {
         }
 
         logger.log({
-            message: `deleting report dir "${options.path}" ...`,
+            message: `deleting report dir "${dir}" ...`,
             emoji: 'wastebasket',
             chalk: chalk.gray
         });
