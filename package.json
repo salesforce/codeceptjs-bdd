@@ -5,7 +5,11 @@
         "packages/*"
     ],
     "dependencies": {
-        "lerna": "^3.14.1"
+        "check-yarn-lock": "^0.2.1",
+        "husky": "^4.3.0",
+        "lerna": "^3.14.1",
+        "lint-staged": "^10.5.1",
+        "prettier": "^2.1.2"
     },
     "homepage": "https://gkushang.github.io/",
     "repository": {
@@ -31,5 +35,20 @@
     "version": "1.0.0",
     "description": "CodeceptJS Cucumber BDD Framework",
     "author": "Kushang Gajjar <g.kushang@gmail.com>",
-    "license": "MIT"
+    "license": "MIT",
+    "husky": {
+        "hooks": {
+            "pre-commit": "check-yarn-lock && lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{ts,js}": [
+            "eslint --fix",
+            "git add"
+        ],
+        "*.{ts,md,json,js}": [
+            "yarn prettier",
+            "git add"
+        ]
+    }
 }
