@@ -3,9 +3,9 @@ let get = function (getBrowsers) {
         helpers: {
             WebDriver: getBrowsers()[0],
             SauceHelper: {
-                require: 'codeceptjs-saucehelper'
+                require: 'codeceptjs-saucehelper',
             },
-            REST: {}
+            REST: {},
         },
         plugins: {
             wdio: {
@@ -14,22 +14,22 @@ let get = function (getBrowsers) {
                 user: process.env.SAUCE_USERNAME,
                 key: process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY,
                 tunnelIdentifier: process.env.SAUCE_TUNNEL_ID || process.env.SAUCE_PARENT_TUNNEL_ID,
-                region: process.env.SAUCE_REGION || 'us'
-            }
+                region: process.env.SAUCE_REGION || 'us',
+            },
         },
         multiple: {
             multibrowsers: {
                 chunks: getBrowsers().length,
-                browsers: getBrowsers()
+                browsers: getBrowsers(),
             },
             parallel: {
-                browsers: getBrowsers()
-            }
-        }
+                browsers: getBrowsers(),
+            },
+        },
     };
     return webdriverConf;
 };
 
 module.exports = {
-    get
+    get,
 };

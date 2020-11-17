@@ -1,4 +1,4 @@
-let get = function (getBrowsers, sauceBrowsers) {
+let get = function (getBrowsers) {
     let appiumConfig = {
         helpers: {
             Appium: {
@@ -7,13 +7,13 @@ let get = function (getBrowsers, sauceBrowsers) {
                 user: process.env.SAUCE_USERNAME,
                 key: process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY,
                 tunnelIdentifier: process.env.SAUCE_TUNNEL_ID || process.env.SAUCE_PARENT_TUNNEL_ID,
-                region: process.env.SAUCE_REGION || 'us'
+                region: process.env.SAUCE_REGION || 'us',
             },
             SauceHelper: {
-                require: 'codeceptjs-saucehelper'
+                require: 'codeceptjs-saucehelper',
             },
-            REST: {}
-        }
+            REST: {},
+        },
     };
 
     let appiumBrowser = getBrowsers()[0];
@@ -23,5 +23,5 @@ let get = function (getBrowsers, sauceBrowsers) {
 };
 
 module.exports = {
-    get
+    get,
 };

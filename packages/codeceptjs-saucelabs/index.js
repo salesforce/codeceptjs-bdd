@@ -1,5 +1,5 @@
 const saucelabs = require('./lib/codecept.sauce.conf');
 
- module.exports = {
-     config: { saucelabs }
- };
+module.exports = {
+    config: { saucelabs },
+};

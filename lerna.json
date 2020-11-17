@@ -1,23 +1,16 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "command": {
-    "publish": {
-      "ignoreChanges": [
-        "ignored-file",
-        "*.md"
-      ],
-      "message": "chore(release): publish"
+    "packages": ["packages/*"],
+    "command": {
+        "publish": {
+            "ignoreChanges": ["ignored-file", "*.md"],
+            "message": "chore(release): publish"
+        },
+        "bootstrap": {
+            "ignore": "component-*",
+            "npmClientArgs": ["--no-package-lock"]
+        }
     },
-    "bootstrap": {
-      "ignore": "component-*",
-      "npmClientArgs": [
-        "--no-package-lock"
-      ]
-    }
-  },
-  "npmClient": "yarn",
-  "useWorkspaces": true,
-  "version": "independent"
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "version": "independent"
 }

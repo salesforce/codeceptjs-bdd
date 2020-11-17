@@ -18,7 +18,8 @@
         "circleci:test:playwright:parallel": "DRIVER=playwright yarn acceptance:parallel",
         "circleci:test:webdriver": "yarn acceptance --profile chrome:headless",
         "circleci:test:webdriver:parallel": "yarn acceptance:parallel --profile chrome:headless",
-        "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+        "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+        "lerna:lint:prettier": "lerna run lint:prettier"
     },
     "bin": {
         "create-codeceptjs-bdd-tests": "./cli/create.js"
