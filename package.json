@@ -37,19 +37,19 @@
     "description": "CodeceptJS Cucumber BDD Framework",
     "author": "Kushang Gajjar <g.kushang@gmail.com>",
     "license": "MIT",
-    "husky": {
-        "hooks": {
-            "pre-commit": "check-yarn-lock && lint-staged"
-        }
-    },
     "lint-staged": {
         "packages/**/*.{js}": [
             "lerna run lint:js:fix",
             "git add"
         ],
-        "packages/codeceptjs-configure/**/*.{js,ts,md,json}": [
+        "packages/**/*.{js,ts,md,json}": [
             "yarn prettier",
             "git add"
         ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "check-yarn-lock && lint-staged"
+        }
     }
 }
