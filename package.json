@@ -42,11 +42,11 @@
         }
     },
     "lint-staged": {
-        "*.{ts,js}": [
+        "packages/package-one/**/*.{js,ts}": [
             "eslint --fix",
             "git add"
         ],
-        "*.{ts,md,json,js}": [
+        "packages/package-one/**/*.{js,ts,md,json}": [
             "yarn prettier",
             "git add"
         ]
