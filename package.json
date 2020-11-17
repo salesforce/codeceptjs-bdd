@@ -5,7 +5,11 @@
         "packages/*"
     ],
     "dependencies": {
-        "lerna": "^3.14.1"
+        "check-yarn-lock": "^0.2.1",
+        "husky": "^4.3.0",
+        "lerna": "^3.22.1",
+        "lint-staged": "^10.5.1",
+        "prettier": "^2.1.2"
     },
     "homepage": "https://gkushang.github.io/",
     "repository": {
@@ -26,7 +30,8 @@
         "circleci:test:playwright": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright",
         "circleci:test:playwright:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright:parallel",
         "circleci:test:webdriver": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver",
-        "circleci:test:webdriver:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver:parallel"
+        "circleci:test:webdriver:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver:parallel",
+        "lerna:lint:prettier": "lerna run lint:prettier"
     },
     "version": "1.0.0",
     "description": "CodeceptJS Cucumber BDD Framework",

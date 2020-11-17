@@ -18,32 +18,32 @@ let masterConf = {
     cleanup: true,
     helpers: {
         Driver_commands: {
-            require: driver_commands
+            require: driver_commands,
         },
         custom_methods: {
-            require: custom_methods
+            require: custom_methods,
         },
         REST: {
             endpoint: host.get(),
-            timeout: 300000
-        }
+            timeout: 300000,
+        },
     },
     plugins: {
         screenshotOnFail: {
-            enabled: true
+            enabled: true,
         },
         allure: {
-            enabled: true
+            enabled: true,
         },
         autoDelay: {
             enabled: true,
             delayBefore: 400,
-            delayAfter: 400
+            delayAfter: 400,
         },
         retryFailedStep: {
             enabled: true,
-            retries: 10
-        }
+            retries: 10,
+        },
     },
     multiple: {
         parallel: {
@@ -53,25 +53,26 @@ let masterConf = {
                     chunks.push([file]);
                 });
                 return chunks;
-            }
+            },
         },
         smoke: {
             grep: '@smoke',
-            browsers: [process.env.WEBDRIVER_BROWSER]
-        }
+            browsers: [process.env.WEBDRIVER_BROWSER],
+        },
     },
     gherkin: {
         steps: steps(),
-        features: process.env.CODECEPT_RELATIVE_PATH + 'features/**/*.feature'
+        features: process.env.CODECEPT_RELATIVE_PATH + 'features/**/*.feature',
     },
     include: {
         ...pageObjects(),
-        page: 'codeceptjs-configure/lib/helpers/global.page.js'
+        page: 'codeceptjs-configure/lib/helpers/global.page.js',
     },
-    tests: process.env.CODECEPT_RELATIVE_PATH + '**/*.spec.{js,ts}'
+    tests: process.env.CODECEPT_RELATIVE_PATH + '**/*.spec.{js,ts}',
 };
 
-const driverConf = driversConf[Object.keys(driversConf).find((driver) => driver.toLowerCase() === process.env.DRIVER.toLowerCase())];
+const driverConf =
+    driversConf[Object.keys(driversConf).find((driver) => driver.toLowerCase() === process.env.DRIVER.toLowerCase())];
 
 if (driverConf) {
     masterConf = driverConf.get(masterConf);

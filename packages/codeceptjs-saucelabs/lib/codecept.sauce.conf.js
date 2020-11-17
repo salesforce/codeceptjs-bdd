@@ -34,7 +34,9 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
     }
 
     function getRequestedBrowser() {
-        return isAppiumRequested() ? gProfile.split(SAUCE_DELIMITER)[2].split(MULTI_BROWSER_DELIMITER) : gProfile.split(SAUCE_DELIMITER)[1].split(MULTI_BROWSER_DELIMITER);
+        return isAppiumRequested()
+            ? gProfile.split(SAUCE_DELIMITER)[2].split(MULTI_BROWSER_DELIMITER)
+            : gProfile.split(SAUCE_DELIMITER)[1].split(MULTI_BROWSER_DELIMITER);
     }
 
     function getBrowsers() {
@@ -83,16 +85,31 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
             webdriverConf.plugins.wdio.user = sauceUsername;
             webdriverConf.plugins.wdio.key = sauceKey;
 
-            console.info(`${emoji.get('sun_behind_cloud')}  ` + chalk.yellow.bold('Tests are running on Sauce Labs account: ') + chalk.blue.bold(sauceUsername));
-            console.info(chalk.yellow.bold('Sauce Labs Dashboard for the current build is : ') + chalk.blue.bold(process.env.SAUCE_BUILD));
+            console.info(
+                `${emoji.get('sun_behind_cloud')}  ` +
+                    chalk.yellow.bold('Tests are running on Sauce Labs account: ') +
+                    chalk.blue.bold(sauceUsername)
+            );
+            console.info(
+                chalk.yellow.bold('Sauce Labs Dashboard for the current build is : ') +
+                    chalk.blue.bold(process.env.SAUCE_BUILD)
+            );
 
             // For supporting the codeceptjs-saucehelper module
             if (!isAppiumRequested()) {
-                console.info(chalk.yellow.bold('Tests are running on Sauce Labs browsers: ') + chalk.blue.bold(JSON.stringify(getBrowsers(), null, 2)) + '\n');
+                console.info(
+                    chalk.yellow.bold('Tests are running on Sauce Labs browsers: ') +
+                        chalk.blue.bold(JSON.stringify(getBrowsers(), null, 2)) +
+                        '\n'
+                );
                 webdriverConf.helpers.WebDriver.user = sauceUsername;
                 webdriverConf.helpers.WebDriver.key = sauceKey;
             } else {
-                console.info(chalk.yellow.bold('Tests are running on Sauce Labs Appium Mobile browser: ') + chalk.blue.bold(JSON.stringify(getBrowsers(), null, 2)) + '\n');
+                console.info(
+                    chalk.yellow.bold('Tests are running on Sauce Labs Appium Mobile browser: ') +
+                        chalk.blue.bold(JSON.stringify(getBrowsers(), null, 2)) +
+                        '\n'
+                );
             }
         }
         if (isAppiumRequested()) {

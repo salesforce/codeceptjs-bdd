@@ -9,6 +9,9 @@
         "CodeceptJS",
         "Multibrowsers"
     ],
+    "scripts": {
+        "lint:prettier": "eslint lib/**/*.js --fix && prettier --write -ignore-unknown . "
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/salesforce/codeceptjs-bdd.git"

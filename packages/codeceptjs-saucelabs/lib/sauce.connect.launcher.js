@@ -7,23 +7,24 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 const emoji = require('node-emoji');
 
-console.log('\n' +
-    chalk.yellow(
-        figlet.textSync('CODECEPTJS SAUCE CONNECT', {
+console.log(
+    '\n' +
+        chalk.yellow(
+            figlet.textSync('CODECEPTJS SAUCE CONNECT', {
                 font: 'slant',
                 horizontalLayout: 'default',
-                verticalLayout: 'default'
-        })
-    )
+                verticalLayout: 'default',
+            })
+        )
 );
 
-console.info(chalk.blue.bold('\nLaunching SauceTunnel for the account: ') + chalk.yellow.bold(process.env.SAUCE_USERNAME));
+console.info(
+    chalk.blue.bold('\nLaunching SauceTunnel for the account: ') + chalk.yellow.bold(process.env.SAUCE_USERNAME)
+);
 console.info(chalk.yellow.bold(emoji.emojify(':coffee: ') + 'wait a few seconds ...\n'));
-
 
 var sauceConnectLauncher = require('sauce-connect-launcher'),
     options = {
-
         // Sauce Labs username.  You can also pass this through the
         // SAUCE_USERNAME environment variable
         username: process.env.SAUCE_USERNAME,
@@ -73,21 +74,32 @@ var sauceConnectLauncher = require('sauce-connect-launcher'),
         // A function to optionally write sauce-connect-launcher log messages.
         // e.g. `console.log`.  (optional)
         logger: function (message) {
-                console.log(chalk.green(message)        );
+            console.log(chalk.green(message));
         },
 
         // an optional suffix to be appended to the `readyFile` name.
         // useful when running multiple tunnels on the same machine,
         // such as in a continuous integration environment. (optional)
-        readyFileId: null
+        readyFileId: null,
     };
 
-    sauceConnectLauncher(options, function (err, sauceConnectProcess) {
-        if (err) {
-                console.error(chalk.red.bold('Error in launching SauceTunnel: ', err));
-                return;
-        }
-        console.info(chalk.blue.bold(emoji.emojify(':rocket: ')  + 'SauceLabs Tunnel is launched successfully for the account: ') + chalk.yellow.bold(process.env['SAUCE_USERNAME']));
+sauceConnectLauncher(options, function (err) {
+    if (err) {
+        console.error(chalk.red.bold('Error in launching SauceTunnel: ', err));
+        return;
+    }
+    console.info(
+        chalk.blue.bold(emoji.emojify(':rocket: ') + 'SauceLabs Tunnel is launched successfully for the account: ') +
+            chalk.yellow.bold(process.env['SAUCE_USERNAME'])
+    );
 
-        console.info(chalk.white.bold('\n' + emoji.emojify(':octagonal_sign: ') + 'Hit ' + chalk.yellow.bgBlue.bold(' CTRL + C ') +  ' to shutdown the tunnel...'));
+    console.info(
+        chalk.white.bold(
+            '\n' +
+                emoji.emojify(':octagonal_sign: ') +
+                'Hit ' +
+                chalk.yellow.bgBlue.bold(' CTRL + C ') +
+                ' to shutdown the tunnel...'
+        )
+    );
 });

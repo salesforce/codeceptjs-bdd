@@ -9,6 +9,9 @@
         "CodeceptJS",
         "Multibrowsers"
     ],
+    "scripts": {
+        "lerna:lint:prettier": "lerna run lint:prettier"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"

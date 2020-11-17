@@ -19,7 +19,10 @@ logger.welcome();
  * @param {object} conf
  */
 const create = (conf, userSpecifiedSauceBrowsers) => {
-    const driver = master_conf.helpers[Object.keys(master_conf.helpers).find((driver) => driver.toLowerCase() === gDriver.toLowerCase())];
+    const driver =
+        master_conf.helpers[
+            Object.keys(master_conf.helpers).find((driver) => driver.toLowerCase() === gDriver.toLowerCase())
+        ];
 
     if (!driver) {
         logger.error(`'${gDriver}' is not a supported driver. Supported drivers are: [${Object.keys(driversConf)}]`);
@@ -35,31 +38,37 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
 
     logger.log({
         message: driverMessage,
-        emoji: 'star2'
+        emoji: 'star2',
     });
 
     logger.log({
         message: `Host: ${process.env.HOST}`,
-        emoji: 'earth_americas'
+        emoji: 'earth_americas',
     });
 
     logger.log({
         message: `${gDriver}: ${JSON.stringify(driver)}`,
-        chalk: require('chalk').gray
+        chalk: require('chalk').gray,
     });
 
     if (gDriver && gDriver.toLowerCase() === 'playwright') {
         logger.log({
-            message: chalk.greenBright.bold((process.env.HEADLESS === 'true') ? `Running Headless ...` : `Running non-Headless ...`),
+            message: chalk.greenBright.bold(
+                process.env.HEADLESS === 'true' ? `Running Headless ...` : `Running non-Headless ...`
+            ),
             emoji: 'running',
-            chalk: chalk.bgBlack
+            chalk: chalk.bgBlack,
         });
     }
 
     const config = merge(
         merge(
             merge(master_conf, conf),
-            require('codeceptjs-saucelabs').config.saucelabs(process.env.SAUCE_USERNAME, process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY, userSpecifiedSauceBrowsers || {})
+            require('codeceptjs-saucelabs').config.saucelabs(
+                process.env.SAUCE_USERNAME,
+                process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY,
+                userSpecifiedSauceBrowsers || {}
+            )
         ),
         require('codeceptjs-selenoid').config.selenoid()
     );
@@ -70,5 +79,5 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
 };
 
 module.exports = {
-    create
+    create,
 };

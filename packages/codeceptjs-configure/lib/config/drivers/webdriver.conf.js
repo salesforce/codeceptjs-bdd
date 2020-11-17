@@ -13,10 +13,10 @@ const webdriver_conf = {
             timeouts: {
                 implicit: 5000,
                 script: 60000,
-                'page load': 10000
-            }
-        }
-    }
+                'page load': 10000,
+            },
+        },
+    },
 };
 
 const isRunningLocally = (profile) => {
@@ -31,8 +31,8 @@ const get = (conf) => {
         conf.helpers.WebDriver.browser = 'chrome';
         conf.helpers.WebDriver.capabilities = {
             chromeOptions: {
-                args: ['--headless', '--disable-gpu', '--window-size=1920,1080']
-            }
+                args: ['--headless', '--disable-gpu', '--window-size=1920,1080'],
+            },
         };
     } else if (profile && (profile === 'safari' || profile === 'firefox')) {
         conf.helpers.WebDriver.windowSize = 'maximize';
@@ -46,8 +46,8 @@ const get = (conf) => {
         conf.plugins = {
             wdio: {
                 enabled: true,
-                services: [STANDALONE_SERVICE]
-            }
+                services: [STANDALONE_SERVICE],
+            },
         };
     }
 
