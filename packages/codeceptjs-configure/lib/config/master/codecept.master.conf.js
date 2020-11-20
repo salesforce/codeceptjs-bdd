@@ -35,11 +35,6 @@ let masterConf = {
         allure: {
             enabled: true,
         },
-        autoDelay: {
-            enabled: true,
-            delayBefore: 400,
-            delayAfter: 400,
-        },
         retryFailedStep: {
             enabled: true,
             retries: 10,
