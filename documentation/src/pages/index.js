@@ -2,6 +2,7 @@ import React from 'react';
 import AppLayout from '../components/AppLayout';
 import AppCard from '../components/AppCard';
 import CreateTests from '../components/CreateTests';
+import RunTests from '../components/RunTests';
 import codeceptjsBddFrameworkImage from '../images/codeceptbdd-arch.png';
 import howImage from '../images/How.png';
 import BDD from '../images/BDD.png';
@@ -321,6 +322,9 @@ const IndexPage = () => {
         <Divider />
         <br></br>
         <CreateTests />
+        <br></br>
+        <br></br>
+        <RunTests />
         <Grid container spacing={5} className={classes.arch}>
           {renderAppCards()}
         </Grid>

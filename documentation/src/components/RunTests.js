@@ -66,6 +66,25 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+function runCommands(options) {
+  return (
+    <div style={{ paddingTop: '14px' }}>
+      <span style={{ color: '#9999FF', fontWeight: 'bold' }}>
+        {' '}
+        {options.title}{' '}
+      </span>
+      {/* <br /> */}
+      <span style={{ color: '#929D9D', fontSize: '0.7em' }}>
+        {' '}
+        {/* // [--profile chrome|firefox|safari]{' '} */}
+      </span>
+      <br />
+      <span style={{ color: '#e1e31a' }}>$ </span>
+      <span style={{ color: 'white' }}>yarn ui:test </span>
+      <span style={{ color: '#ffe59a' }}>--profile {options.profile} </span>
+    </div>
+  );
+}
 export default function CreateTests() {
   const classes = useStyles();
   return (
@@ -86,20 +105,19 @@ export default function CreateTests() {
             marginTop: '1px',
           }}
         >
-          Quickly create your Codeceptjs-BDD Acceptance tests through open
-          source
+          Run tests on various platforms with Single CLI command:
           <span
             style={{
               color: '#253C3C',
-              fontSize: '1em',
+              fontSize: '0.9em',
               fontFamily: 'monospace, monospace, monospace',
               fontWeight: '500',
             }}
           >
             {' '}
-            create-codecepjts-bdd-tests{' '}
+            Locally, Sauce Labs, Selenoid Grid, Appium, and with Playwright:
+            Mobile /Tablet /Desktop browsers.{' '}
           </span>
-          tool.
         </div>
       </Typography>
       <Grid container spacing={3}>
@@ -107,8 +125,8 @@ export default function CreateTests() {
           <Paper
             elevation={8}
             style={{
-              backgroundColor: '#2F4B4B',
-              height: '5em',
+              backgroundColor: '#191953',
+              height: '32em',
               fontColor: 'yelllow',
             }}
           >
@@ -116,20 +134,37 @@ export default function CreateTests() {
               <div
                 style={{
                   color: '#e1e31a',
-                  fontSize: '14px',
+                  fontSize: '12px',
                   marginTop: '5px',
                   fontFamily: 'monospace, monospace, monospace',
                   paddingTop: '1.7em',
                   paddingLeft: '10px',
-                  overflowX: 'scroll',
-                  whiteSpace: 'nowrap',
+                  overflow: 'scroll',
+                  whiteSpace: 'normal',
                 }}
               >
-                <span style={{ color: '#e1e31a' }}>$ </span>
-                <span style={{ color: 'white' }}>npx </span>
-                <span style={{ color: '#ffe59a' }}>
-                  create-codeceptjs-bdd-tests{' '}
-                </span>
+                {runCommands({ title: 'Locally', profile: 'chrome' })}
+                {/* -- */}
+                <br />
+                {runCommands({
+                  title: 'Playwright Mobile/Tablet Devices',
+                  profile: "device:'iPhone 11':safari",
+                })}
+                <br />
+                {runCommands({
+                  title: 'Sauce Labs',
+                  profile: "sauce:config:'macOS 10.15':safari:13.",
+                })}
+                <br />
+                {runCommands({
+                  title: 'Selenoid Grid',
+                  profile: 'selenoid:chrome:80',
+                })}
+                <br />
+                {runCommands({
+                  title: 'Appium',
+                  profile: 'sauce:appium:androidchrome',
+                })}
               </div>
             </Hidden>
 
@@ -137,18 +172,35 @@ export default function CreateTests() {
               <div
                 style={{
                   color: '#e1e31a',
-                  fontSize: '1.7em',
+                  fontSize: '1.2em',
                   marginTop: '5px',
                   fontFamily: 'monospace, monospace, monospace',
-                  paddingTop: '0.8em',
+                  paddingTop: '0.9em',
                   paddingLeft: '1em',
                 }}
               >
-                <span style={{ color: '#e1e31a' }}>$ </span>
-                <span style={{ color: 'white' }}>npx </span>
-                <span style={{ color: '#ffe59a' }}>
-                  create-codeceptjs-bdd-tests{' '}
-                </span>
+                {runCommands({ title: 'Locally', profile: 'chrome' })}
+                {/* -- */}
+                <br />
+                {runCommands({
+                  title: 'Playwright Mobile/Tablet Devices',
+                  profile: "device:'iPhone 11':safari",
+                })}
+                <br />
+                {runCommands({
+                  title: 'Sauce Labs',
+                  profile: "sauce:config:'macOS 10.15':safari:13.",
+                })}
+                <br />
+                {runCommands({
+                  title: 'Selenoid Grid',
+                  profile: 'selenoid:chrome:80',
+                })}
+                <br />
+                {runCommands({
+                  title: 'Appium',
+                  profile: 'sauce:appium:androidchrome',
+                })}
               </div>
             </Hidden>
           </Paper>
