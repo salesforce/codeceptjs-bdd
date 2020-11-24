@@ -50,7 +50,13 @@ const welcome = () => {
         env: 'node', // define the environment CFonts is being executed in
     });
 
-    cli.default.log('\n\n' + emoji.emojify(':tada: ') + chalk.blue.underline.bold('Welcome to CodeceptJs-BDD CLI!'));
+    cli.default.log(
+        '\n\n' +
+            emoji.emojify(':tada: ') +
+            chalk.blue.bold(
+                'Welcome to CodeceptJs-BDD CLI! ' + chalk.blue.underline.bold('(https://gkushang.github.io/)')
+            )
+    );
 
     cli.default.log(
         chalk.green.bold(
