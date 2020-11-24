@@ -1,6 +1,13 @@
 CHANGELOG IS ALSO AVAILABLE ON [CODECEPTJS-BDD WEBSITE](https://github.com/gkushang/codeceptjs-bdd/blob/develop/documentation/docs/CHANGELOG.md)
 
-## 8.0.4 (NOV-19-2020)
+## CODECEPTJS-CONFIGURE V8.0.5 (NOV-24-2020)
+
+-   Automatic selection of Driver based on the `--profile` CLI option
+    e.g. if you pass a `--profile device:'iPhone 11':safari` then framework will switch to Playwright automatically
+
+    e.g. if you pass a `--profile sauce:config:'Windows 10':chrome:80` then framework will swith to Webdriver automatically.
+
+## CODECEPTJS-CONFIGURE V8.0.4 (NOV-19-2020)
 
 -   Typescript support. [More info](https://codecept.io/typescript/#typescript) on typescript setup
 -   Runs on Selenoid. [More info](http://gkushang.github.io/03-02-run-on-selenoid/3-run-on-selenoid/) on how to run on Selenoid
