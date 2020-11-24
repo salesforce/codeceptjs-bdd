@@ -21,7 +21,7 @@
         "ui:test:all": "yarn ui:test && yarn ui:test:parallel && DRIVER=webdriver yarn ui:test --profile sauce:chrome && DRIVER=webdriver yarn ui:test",
         "circleci:test:playwright": "DRIVER=playwright yarn acceptance",
         "circleci:test:playwright:parallel": "DRIVER=playwright yarn acceptance:parallel",
-        "circleci:test:webdriver": "yarn acceptance --profile chrome:headless",
+        "circleci:test:webdriver": "DRIVER=webdriver yarn acceptance --profile chrome:headless",
         "circleci:test:webdriver:parallel": "yarn acceptance:parallel --profile chrome:headless",
         "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
         "lerna:lint:prettier": "lerna run lint:prettier"
