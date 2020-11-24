@@ -27,7 +27,7 @@ Then(
          // EXAMPLE 1: USE CODECEPTJS ASSERTIONS
          ************************************/
 
-        I.see('CodeceptJS BDD Framework with Cucumber, SauceLabs');
+        I.see('Javascript BDD UI Automation Framework');
 
         I.see('MIT license\n');
 
