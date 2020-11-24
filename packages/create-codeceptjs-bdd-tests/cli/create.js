@@ -7,10 +7,7 @@ const path = require('path');
 const fs = require('fs');
 const UpdateEnvironments = require('./update.env');
 
-const {
-    addNpmScripts,
-    installDependencies
-} = require('./update.package');
+const { addNpmScripts, installDependencies } = require('./update.package');
 const log = require('./logger');
 const {
     aboutProjectPaths,
@@ -26,21 +23,13 @@ const run = async () => {
      **********************************************/
 
     const copyAcceptanceTests = async () => {
-        const acceptanceTestsPath = path.join(
-            ROOT_PATH,
-            RELATIVE_PATH,
-            ACCEPTANCE
-        );
+        const acceptanceTestsPath = path.join(ROOT_PATH, RELATIVE_PATH, ACCEPTANCE);
 
         if (!fs.existsSync(acceptanceTestsPath)) {
             shell.mkdir('-p', acceptanceTestsPath);
         }
 
-        shell.cp(
-            '-R',
-            path.join(__dirname, `../${ACCEPTANCE}`),
-            path.join(ROOT_PATH, RELATIVE_PATH)
-        );
+        shell.cp('-R', path.join(__dirname, `../${ACCEPTANCE}`), path.join(ROOT_PATH, RELATIVE_PATH));
     };
 
     /**********************************************
@@ -48,15 +37,10 @@ const run = async () => {
      **********************************************/
     const updateDriver = async () => {
         if (DRIVER === 'WebDriver') {
-            const {
-                INTEGRATE_SAUCE_LABS
-            } = await aboutSauceLabs();
+            const { INTEGRATE_SAUCE_LABS } = await aboutSauceLabs();
 
             if (INTEGRATE_SAUCE_LABS) {
-                const {
-                    SAUCE_USERNAME,
-                    SAUCE_KEY,
-                } = await aboutSauceLabsAccount();
+                const { SAUCE_USERNAME, SAUCE_KEY } = await aboutSauceLabsAccount();
                 // shell.sed('-i', '<sauce_username>', SAUCE_USERNAME, configFile);
                 updateEnvs.sauceLabs({
                     sauceUsername: SAUCE_USERNAME,
@@ -77,19 +61,18 @@ const run = async () => {
 
             console.log(
                 '\n' +
-                chalk.green(
-                    figlet.textSync('Running Tests', {
-                        font: 'speed',
-                        horizontalLayout: 'default',
-                        verticalLayout: 'default',
-                    })
-                )
+                    chalk.green(
+                        figlet.textSync('Running Tests', {
+                            font: 'speed',
+                            horizontalLayout: 'default',
+                            verticalLayout: 'default',
+                        })
+                    )
             );
 
             if (
-                shell.exec(
-                    `DRIVER=${DRIVER} ./node_modules/.bin/codeceptjs run --grep=@search_results --steps`
-                ).code !== 0
+                shell.exec(`DRIVER=${DRIVER} ./node_modules/.bin/codeceptjs run --grep=@search_results --steps`)
+                    .code !== 0
             ) {
                 log.failure('Execution of Acceptance Test Failed.');
             }
@@ -100,17 +83,11 @@ const run = async () => {
 
     log.welcome();
     // ask about project paths
-    const {
-        PROJECT_NAME,
-        ROOT_PATH,
-        RELATIVE_PATH,
-    } = await aboutProjectPaths();
+    const { PROJECT_NAME, ROOT_PATH, RELATIVE_PATH } = await aboutProjectPaths();
 
     log.infoAboutPaths(path.join(ROOT_PATH, RELATIVE_PATH, ACCEPTANCE));
 
-    const {
-        DRIVER
-    } = await aboutDriver();
+    const { DRIVER } = await aboutDriver();
 
     log.tipsToExecuteOnDriver();
 
@@ -131,12 +108,7 @@ const run = async () => {
 
     // update project name
     shell.sed('-i', '<your-acceptance-tests-name>', PROJECT_NAME, configFile);
-    shell.sed(
-        '-i',
-        './acceptance',
-        './' + RELATIVE_PATH + '/acceptance',
-        configFile
-    );
+    shell.sed('-i', './acceptance', './' + RELATIVE_PATH + '/acceptance', configFile);
 
     const updateEnvs = new UpdateEnvironments({
         rootPath: ROOT_PATH,
@@ -144,7 +116,7 @@ const run = async () => {
     });
 
     updateEnvs.relativePath({
-        relativePath: RELATIVE_PATH
+        relativePath: RELATIVE_PATH,
     });
 
     // create package.json if not exists
@@ -158,14 +130,12 @@ const run = async () => {
     await updateDriver();
 
     updateEnvs.driver({
-        driver: DRIVER
+        driver: DRIVER,
     });
 
     log.scenarioExecutions();
 
-    const {
-        SHOULD_EXECUTE
-    } = await aboutScenarioExeuctions();
+    const { SHOULD_EXECUTE } = await aboutScenarioExeuctions();
 
     addNpmScripts(packageJson, RELATIVE_PATH, DRIVER);
 
@@ -175,5 +145,7 @@ const run = async () => {
 
     log.success(path.join(ROOT_PATH, RELATIVE_PATH, 'acceptance'));
 };
+
+const CFonts = require('cfonts');
 
 run();

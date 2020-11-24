@@ -1,7 +1,7 @@
 const cli = require('cli-ux');
 const emoji = require('node-emoji');
 const chalk = require('chalk');
-const figlet = require('figlet');
+const CFonts = require('cfonts');
 const shell = require('shelljs');
 
 const log = (logMessage) => {
@@ -27,29 +27,30 @@ const error = (ROOT_PATH) => {
             chalk.blue.bold(
                 `Don't worry! We are copying the existing to continue the setup. Please update the file once the setup is done!`
             ) +
-            emoji.emojify(':zap:  ') + '\n\n'
+            emoji.emojify(':zap:  ') +
+            '\n\n'
     );
 };
 
 const welcome = () => {
     console.clear();
 
-    cli.default.log(
-        '\n' +
-            chalk.yellow(
-                figlet.textSync('BDD Codecept JS', {
-                    font: 'Ghost',
-                    horizontalLayout: 'default',
-                    verticalLayout: 'default',
-                })
-            )
-    );
+    CFonts.say('Create CodeceptJS-BDD Tests!', {
+        font: 'chrome', // define the font face
+        align: 'left', // define text alignment
+        colors: ['system'], // define all colors
+        background: 'transparent', // define the background color, you can also use `backgroundColor` here as key
+        letterSpacing: 1, // define letter spacing
+        lineHeight: 1, // define the line height
+        space: true, // define if the output text should have empty lines on top and on the bottom
+        maxLength: '0', // define how many character can be on one line
+        gradient: ['blue', 'yellow'], // define your two gradient colors
+        independentGradient: false, // define if you want to recalculate the gradient for each new line
+        transitionGradient: false, // define if this is a transition between colors directly
+        env: 'node', // define the environment CFonts is being executed in
+    });
 
-    cli.default.log(
-        '\n\n' +
-            emoji.emojify(':tada: ') +
-            chalk.blue.underline.bold('Welcome to CodeceptJs-BDD CLI!')
-    );
+    cli.default.log('\n\n' + emoji.emojify(':tada: ') + chalk.blue.underline.bold('Welcome to CodeceptJs-BDD CLI!'));
 
     cli.default.log(
         chalk.green.bold(
@@ -67,10 +68,7 @@ const welcome = () => {
 const infoAboutPaths = (path) => {
     cli.default.log(
         '\n' +
-            chalk.bold.red(
-                emoji.emojify(':bulb:') +
-                    ' Codecpetjs BDD tests will be created at : '
-            ) +
+            chalk.bold.red(emoji.emojify(':bulb:') + ' Codecpetjs BDD tests will be created at : ') +
             chalk.bold.bgBlue(path) +
             '\n'
     );
@@ -79,10 +77,7 @@ const infoAboutPaths = (path) => {
 const saucelabsInfo = (username, key) => {
     cli.default.log(
         '\n' +
-            chalk.bold.red(
-                emoji.emojify(':bulb:') +
-                    ' You can run tests on Saucelabs thru a "--profile" flag: '
-            ) +
+            chalk.bold.red(emoji.emojify(':bulb:') + ' You can run tests on Saucelabs thru a "--profile" flag: ') +
             chalk.bold.bgBlue('yarn acceptance --profile sauce:chrome')
     );
 };
@@ -101,13 +96,7 @@ const success = (filepath) => {
 
 const failure = (message) => {
     cli.default.log(
-        '\n' +
-            chalk.bold.red(
-                emoji.emojify(':warning:  ') +
-                    emoji.emojify(':disappointed: ') +
-                    'Error: ' +
-                    message
-            )
+        '\n' + chalk.bold.red(emoji.emojify(':warning:  ') + emoji.emojify(':disappointed: ') + 'Error: ' + message)
     );
     shell.exit(1);
 };
@@ -116,8 +105,7 @@ const tipsToExecuteOnDriver = () => {
     cli.default.log(
         '\n' +
             chalk.bold.red(
-                emoji.emojify(':bulb:') +
-                    ' You can run tests on either driver thru "DRIVER" env variable: '
+                emoji.emojify(':bulb:') + ' You can run tests on either driver thru "DRIVER" env variable: '
             ) +
             chalk.bold.bgBlue('DRIVER=playwright yarn acceptance') +
             '\n'
