@@ -1,7 +1,7 @@
 ---
 title: Scenario
 sub_title: BDD Gherkin/Cucumber Scenario
-parents: ['Acceptance Tests', 'E2E BDD Tests']
+parents: ['E2E BDD Tests']
 keywords: ['Scenario', 'Scenarios', 'cucumber', 'bdd', 'gherkin']
 ---
 

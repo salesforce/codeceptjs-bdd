@@ -1,7 +1,7 @@
 ---
 title: Tags
 sub_title: Group features and scenarios with Tags
-parents: ['Acceptance Tests', 'E2E BDD Tests']
+parents: ['E2E BDD Tests']
 keywords: ['Tag', 'Tags', 'cucumber', 'bdd', 'gherkin', 'gwt']
 ---
 
