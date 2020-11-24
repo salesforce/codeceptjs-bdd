@@ -11,7 +11,7 @@ Scenarios are defined in `.feature` files, which are stored in the features dire
 
 Each step in th Scenario starts with **Given**, **When**, **Then**, **And** and **But** (GWT). This is what Codeceptjs-BDD will execute.
 
-```bash
+```javascript
 
     Scenario: scenario description
 
@@ -22,7 +22,7 @@ Each step in th Scenario starts with **Given**, **When**, **Then**, **And** and 
 
 #### Example of Scenario
 
-```bash
+```javascript
 
     Scenario: Shopper is able to add shoes to cart
 
@@ -46,7 +46,7 @@ It is always recommended to `Tag` a Scenario.
 
 Each scenario can have a one or more Tags. Tags are very useful to group the features together or to filter and run a feature.
 
-```bash
+```javascript
 
    @add_to_cart
     Scenario: Shopper is able to add shoes to cart

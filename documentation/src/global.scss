@@ -1,5 +1,5 @@
-$code-background-color: #2e3f3f;
-$code-font-color: #ffe7a6;
+$code-background-color: #454e60;
+$code-font-color: rgb(247, 246, 216);
 
 body {
   font-size: 100px;
@@ -61,11 +61,39 @@ body {
   background-color: #bcdeff !important;
 }
 
-code {
+code[class*='language-bash'],
+pre[class*='language-bash'],
+code[class*='language-javascript'],
+pre[class*='language-javascript'] {
   color: $code-font-color !important;
   background-color: $code-background-color !important;
-  font-family: monospace, monospace !important;
-  padding: 0.2em 0.5em !important;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
+  font-size: 0.9em !important;
+  display: block !important;
+  white-space: pre !important;
+  word-spacing: normal !important;
+  word-break: normal !important;
+  .token.assign-left.variable {
+    color: #f08d49 !important;
+  }
+  .token.string {
+    color: white !important;
+  }
+  .token.function {
+    color: #edf036 !important;
+  }
+}
+
+code[class*='language-text'],
+pre[class*='language-text'] {
+  color: rgba(58, 53, 53, 0.947) !important;
+  background-color: #fefedc !important;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
+  font-size: 0.8em !important;
+  overflow: auto !important;
+  padding: 0.25rem 0.5rem !important;
+  margin: 0 !important;
+  white-space: normal !important;
 }
 
 .anchor.before {

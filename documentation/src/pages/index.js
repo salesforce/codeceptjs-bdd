@@ -1,6 +1,7 @@
 import React from 'react';
 import AppLayout from '../components/AppLayout';
 import AppCard from '../components/AppCard';
+import CreateTests from '../components/CreateTests';
 import codeceptjsBddFrameworkImage from '../images/codeceptbdd-arch.png';
 import howImage from '../images/How.png';
 import BDD from '../images/BDD.png';
@@ -109,7 +110,8 @@ const renderAppCards = () => {
       title: 'Plugin Based',
       description:
         'Codeceptjs is a plugin based architecture. You can create helpers and plugins for your need and easily plug in to the framework. Codeceptjs-bdd implements two plugins: codeceptjs-share to share config and codeceptjs-saucelabs to integrate Sauce Labs.',
-      link: 'https://github.com/salesforce/codeceptjs-bdd/tree/develop/packages',
+      link:
+        'https://github.com/salesforce/codeceptjs-bdd/tree/develop/packages',
       image: pluginBasedImage,
     },
     {
@@ -119,7 +121,7 @@ const renderAppCards = () => {
         'Codeceptjs BDD provides an ability to run BDD Feaure files all in Parallel on Single browser or can run same set of tests in Parallel but on different browsers/OS combo (multile browers) on Sauce Labs. It offers greate Test Execution Coverage for your App.',
       link: '/03-01-run-locally/5-run-on-multi-browsers/',
       image: multibrowsers,
-    },  
+    },
     {
       size: 3,
       title: 'Automate Web Components',
@@ -318,96 +320,10 @@ const IndexPage = () => {
         <br></br>
         <Divider />
         <br></br>
-
-        <Typography
-          variant="h6"
-          color="gray"
-          display="block"
-          className={classes.title}
-          gutterBottom
-        >
-          <div
-            style={{
-              color: '#2F4B4B',
-              fontSize: '0.85em',
-              fontFamily:
-                'helveticaneue-light, helvetica neue light, helvetica neue, Helvetica, Arial, lucida grande, sans-serif',
-              marginTop: '1px',
-            }}
-          >
-            Quickly create your Codeceptjs-BDD Acceptance tests through open
-            source
-            <span
-              style={{
-                color: '#253C3C',
-                fontSize: '1em',
-                fontFamily: 'monospace, monospace, monospace',
-                fontWeight: '500',
-              }}
-            >
-              {' '}
-              create-codecepjts-bdd-tests{' '}
-            </span>
-            tool.
-          </div>
-        </Typography>
-
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={12}>
-            <Paper
-              elevation={8}
-              style={{
-                backgroundColor: '#2F4B4B',
-                height: '5em',
-                fontColor: 'yelllow',
-              }}
-            >
-              <Hidden smUp>
-                <div
-                  style={{
-                    color: '#e1e31a',
-                    fontSize: '14px',
-                    marginTop: '5px',
-                    fontFamily: 'monospace, monospace, monospace',
-                    paddingTop: '1.7em',
-                    paddingLeft: '10px',
-                    overflowX: 'scroll',
-                    whiteSpace: 'nowrap',
-                  }}
-                >
-                  <span style={{ color: '#e1e31a' }}>$ </span>
-                  <span style={{ color: 'white' }}>npx </span>
-                  <span style={{ color: '#ffe59a' }}>
-                    create-codeceptjs-bdd-tests{' '}
-                  </span>
-                </div>
-              </Hidden>
-
-              <Hidden xsDown>
-                <div
-                  style={{
-                    color: '#e1e31a',
-                    fontSize: '1.7em',
-                    marginTop: '5px',
-                    fontFamily: 'monospace, monospace, monospace',
-                    paddingTop: '0.8em',
-                    paddingLeft: '1em',
-                  }}
-                >
-                  <span style={{ color: '#e1e31a' }}>$ </span>
-                  <span style={{ color: 'white' }}>npx </span>
-                  <span style={{ color: '#ffe59a' }}>
-                    create-codeceptjs-bdd-tests{' '}
-                  </span>
-                </div>
-              </Hidden>
-            </Paper>
-          </Grid>
-        </Grid>
+        <CreateTests />
         <Grid container spacing={5} className={classes.arch}>
           {renderAppCards()}
         </Grid>
-
         {renderCardDataWithActions(classes)}
       </div>
     </AppLayout>

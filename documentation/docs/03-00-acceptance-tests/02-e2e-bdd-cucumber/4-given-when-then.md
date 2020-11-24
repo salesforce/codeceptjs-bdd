@@ -65,7 +65,7 @@ You should only verify an outcome that is observable for the user (or external s
 
 If you have successive Given’s, When’s, or Then’s, you could write:
 
-**NOT RECOMMENDED TO HAVE MULTILE GWT's**
+**NOT RECOMMENDED TO HAVE MULTIPLES GWT's**
 
 ```bash
 
@@ -82,7 +82,7 @@ Example: Multiple Givens
 
 Or, you could make the example more fluidly structured by replacing the successive Given’s, When’s, or Then’s with And’s and But’s:
 
-```bash
+```javascript
 Example: Multiple Givens
   Given one thing
   And another thing

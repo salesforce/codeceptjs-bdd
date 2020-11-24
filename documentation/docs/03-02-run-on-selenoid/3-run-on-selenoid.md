@@ -11,11 +11,12 @@ Start Selenoid and Selenoid-UI locally. Pls follow the instructions [here](https
 
 ### 🏃 Run Scenarios on Selenoid
 
-Codeceptjs-BDD implements the quick way to run your tests on Selenoid Grid. It uses the module `codeceptjs-selenoid`. 
+Codeceptjs-BDD implements the quick way to run your tests on Selenoid Grid. It uses the module `codeceptjs-selenoid`.
 
 Please note the `selenoid:` in the below command, which does the magic running your tests on Selenoid.
 
-`--profile selenoid:<browser>:<browser-version>`
+```bash
+ $ yarn acceptance --profile selenoid:<browser>:<browser-version>
+```
 
 e.g. `yarn acceptance --profile selenoid:chrome:84`
-

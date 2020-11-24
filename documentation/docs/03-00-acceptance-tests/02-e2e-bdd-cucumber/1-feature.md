@@ -19,7 +19,7 @@ The purpose of the Feature is to provide a high-level description of a software 
 
 #### Example of Feature File
 
-```bash
+```javascript
 
     Feature: Add to Cart
 
@@ -29,7 +29,7 @@ The purpose of the Feature is to provide a high-level description of a software 
 
 ```
 
-### Free Form Decription
+### Free Form Description
 
 ---
 
@@ -45,7 +45,7 @@ These description lines are ignored by Codeceptjs-BDD at runtime, but are availa
       I want to  ...
       So that ...
 
-    Free Form Text: more explaination about feature
+    Free Form Text: more explanation about feature
 
 ```
 
@@ -55,7 +55,7 @@ These description lines are ignored by Codeceptjs-BDD at runtime, but are availa
 
 Each feature can have a one or more Tags. Tags are very useful to group the features together or to filter and run a feature.
 
-```bash
+```javascript
 
    @shopping_cart @cart
     Feature: Add to cart

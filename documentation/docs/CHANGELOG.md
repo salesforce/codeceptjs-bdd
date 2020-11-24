@@ -4,6 +4,28 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-configure & @codeceptjs-sauce
 keywords: ['changelog', 'releases', 'release']
 ---
 
+## 8.0.4 (NOV-19-2020)
+
+- CodeceptJS 3 Upgrade
+- Typescript support. [More info](https://codecept.io/typescript/#typescript) on typescript setup
+- Runs on Selenoid. [More info](http://gkushang.github.io/03-02-run-on-selenoid/3-run-on-selenoid/) on how to run on Selenoid
+
+```bash
+$ yarn acceptance --profile selenoid:chrome:80
+```
+
+- Run on any Saucelabs Platform configruation. [More info](http://gkushang.github.io/03-02-run-on-saucelabs/3-run-on-saucelabs/)
+
+```bash
+$ yarn acceptance --profile sauce:config:'Windows 10':chrome:80
+```
+
+- Run on Mobile Devices on Playwright. [More info](http://gkushang.github.io/03-03-playwright/1-run-with-playwright/)
+
+```bash
+$ yarn acceptacne --profile device:'iPhone 11':safari
+```
+
 ## 5.2.1 (AUG-30-2020)
 
 - Feature:

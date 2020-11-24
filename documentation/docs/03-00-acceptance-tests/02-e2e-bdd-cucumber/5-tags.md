@@ -1,13 +1,13 @@
 ---
 title: Tags
-sub_title: Group features and sceanarios with Tags
+sub_title: Group features and scenarios with Tags
 parents: ['Acceptance Tests', 'E2E BDD Tests']
 keywords: ['Tag', 'Tags', 'cucumber', 'bdd', 'gherkin', 'gwt']
 ---
 
-Tags are a great way to organise your features and scenarios. Cucumber features and scenarios can contain Tags marked with `@`. Tags can be used to run Subset of Scenarios.
+Tags are a great way to organize your features and scenarios. Cucumber features and scenarios can contain Tags marked with `@`. Tags can be used to run Subset of Scenarios.
 
-```bash
+```javascript
    @checkout
     Feature: Checkout Cart
 
@@ -21,7 +21,7 @@ Tags are a great way to organise your features and scenarios. Cucumber features 
 
 A feature or scenario can have as many tags as you like. Separate them with spaces:
 
-```bash
+```javascript
    @checkout @checkout_guest @checkout_registered
     Feature: Checkout Cart
 ```
@@ -37,7 +37,7 @@ Tags can be placed above the following Gherkin elements:
 
 Another creative way to use tags is to keep track of where in the development process a certain feature is:
 
-```bash
+```javascript
 
 @qa_ready
 Feature: Index projects

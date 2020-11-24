@@ -17,14 +17,11 @@ Page Objects contains all the Browser Interactions. It has become a standard for
 const { I } = inject();
 
 class AccountPage {
-  constructor() {
-    // locators
-    this.locators = {
-      firstName: '[data-automation="first-name"]',
-      lastName: '[data-automation="last-name"]',
-      // more locators of the page
-    };
-  }
+  locators = {
+    firstName: '[data-automation="first-name"]',
+    lastName: '[data-automation="last-name"]',
+    // more locators of the page
+  };
 
   createProfile(profile) {
     I.fillField(this.locators.firstName, profile.firstName);

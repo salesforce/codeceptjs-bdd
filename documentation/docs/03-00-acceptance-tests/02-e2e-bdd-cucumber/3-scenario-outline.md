@@ -12,7 +12,7 @@ The keyword Scenario Template is a synonym of the keyword Scenario Outline.
 
 Copying and pasting scenarios to use different values quickly becomes tedious and repetitive:
 
-```bash
+```javascript
 Scenario: eat 5 out of 12
   Given there are 12 cucumbers
   When I eat 5 cucumbers
@@ -29,7 +29,7 @@ Scenario: eat 5 out of 20
 
 Scenario outlines allow us to more concisely express these scenarios through the use of a template with < >-delimited parameters:
 
-```bash
+```javascript
 Scenario Outline: eating
   Given there are <start> cucumbers
   When I eat <eat> cucumbers

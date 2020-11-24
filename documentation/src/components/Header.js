@@ -166,7 +166,7 @@ function Header({ siteTitle, siteDescription }, props) {
               edge="end"
               onClick={() => {
                 window.open(
-                  'https://github.com/gkushang/codeceptjs-bdd',
+                  'https://github.com/salesforce/codeceptjs-bdd',
                   '_blank'
                 );
               }}
