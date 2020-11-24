@@ -35,11 +35,11 @@ jobs:
             - run:
                   name: Run on Playwright - Parallel
                   command: yarn circleci:test:playwright:parallel
-            - run:
-                  name: Run on WebDriver
-                  command: yarn circleci:test:webdriver
+            # - run:
+            #       name: Run on WebDriver
+            #       command: yarn circleci:test:webdriver
 
 workflows:
     acceptance-tests:
         jobs:
-            - ci-on-webdriver-and-playwright            
+            - ci-on-webdriver-and-playwright
