@@ -30,7 +30,7 @@
         "circleci:test:playwright": "DRIVER=playwright yarn acceptance",
         "circleci:test:playwright:parallel": "DRIVER=playwright yarn acceptance:parallel",
         "circleci:test:webdriver": "DRIVER=webdriver yarn acceptance --profile chrome:headless",
-        "circleci:test:webdriver:parallel": "yarn acceptance:parallel --profile chrome:headless",
+        "circleci:test:webdriver:parallel": "DRIVER=webdriver yarn acceptance:parallel --profile chrome:headless",
         "lerna:lint:prettier": "lerna run lint:prettier",
         "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
         "test": "yarn circleci:test:playwright:chromium && yarn circleci:test:playwright:firefox && yarn circleci:test:playwright:safari && circleci:test:webdriver && circleci:test:playwright:parallel && circleci:test:webdriver:parallel",
