@@ -1,28 +1,28 @@
 {
     "name": "codeceptjs-selenoid",
     "version": "1.0.1",
-    "main": "index.js",
     "description": "CodeceptJS-BDD Selenoid Integration",
-    "homepage": "https://gkushang.github.io/",
     "keywords": [
         "Selenoid",
         "CodeceptJS",
         "Multibrowsers"
     ],
-    "scripts": {
-        "lerna:lint:prettier": "lerna run lint:prettier"
-    },
+    "homepage": "https://gkushang.github.io/",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
     },
+    "license": "MIT",
     "author": {
         "name": "Kushang Gajjar",
         "email": "g.kushang@gmail.com"
     },
-    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "lerna:lint:prettier": "lerna run lint:prettier"
+    },
     "dependencies": {
-        "chalk": "^2.4.2",
+        "chalk": "^4.1.0",
         "debug": "^4.1.1",
         "deepmerge": "^4.0.0",
         "figlet": "^1.2.4",
