@@ -1,4 +1,7 @@
-let BROWSER = process.env.profile === 'undefined' ? process.env.DEFAULT_PLAYWRIGHT_BROWSER : process.env.profile;
+let BROWSER =
+    process.env.profile === 'undefined' || !process.env.profile
+        ? process.env.DEFAULT_PLAYWRIGHT_BROWSER
+        : process.env.profile;
 const merge = require('deepmerge');
 const host = require('../../host/host');
 const { devices } = require('playwright');

@@ -1,4 +1,7 @@
-const BROWSER = process.env.profile === 'undefined' ? process.env.DEFAULT_WEBDRIVER_BROWSER : process.env.profile;
+const BROWSER =
+    process.env.profile === 'undefined' || !process.env.profile
+        ? process.env.DEFAULT_WEBDRIVER_BROWSER
+        : process.env.profile;
 const merge = require('deepmerge');
 const host = require('../../host/host');
 const STANDALONE_SERVICE = 'selenium-standalone';
