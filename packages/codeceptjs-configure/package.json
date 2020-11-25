@@ -22,6 +22,7 @@
         "url": "https://github.com/salesforce/codeceptjs-bdd/issues"
     },
     "dependencies": {
+        "allure-commandline": "^2.9.0",
         "@codeceptjs/helper": "^1.0.1",
         "@wdio/selenium-standalone-service": "5.16.10",
         "camelcase": "^6.0.0",
@@ -33,12 +34,18 @@
         "codeceptjs-selenoid": "^1.0.1",
         "debug": "^4.1.1",
         "deepmerge": "^4.2.2",
+        "dotenv-extended": "^2.8.0",
         "expect": "^26.4.2",
         "expect-playwright": "^0.2.5",
         "figlet": "^1.3.0",
         "node-emoji": "^1.10.0",
+        "playwright": "^1.6.1",
         "prettier": "^2.1.2",
         "typescript": "^4.0.5",
-        "webdriverio": "^5.2.2"
+        "webdriverio": "^5.2.2",
+        "faker": "^4.1.0",
+        "selenium-standalone": "^6.16.0",
+        "should": "^13.2.3",
+        "soft-assert": "^0.2.0"
     }
 }
