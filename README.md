@@ -1,6 +1,6 @@
 # CodeceptJS BDD
 
-**_[Codeceptjs-BDD](http://gkushang.github.io/) Framework with BDD Cucumber, Webdriver, Playwright, SauceLabs & Selenoid integrations._**
+**_[Codeceptjs-BDD](http://gkushang.github.io/) Framework with BDD Cucumber, Webdriver, Playwright, SauceLabs & Selenoid integrations. WebComponents, LWC & #shadow-roots support._**
 
 [![CircleCI](https://circleci.com/gh/salesforce/codeceptjs-bdd.svg?style=svg)](https://circleci.com/gh/salesforce/codeceptjs-bdd) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 
@@ -11,7 +11,7 @@
 
 <a href="https://gkushang.github.io" rel="nofollow noreferrer" target="_blank"><img src="https://i.postimg.cc/8zDLzZRq/Screen-Shot-2020-01-28-at-6-27-28-PM.png" alt="docs"></a>
 
-## 🚚 [Changelog](https://github.com/gkushang/codeceptjs-bdd/blob/develop/documentation/docs/CHANGELOG.md)
+## 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
 
 ## 🧐 What's inside?
 
