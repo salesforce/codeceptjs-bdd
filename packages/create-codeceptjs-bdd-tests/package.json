@@ -1,44 +1,44 @@
 {
     "name": "create-codeceptjs-bdd-tests",
     "version": "7.0.4",
-    "author": {
-        "name": "Kushang Gajjar",
-        "email": "g.kushang@gmail.com"
-    },
     "description": "Create Codeceptjs BDD Tests",
-    "homepage": "https://gkushang.github.io/",
-    "scripts": {
-        "acceptance": "npx codeceptjs run ",
-        "acceptance:parallel": "npx codeceptjs run-workers --suites 3",
-        "acceptance:washer": "npx codeceptjs run-rerun",
-        "acceptance:report": "allure serve ./acceptance/report",
-        "acceptance:all": "yarn acceptance && yarn acceptance:parallel && DRIVER=webdriver yarn acceptance --profile sauce:chrome && DRIVER=webdriver yarn acceptance",
-        "test": "yarn circleci:test:playwright:chromium && yarn circleci:test:playwright:firefox && yarn circleci:test:playwright:safari && circleci:test:webdriver && circleci:test:playwright:parallel && circleci:test:webdriver:parallel",
-        "ui:test": "npx codeceptjs run ",
-        "ui:test:parallel": "npx codeceptjs run-workers --suites 3",
-        "ui:test:washer": "npx codeceptjs run-rerun",
-        "ui:test:report": "allure serve ./acceptance/report",
-        "ui:test:all": "yarn ui:test && yarn ui:test:parallel && DRIVER=webdriver yarn ui:test --profile sauce:chrome && DRIVER=webdriver yarn ui:test",
-        "circleci:test:playwright": "DRIVER=playwright yarn acceptance",
-        "circleci:test:playwright:parallel": "DRIVER=playwright yarn acceptance:parallel",
-        "circleci:test:webdriver": "DRIVER=webdriver yarn acceptance --profile chrome:headless",
-        "circleci:test:webdriver:parallel": "yarn acceptance:parallel --profile chrome:headless",
-        "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
-        "lerna:lint:prettier": "lerna run lint:prettier"
-    },
-    "bin": {
-        "create-codeceptjs-bdd-tests": "./cli/create.js"
-    },
-    "license": "MIT",
-    "main": "./cli/create.js",
     "keywords": [
         "Cucumber",
         "CodeceptJS",
         "Gherkin"
     ],
+    "homepage": "https://gkushang.github.io/",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Kushang Gajjar",
+        "email": "g.kushang@gmail.com"
+    },
+    "main": "./cli/create.js",
+    "bin": {
+        "create-codeceptjs-bdd-tests": "./cli/create.js"
+    },
+    "scripts": {
+        "acceptance": "npx codeceptjs run ",
+        "acceptance:all": "yarn acceptance && yarn acceptance:parallel && DRIVER=webdriver yarn acceptance --profile sauce:chrome && DRIVER=webdriver yarn acceptance",
+        "acceptance:parallel": "npx codeceptjs run-workers --suites 3",
+        "acceptance:report": "allure serve ./acceptance/report",
+        "acceptance:washer": "npx codeceptjs run-rerun",
+        "circleci:test:playwright": "DRIVER=playwright yarn acceptance",
+        "circleci:test:playwright:parallel": "DRIVER=playwright yarn acceptance:parallel",
+        "circleci:test:webdriver": "DRIVER=webdriver yarn acceptance --profile chrome:headless",
+        "circleci:test:webdriver:parallel": "yarn acceptance:parallel --profile chrome:headless",
+        "lerna:lint:prettier": "lerna run lint:prettier",
+        "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+        "test": "yarn circleci:test:playwright:chromium && yarn circleci:test:playwright:firefox && yarn circleci:test:playwright:safari && circleci:test:webdriver && circleci:test:playwright:parallel && circleci:test:webdriver:parallel",
+        "ui:test": "npx codeceptjs run ",
+        "ui:test:all": "yarn ui:test && yarn ui:test:parallel && DRIVER=webdriver yarn ui:test --profile sauce:chrome && DRIVER=webdriver yarn ui:test",
+        "ui:test:parallel": "npx codeceptjs run-workers --suites 3",
+        "ui:test:report": "allure serve ./acceptance/report",
+        "ui:test:washer": "npx codeceptjs run-rerun"
     },
     "dependencies": {
         "cfonts": "^2.8.6",

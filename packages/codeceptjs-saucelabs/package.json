@@ -1,26 +1,26 @@
 {
     "name": "codeceptjs-saucelabs",
     "version": "5.2.6",
-    "main": "index.js",
     "description": "CodeceptJS Saucelabs Integration",
-    "homepage": "https://gkushang.github.io/",
     "keywords": [
         "Saucelabs",
         "CodeceptJS",
         "Multibrowsers"
     ],
-    "scripts": {
-        "lint:prettier": "eslint lib/**/*.js --fix && prettier --write -ignore-unknown . "
-    },
+    "homepage": "https://gkushang.github.io/",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/salesforce/codeceptjs-bdd.git"
     },
+    "license": "MIT",
     "author": {
         "name": "Kushang Gajjar",
         "email": "g.kushang@gmail.com"
     },
-    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "lint:prettier": "eslint lib/**/*.js --fix && prettier --write -ignore-unknown . "
+    },
     "dependencies": {
         "@wdio/sauce-service": "^6.10.0",
         "chalk": "^4.1.0",
