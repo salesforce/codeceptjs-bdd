@@ -41,6 +41,7 @@
         "ui:test:washer": "npx codeceptjs run-rerun"
     },
     "dependencies": {
+        "@wdio/selenium-standalone-service": "^5.16.10",
         "cfonts": "^2.8.6",
         "cli-ux": "^5.4.5",
         "figlet": "^1.2.3",

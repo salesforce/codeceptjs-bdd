@@ -22,6 +22,25 @@ const webdriver_conf = {
     },
 };
 
+const wdioSeleniumArgs = {
+    seleniumArgs: {
+        drivers: {
+            chrome: {
+                version: '87.0.4280.20', // Chromedriver version
+            },
+        },
+    },
+    seleniumInstallArgs: {
+        baseURL: 'https://selenium-release.storage.googleapis.com',
+        drivers: {
+            chrome: {
+                version: '87.0.4280.20',
+                baseURL: 'https://chromedriver.storage.googleapis.com',
+            },
+        },
+    },
+};
+
 const isRunningLocally = (profile) => {
     return profile && !(profile.match('sauce:') || profile.match('selenoid:'));
 };
