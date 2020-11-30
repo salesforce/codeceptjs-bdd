@@ -7,6 +7,10 @@ const host = require('../../host/host');
 const { devices } = require('playwright');
 
 const getPlaywrightBrowser = function () {
+    if (BROWSER && BROWSER.match('playwright:[a-zA-Z]')) {
+        BROWSER = process.env.profile.split(':')[1];
+    }
+
     if (BROWSER && BROWSER.match('device:[a-zA-Z]')) {
         let profileInfo = BROWSER.split(':');
         profileInfo.shift();
