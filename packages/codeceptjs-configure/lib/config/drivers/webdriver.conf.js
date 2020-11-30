@@ -10,7 +10,7 @@ const webdriver_conf = {
     helpers: {
         WebDriver: {
             url: host.get(),
-            browser: BROWSER,
+            browser: BROWSER && BROWSER.match('webdriver:[a-zA-Z]') ? BROWSER.split(':')[1] : BROWSER,
             smartWait: 5000,
             waitForTimeout: 20000,
             timeouts: {
