@@ -41,6 +41,7 @@ const playwright_conf = {
             url: host.get(),
             waitForNavigation: 'domcontentloaded',
             show: process.env.HEADLESS === 'false',
+            restart: true,
             emulate: {
                 ignoreHTTPSErrors: true,
                 acceptDownloads: true,

@@ -1,14 +1,13 @@
 const glob = require('glob');
 const path = require('path');
 
-const steps = () => {
+const steps = (pathToSteps) => {
     let steps = [];
-    glob.sync(
-        path.join(
-            process.env.CODECEPT_RELATIVE_PATH,
-            '{steps/**/*.steps.*,specs/hooks/**/*.hooks.*, __specs__/hooks/**/*.hooks.*}'
-        )
-    ).map((file) => steps.push('./' + file));
+    if (!pathToSteps) {
+        pathToSteps = '{steps/**/*.steps.*,specs/hooks/**/*.hooks.*, __specs__/hooks/**/*.hooks.*}';
+    }
+
+    glob.sync(path.join(process.env.CODECEPT_RELATIVE_PATH, pathToSteps)).map((file) => steps.push('./' + file));
     return steps;
 };
 
