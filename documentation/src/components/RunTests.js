@@ -126,7 +126,7 @@ export default function CreateTests() {
             elevation={8}
             style={{
               backgroundColor: '#191953',
-              height: '32em',
+              height: '38em',
               fontColor: 'yelllow',
             }}
           >
@@ -143,7 +143,15 @@ export default function CreateTests() {
                   whiteSpace: 'normal',
                 }}
               >
-                {runCommands({ title: 'Locally', profile: 'chrome' })}
+                {runCommands({
+                  title: 'Webdriver',
+                  profile: 'webdriver:chrome',
+                })}
+                <br />
+                {runCommands({
+                  title: 'Playwright',
+                  profile: 'playwright:chrome',
+                })}
                 {/* -- */}
                 <br />
                 {runCommands({
@@ -153,7 +161,7 @@ export default function CreateTests() {
                 <br />
                 {runCommands({
                   title: 'Sauce Labs',
-                  profile: "sauce:config:'macOS 10.15':safari:13.",
+                  profile: "sauce:config:'macOS 10.15':safari:13",
                 })}
                 <br />
                 {runCommands({
@@ -179,7 +187,16 @@ export default function CreateTests() {
                   paddingLeft: '1em',
                 }}
               >
-                {runCommands({ title: 'Locally', profile: 'chrome' })}
+                {runCommands({
+                  title: 'Webdriver',
+                  profile: 'webdriver:chrome',
+                })}
+                <br />
+                {/* -- */}
+                {runCommands({
+                  title: 'Playwright',
+                  profile: 'playwright:chrome',
+                })}
                 {/* -- */}
                 <br />
                 {runCommands({
