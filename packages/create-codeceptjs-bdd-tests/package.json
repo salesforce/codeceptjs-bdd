@@ -53,6 +53,7 @@
         "node-emoji": "^1.10.0",
         "playwright": "^1.6.1",
         "prettier": "^2.0.4",
+        "query-selector-shadow-dom": "^0.8.0",
         "shelljs": "^0.8.3"
     },
     "devDependencies": {

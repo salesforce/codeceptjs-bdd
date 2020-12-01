@@ -1,6 +1,19 @@
 const Helper = require('@codeceptjs/helper');
+const { locatorStrategy } = require('query-selector-shadow-dom/plugins/webdriverio');
 
 class Driver_commands extends Helper {
+    async fill(locator, text) {
+        // console.log('this.helpers:: ', this.helpers);
+
+        const { WebDriver } = this.helpers;
+        const { browser } = WebDriver;
+        browser.addLocatorStrategy('shadow', locatorStrategy);
+
+        // console.log('\n\n===== adding Shadow CUSTOM ======\n\n');
+        const el = await browser.custom$('shadow', locator);
+        el.setValue(text);
+    }
+
     driver() {
         return this.helpers.WebDriver || this.helpers.Playwright;
     }
