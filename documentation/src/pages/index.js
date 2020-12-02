@@ -33,9 +33,8 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import DomainIcon from '@material-ui/icons/Domain';
 import VisibilityIcon from '@material-ui/icons/Visibility';
-import Paper from '@material-ui/core/Paper';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
@@ -205,14 +204,14 @@ const renderAppCards = () => {
     },
   ];
 
-  return appCardData.map(cardData => (
+  return appCardData.map((cardData) => (
     <Grid item sm={cardData.size}>
       <AppCard {...cardData} />
     </Grid>
   ));
 };
 
-const renderCardDataWithActions = classes => {
+const renderCardDataWithActions = (classes) => {
   const cardDataWithActions = [
     {
       cardHeader: {
@@ -249,7 +248,7 @@ const renderCardDataWithActions = classes => {
     },
   ];
 
-  return cardDataWithActions.map(cardData => (
+  return cardDataWithActions.map((cardData) => (
     <Grid item xs={12} className={classes.arch}>
       <Card className={classes.card}>
         <CardHeader {...cardData.cardHeader} />
