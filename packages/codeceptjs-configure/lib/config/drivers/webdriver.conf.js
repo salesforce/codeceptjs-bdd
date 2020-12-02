@@ -2,6 +2,7 @@ const BROWSER = process.env.profile === 'undefined' ? process.env.DEFAULT_WEBDRI
 const merge = require('deepmerge');
 const host = require('../../host/host');
 const STANDALONE_SERVICE = 'selenium-standalone';
+const { locatorStrategy } = require('query-selector-shadow-dom/plugins/webdriverio');
 
 const webdriver_conf = {
     helpers: {
@@ -9,6 +10,7 @@ const webdriver_conf = {
             url: host.get(),
             browser: BROWSER,
             smartWait: 5000,
+            customLocator: locatorStrategy,
             waitForTimeout: 20000,
             timeouts: {
                 implicit: 5000,
@@ -44,6 +46,7 @@ const get = (conf) => {
 
     if (isRunningLocally(profile)) {
         conf.plugins = {
+            ...conf.plugins,
             wdio: {
                 enabled: true,
                 services: [STANDALONE_SERVICE],

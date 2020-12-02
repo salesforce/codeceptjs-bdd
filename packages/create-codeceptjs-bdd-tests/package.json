@@ -54,7 +54,8 @@
         "playwright": "^1.6.1",
         "prettier": "^2.0.4",
         "query-selector-shadow-dom": "^0.8.0",
-        "shelljs": "^0.8.3"
+        "shelljs": "^0.8.3",
+        "webdriverio": "^6.10.5"
     },
     "devDependencies": {
         "@wdio/selenium-standalone-service": "5.16.10",
