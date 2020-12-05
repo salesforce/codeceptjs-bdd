@@ -22,7 +22,7 @@ import Search from './Search';
 import TelegramIcon from '@material-ui/icons/Telegram';
 
 const drawerWidth = 240;
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
   },
@@ -116,7 +116,7 @@ function Header({ siteTitle, siteDescription }, props) {
 
             <GatsbyLink href="/" className={classes.title}>
               <Typography variant="h6" className={classes.title}>
-                Codeceptjs BDD Framework Documentation Hub
+                Codeceptjs BDD Framework Documentations
               </Typography>
             </GatsbyLink>
           </Hidden>
