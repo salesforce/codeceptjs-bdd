@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kushang Gajjar <g.kushang@gmail.com>",
   "dependencies": {
     "@material-ui/core": "4.8.2",
     "@material-ui/icons": "4.5.1",
