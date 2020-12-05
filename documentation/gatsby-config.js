@@ -5,6 +5,14 @@ module.exports = {
     author: 'Kushang Gajjar',
   },
   plugins: [
+    `gatsby-plugin-material-ui`,
+    {
+      resolve: 'gatsby-plugin-styled-components',
+      options: {
+        fileName: false,
+        pure: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -13,7 +21,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-theme-material-ui`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
