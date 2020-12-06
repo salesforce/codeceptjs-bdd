@@ -11,7 +11,7 @@
 
 #### 📖 User Docs / PWA Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
 
-![](website/cbdd.gif)
+<a href="https://gkushang.github.io" rel="nofollow noreferrer" target="_blank">![](website/cbdd.gif)</a>
 
 <a href="https://gkushang.github.io" rel="nofollow noreferrer" target="_blank"><img src="https://media.giphy.com/media/5I6N7zonb9E1boMXgI/source.gif" alt="docs"></a>
 
