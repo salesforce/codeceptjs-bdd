@@ -1,0 +1,41 @@
+{
+    "name": "webcomponents-webdriver-playwright-e2e",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "codeceptjs def && codeceptjs run --steps ",
+        "test:parallel": "codeceptjs def  && codeceptjs run-workers --suites 10",
+        "test:report": "allure serve ./tests/report"
+    },
+    "keywords": [
+        "webcomponents",
+        "lwc",
+        "shadow-roots"
+    ],
+    "author": "Kushang Gajjar <gkushang@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "codeceptjs-configure": "^8.0.13",
+        "codeceptjs-saucelabs": "^5.2.7",
+        "codeceptjs-selenoid": "^1.0.2",
+        "prettier": "^2.2.1",
+        "ts-node": "^9.1.0",
+        "typescript": "^4.1.2"
+    },
+    "devDependencies": {
+        "allure-commandline": "^2.13.0",
+        "codeceptjs": "3.0.2",
+        "debug": "^4.3.1",
+        "deepmerge": "^4.2.2",
+        "dotenv-extended": "^2.9.0",
+        "expect": "^26.6.2",
+        "expect-playwright": "^0.2.6",
+        "faker": "^5.1.0",
+        "playwright": "^1.6.2",
+        "protractor": "^7.0.0",
+        "rimraf": "^3.0.2",
+        "should": "^13.2.3",
+        "soft-assert": "^0.2.3"
+    }
+}

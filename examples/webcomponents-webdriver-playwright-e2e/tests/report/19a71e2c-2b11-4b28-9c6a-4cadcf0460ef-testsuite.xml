@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1607212804498' stop='1607212805681'>
+    <name>Login to Github @login</name>
+    <title>Login to Github @login</title>
+    <test-cases>
+        <test-case start='1607212804498' status='passed' stop='1607212805516'>
+            <name>Fred successfully logs in to contribute to the Git repository @login</name>
+            <title>Fred successfully logs in to contribute to the Git repository @login</title>
+            <labels>
+                <label name='tag' value='@login'/>
+                <label name='tag' value='@login'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

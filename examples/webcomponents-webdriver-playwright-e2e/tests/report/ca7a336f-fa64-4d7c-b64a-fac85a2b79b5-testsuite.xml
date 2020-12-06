@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1607212798072' stop='1607212804494'>
+    <name>Search Github @search</name>
+    <title>Search Github @search</title>
+    <test-cases>
+        <test-case start='1607212798074' status='failed' stop='1607212804074'>
+            <name>Fred should see the highlighted results for the searched repository @search_results</name>
+            <title>Fred should see the highlighted results for the searched repository @search_results</title>
+            <labels>
+                <label name='tag' value='@search'/>
+                <label name='tag' value='@search_results'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1607212799342' status='failed' stop='1607212804074'>
+                    <name>homePage: search "salesforce/codeceptjs-bdd"</name>
+                    <title>homePage: search "salesforce/codeceptjs-bdd"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1607212799342' status='failed' stop='1607212804073'>
+                            <name>I fill field ".header-search-input", "salesforce/codeceptjs-bdd"</name>
+                            <title>I fill field ".header-search-input", "salesforce/codeceptjs-bdd"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='e762d9a1-6d8a-4ebc-b834-423acfade245-attachment.png' type='image/png' size='5320'/>
+            </attachments>
+            <failure>
+                <message>Field ".header-search-input" was not found by text|CSS|XPath</message>
+                <stack-trace>Error: Field ".header-search-input" was not found by text|CSS|XPath
+                    at new ElementNotFound (/Users/kgajjar/dev/b2c/codeceptjs-bdd/examples/webcomponents-webdriver-playwright-e2e/node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)
+                    at assertElementExists (/Users/kgajjar/dev/b2c/codeceptjs-bdd/examples/webcomponents-webdriver-playwright-e2e/node_modules/codeceptjs/lib/helper/Playwright.js:2406:11)
+                    at Playwright.fillField (/Users/kgajjar/dev/b2c/codeceptjs-bdd/examples/webcomponents-webdriver-playwright-e2e/node_modules/codeceptjs/lib/helper/Playwright.js:1212:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
