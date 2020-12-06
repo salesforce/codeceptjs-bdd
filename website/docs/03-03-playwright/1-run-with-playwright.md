@@ -17,7 +17,7 @@ Codeceptjs-BDD integrates the Playwright with WebDriver.
 
 ### 🚀 To run on Playwright
 
-If you have setup framework through the Codeceptjs-BDD [CLI](/01-getting-started/1-quick-start/), then you'd have an option to select Default driver. Set the Default Driver in `codecept.env` file to be Playwright.
+If you have setup framework through the Codeceptjs-BDD [CLI](/01-01-getting-started/1-quick-start/), then you'd have an option to select Default driver. Set the Default Driver in `codecept.env` file to be Playwright.
 
 Alternatively, set the `DRIVER` to be ~playwright thru CLI,
 

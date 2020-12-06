@@ -34,7 +34,7 @@ import Button from '@material-ui/core/Button';
 import DomainIcon from '@material-ui/icons/Domain';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
@@ -78,7 +78,7 @@ const renderAppCards = () => {
       title: 'Write Feature Files',
       description:
         'CodeceptJs BDD integrates Cucumber to write Gherkin Feature Files. Cucumber is a popular collaboration tool used by many teams practiving BDD to capture requirements and create executable specifications.',
-      link: '/03-00-acceptance-tests/02-e2e-bdd-cucumber/1-feature/',
+      link: '/02-02-e2e-bdd-cucumber/1-feature/',
       image: cucumber,
     },
     {
@@ -140,7 +140,7 @@ const renderAppCards = () => {
       description:
         'One framework, mulitple solutions. Use Codeceptjs-BDD to automate both of your Integration tests and E2E Tests. Codecetpsj-BDD can run both, Mocha and Cucumber BDD, with the single common command.',
       firstLinkName: 'Learn More',
-      link: '/03-00-acceptance-tests/01-integration-tests/1-integration-tests/',
+      link: '/02-01-integration-tests/1-integration-tests/',
       image: require('../images/imocha.png'),
     },
     {
@@ -149,7 +149,7 @@ const renderAppCards = () => {
       description:
         'Choose to write your E2E Tests either with Classical Mocha styled tests or modern Cucumber BDD Feature files acceptance tests. Codeceptjs-BDD supports both, mixed of, Mocha-style accetpance tests and Cucumber Fetures.',
       firstLinkName: 'Learn More',
-      link: '/03-00-acceptance-tests/02-e2e-bdd-cucumber/1-feature/',
+      link: '/02-02-e2e-bdd-cucumber/1-feature/',
       image: require('../images/e2e.png'),
     },
     {
@@ -204,14 +204,14 @@ const renderAppCards = () => {
     },
   ];
 
-  return appCardData.map((cardData) => (
+  return appCardData.map(cardData => (
     <Grid item sm={cardData.size}>
       <AppCard {...cardData} />
     </Grid>
   ));
 };
 
-const renderCardDataWithActions = (classes) => {
+const renderCardDataWithActions = classes => {
   const cardDataWithActions = [
     {
       cardHeader: {
@@ -248,7 +248,7 @@ const renderCardDataWithActions = (classes) => {
     },
   ];
 
-  return cardDataWithActions.map((cardData) => (
+  return cardDataWithActions.map(cardData => (
     <Grid item xs={12} className={classes.arch}>
       <Card className={classes.card}>
         <CardHeader {...cardData.cardHeader} />
@@ -266,7 +266,7 @@ const renderCardDataWithActions = (classes) => {
             variant="contained"
             size="large"
             color="primary"
-            href="01-getting-started/1-quick-start/"
+            href="01-01-getting-started/1-quick-start/"
           >
             Quick Start
           </Button>
@@ -305,7 +305,7 @@ const IndexPage = () => {
 
             <Hidden xsDown>
               <Grid key={2} item>
-                <GatsbyLink to="01-getting-started/1-quick-start/">
+                <GatsbyLink to="01-01-getting-started/1-quick-start/">
                   <Button variant="contained" size="large" color="primary">
                     Quick Start
                   </Button>

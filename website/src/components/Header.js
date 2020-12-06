@@ -143,7 +143,7 @@ function Header({ siteTitle, siteDescription }, props) {
           </Hidden>
 
           <Tooltip title="Quick Start">
-            <GatsbyLink to="/01-getting-started/1-quick-start/">
+            <GatsbyLink to="/01-01-getting-started/1-quick-start/">
               <IconButton aria-label="Quick Start" color="inherit">
                 <TelegramIcon style={{ fill: 'white' }} />
               </IconButton>

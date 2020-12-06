@@ -130,7 +130,7 @@ $ yarn acceptance:report
   - Now: No need to add it to Config file manually. Framework scans all the Page Objects, create Dependency Injections
 
 - New Look to Codeceptjs-BDD CLI
-- Created the Binary to create the BDD Tests. Now, you do not need to Clone the repo but simply run the below command to setup the Tests. [More info](https://gkushang.github.io/01-getting-started/1-quick-start/)
+- Created the Binary to create the BDD Tests. Now, you do not need to Clone the repo but simply run the below command to setup the Tests. [More info](https://gkushang.github.io/01-01-getting-started/1-quick-start/)
 - Update docs and add link to [New Releases](/CHANGELOG/)
 
 ```bash
