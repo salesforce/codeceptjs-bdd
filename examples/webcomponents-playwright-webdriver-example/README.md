@@ -12,9 +12,13 @@ yarn
 
 ### 🚀 Run
 
+##### Webdriver
+
 ```
 yarn acceptance --profile webdriver:chrome
 ```
+
+##### Playwright
 
 ```
 yarn acceptance --profile playwright:chrome
