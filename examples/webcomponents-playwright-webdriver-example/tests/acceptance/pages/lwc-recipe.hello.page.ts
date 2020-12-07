@@ -12,7 +12,6 @@ class HomePage {
     helloBinding = {
         enterName: (name) => {
             I.fillField(this.locators.helloBinding.nameField, name);
-            I.wait(2);
         },
 
         grabTitle: async () => await I.grabTextFrom(this.locators.helloBinding.title),

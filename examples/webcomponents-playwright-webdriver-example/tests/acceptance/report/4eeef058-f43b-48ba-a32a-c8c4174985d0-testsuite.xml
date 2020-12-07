@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1607303269724' stop='1607303284899'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1607311786720' stop='1607311794839'>
     <name>LWC Hello! @hello:</name>
     <title>LWC Hello! @hello:</title>
     <test-cases>
-        <test-case start='1607303280512' status='passed' stop='1607303284845'>
+        <test-case start='1607311792326' status='passed' stop='1607311794784'>
             <name>Verify the Hello Binding Component @@hello_binding</name>
             <title>Verify the Hello Binding Component @@hello_binding</title>
             <labels>
@@ -12,25 +12,19 @@
             </labels>
             <parameters/>
             <steps>
-                <step start='1607303282225' status='passed' stop='1607303282669'>
+                <step start='1607311794141' status='passed' stop='1607311794610'>
                     <name>I am on page "/#hello"</name>
                     <title>I am on page "/#hello"</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1607303282669' status='passed' stop='1607303282807'>
+                <step start='1607311794610' status='passed' stop='1607311794749'>
                     <name>I fill field "recipe-hello-binding input", "Kushang Gajjar"</name>
                     <title>I fill field "recipe-hello-binding input", "Kushang Gajjar"</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1607303282807' status='passed' stop='1607303284808'>
-                    <name>I wait 2</name>
-                    <title>I wait 2</title>
-                    <attachments/>
-                    <steps/>
-                </step>
-                <step start='1607303284808' status='passed' stop='1607303284844'>
+                <step start='1607311794749' status='passed' stop='1607311794782'>
                     <name>I grab text from "recipe-hello-binding p"</name>
                     <title>I grab text from "recipe-hello-binding p"</title>
                     <attachments/>
