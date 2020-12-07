@@ -22,8 +22,8 @@
         "create-codeceptjs-bdd-tests": "./cli/create.js"
     },
     "scripts": {
-        "acceptance": "npx codeceptjs run ",
-        "acceptance:all": "yarn acceptance && yarn acceptance:parallel && DRIVER=webdriver yarn acceptance --profile sauce:chrome && DRIVER=webdriver yarn acceptance",
+        "acceptance": "codeceptjs def && codeceptjs run ",
+        "acceptance:all": "codeceptjs def && yarn acceptance && yarn acceptance:parallel && DRIVER=webdriver yarn acceptance --profile sauce:chrome && DRIVER=webdriver yarn acceptance",
         "acceptance:parallel": "npx codeceptjs run-workers --suites 3",
         "acceptance:report": "allure serve ./acceptance/report",
         "acceptance:washer": "npx codeceptjs run-rerun",
@@ -33,10 +33,10 @@
         "circleci:test:webdriver:parallel": "DRIVER=webdriver yarn acceptance:parallel --profile chrome:headless",
         "lerna:lint:prettier": "lerna run lint:prettier",
         "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
-        "test": "yarn circleci:test:playwright:chromium && yarn circleci:test:playwright:firefox && yarn circleci:test:playwright:safari && circleci:test:webdriver && circleci:test:playwright:parallel && circleci:test:webdriver:parallel",
-        "ui:test": "npx codeceptjs run ",
+        "test": "codeceptjs def && yarn circleci:test:playwright:chromium && yarn circleci:test:playwright:firefox && yarn circleci:test:playwright:safari && circleci:test:webdriver && circleci:test:playwright:parallel && circleci:test:webdriver:parallel",
+        "ui:test": "codeceptjs def && codeceptjs run ",
         "ui:test:all": "yarn ui:test && yarn ui:test:parallel && DRIVER=webdriver yarn ui:test --profile sauce:chrome && DRIVER=webdriver yarn ui:test",
-        "ui:test:parallel": "npx codeceptjs run-workers --suites 3",
+        "ui:test:parallel": "codeceptjs def && npx codeceptjs run-workers --suites 3",
         "ui:test:report": "allure serve ./acceptance/report",
         "ui:test:washer": "npx codeceptjs run-rerun"
     },
@@ -44,9 +44,12 @@
         "@wdio/selenium-standalone-service": "^5.16.10",
         "cfonts": "^2.8.6",
         "cli-ux": "^5.4.5",
+        "expect": "^26.6.2",
         "figlet": "^1.2.3",
         "inquirer": "^7.0.0",
         "node-emoji": "^1.10.0",
-        "shelljs": "^0.8.3"
+        "shelljs": "^0.8.3",
+        "ts-node": "^9.1.0",
+        "typescript": "^4.1.2"
     }
 }

@@ -1,19 +1,21 @@
 ---
 title: Quick Start
-sub_title: CLI to create-codecpetjs-bdd-tests
+sub_title: CLI to create-codeceptjs-bdd-tests
 parents: ['Getting Started']
 keywords: ['setup', 'framework', 'quick start', 'videos']
 ---
 
 ## 🖥 Interactive CLI
 
-To create your Codecpejs BDD Tests and install dependencies, use the open source **create-codecpetjs-bdd-tests** tool.
+To create your Codeceptjs BDD Tests in Typescript, use the open source **create-codeceptjs-bdd-tests** tool.
 
 ## 🚀 Quick Setup your framework
 
-⚠ prequesite [Installation Guide](/01-01-getting-started/2-installation/).
+⚠ prerequisite [Installation Guide](/01-01-getting-started/2-installation/).
 
 **Optional**: If you are looking to Colocate your Acceptance Tests with your Source Code repository then **cd \<to-your-source-code-repository-folder\>** before running below step. This step is optional, the CLI will ask to provide the path you want to create the Codeceptjs-BDD tests.
+
+The below command will create the CodeceptjsBDD tests in Typescript/Javascript.
 
 ```bash
 

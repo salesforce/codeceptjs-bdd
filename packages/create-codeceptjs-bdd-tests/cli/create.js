@@ -102,7 +102,13 @@ const run = async () => {
     // copy codecept conf
     shell.cp('-R', path.join(__dirname, '../codecept.conf.js'), ROOT_PATH);
 
-    // get config and packagejson
+    // copy tscofing.json
+    shell.cp('-R', path.join(__dirname, '../tsconfig.json'), ROOT_PATH);
+
+    // copy steps.d.ts
+    shell.cp('-R', path.join(__dirname, '../steps.d.ts'), ROOT_PATH);
+
+    // get config and package-json
     const configFile = path.join(ROOT_PATH, 'codecept.conf.js');
     const packageJson = path.join(ROOT_PATH, 'package.json');
 
