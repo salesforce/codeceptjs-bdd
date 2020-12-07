@@ -38,6 +38,6 @@ The CLI,
 5. Configures Sauce Labs (optional)
 6. Runs existing Sample BDD Feature Files to test your setup
 
-This Framework comes with the Sample BDD Feature files with examples. Please follow through the [Examples](https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/codeceptjs-cucumber/acceptance/features) to create your own Feature Files & Scenarios.
+This Framework comes with the Sample BDD Feature files with examples. Please follow through the [Examples](https://github.com/gkushang/codeceptjs-bdd/tree/develop/packages/create-codeceptjs-bdd-tests/acceptance/features) to create your own Feature Files & Scenarios.
 
 💯Follow the instructions on CLI. Once done, you're ready to start writing automated Feature files for your app 🎉
