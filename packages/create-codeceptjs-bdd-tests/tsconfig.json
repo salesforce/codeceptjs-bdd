@@ -1,0 +1,14 @@
+{
+    "ts-node": {
+        "files": true
+    },
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "target": "es2020",
+        "lib": ["es6"],
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "strictNullChecks": true,
+        "types": ["codeceptjs", "node"]
+    }
+}

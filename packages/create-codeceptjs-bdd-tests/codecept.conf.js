@@ -1,23 +1,25 @@
 // load env variables - this should be the first line of config
 require('dotenv-extended').config({
     path: './acceptance/config/codecept.dev.env',
-    defaults: './acceptance/config/codecept.env'
+    defaults: './acceptance/config/codecept.env',
 });
-// this is globally defined here, and used across all step definitions for BDD Assertions
-const should = require('should');
+require('ts-node/register');
 
-const configure = require('codeceptjs-configure').configure;
+const { configure, cleanReports } = require('codeceptjs-configure');
 
 let conf = {
     name: '<your-acceptance-tests-name>',
+
+    bootstrap: (callback) => cleanReports({ path: './report', callback }),
+
     // add more configuration as required
     rerun: {
         // how many times all tests should pass
         minSuccess: 2,
 
         // how many times to try to rerun all tests
-        maxReruns: 4
-    }
+        maxReruns: 4,
+    },
 };
 
 /**
