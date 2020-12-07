@@ -19,5 +19,3 @@ yarn acceptance --profile webdriver:chrome
 ```
 yarn acceptance --profile playwright:chrome
 ```
-
-![](wc.png)
