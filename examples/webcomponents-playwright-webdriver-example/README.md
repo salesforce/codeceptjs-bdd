@@ -2,4 +2,22 @@
 
 This repository demonstrate the Simplified Locator strategy to locate the Shadow Elements to automate app with Webdriver & Playwright.
 
-### 🌀 Getting Started
+### 🌀 Clone & Install
+
+```
+git clone git@github.com:salesforce/codeceptjs-bdd.git
+cd codeceptjs-bdd/examples/webcomponents-playwright-webdriver-example
+yarn
+```
+
+### 🚀 Run
+
+```
+yarn acceptance --profile webdriver:chrome
+```
+
+```
+yarn acceptance --profile playwright:chrome
+```
+
+![][wc.png]
