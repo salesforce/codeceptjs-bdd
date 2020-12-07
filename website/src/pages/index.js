@@ -126,12 +126,10 @@ const renderAppCards = () => {
       size: 3,
       title: 'Automate Web Components',
       description:
-        'Simplified Locators for Web Components or Shadow Root elements. Codeceptjs-BDD automates your application built with Web Components or Salesforce LWC.',
-      secondLinkName: 'Selenium Example',
-      secondLink: '/07-salesforce-lwc/1-salesforce-lighting-web-components/',
-      firstLinkName: 'Playwright Example',
+        'Webdriver & Playwright E2E Tests with Simplified Locators to locate Shadow Elements. Codeceptjs-BDD automates your application built with Web Components or Salesforce LWC.',
+      firstLinkName: 'E2E Automation Example',
       link:
-        '/07-salesforce-lwc/1-salesforce-lighting-web-components-playwright/',
+        '/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/',
       image: require('../images/lwc-sf.png'),
     },
     {
