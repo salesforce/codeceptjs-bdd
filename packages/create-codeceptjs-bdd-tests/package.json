@@ -1,6 +1,6 @@
 {
     "name": "create-codeceptjs-bdd-tests",
-    "version": "7.0.6",
+    "version": "7.0.7",
     "description": "Create Codeceptjs BDD Tests",
     "keywords": [
         "Cucumber",
