@@ -2,10 +2,11 @@
  * clean reports
  *
  */
-const fs = require('fs');
+// const fs = require('fs');
 const path = require('path');
 const logger = require('../logger/logger');
 const chalk = require('chalk');
+const fsExtra = require('fs-extra');
 
 const cleanReports = function (options) {
     if (!options.path) {
@@ -18,20 +19,12 @@ const cleanReports = function (options) {
 
     const dir = path.join(process.cwd(), options.relativePath, options.path);
 
-    fs.rmdir(dir, { recursive: true }, (err) => {
-        if (err) {
-            throw Error('Error cleaning the Report directory', err);
-        }
+    fsExtra.emptyDirSync(dir);
 
-        if (options.callback) {
-            options.callback();
-        }
-
-        logger.log({
-            message: `deleting report dir "${dir}" ...`,
-            emoji: 'wastebasket',
-            chalk: chalk.gray,
-        });
+    logger.log({
+        message: `cleaning report dir "${dir}" ...`,
+        emoji: 'wastebasket',
+        chalk: chalk.gray,
     });
 };
 
