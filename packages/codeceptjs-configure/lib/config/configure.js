@@ -19,10 +19,9 @@ logger.welcome();
  * @param {object} conf
  */
 const create = (conf, userSpecifiedSauceBrowsers) => {
+    const findDriver = () => Object.keys(master_conf.helpers).find((driver) => driver.toLowerCase() === gDriver.toLowerCase());
     const driver =
-        master_conf.helpers[
-            Object.keys(master_conf.helpers).find((driver) => driver.toLowerCase() === gDriver.toLowerCase())
-        ];
+        master_conf.helpers[findDriver()];
 
     if (!driver) {
         logger.error(`'${gDriver}' is not a supported driver. Supported drivers are: [${Object.keys(driversConf)}]`);
@@ -41,23 +40,14 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         emoji: 'star2',
     });
 
-    logger.log({
-        message: `Host: ${process.env.HOST}`,
-        emoji: 'earth_americas',
-    });
+    if (!process.env.HOST) {
+        process.env.HOST = conf.host;
+    }
 
-    logger.log({
-        message: `${gDriver}: ${JSON.stringify(driver)}`,
-        chalk: require('chalk').gray,
-    });
-
-    if (gDriver && gDriver.toLowerCase() === 'playwright') {
+    if (process.env.HOST) {
         logger.log({
-            message: chalk.greenBright.bold(
-                process.env.HEADLESS === 'true' ? `Running Headless ...` : `Running non-Headless ...`
-            ),
-            emoji: 'running',
-            chalk: chalk.bgBlack,
+            message: `Host: ${process.env.HOST}`,
+            emoji: 'earth_americas',
         });
     }
 
@@ -73,6 +63,21 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         require('codeceptjs-selenoid').config.selenoid()
     );
 
+    logger.log({
+        message: `${gDriver}: ${JSON.stringify(config.helpers[findDriver()])}`,
+        chalk: require('chalk').gray,
+    });
+
+    if (gDriver && gDriver.toLowerCase() === 'playwright') {
+        logger.log({
+            message: chalk.greenBright.bold(
+                process.env.HEADLESS === 'true' ? `Running Headless ...` : `Running non-Headless ...`
+            ),
+            emoji: 'running',
+            chalk: chalk.bgBlack,
+        });
+    }
+ 
     debug(chalk.gray(JSON.stringify(config, undefined, 2)));
 
     return config;

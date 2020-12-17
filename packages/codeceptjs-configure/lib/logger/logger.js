@@ -37,7 +37,7 @@ const welcome = () => {
         message = message.concat(zap).concat(' ');
     }
 
-    message = message.concat('  Codeceptjs BDD Acceptance Tests   ');
+    message = message.concat('  Codeceptjs-BDD Acceptance Tests   ');
 
     for (let m = 0; m < i; m++) {
         message = message.concat(zap).concat(' ');

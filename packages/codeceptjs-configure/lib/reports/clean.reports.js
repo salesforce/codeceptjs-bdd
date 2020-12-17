@@ -2,7 +2,6 @@
  * clean reports
  *
  */
-// const fs = require('fs');
 const path = require('path');
 const logger = require('../logger/logger');
 const chalk = require('chalk');
