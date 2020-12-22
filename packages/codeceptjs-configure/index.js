@@ -2,6 +2,7 @@ const master = require('./lib/config/master/codecept.master.conf');
 const cleanReports = require('./lib/reports/clean.reports').cleanReports;
 const configure = require('./lib/config/configure');
 const host = require('./lib/host/host');
+const logger = require('./lib/logger/logger');
 
 const Driver_commands = require.resolve('./lib/helpers/driver-commands.helper.js');
 
@@ -11,6 +12,7 @@ module.exports = {
     cleanReports,
     configure,
     host,
+    log: logger.log,
     pageObjects: require('./lib/config/bdd/pageObjects').pageObjects,
     steps: require('./lib/config/bdd/steps').steps,
 };

@@ -19,9 +19,9 @@ logger.welcome();
  * @param {object} conf
  */
 const create = (conf, userSpecifiedSauceBrowsers) => {
-    const findDriver = () => Object.keys(master_conf.helpers).find((driver) => driver.toLowerCase() === gDriver.toLowerCase());
-    const driver =
-        master_conf.helpers[findDriver()];
+    const findDriver = () =>
+        Object.keys(master_conf.helpers).find((driver) => driver.toLowerCase() === gDriver.toLowerCase());
+    const driver = master_conf.helpers[findDriver()];
 
     if (!driver) {
         logger.error(`'${gDriver}' is not a supported driver. Supported drivers are: [${Object.keys(driversConf)}]`);
@@ -36,19 +36,13 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
     }
 
     logger.log({
+        chalk: chalk.bgBlue.bold,
         message: driverMessage,
         emoji: 'star2',
     });
 
     if (!process.env.HOST) {
         process.env.HOST = conf.host;
-    }
-
-    if (process.env.HOST) {
-        logger.log({
-            message: `Host: ${process.env.HOST}`,
-            emoji: 'earth_americas',
-        });
     }
 
     const config = merge(
@@ -77,8 +71,12 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
             chalk: chalk.bgBlack,
         });
     }
- 
-    debug(chalk.gray(JSON.stringify(config, undefined, 2)));
+
+    if (!logger.isTypescriptDef()) {
+        debug(chalk.gray(JSON.stringify(config, undefined, 2)));
+    } else {
+        logger.printTypescriptDef();
+    }
 
     return config;
 };

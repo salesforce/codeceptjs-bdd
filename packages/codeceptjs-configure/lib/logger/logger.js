@@ -2,19 +2,31 @@ const cli = require('cli-ux');
 const emoji = require('node-emoji');
 const chalk = require('chalk');
 
+const isTypescriptDef = () => process.argv.includes('def');
+
+const printTypescriptDef = () => cli.default.log(`${chalk.bgBlue.bold('📝 Generating Typescript Defs...\n')}`);
+
 const log = (logMessage) => {
+    if (isTypescriptDef()) {
+        return;
+    }
+
     let message = '';
 
     if (logMessage.emoji) {
         message = `${emoji.get(logMessage.emoji)}  `;
     }
 
-    message = message.concat(logMessage.message);
+    if (logMessage.message) {
+        message = message.concat(logMessage.message);
+    } else {
+        message = logMessage;
+    }
 
     if (logMessage.chalk) {
         cli.default.log(logMessage.chalk(message.concat('\n')));
     } else {
-        cli.default.log(chalk.bgBlue.bold(message.concat('\n')));
+        cli.default.log(`${chalk.blue.bold('log')} ${chalk.green.bold(message)}`);
     }
 };
 
@@ -46,4 +58,4 @@ const welcome = () => {
     cli.default.log(chalk.yellow(message.concat('\n\n')));
 };
 
-module.exports = { log, welcome, host, error };
+module.exports = { log, welcome, host, error, isTypescriptDef, printTypescriptDef };
