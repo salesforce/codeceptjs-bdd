@@ -1,25 +1,24 @@
-import { appendFileSync } from 'fs';
-import { join } from 'path';
+const { appendFileSync } = require('fs');
+const { join } = require('path');
+
 /**
  * Helper class for the Allure Report
  */
 class AllureHelper extends Helper {
-    output: string;
-
     constructor(config) {
         super(config);
         this.output = config.output;
     }
 
-    private buildPath(name: string) {
+    buildPath(name) {
         return join(this.output, name);
     }
 
-    printEnvsOnAllureReport = (key: string, value: string): void => {
+    printEnvsOnAllureReport = (key, value) => {
         const text = `${key}=${value}\n`;
         const path = this.buildPath('environment.properties');
         appendFileSync(path, text);
     };
 }
 
-export = AllureHelper;
+module.exports = AllureHelper;

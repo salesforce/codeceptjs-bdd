@@ -7,12 +7,12 @@ const { pageObjects } = require('../bdd/pageObjects');
 
 let driver_commands = 'codeceptjs-configure/lib/helpers/driver-commands.helper.js';
 let custom_methods = 'codeceptjs-configure/lib/helpers/custom-methods.helper.js';
-let allure_report_helper = 'codeceptjs-configure/lib/helpers/allure-report.helper.ts';
+let allure_report_helper = 'codeceptjs-configure/lib/helpers/allure-report.helper.js';
 
 if (process.env.CODECEPT_BDD_LERNA) {
     driver_commands = require.resolve('../../helpers/driver-commands.helper.js');
     custom_methods = require.resolve('../../helpers/custom-methods.helper.js');
-    allure_report_helper = require.resolve('../../helpers/allure-report.helper.ts');
+    allure_report_helper = require.resolve('../../helpers/allure-report.helper.js');
 }
 
 let masterConf = {
