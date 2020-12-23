@@ -1,4 +1,3 @@
-const config = require('codeceptjs').config.get();
 import { appendFileSync } from 'fs';
 import { join } from 'path';
 /**
