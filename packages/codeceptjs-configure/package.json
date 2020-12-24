@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "@codeceptjs/helper": "^1.0.1",
+        "@types/node": "^14.14.16",
         "@wdio/selenium-standalone-service": "^6.10.0",
         "allure-commandline": "^2.9.0",
         "camelcase": "^6.0.0",

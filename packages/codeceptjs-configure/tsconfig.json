@@ -1,0 +1,11 @@
+{
+    "ts-node": {
+        "files": true
+    },
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "commonjs",
+        "types": ["node"]
+    },
+    "include": ["./lib/**/*.ts"]
+}
