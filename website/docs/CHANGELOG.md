@@ -21,7 +21,7 @@ keywords: ['changelog', 'releases', 'release']
 $ yarn acceptance --profile selenoid:chrome:80
 ```
 
-- Run on any Saucelabs Platform configruation. [More info](http://gkushang.github.io/03-02-run-on-saucelabs/3-run-on-saucelabs/)
+- Run on any Saucelabs Platform configuration. [More info](http://gkushang.github.io/03-02-run-on-saucelabs/3-run-on-saucelabs/)
 
 ```bash
 $ yarn acceptance --profile sauce:config:'Windows 10':chrome:80
@@ -30,7 +30,7 @@ $ yarn acceptance --profile sauce:config:'Windows 10':chrome:80
 - Run on Mobile Devices on Playwright. [More info](http://gkushang.github.io/03-03-playwright/1-run-with-playwright/)
 
 ```bash
-$ yarn acceptacne --profile device:'iPhone 11':safari
+$ yarn acceptance --profile device:'iPhone 11':safari
 ```
 
 ## 5.2.1 (AUG-30-2020)
@@ -75,7 +75,7 @@ More devices are available [here](https://github.com/microsoft/playwright/blob/m
   DRIVER=webdriver yarn acceptance:parallel --profile sauce:chrome
 ```
 
-- CircleCI runs more tests for Chrome, Firefox, Safari and Run in Parallal foe each commit
+- CircleCI runs more tests for Chrome, Firefox, Safari and Run in Parallel foe each commit
 
 ## 5.0.6 (MAY-20-2020)
 

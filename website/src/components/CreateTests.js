@@ -94,7 +94,7 @@ export default function CreateTests() {
                 }}
               >
                 {' '}
-                ℹ️
+                🚀
                 <span style={{ fontWeight: '600', paddingLeft: '0.2em' }}>
                   Recent Release: Exclusive "Shadow DOM" support for WebDriver.{' '}
                   <a
@@ -117,7 +117,7 @@ export default function CreateTests() {
                   padding: '0.6em',
                 }}
               >
-                ℹ️
+                🚀
                 <span style={{ fontWeight: '600', paddingLeft: '0.2em' }}>
                   Recent Release: Exclusive "Shadow DOM" support for WebDriver.{' '}
                   <a
