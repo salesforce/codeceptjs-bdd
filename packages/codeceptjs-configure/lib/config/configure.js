@@ -36,6 +36,11 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
     }
 
     logger.log({
+        chalk: chalk.blue,
+        message: '🌏 [Docs] gkushang.github.io [Repo] github.com/salesforce/codeceptjs-bdd',
+    });
+
+    logger.log({
         chalk: chalk.bgBlue.bold,
         message: driverMessage,
         emoji: 'star2',
