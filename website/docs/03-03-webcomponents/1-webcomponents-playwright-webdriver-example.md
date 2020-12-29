@@ -18,9 +18,9 @@ keywords:
 
 ## ☁︎ Automate Salesforce Lighting Web Components
 
-💯 **ADVANTAGE:** The framework provides the Shadow Locators equivalent to [Document.querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) for Webdriver.
+💯 **ADVANTAGE:** The framework provides the Shadow Locators equivalent to [Document.querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) for **Webdriver**.
 
-🚀 Playwright has a native support to locate the Shadow Elements explicitly but WebDriver does not yet. **However, this framework adds the Explicit Support for WebDriver too.**
+🚀 **This framework adds the Explicit Support for WebDriver too.**
 
 ## Example
 
@@ -28,7 +28,7 @@ The complete example of E2E Tests for WebComponents (shadow-roots) is available 
 
 ⏩ https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example)
 
-The simpler locator will work with both WebDriver & Playwright
+**Simplified Locator to locate the Shadow Element (no DOM Hierarchy is required),**
 
 ```javascript
 I.fillField('recipe-hello-binding input', 'hello');

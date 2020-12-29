@@ -5,7 +5,7 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';
 import Paper from '@material-ui/core/Paper';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -104,7 +104,10 @@ export default function CreateTests() {
             marginTop: '1px',
           }}
         >
-          Run tests on various platforms with Single CLI command:
+          <span style={{ fontWeight: '600' }}>
+            Run tests on various platforms
+          </span>{' '}
+          with Single CLI command:
           <span
             style={{
               color: '#253C3C',

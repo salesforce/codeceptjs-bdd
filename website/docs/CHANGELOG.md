@@ -4,14 +4,14 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-configure & @codeceptjs-sauce
 keywords: ['changelog', 'releases', 'release']
 ---
 
-### CODECEPTJS-CONFIGURE V8.0.5 (NOV-24-2020)
+### CODECEPTJS-CONFIGURE V8.x (DEC-26-2020)
+
+- Exclusive Shadow DOM support for WebDriver. [More info](/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/) on support. Checkout the example on Github [here](https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example).
 
 - Automatic selection of Driver based on the `--profile` CLI option
   e.g. if you pass a `--profile device:'iPhone 11':safari` then framework will switch to Playwright automatically
 
-  e.g. if you pass a `--profile sauce:config:'Windows 10':chrome:80` then framework will swith to Webdriver automatically.
-
-### CODECEPTJS-CONFIGURE V8.0.4 (NOV-19-2020)
+  e.g. if you pass a `--profile sauce:config:'Windows 10':chrome:80` then framework will switch to Webdriver automatically.
 
 - CodeceptJS 3 Upgrade
 - Typescript support. [More info](https://codecept.io/typescript/#typescript) on typescript setup

@@ -69,7 +69,7 @@ const renderAppCards = () => {
       size: 4,
       title: 'Why BDD?',
       description:
-        'BDD is a great way to colloborate within teams & with stakeholders to create shared understanding of how the product should behave, capture concrete examples and create an executable & living specification on-the-fly.',
+        'BDD is a great way to collaborate within teams & with stakeholders to create shared understanding of how the product should behave, capture concrete examples and create an executable & living specification on-the-fly.',
       link: 'https://medium.com/hackernoon/bdd-in-3-minutes-c3f8fc022237',
       image: BDD,
     },
