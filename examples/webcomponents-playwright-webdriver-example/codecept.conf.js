@@ -12,6 +12,12 @@ let conf = {
 
     bootstrap: (callback) => cleanReports({ path: './report', callback }),
     require: ['expect'],
+    plugins: {
+        customLocators: {
+            require: './tests/acceptance/helpers/custom-locators.js',
+            enabled: true,
+        },
+    },
     // add more configuration as required
     rerun: {
         // how many times all tests should pass
