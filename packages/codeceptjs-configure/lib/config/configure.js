@@ -36,7 +36,7 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
     }
 
     logger.log({
-        chalk: chalk.hex('#0000ff'),
+        chalk: chalk.hex('#4c4cff'),
         message: '🌏 [Docs] gkushang.github.io [Repo] github.com/salesforce/codeceptjs-bdd',
     });
 
