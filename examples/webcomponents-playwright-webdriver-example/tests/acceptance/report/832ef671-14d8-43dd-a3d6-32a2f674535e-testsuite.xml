@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1607311786720' stop='1607311794839'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1609289375277' stop='1609289377681'>
     <name>LWC Hello! @hello:</name>
     <title>LWC Hello! @hello:</title>
     <test-cases>
-        <test-case start='1607311792326' status='passed' stop='1607311794784'>
+        <test-case start='1609289375278' status='passed' stop='1609289377462'>
             <name>Verify the Hello Binding Component @@hello_binding</name>
             <title>Verify the Hello Binding Component @@hello_binding</title>
             <labels>
@@ -12,19 +12,19 @@
             </labels>
             <parameters/>
             <steps>
-                <step start='1607311794141' status='passed' stop='1607311794610'>
+                <step start='1609289376384' status='passed' stop='1609289377051'>
                     <name>I am on page "/#hello"</name>
                     <title>I am on page "/#hello"</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1607311794610' status='passed' stop='1607311794749'>
+                <step start='1609289377051' status='passed' stop='1609289377451'>
                     <name>I fill field "recipe-hello-binding input", "Kushang Gajjar"</name>
                     <title>I fill field "recipe-hello-binding input", "Kushang Gajjar"</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1607311794749' status='passed' stop='1607311794782'>
+                <step start='1609289377451' status='passed' stop='1609289377461'>
                     <name>I grab text from "recipe-hello-binding p"</name>
                     <title>I grab text from "recipe-hello-binding p"</title>
                     <attachments/>
