@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1609292894586' stop='1609292917102'>
+    <name>LWC Hello! @hello:</name>
+    <title>LWC Hello! @hello:</title>
+    <test-cases>
+        <test-case start='1609292914535' status='passed' stop='1609292917047'>
+            <name>Verify the Hello Binding Component @@hello_binding</name>
+            <title>Verify the Hello Binding Component @@hello_binding</title>
+            <labels>
+                <label name='tag' value='@hello'/>
+                <label name='tag' value='@@hello_binding'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1609292916395' status='passed' stop='1609292916875'>
+                    <name>I am on page "/#hello"</name>
+                    <title>I am on page "/#hello"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1609292916875' status='passed' stop='1609292917011'>
+                    <name>I fill field "recipe-hello-binding input", "Kushang Gajjar"</name>
+                    <title>I fill field "recipe-hello-binding input", "Kushang Gajjar"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1609292917011' status='passed' stop='1609292917045'>
+                    <name>I grab text from "recipe-hello-binding p"</name>
+                    <title>I grab text from "recipe-hello-binding p"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

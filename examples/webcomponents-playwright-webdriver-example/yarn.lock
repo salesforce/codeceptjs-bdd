@@ -1216,8 +1216,7 @@ codeceptjs-selenoid@^1.0.2:
 
 codeceptjs@^3.0.2, "codeceptjs@https://github.com/gkushang/CodeceptJS.git#wdio/custom-locator":
   version "3.0.4"
-  uid b6ead001557bee9dec5c08368884c8da943901ec
-  resolved "https://github.com/gkushang/CodeceptJS.git#b6ead001557bee9dec5c08368884c8da943901ec"
+  resolved "https://github.com/gkushang/CodeceptJS.git#2de09d73796abd9ce3b28705ef5e0a91138b9218"
   dependencies:
     "@codeceptjs/configure" "^0.6.2"
     "@codeceptjs/helper" "^1.0.1"
