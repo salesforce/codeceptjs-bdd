@@ -85,7 +85,7 @@ export default function CreateTests() {
               <div
                 style={{
                   color: 'black',
-                  fontSize: '9.5px',
+                  fontSize: '8px',
                   fontFamily: 'monospace, monospace, monospace',
                   paddingTop: '1em',
                   paddingLeft: '0.4em',
@@ -95,7 +95,13 @@ export default function CreateTests() {
               >
                 {' '}
                 🚀
-                <span style={{ fontWeight: '600', paddingLeft: '0.2em' }}>
+                <span
+                  style={{
+                    fontWeight: '600',
+                    paddingLeft: '.2em',
+                    marginRight: '0.9em',
+                  }}
+                >
                   Recent Release: Exclusive "Shadow DOM" support for WebDriver.{' '}
                   <a
                     href="/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/"
@@ -118,7 +124,7 @@ export default function CreateTests() {
                 }}
               >
                 🚀
-                <span style={{ fontWeight: '600', paddingLeft: '0.2em' }}>
+                <span style={{ fontWeight: '600', paddingLeft: '0.1em' }}>
                   Recent Release: Exclusive "Shadow DOM" support for WebDriver.{' '}
                   <a
                     href="/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/"
