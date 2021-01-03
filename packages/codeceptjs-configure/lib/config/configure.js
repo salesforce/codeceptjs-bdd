@@ -62,8 +62,6 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         require('codeceptjs-selenoid').config.selenoid()
     );
 
-    config.helpers.allure_report_helper.output = config.output;
-
     logger.log({
         message: `${gDriver}: ${JSON.stringify(config.helpers[findDriver()])}`,
         chalk: require('chalk').gray,
