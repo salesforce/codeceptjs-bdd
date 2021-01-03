@@ -7,7 +7,7 @@ type custom_methods = import('/Users/kgajjar/dev/b2c/codeceptjs-bdd/packages/cod
 
 declare namespace CodeceptJS {
   interface SupportObject { I: I, current: any, ghHomePage: ghHomePage, ghSearchPage: ghSearchPage, page: page }
-  interface Methods extends Driver_commands, custom_methods, REST, WebDriver {}
+  interface Methods extends Driver_commands, custom_methods, REST, Playwright {}
   interface I extends WithTranslation<Methods> {}
   namespace Translation {
     interface Actions {}
