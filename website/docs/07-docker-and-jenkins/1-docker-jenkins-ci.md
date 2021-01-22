@@ -19,7 +19,7 @@ Codeceptjs-BDD can run on Sauce Labs through your Jenkins CI. Sauce Labs can pro
 
 Jenkinsfile uses the docker image [gkushang/codeceptjs-e2e](https://hub.docker.com/repository/docker/gkushang/codeceptjs-e2e) to run your tests on Sauce Labs. Below is the sample Jenkinsfile Script to run your Codeceptjs-BDD test suite. 
 
-The Script assumes you will have following Jeniins Build Parameters,
+The Script assumes you will have following Jenkins Build Parameters,
 
 * HOST: host of your running app
 * SAUCE_USERNAME

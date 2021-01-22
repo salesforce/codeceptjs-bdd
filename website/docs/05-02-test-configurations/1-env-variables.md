@@ -27,7 +27,7 @@ HOST=https://localhost
 
 ## codecept.env
 
-This file contains all your default environment variables, such as common Environment Variables across all your test environements.
+This file contains all your default environment variables, such as common Environment Variables across all your test environments.
 
 It contains overall app configuration values that would be common across environments. The **codecept.env** file is loaded first and then the **codecept.dev.env** file is loaded and will overwrite any values from the **codecept.env** file.
 
@@ -65,7 +65,7 @@ Your Local Development Environmental Variables. Personalize your Execution Envir
 
 This file contains all the Secrets and Password for your App. You must not commit this file to the Source Control because it contains sensitive information such as usernames, passwords, api keys, etc. The format is a series of key-value pairs. Any line starting with # or ; are commented out and ignored.
 
-Because you do not committ this file to the source control, how do your teammates know what are the keys and how to define them?
+Because you do not commit this file to the source control, how do your teammates know what are the keys and how to define them?
 
 ####🧩Sharing With Your Team
 

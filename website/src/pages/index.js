@@ -118,7 +118,7 @@ const renderAppCards = () => {
       size: 3,
       title: 'Multibrowsers | Parallel',
       description:
-        'Codeceptjs BDD provides an ability to run BDD Feaure files all in Parallel on Single browser or can run same set of tests in Parallel but on different browsers/OS combo (multile browers) on Sauce Labs. It offers greate Test Execution Coverage for your App.',
+        'Codeceptjs BDD provides an ability to run BDD Feature files all in Parallel on Single browser or can run same set of tests in Parallel but on different browsers/OS combo (multiple browsers) on Sauce Labs. It offers great Test Execution Coverage for your App.',
       link: '/03-01-run-locally/5-run-on-multi-browsers/',
       image: multibrowsers,
     },
@@ -136,7 +136,7 @@ const renderAppCards = () => {
       size: 3,
       title: 'Integration Tests',
       description:
-        'One framework, mulitple solutions. Use Codeceptjs-BDD to automate both of your Integration tests and E2E Tests. Codecetpsj-BDD can run both, Mocha and Cucumber BDD, with the single common command.',
+        'One framework, multiple solutions. Use Codeceptjs-BDD to automate both of your Integration tests and E2E Tests. Codecetpsj-BDD can run both, Mocha and Cucumber BDD, with the single common command.',
       firstLinkName: 'Learn More',
       link: '/02-01-integration-tests/1-integration-tests/',
       image: require('../images/imocha.png'),
@@ -145,7 +145,7 @@ const renderAppCards = () => {
       size: 3,
       title: 'E2E BDD Tests',
       description:
-        'Choose to write your E2E Tests either with Classical Mocha styled tests or modern Cucumber BDD Feature files acceptance tests. Codeceptjs-BDD supports both, mixed of, Mocha-style accetpance tests and Cucumber Fetures.',
+        'Choose to write your E2E Tests either with Classical Mocha styled tests or modern Cucumber BDD Feature files acceptance tests. Codeceptjs-BDD supports both, mixed of, Mocha-style acceptance tests and Cucumber Features.',
       firstLinkName: 'Learn More',
       link: '/02-02-e2e-bdd-cucumber/1-feature/',
       image: require('../images/e2e.png'),
@@ -163,7 +163,7 @@ const renderAppCards = () => {
       size: 3,
       title: 'Quick Setup Wizard',
       description:
-        'Quicky setup BDD framework for your App. Codecept-BDD implemetns the Interactive CLI to quickly setup the BDD Framework, integration with Sauce Labs and provides set of example Automated Feature files.',
+        'Quick setup BDD framework for your App. Codecept-BDD implements the Interactive CLI to quickly setup the BDD Framework, integration with Sauce Labs and provides set of example Automated Feature files.',
       link:
         'https://www.youtube.com/watch?time_continue=1&v=-x9kFV66-X4&feature=emb_logo',
       firstLinkName: 'Watch in Action',
@@ -184,7 +184,7 @@ const renderAppCards = () => {
       size: 3,
       title: 'Multi Browsers',
       description:
-        'Run your scenarios on Multiple Browsers in Parallel, including multiple versions of same brwoser or different browsers and different OS combinations on Sauce Labs. Boost your Test Execution coverage.',
+        'Run your scenarios on Multiple Browsers in Parallel, including multiple versions of same browser or different browsers and different OS combinations on Sauce Labs. Boost your Test Execution coverage.',
       link: 'https://www.youtube.com/watch?v=njOlOJ07Dxw',
       firstLinkName: 'Watch in Action',
       icon: <YouTubeIcon color="secondary" />,

@@ -112,7 +112,7 @@ $ yarn acceptance:report
 
 ```
 
-- Check incldued to verify if `config/codecept.dev.env` file exists.
+- Check included to verify if `config/codecept.dev.env` file exists.
 
 ## 5.0.4 (MAY-12-2020)
 
@@ -123,7 +123,7 @@ $ yarn acceptance:report
 
 - Simplify the Configuration. Introducing Developer's Configuration
   - Add `.defaults` config: Contains all default Test Properties across all environments
-  - Add `.secrets` config: Contains all sensitive information such as Secrets, Password, Username and will not be commited to the source control. [More info](http://localhost:8981/04-configurations/1-env-variables/)
+  - Add `.secrets` config: Contains all sensitive information such as Secrets, Password, Username and will not be committed to the source control. [More info](http://localhost:8981/04-configurations/1-env-variables/)
 - Automatically injects Page Objects to the tests. [More info](http://localhost:8981/05-page-objects/3-naming-conventions/)
 
   - Before: User needs to add Page Object to the Config file each time new Page Object is created

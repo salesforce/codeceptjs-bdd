@@ -78,7 +78,7 @@ export default function CreateTests() {
               height: '2.3em',
               marginTop: '-10px',
               marginBottom: '2em',
-              fontColor: 'yelllow',
+              fontColor: 'yellow',
             }}
           >
             <Hidden smUp>
@@ -178,7 +178,7 @@ export default function CreateTests() {
             style={{
               backgroundColor: '#2F4B4B',
               height: '5em',
-              fontColor: 'yelllow',
+              fontColor: 'yellow',
             }}
           >
             <Hidden smUp>

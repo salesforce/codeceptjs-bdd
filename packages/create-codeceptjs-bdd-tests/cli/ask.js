@@ -49,7 +49,7 @@ exports.aboutSauceLabsAccount = () => {
     ]);
 };
 
-exports.aboutScenarioExeuctions = () => {
+exports.aboutScenarioExecutions = () => {
     return inquirer.prompt([
         {
             name: 'SHOULD_EXECUTE',

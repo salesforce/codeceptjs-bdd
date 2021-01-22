@@ -44,7 +44,7 @@ Keywords are not taken into account when looking for a step definition. This mea
 
 It is always recommended to `Tag` a Scenario.
 
-Each scenario can have a one or more Tags. Tags are very useful to group the features together or to filter and run a feature.
+Each scenario can have one or more Tags. Tags are very useful to group the features together or to filter and run a feature.
 
 ```javascript
 

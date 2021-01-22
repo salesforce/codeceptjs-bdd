@@ -61,7 +61,7 @@ Then it should work perfectly
 
 This leaves a lot of freedom to the implementer. It also trusts that the implementer has understood the requirement perfectly and will not make any mistake. It is totally useless as an example that drives the development.
 
-This is a trap that it is easier to fall into if the the product owner or business analyst writes the scenarios alone. With more people writing scenarios, more perspectives are taken into account. Vague examples can be made concrete, unclear examples can be questioned, and unclear rules can be found.
+This is a trap that it is easier to fall into if the product owner or business analyst writes the scenarios alone. With more people writing scenarios, more perspectives are taken into account. Vague examples can be made concrete, unclear examples can be questioned, and unclear rules can be found.
 
 Finding the right balance between too vague and too many details is hard. This is something experience will teach you. Getting it perfect from the beginning is not something to expect from a team. It is hard even with lots of experience.
 

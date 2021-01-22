@@ -73,7 +73,7 @@ module.exports = {
         I.click(I.grabCss(this.locators.loginButton));
     }
 
-    // retrive login button text
+    // retrieve login button text
     async getLoginButtonText() {
         return await I.grabTextFrom(I.grabCss(this.locators.loginButton));
     }

@@ -39,7 +39,7 @@ yarn add lerna
 
 ```
 
-(optional) Boostrap the Codeceptjs-BDD Packages
+(optional) Bootstrap the Codeceptjs-BDD Packages
 
 ```bash
 
