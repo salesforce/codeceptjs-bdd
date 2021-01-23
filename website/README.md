@@ -88,7 +88,7 @@ A quick look at the top-level files and directories you'll see in the project.
     ├── images
     ├── pages
     ├── templates
-    ├── glabal.scss
+    ├── global.scss
 
 1.   **`components`**: All the react components like layout, sidebar etc.
 
@@ -98,7 +98,7 @@ A quick look at the top-level files and directories you'll see in the project.
  
 4.   **`templates`**: Contains templates for programmatically creating pages.
 
-5.   **`glabal.scss`**: global styles.
+5.   **`global.scss`**: global styles.
 
 ## 🧐 How to add/edit documentations
 **It's very simple!!**

@@ -74,7 +74,7 @@ Scenario: John buys shoes
 
 ```
 
-The Ultra Declartive scenarios are not recommended either because,
+The Ultra Declarative scenarios are not recommended either because,
 * **Given:** Not Procedural. No interactions? No Actions?
 * **When:** Too Vague. Which color? Quantity?
 * **Then:** Not Verifiable. What am I asserting?
@@ -100,7 +100,7 @@ Scenario: John can add shoes to shopping cart
 ### Describing actions using the ACTOR
 ---
 
-Most systems have behavior that is used by multiple users or actors. This means that you want to talk a bout a specific user, a persona, if you can. 
+Most systems have behavior that is used by multiple users or actors. This means that you want to talk about a specific user, a persona, if you can. 
 
 **A persona will give you context about what the system should be able to do to support a specific category of users.**
 
@@ -114,4 +114,4 @@ Not all scenarios will bring value forever. You may delete scenarios after a whi
 
 Instead of deleting scenarios, you can rewrite them to document something more interesting. There are perhaps edge cases that can be covered with a rephrased scenario.
 
-Keeping scenarios because they where written once is not a a good argument. Don't do that.
+Keeping scenarios because they where written once is not a good argument. Don't do that.

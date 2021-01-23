@@ -9,9 +9,9 @@ When developing a testing framework, it is a good idea to have some naming conve
 
 ####❓Why to follow the naming conventions for Page Objects?
 
-Codeceptjs has created the [Page Objects Depedency Injection](https://codecept.io/pageobjects/#dependency-injection), which requires developers to include all the page objects in the configuration file. Which is a manual and very tedious process to include Page Objects each time you create new.
+Codeceptjs has created the [Page Objects Dependency Injection](https://codecept.io/pageobjects/#dependency-injection), which requires developers to include all the page objects in the configuration file. Which is a manual and very tedious process to include Page Objects each time you create new.
 
-💯 The **Codecpetjs-BDD** framework automates the entire process of dependency injections and eliminates the need to define page objects manually inthe configurations. Just follow the below conventions.
+💯 The **Codecpetjs-BDD** framework automates the entire process of dependency injections and eliminates the need to define page objects manually in the configurations. Just follow the below conventions.
 
 #### 🌈 Two conventions of Page Objects
 

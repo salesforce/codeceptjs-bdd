@@ -19,7 +19,7 @@ Codeceptjs-BDD can run all your Feature files in Parallel. You can choose to run
 
 ---
 
-Codeceptjs-BDD implemets the scripts and commands to run all Feature files in Parallel. You can choose the **browser** to run by passing through **-\-profile** command.
+Codeceptjs-BDD implements the scripts and commands to run all Feature files in Parallel. You can choose the **browser** to run by passing through **-\-profile** command.
 
 ```bash
     $ yarn acceptance:parallel

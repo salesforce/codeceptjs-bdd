@@ -35,7 +35,7 @@ Default Browser: `Chrome`
 
 ### 🎠 Run on Different Browser
 
-Browser selection is conrolled by `--profile <browser>` command line parameter
+Browser selection is controlled by `--profile <browser>` command line parameter
 
 Below command runs full regression on **Firefox** Browser.
 

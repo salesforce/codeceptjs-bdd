@@ -54,8 +54,8 @@ An outcome should be on an observable output. That is, something that comes out 
 ```bash
 
     Then he sees that the guessed word was wrong
-    Then he verifis the products in the cart
-    Then she sees remaning balance as $12
+    Then he verifies the products in the cart
+    Then she sees remaining balance as $12
 
 ```
 

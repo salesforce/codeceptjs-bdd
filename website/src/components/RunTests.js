@@ -129,7 +129,7 @@ export default function CreateTests() {
             style={{
               backgroundColor: '#191953',
               height: '38em',
-              fontColor: 'yelllow',
+              fontColor: 'yellow',
             }}
           >
             <Hidden smUp>

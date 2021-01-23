@@ -29,7 +29,7 @@ Let's automate the **Add to Cart** scenario for the Shopping App.
 
 ### Step 1: Writing Feature File
 
-First, start writing Feature Files. Please checkout the [Beginners Mistakes](/09-best-practices/1-begineers-mistakes//) to avoid mistakes.
+First, start writing Feature Files. Please checkout the [Beginners Mistakes](/09-best-practices/1-beginners-mistakes//) to avoid mistakes.
 
 Feature Files should be placed under `features` directory or sub-directories.
 
@@ -67,7 +67,7 @@ When(/the cart has {string} pairs of {string} shoes/, (quantity, productTitle) =
     shoppingHomePage.goToCart();
 
     (await cartPage.grabProductTitle()).trim().should.equal(productTitle);
-    (await cartPage.grabQuanity()).should.equal(quantity);
+    (await cartPage.grabQuantity()).should.equal(quantity);
 });
 
 
@@ -104,10 +104,10 @@ module.exports = new ShoppingHomePage();
 
 ### Step 4: Assert your application
 
-Codeceptjs-BDD supports [should.js](http://shouldjs.github.io/) library to veriy assertions.
+Codeceptjs-BDD supports [should.js](http://shouldjs.github.io/) library to verify assertions.
 
 ```javascript
-(await cartPage.grabQuanity()).should.equal(quantity);
+(await cartPage.grabQuantity()).should.equal(quantity);
 ```
 
 ### Step 5: Launch HTML Acceptance Report
