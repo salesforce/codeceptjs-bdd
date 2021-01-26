@@ -18,7 +18,7 @@ let get = function (browserInfo) {
                             version: browserInfo.version || 'latest',
                             enableVNC: !!process.env.ENABLE_VNC || true,
                             enableVideo: !!process.env.ENABLE_VIDEO || false,
-                            screenResolution: process.env.screenResolution || '1280x1024x24', // desktop screens
+                            screenResolution: process.env.SCREEN_RESOLUTION || '1280x1024x24', // desktop screens
                         },
                     };
                     if (JSON.parse(process.env.HEADLESS || false)) {
