@@ -4,6 +4,14 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-configure & @codeceptjs-sauce
 keywords: ['changelog', 'releases', 'release']
 ---
 
+### CODECEPTJS-CONFIGURE V8.1.1 (JAN-21-2021)
+
+- Set ScreenResolution for the Selenoid Grid. If your Selenoid Grid renders the Tablet size browsers than you can set Screen Resolution as shown below. The default Scren Resolution is desktop size.
+
+`SCREEN_RESOLUTION` - the default resolution is `1280x1024x24` (desktop size)
+
+- Support one more platform (an alternative to Selenoid Grid): `baas:<browser>:<version>`
+
 ### CODECEPTJS-CONFIGURE V8.x (DEC-26-2020)
 
 - Exclusive Shadow DOM support for WebDriver. [More info](/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/) on support. Checkout the example on Github [here](https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example).
