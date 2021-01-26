@@ -3,7 +3,7 @@
  *
  */
 const get = function (defaultHost, scheme) {
-    let host = defaultHost | process.env.HOST;
+    let host = defaultHost || process.env.HOST;
     scheme = scheme ? scheme : 'https';
 
     if (!host) {
