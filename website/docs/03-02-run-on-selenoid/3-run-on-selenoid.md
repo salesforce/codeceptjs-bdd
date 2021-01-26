@@ -20,3 +20,7 @@ Please note the `selenoid:` in the below command, which does the magic running y
 ```
 
 e.g. `yarn acceptance --profile selenoid:chrome:84`
+
+If your Selenoid Grid renders the Tablet Size browser size then you can set the screen resolution by setting the env variable,
+
+`SCREEN_RESOLUTION` - the default resolution is `1280x1024x24` (desktop size)

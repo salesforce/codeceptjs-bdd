@@ -11,5 +11,7 @@ module.exports = function () {
         process.env.DRIVER = 'Webdriver';
     } else if (process.env.profile && process.env.profile.match('playwright:[a-zA-Z]')) {
         process.env.DRIVER = 'Playwright';
+    } else if (process.env.profile && process.env.profile.match('baas:[a-zA-Z]')) {
+        process.env.DRIVER = 'Webdriver';
     }
 };
