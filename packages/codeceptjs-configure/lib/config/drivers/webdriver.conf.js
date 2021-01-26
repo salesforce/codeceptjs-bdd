@@ -47,7 +47,7 @@ const wdioSeleniumArgs = {
 };
 
 const isRunningLocally = (profile) => {
-    return profile && !(profile.match('sauce:') || profile.match('selenoid:'));
+    return profile && !(profile.match('sauce:') || profile.match('selenoid:') || profile.match('baas:'));
 };
 
 const get = (conf) => {
