@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-selenoid",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "CodeceptJS-BDD Selenoid Integration",
     "keywords": [
         "Selenoid",
