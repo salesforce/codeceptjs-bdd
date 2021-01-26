@@ -9,6 +9,7 @@ jobs:
         docker: # run the steps with Docker
             - image: circleci/node:14-browsers
               environment:
+                  HEADLESS: true
                   HOST: github.com
                   DRIVER: webdriver
                   CODECEPT_RELATIVE_PATH: ./acceptance/
@@ -32,9 +33,9 @@ jobs:
             - run:
                   name: Run on Playwright
                   command: yarn circleci:test:playwright
-            - run:
-                  name: Run on Playwright - Parallel
-                  command: yarn circleci:test:playwright:parallel
+            # - run:
+            #       name: Run on Playwright - Parallel
+            #       command: yarn circleci:test:playwright:parallel
             - run:
                   name: Run on WebDriver
                   command: yarn circleci:test:webdriver

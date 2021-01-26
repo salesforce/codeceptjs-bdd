@@ -53,7 +53,7 @@ These description lines are ignored by Codeceptjs-BDD at runtime, but are availa
 
 ---
 
-Each feature can have a one or more Tags. Tags are very useful to group the features together or to filter and run a feature.
+Each feature can have one or more Tags. Tags are very useful to group the features together or to filter and run a feature.
 
 ```javascript
 

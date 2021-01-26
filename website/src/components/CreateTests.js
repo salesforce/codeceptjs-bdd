@@ -5,7 +5,7 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';
 import Paper from '@material-ui/core/Paper';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -69,6 +69,76 @@ export default function CreateTests() {
   const classes = useStyles();
   return (
     <div>
+      <Grid container spacing={3}>
+        <Grid item xs={12} sm={12}>
+          <Paper
+            elevation={2}
+            style={{
+              backgroundColor: 'lightyellow',
+              height: '2.3em',
+              marginTop: '-10px',
+              marginBottom: '2em',
+              fontColor: 'yellow',
+            }}
+          >
+            <Hidden smUp>
+              <div
+                style={{
+                  color: 'black',
+                  fontSize: '8px',
+                  fontFamily: 'monospace, monospace, monospace',
+                  paddingTop: '1em',
+                  paddingLeft: '0.4em',
+                  overflowX: 'scroll',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                {' '}
+                🚀
+                <span
+                  style={{
+                    fontWeight: '600',
+                    paddingLeft: '.2em',
+                    marginRight: '0.9em',
+                  }}
+                >
+                  Recent Release: Exclusive "Shadow DOM" support for WebDriver.{' '}
+                  <a
+                    href="/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/"
+                    style={{ color: '#1e1e99' }}
+                  >
+                    More info
+                  </a>
+                </span>
+              </div>
+            </Hidden>
+
+            <Hidden xsDown>
+              <div
+                style={{
+                  color: '#323232',
+                  fontSize: '0.95em',
+                  fontFamily: 'monospace, monospace, monospace',
+                  verticalAlign: 'middle',
+                  padding: '0.6em',
+                }}
+              >
+                🚀
+                <span style={{ fontWeight: '600', paddingLeft: '0.1em' }}>
+                  Recent Release: Exclusive "Shadow DOM" support for WebDriver.{' '}
+                  <a
+                    href="/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/"
+                    style={{ color: '#1e1e99' }}
+                  >
+                    More info
+                  </a>
+                </span>
+              </div>
+            </Hidden>
+          </Paper>
+        </Grid>
+      </Grid>
+
       <Typography
         variant="h6"
         color="gray"
@@ -85,8 +155,8 @@ export default function CreateTests() {
             marginTop: '1px',
           }}
         >
-          Quickly create your Codeceptjs-BDD Acceptance tests through open
-          source
+          <span style={{ fontWeight: '600' }}>Quickly create </span>your
+          Codeceptjs-BDD Acceptance tests through open source
           <span
             style={{
               color: '#253C3C',
@@ -96,7 +166,7 @@ export default function CreateTests() {
             }}
           >
             {' '}
-            create-codecepjts-bdd-tests{' '}
+            create-codeceptjs-bdd-tests{' '}
           </span>
           tool.
         </div>
@@ -108,7 +178,7 @@ export default function CreateTests() {
             style={{
               backgroundColor: '#2F4B4B',
               height: '5em',
-              fontColor: 'yelllow',
+              fontColor: 'yellow',
             }}
           >
             <Hidden smUp>

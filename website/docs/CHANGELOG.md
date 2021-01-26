@@ -4,14 +4,14 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-configure & @codeceptjs-sauce
 keywords: ['changelog', 'releases', 'release']
 ---
 
-### CODECEPTJS-CONFIGURE V8.0.5 (NOV-24-2020)
+### CODECEPTJS-CONFIGURE V8.x (DEC-26-2020)
+
+- Exclusive Shadow DOM support for WebDriver. [More info](/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/) on support. Checkout the example on Github [here](https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example).
 
 - Automatic selection of Driver based on the `--profile` CLI option
   e.g. if you pass a `--profile device:'iPhone 11':safari` then framework will switch to Playwright automatically
 
-  e.g. if you pass a `--profile sauce:config:'Windows 10':chrome:80` then framework will swith to Webdriver automatically.
-
-### CODECEPTJS-CONFIGURE V8.0.4 (NOV-19-2020)
+  e.g. if you pass a `--profile sauce:config:'Windows 10':chrome:80` then framework will switch to Webdriver automatically.
 
 - CodeceptJS 3 Upgrade
 - Typescript support. [More info](https://codecept.io/typescript/#typescript) on typescript setup
@@ -21,7 +21,7 @@ keywords: ['changelog', 'releases', 'release']
 $ yarn acceptance --profile selenoid:chrome:80
 ```
 
-- Run on any Saucelabs Platform configruation. [More info](http://gkushang.github.io/03-02-run-on-saucelabs/3-run-on-saucelabs/)
+- Run on any Saucelabs Platform configuration. [More info](http://gkushang.github.io/03-02-run-on-saucelabs/3-run-on-saucelabs/)
 
 ```bash
 $ yarn acceptance --profile sauce:config:'Windows 10':chrome:80
@@ -30,7 +30,7 @@ $ yarn acceptance --profile sauce:config:'Windows 10':chrome:80
 - Run on Mobile Devices on Playwright. [More info](http://gkushang.github.io/03-03-playwright/1-run-with-playwright/)
 
 ```bash
-$ yarn acceptacne --profile device:'iPhone 11':safari
+$ yarn acceptance --profile device:'iPhone 11':safari
 ```
 
 ## 5.2.1 (AUG-30-2020)
@@ -75,7 +75,7 @@ More devices are available [here](https://github.com/microsoft/playwright/blob/m
   DRIVER=webdriver yarn acceptance:parallel --profile sauce:chrome
 ```
 
-- CircleCI runs more tests for Chrome, Firefox, Safari and Run in Parallal foe each commit
+- CircleCI runs more tests for Chrome, Firefox, Safari and Run in Parallel foe each commit
 
 ## 5.0.6 (MAY-20-2020)
 
@@ -112,7 +112,7 @@ $ yarn acceptance:report
 
 ```
 
-- Check incldued to verify if `config/codecept.dev.env` file exists.
+- Check included to verify if `config/codecept.dev.env` file exists.
 
 ## 5.0.4 (MAY-12-2020)
 
@@ -123,7 +123,7 @@ $ yarn acceptance:report
 
 - Simplify the Configuration. Introducing Developer's Configuration
   - Add `.defaults` config: Contains all default Test Properties across all environments
-  - Add `.secrets` config: Contains all sensitive information such as Secrets, Password, Username and will not be commited to the source control. [More info](http://localhost:8981/04-configurations/1-env-variables/)
+  - Add `.secrets` config: Contains all sensitive information such as Secrets, Password, Username and will not be committed to the source control. [More info](http://localhost:8981/04-configurations/1-env-variables/)
 - Automatically injects Page Objects to the tests. [More info](http://localhost:8981/05-page-objects/3-naming-conventions/)
 
   - Before: User needs to add Page Object to the Config file each time new Page Object is created

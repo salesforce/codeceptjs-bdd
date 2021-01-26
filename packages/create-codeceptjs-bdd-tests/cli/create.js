@@ -13,7 +13,7 @@ const {
     aboutProjectPaths,
     aboutSauceLabs,
     aboutDriver,
-    aboutScenarioExeuctions,
+    aboutScenarioExecutions,
     aboutSauceLabsAccount,
 } = require('./ask');
 
@@ -91,7 +91,7 @@ const run = async () => {
 
     log.tipsToExecuteOnDriver();
 
-    // create directoty and copy acceptnace
+    // create directory and copy acceptance
     if (!fs.existsSync(ROOT_PATH)) {
         shell.mkdir('-p', ROOT_PATH);
     }
@@ -141,7 +141,7 @@ const run = async () => {
 
     log.scenarioExecutions();
 
-    const { SHOULD_EXECUTE } = await aboutScenarioExeuctions();
+    const { SHOULD_EXECUTE } = await aboutScenarioExecutions();
 
     addNpmScripts(packageJson, RELATIVE_PATH, DRIVER);
 

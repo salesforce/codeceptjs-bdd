@@ -61,7 +61,7 @@ let customConfig = (conf) => {
 
     if (customConf.length < 2) {
         throw new Error(
-            'Sauce Custom Config in the "--profile" was not defined correctly. It should be in the format of "sauce:config:\'plaformName\':browserName:brwoserVersion"'
+            'Sauce Custom Config in the "--profile" was not defined correctly. It should be in the format of "sauce:config:\'platformName\':browserName:browserVersion"'
         );
     }
 

@@ -19,10 +19,9 @@ logger.welcome();
  * @param {object} conf
  */
 const create = (conf, userSpecifiedSauceBrowsers) => {
-    const driver =
-        master_conf.helpers[
-            Object.keys(master_conf.helpers).find((driver) => driver.toLowerCase() === gDriver.toLowerCase())
-        ];
+    const findDriver = () =>
+        Object.keys(master_conf.helpers).find((driver) => driver.toLowerCase() === gDriver.toLowerCase());
+    const driver = master_conf.helpers[findDriver()];
 
     if (!driver) {
         logger.error(`'${gDriver}' is not a supported driver. Supported drivers are: [${Object.keys(driversConf)}]`);
@@ -37,28 +36,18 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
     }
 
     logger.log({
+        chalk: chalk.hex('#5d5dff'),
+        message: '🌏 [docs] gkushang.github.io [repository] github.com/salesforce/codeceptjs-bdd',
+    });
+
+    logger.log({
+        chalk: chalk.bgBlue.bold,
         message: driverMessage,
         emoji: 'star2',
     });
 
-    logger.log({
-        message: `Host: ${process.env.HOST}`,
-        emoji: 'earth_americas',
-    });
-
-    logger.log({
-        message: `${gDriver}: ${JSON.stringify(driver)}`,
-        chalk: require('chalk').gray,
-    });
-
-    if (gDriver && gDriver.toLowerCase() === 'playwright') {
-        logger.log({
-            message: chalk.greenBright.bold(
-                process.env.HEADLESS === 'true' ? `Running Headless ...` : `Running non-Headless ...`
-            ),
-            emoji: 'running',
-            chalk: chalk.bgBlack,
-        });
+    if (!process.env.HOST) {
+        process.env.HOST = conf.host;
     }
 
     const config = merge(
@@ -73,7 +62,26 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         require('codeceptjs-selenoid').config.selenoid()
     );
 
-    debug(chalk.gray(JSON.stringify(config, undefined, 2)));
+    logger.log({
+        message: `${gDriver}: ${JSON.stringify(config.helpers[findDriver()])}`,
+        chalk: require('chalk').gray,
+    });
+
+    if (gDriver && gDriver.toLowerCase() === 'playwright') {
+        logger.log({
+            message: chalk.greenBright.bold(
+                process.env.HEADLESS === 'true' ? `Running Headless ...` : `Running non-Headless ...`
+            ),
+            emoji: 'running',
+            chalk: chalk.bgBlack,
+        });
+    }
+
+    if (!logger.isTypescriptDef()) {
+        debug(chalk.gray(JSON.stringify(config, undefined, 2)));
+    } else {
+        logger.printTypescriptDef();
+    }
 
     return config;
 };

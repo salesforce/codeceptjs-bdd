@@ -39,6 +39,9 @@ let masterConf = {
             enabled: true,
             retries: 10,
         },
+        tryTo: {
+            enabled: true,
+        },
     },
     multiple: {
         parallel: {

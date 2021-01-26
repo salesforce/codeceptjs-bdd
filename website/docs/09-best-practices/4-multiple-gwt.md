@@ -1,5 +1,5 @@
 ---
-title: Mutilple GWT
+title: Multilple GWT
 sub_title: BDD Anti Patterns
 parents: ["Best Practices"]
 keywords: [ "Best Practices"]
