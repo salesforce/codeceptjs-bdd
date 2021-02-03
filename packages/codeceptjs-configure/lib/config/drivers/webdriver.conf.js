@@ -18,11 +18,6 @@ const webdriver_conf = {
                 process.env.CUSTOM_LOCATOR_STRATEGY === true || process.env.CUSTOM_LOCATOR_STRATEGY === 'true'
                     ? locatorStrategy
                     : undefined,
-            timeouts: {
-                implicit: 5000,
-                script: 60000,
-                'page load': 10000,
-            },
         },
     },
 };
