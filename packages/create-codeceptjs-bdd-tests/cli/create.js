@@ -152,6 +152,4 @@ const run = async () => {
     log.success(path.join(ROOT_PATH, RELATIVE_PATH, 'acceptance'));
 };
 
-const CFonts = require('cfonts');
-
 run();

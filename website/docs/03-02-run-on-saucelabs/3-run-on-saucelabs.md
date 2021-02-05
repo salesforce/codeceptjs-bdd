@@ -35,6 +35,12 @@ To run with default CodeceptJS BDD configurations,
 
 `$ yarn acceptance --profile sauce:chrome|firefox|safari|...`
 
+#### Sauce Connect
+
+To connect with active Sauce Tunnel, pass param `SAUCE_TUNNEL_NAME`,
+
+`$ SAUCE_TUNNEL_NAME=<tunnel-name> yarn acceptance --profile sauce:config:'<OS>':<browser>:<version>`
+
 ### 🎥 Watch in Action
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ugCjMOJlClc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
