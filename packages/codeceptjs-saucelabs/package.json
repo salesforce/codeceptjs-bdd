@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-saucelabs",
-    "version": "5.2.9",
+    "version": "5.2.10",
     "description": "CodeceptJS Saucelabs Integration",
     "keywords": [
         "Saucelabs",
