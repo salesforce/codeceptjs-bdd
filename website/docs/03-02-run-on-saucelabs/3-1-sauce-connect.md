@@ -11,7 +11,7 @@ keywords: ['Saucelabs', 'sauce', 'sauce tunnel', 'tunnel', 'connect']
 
 ```
 git clone git@github.com:salesforce/codeceptjs-bdd.git
-cd codeceptjs-bdd/packages/codeceptjs-saucelabs
+cd codeceptjs-bdd/packages/codecept-sauce-connect
 yarn
 ```
 
