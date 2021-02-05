@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-sauce-connect",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "CodeceptJS - Launch Sauce Connect",
     "keywords": [
         "Saucelabs",
