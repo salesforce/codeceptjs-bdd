@@ -13,7 +13,7 @@ const sauceConnectLauncher = require('sauce-connect-launcher');
 
 console.clear();
 
-CFonts.say('CODECEPT SAUCE CONNECT', {
+CFonts.say('CODECEPTJS SAUCE CONNECT', {
     font: 'chrome', // define the font face
     align: 'left', // define text alignment
     colors: ['system'], // define all colors
@@ -88,22 +88,22 @@ const options = {
 };
 
 program
-    .option('-n, --tunnel-name ', 'Sauce Tunnel Name', 'codecept-sauce-tunnel')
-    .option('-u, --username', 'SauceLabs Username')
-    .option('-k, --key', 'SauceLabs Password')
+    .option('-n, --tunnel-name [optional]', 'Sauce Tunnel Name', 'codeceptjs-sauce-tunnel')
+    .option('-u, --username [required]', 'SauceLabs Username')
+    .option('-k, --key [required]', 'SauceLabs Password')
     .option('-v, --verbose', 'verbose logs', false)
-    .parse(process.argv);
+    .parse();
 
+// console.log(process.argv);
 const o = program.opts();
-
+console.log(o);
+console.log('\n\n');
 options.username = o.username || process.env.SAUCE_USERNAME;
-options.tunnelIdentifier = o.tunnelName || 'codecept-sauce-tunnel';
+options.tunnelIdentifier = o.tunnelName || 'codeceptjs-sauce-tunnel';
 options.accessKey = o.key || process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY;
 options.verbose = o.verbose || false;
 
-console.info(
-    chalk.blue.bold('Launching SauceTunnel for the account: ') + chalk.yellow.bold(process.env.SAUCE_USERNAME)
-);
+console.info(chalk.blue.bold('Launching SauceTunnel for the account: ') + chalk.yellow.bold(options.username));
 
 console.info(chalk.blue.bold('Tunnel Name: ') + chalk.yellow.bold(options.tunnelIdentifier));
 
