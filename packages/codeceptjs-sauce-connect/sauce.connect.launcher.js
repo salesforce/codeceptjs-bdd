@@ -103,9 +103,7 @@ options.tunnelIdentifier = o.tunnelName || 'codeceptjs-sauce-tunnel';
 options.accessKey = o.key || process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY;
 options.verbose = o.verbose || false;
 
-console.info(
-    chalk.blue.bold('Launching SauceTunnel for the account: ') + chalk.yellow.bold(process.env.SAUCE_USERNAME)
-);
+console.info(chalk.blue.bold('Launching SauceTunnel for the account: ') + chalk.yellow.bold(options.username));
 
 console.info(chalk.blue.bold('Tunnel Name: ') + chalk.yellow.bold(options.tunnelIdentifier));
 
