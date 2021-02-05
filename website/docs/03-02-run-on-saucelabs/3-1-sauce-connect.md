@@ -7,30 +7,23 @@ keywords: ['Saucelabs', 'sauce', 'sauce tunnel', 'tunnel', 'connect']
 
 ### ⚡️ Sauce Tunnel
 
-##### Clone & Install
+##### Start Sauce Tunnel thru single command
 
 ```bash
-git clone git@github.com:salesforce/codeceptjs-bdd.git
-cd codeceptjs-bdd/packages/codeceptjs-sauce-connect
-yarn
+ npx codeceptjs-sauce-connect -u <sauce-username> -k <sauce-accesskey>
 ```
 
-##### Start Tunnel
-
-Take a look at options,
+Take a look at other options,
 
 ```bash
-yarn sauce:connect -h
+npx codeceptjs-sauce-connect -h
 ```
 
-To start Sauce Tunnel (default name: codecept-sauce-tunnel)
+To start Sauce Tunnel with specific Tunnel Name pass `-n <tunnel-name>` (default: codeceptjs-sauce-tunnel)
 
 ```bash
-yarn sauce:connect -u <saucelabs-username> -k <saucelabs-access-key> -n <saucelabs-tunnel-name>
+npx codeceptjs-sauce-connect -u <saucelabs-username> -k <saucelabs-access-key> -n <saucelabs-tunnel-name>
 ```
-
-e.g.
-`yarn sauce:connect -u $SAUCE_USERNAME -k $SAUCE_KEY`
 
 ##### Connect your Codecept tests with existing active tunnel,
 
