@@ -26,7 +26,8 @@
         "circleci:test:webdriver:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:webdriver:parallel",
         "lerna:lint:prettier": "lerna run lint:prettier",
         "lerna:polish": "lerna run lint:prettier && lerna exec npx sort-package-json",
-        "lerna:publish": "lerna bootstrap && lerna publish --registry https://registry.npmjs.org"
+        "lerna:publish": "lerna bootstrap && lerna publish --registry https://registry.npmjs.org",
+        "sauce:connect": "lerna run sauce:connect"
     },
     "resolutions": {
         "minimist": "^1.2.5"

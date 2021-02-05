@@ -1,6 +1,12 @@
+const tunnelIdentifier = {
+    tunnelIdentifier:
+        process.env.SAUCE_TUNNEL_NAME || process.env.SAUCE_TUNNEL_ID || process.env.SAUCE_PARENT_TUNNEL_ID,
+};
+
 const sauceOptions = {
     idleTimeout: 300,
     seleniumVersion: '3.14.0',
+    tunnelIdentifier,
 };
 
 let browsers = {
@@ -11,12 +17,14 @@ let browsers = {
             'sauce:options': sauceOptions,
         },
     },
+
     firefox: {
         browser: 'firefox',
         capabilities: {
             'sauce:options': sauceOptions,
         },
     },
+
     safari: {
         browser: 'safari',
         capabilities: {
@@ -24,12 +32,14 @@ let browsers = {
             'sauce:options': sauceOptions,
         },
     },
+
     edge: {
         browser: 'MicrosoftEdge',
         capabilities: {
             'sauce:options': sauceOptions,
         },
     },
+
     ie: {
         browser: 'internet explorer',
         capabilities: {
@@ -42,8 +52,20 @@ let browsers = {
         desiredCapabilities: {
             appiumVersion: '1.9.1',
             platformName: 'Android',
-            platformVersion: '8.0',
-            deviceName: 'Android Emulator',
+            platformVersion: '9.0',
+            deviceName: 'Samsung Galaxy S9 WQHD GoogleAPI Emulator',
+            tunnelIdentifier,
+        },
+    },
+
+    iphonesafari: {
+        browser: 'Safari',
+        desiredCapabilities: {
+            appiumVersion: '1.20.1',
+            platformName: 'iOS',
+            platformVersion: '14.3',
+            deviceName: 'iPhone 12 Pro Simulator',
+            tunnelIdentifier,
         },
     },
 };
