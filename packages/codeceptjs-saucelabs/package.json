@@ -1,13 +1,13 @@
 {
     "name": "codeceptjs-saucelabs",
-    "version": "5.2.8",
+    "version": "5.2.9",
     "description": "CodeceptJS Saucelabs Integration",
     "keywords": [
         "Saucelabs",
         "CodeceptJS",
         "Multibrowsers"
     ],
-    "main": "./bin/sauce.connect.launcher.js",
+    "main": "index.js",
     "bin": {
         "codecept-sauce-connect": "./bin/sauce.connect.launcher.js"
     },
@@ -21,7 +21,6 @@
         "name": "Kushang Gajjar",
         "email": "g.kushang@gmail.com"
     },
-    "main": "index.js",
     "scripts": {
         "lint:prettier": "eslint lib/**/*.js --fix && prettier --write -ignore-unknown . ",
         "sauce:connect": "node bin/sauce.connect.launcher.js"
