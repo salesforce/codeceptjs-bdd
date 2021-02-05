@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /** How to launch the tunnel:
  *
  * yarn sauce:connect -u <username> -k <key> -n <tunnel-name> -v
