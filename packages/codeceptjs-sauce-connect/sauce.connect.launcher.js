@@ -111,26 +111,26 @@ console.info(chalk.blue.bold('Tunnel Name: ') + chalk.yellow.bold(options.tunnel
 
 console.info('\n' + chalk.yellow.bold(emoji.emojify(':coffee: ') + 'wait a few seconds ...\n'));
 
-// sauceConnectLauncher(options, function (err) {
-//     if (err) {
-//         console.error(chalk.red.bold('Error in launching SauceTunnel: ', err));
-//         return;
-//     }
-//     console.info(
-//         chalk.blue.bold(
-//             `✅ SauceLabs Tunnel "${chalk.yellow.bold(
-//                 options.tunnelIdentifier
-//             )}" is launched successfully for the account: `
-//         ) + chalk.yellow.bold(options.username)
-//     );
+sauceConnectLauncher(options, function (err) {
+    if (err) {
+        console.error(chalk.red.bold('Error in launching SauceTunnel: ', err));
+        return;
+    }
+    console.info(
+        chalk.blue.bold(
+            `✅ SauceLabs Tunnel "${chalk.yellow.bold(
+                options.tunnelIdentifier
+            )}" is launched successfully for the account: `
+        ) + chalk.yellow.bold(options.username)
+    );
 
-//     console.info(
-//         chalk.white.bold(
-//             '\n' +
-//                 emoji.emojify(':octagonal_sign: ') +
-//                 'Hit ' +
-//                 chalk.yellow.bgBlue.bold(' CTRL + C ') +
-//                 ' to shutdown the tunnel...'
-//         )
-//     );
-// });
+    console.info(
+        chalk.white.bold(
+            '\n' +
+                emoji.emojify(':octagonal_sign: ') +
+                'Hit ' +
+                chalk.yellow.bgBlue.bold(' CTRL + C ') +
+                ' to shutdown the tunnel...'
+        )
+    );
+});
