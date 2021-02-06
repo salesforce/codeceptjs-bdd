@@ -103,7 +103,6 @@ program
     .parse();
 
 const o = program.opts();
-console.log(o);
 options.username = o.username || process.env.SAUCE_USERNAME;
 options.tunnelIdentifier = o.tunnelName || 'codeceptjs-sauce-tunnel';
 options.accessKey = o.key || process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY;
