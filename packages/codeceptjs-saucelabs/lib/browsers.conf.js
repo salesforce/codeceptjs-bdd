@@ -1,10 +1,15 @@
 const tunnelIdentifier =
     process.env.SAUCE_TUNNEL_NAME || process.env.SAUCE_TUNNEL_ID || process.env.SAUCE_PARENT_TUNNEL_ID;
+const parentTunnel = process.env.PARENT_TUNNEL;
 
+const sauceTunnel = {
+    tunnelIdentifier,
+    parentTunnel,
+};
 const sauceOptions = {
     idleTimeout: 300,
     seleniumVersion: '3.14.0',
-    tunnelIdentifier,
+    ...sauceTunnel,
 };
 
 let browsers = {
@@ -52,7 +57,7 @@ let browsers = {
             platformName: 'Android',
             platformVersion: '9.0',
             deviceName: 'Samsung Galaxy S9 WQHD GoogleAPI Emulator',
-            tunnelIdentifier,
+            ...sauceTunnel,
         },
     },
 
@@ -63,7 +68,7 @@ let browsers = {
             platformName: 'iOS',
             platformVersion: '14.3',
             deviceName: 'iPhone 12 Pro Simulator',
-            tunnelIdentifier,
+            ...sauceTunnel,
         },
     },
 };
