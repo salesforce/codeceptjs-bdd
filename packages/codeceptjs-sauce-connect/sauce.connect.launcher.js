@@ -85,23 +85,32 @@ const options = {
     // useful when running multiple tunnels on the same machine,
     // such as in a continuous integration environment. (optional)
     readyFileId: null,
+
+    noOcspVerify: null,
 };
 
 program
     .option('-n, --tunnel-name [optional]', 'Sauce Tunnel Name', 'codeceptjs-sauce-tunnel')
-    .option('-u, --username [required]', 'SauceLabs Username')
-    .option('-k, --key [required]', 'SauceLabs Password')
+    .option('-u, --username [required]', 'Sauce Labs username')
+    .option('-k, --key [required]', 'Sauce Labs access key')
     .option('-v, --verbose', 'verbose logs', false)
+    .option('-x, --verbose-debug', 'Enable verbose debugging', false)
+    .option('-d, --doctor', 'Set to true to perform checks to detect possible misconfiguration or problems', null)
+    .option(
+        '-o, --noOcsp-verify [optional]',
+        'OCSP tunnel certificate validation command that allows you to bypass OCSP checks.'
+    )
     .parse();
 
-// console.log(process.argv);
 const o = program.opts();
 console.log(o);
-console.log('\n\n');
 options.username = o.username || process.env.SAUCE_USERNAME;
 options.tunnelIdentifier = o.tunnelName || 'codeceptjs-sauce-tunnel';
 options.accessKey = o.key || process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY;
 options.verbose = o.verbose || false;
+options.verboseDebugging = o.verboseDebug || false;
+options.doctor = o.doctor || null;
+options.noOcspVerify = o.noOcspVerify || null;
 
 console.info(chalk.blue.bold('Launching SauceTunnel for the account: ') + chalk.yellow.bold(options.username));
 
