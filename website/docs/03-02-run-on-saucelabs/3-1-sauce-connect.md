@@ -33,4 +33,4 @@ To run your tests thru Sauce Tunnel, all you need is to pass the env variable `S
 SAUCE_TUNNEL_NAME=<your-tunnel-name> yarn acceptance --profile sauce:<options>
 ```
 
-Take a look at (https://gkushang.github.io/03-02-run-on-saucelabs/3-run-on-saucelabs/)[how to run on sauce labs] for more info.
+Take a look at [https://gkushang.github.io/03-02-run-on-saucelabs/3-run-on-saucelabs/](how to run on sauce labs) for more info.
