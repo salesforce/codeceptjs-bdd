@@ -7,16 +7,16 @@ keywords: ['Saucelabs', 'sauce', 'sauce tunnel', 'tunnel', 'connect']
 
 ### ⚡️ Sauce Tunnel
 
-##### Start Sauce Tunnel thru single command
+##### Start Sauce Tunnel thru Codeceptjs-Sauce-Connect Tool
 
 ```bash
  npx codeceptjs-sauce-connect -u <sauce-username> -k <sauce-accesskey>
 ```
 
-Take a look at other options,
+To look for more options,
 
 ```bash
-npx codeceptjs-sauce-connect -h
+npx codeceptjs-sauce-connect --help
 ```
 
 To start Sauce Tunnel with specific Tunnel Name pass `-n <tunnel-name>` (default: codeceptjs-sauce-tunnel)
@@ -33,4 +33,4 @@ To run your tests thru Sauce Tunnel, all you need is to pass the env variable `S
 SAUCE_TUNNEL_NAME=<your-tunnel-name> yarn acceptance --profile sauce:<options>
 ```
 
-Take a look at (https://gkushang.github.io/03-02-run-on-saucelabs/3-run-on-saucelabs/)(how to run on sauce labs) for more info.
+Take a look at (https://gkushang.github.io/03-02-run-on-saucelabs/3-run-on-saucelabs/)[how to run on sauce labs] for more info.
