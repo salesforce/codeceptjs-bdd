@@ -25,9 +25,15 @@ To start Sauce Tunnel with specific Tunnel Name pass `-n <tunnel-name>` (default
 npx codeceptjs-sauce-connect -u <saucelabs-username> -k <saucelabs-access-key> -n <saucelabs-tunnel-name>
 ```
 
-##### Connect your Codecept tests with existing active tunnel,
+#### Connect your Codecept tests with existing active tunnel,
 
-To run your tests thru Sauce Tunnel, all you need is to pass the env variable `SAUCE_TUNNEL_NAME`,
+To connect to exiting **Parent Tunnel**, pass the env variable `SAUCE_PARENT_TUNNEL=<owner_value_from_sauce_tunnels_page>`
+
+```bash
+SAUCE_PARENT_TUNNEL=<owner_value_from_sauce_tunnels_page> yarn acceptance --profile sauce:<options>
+```
+
+To connect to existing **Tunnel** (running from the same account), pass the env variable `SAUCE_TUNNEL_NAME=<tunnel-name>`
 
 ```bash
 SAUCE_TUNNEL_NAME=<your-tunnel-name> yarn acceptance --profile sauce:<options>
