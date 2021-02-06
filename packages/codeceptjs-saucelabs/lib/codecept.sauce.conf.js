@@ -24,12 +24,8 @@ function config(sauceUsername, sauceKey, userSpecificBrowsers) {
     }
 
     function exportSauceBuildId() {
-        if (process.env.SAUCE_BUILD) {
-            if (!process.env.SAUCE_BUILD.includes(' __-__ ')) {
-                process.env.SAUCE_BUILD += ' __-__ ' + Date.now();
-            }
-        } else {
-            process.env.SAUCE_BUILD = Date.now();
+        if (!process.env.SAUCE_BUILD) {
+            process.env.SAUCE_BUILD = new Date().toISOString();
         }
     }
 
