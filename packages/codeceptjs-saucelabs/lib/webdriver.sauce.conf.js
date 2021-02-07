@@ -18,6 +18,7 @@ let get = function (getBrowsers) {
                     process.env.SAUCE_PARENT_TUNNEL_ID ||
                     process.env.SAUCE_PARENT_TUNNEL_NAME,
                 region: process.env.SAUCE_REGION || 'us',
+                parentTunnel: process.env.SAUCE_PARENT_TUNNEL,
             },
         },
         multiple: {

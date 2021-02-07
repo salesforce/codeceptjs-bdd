@@ -1,6 +1,6 @@
 const tunnelIdentifier =
     process.env.SAUCE_TUNNEL_NAME || process.env.SAUCE_TUNNEL_ID || process.env.SAUCE_PARENT_TUNNEL_ID;
-const parentTunnel = process.env.PARENT_TUNNEL;
+const parentTunnel = process.env.SAUCE_PARENT_TUNNEL;
 
 const sauceTunnel = {
     tunnelIdentifier,
