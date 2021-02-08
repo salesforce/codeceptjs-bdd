@@ -35,7 +35,7 @@ const options = {
 
     // Sauce Labs access key.  You can also pass this through the
     // SAUCE_ACCESS_KEY environment variable
-    accessKey: process.env.SAUCE_KEY,
+    accessKey: process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY,
 
     // Log output from the `sc` process to stdout?
     verbose: false,
