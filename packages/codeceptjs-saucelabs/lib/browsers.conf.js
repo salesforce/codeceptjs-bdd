@@ -2,14 +2,21 @@ const tunnelIdentifier =
     process.env.SAUCE_TUNNEL_NAME || process.env.SAUCE_TUNNEL_ID || process.env.SAUCE_PARENT_TUNNEL_ID;
 const parentTunnel = process.env.SAUCE_PARENT_TUNNEL;
 
-const sauceTunnel = {
-    tunnelIdentifier,
-    parentTunnel,
+const grabSauceTunnelInfo = () => {
+    if (tunnelIdentifier) {
+        return {
+            tunnelIdentifier,
+        };
+    } else {
+        return {
+            parentTunnel,
+        };
+    }
 };
 const sauceOptions = {
     idleTimeout: 300,
     seleniumVersion: '3.14.0',
-    ...sauceTunnel,
+    ...grabSauceTunnelInfo(),
 };
 
 let browsers = {
@@ -57,7 +64,7 @@ let browsers = {
             platformName: 'Android',
             platformVersion: '9.0',
             deviceName: 'Samsung Galaxy S9 WQHD GoogleAPI Emulator',
-            ...sauceTunnel,
+            ...grabSauceTunnelInfo(),
         },
     },
 
@@ -68,7 +75,7 @@ let browsers = {
             platformName: 'iOS',
             platformVersion: '14.3',
             deviceName: 'iPhone 12 Pro Simulator',
-            ...sauceTunnel,
+            ...grabSauceTunnelInfo(),
         },
     },
 };
@@ -102,4 +109,4 @@ let customConfig = (conf) => {
     return sauceCustomConf;
 };
 
-module.exports = { browsers, customConfig };
+module.exports = { browsers, customConfig, grabSauceTunnelInfo };

@@ -1,3 +1,5 @@
+const { grabSauceTunnelInfo } = require('./browsers.conf');
+
 let get = function (getBrowsers) {
     let appiumConfig = {
         helpers: {
@@ -6,9 +8,8 @@ let get = function (getBrowsers) {
                 port: 80,
                 user: process.env.SAUCE_USERNAME,
                 key: process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY,
-                tunnelIdentifier:
-                    process.env.SAUCE_TUNNEL_ID || process.env.SAUCE_PARENT_TUNNEL_ID || process.env.SAUCE_TUNNEL_NAME,
                 region: process.env.SAUCE_REGION || 'us',
+                ...grabSauceTunnelInfo(),
             },
             SauceHelper: {
                 require: 'codeceptjs-saucehelper',
