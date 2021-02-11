@@ -9,6 +9,7 @@ const chalk = require('chalk');
 const emoji = require('node-emoji');
 const program = require('commander');
 const CFonts = require('cfonts');
+const computerName = require('computer-name');
 const sauceConnectLauncher = require('sauce-connect-launcher');
 
 console.clear();
@@ -90,26 +91,17 @@ const options = {
 };
 
 program
-    .option('-n, --tunnel-name [optional]', 'Sauce Tunnel Name', 'codeceptjs-sauce-tunnel')
-    .option('-u, --username [required]', 'Sauce Labs username')
-    .option('-k, --key [required]', 'Sauce Labs access key')
+    .option('-n, --tunnel-name [optional]', 'Sauce Tunnel Name', `${computerName()}-codecept`)
+    .option('-u, --username [required]', 'Sauce Labs username if not exported as "SAUCE_USERNAME"')
+    .option('-k, --key [required]', 'Sauce Labs access key if not exported as "SAUCE_ACCESS_KEY"')
     .option('-v, --verbose', 'verbose logs', false)
-    .option('-x, --verbose-debug', 'Enable verbose debugging', false)
-    .option('-d, --doctor', 'Set to true to perform checks to detect possible misconfiguration or problems', null)
-    .option(
-        '-o, --noOcsp-verify [optional]',
-        'OCSP tunnel certificate validation command that allows you to bypass OCSP checks.'
-    )
     .parse();
 
 const o = program.opts();
 options.username = o.username || process.env.SAUCE_USERNAME;
-options.tunnelIdentifier = o.tunnelName || 'codeceptjs-sauce-tunnel';
+options.tunnelIdentifier = o.tunnelName || `${computerName()}-codecept`;
 options.accessKey = o.key || process.env.SAUCE_KEY || process.env.SAUCE_ACCESS_KEY;
 options.verbose = o.verbose || false;
-options.verboseDebugging = o.verboseDebug || false;
-options.doctor = o.doctor || null;
-options.noOcspVerify = o.noOcspVerify || null;
 
 console.info(chalk.blue.bold('Launching SauceTunnel for the account: ') + chalk.yellow.bold(options.username));
 
