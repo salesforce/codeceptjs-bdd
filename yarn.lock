@@ -2492,6 +2492,11 @@ compress-commons@^4.0.2:
     normalize-path "^3.0.0"
     readable-stream "^3.6.0"
 
+computer-name@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/computer-name/-/computer-name-0.1.0.tgz#2b6e128302210efa68cc33084ec333c7f8a58db2"
+  integrity sha512-lD6QWjbspZlqWkk5g4gcSvs+TS4LrSiMQfd4LSbAWmmdvLOJzSgTas3LM4p+sGnAXNP0KVNe+/CmkFkAAHwUbA==
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
