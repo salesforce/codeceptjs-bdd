@@ -12,8 +12,8 @@ const webdriver_conf = {
         WebDriver: {
             url: host.get(),
             browser: BROWSER && BROWSER.match('webdriver:[a-zA-Z]') ? BROWSER.split(':')[1] : BROWSER,
-            smartWait: 5000,
-            waitForTimeout: 15000,
+            smartWait: 10000,
+            waitForTimeout: (process.env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
             customLocatorStrategy:
                 process.env.CUSTOM_LOCATOR_STRATEGY === true || process.env.CUSTOM_LOCATOR_STRATEGY === 'true'
                     ? locatorStrategy

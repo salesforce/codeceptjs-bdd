@@ -45,7 +45,7 @@ const playwright_conf = {
             url: host.get(),
             waitForNavigation: 'domcontentloaded',
             show: process.env.HEADLESS === 'false',
-            waitForTimeout: 15000,
+            waitForTimeout: (process.env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
             restart: true,
             emulate: {
                 ignoreHTTPSErrors: true,
