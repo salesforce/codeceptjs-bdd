@@ -13,6 +13,10 @@ const webdriver_conf = {
             url: host.get(),
             browser: BROWSER && BROWSER.match('webdriver:[a-zA-Z]') ? BROWSER.split(':')[1] : BROWSER,
             smartWait: 10000,
+            windowSize:
+                process.env.MAXIMIZE_WINDOW === false || process.env.MAXIMIZE_WINDOW === 'false'
+                    ? undefined
+                    : 'maximize',
             waitForTimeout: (process.env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
             customLocatorStrategy:
                 process.env.CUSTOM_LOCATOR_STRATEGY === true || process.env.CUSTOM_LOCATOR_STRATEGY === 'true'
