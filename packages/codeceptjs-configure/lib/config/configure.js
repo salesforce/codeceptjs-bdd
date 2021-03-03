@@ -48,7 +48,9 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
 
     if (!process.env.HOST) {
         process.env.HOST = conf.host;
-    }
+    } 
+
+    master_conf.plugins.stepByStepReport.output = conf.output;
 
     const config = merge(
         merge(
