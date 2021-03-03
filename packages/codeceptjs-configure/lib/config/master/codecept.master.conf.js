@@ -42,6 +42,13 @@ let masterConf = {
         tryTo: {
             enabled: true,
         },
+        stepByStepReport: {
+            enabled: process.env.ENABLE_STEP_BY_STEP_SCREENSHOTS,
+            deleteSuccessful: false,
+            output: process.env.OUTPUT,
+            screenshotsForAllureReport: true,
+            ignoreSteps: ['grab*', 'wait*', 'print*'],
+        },
     },
     multiple: {
         parallel: {
