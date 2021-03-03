@@ -24,7 +24,7 @@ The default Configuration of Codeceptjs-BDD will "maximize" the browser window a
 However, you can also enable Step by Step Screenshots. It is turned off by default. To Enable the feature, provide an environment variable,
 
 ```bash
-ENABLE_STEP_BY_STEP_SCREENSHOTS=true
+ENABLE_STEP_BY_STEP_SCREENSHOTS = true
 ```
 
 All the screenshots will be attached to the Allure Report. Please make sure to provide `output` value in the Config as shown [here](https://github.com/salesforce/codeceptjs-bdd/blob/develop/packages/create-codeceptjs-bdd-tests/codecept.conf.js#L14)
