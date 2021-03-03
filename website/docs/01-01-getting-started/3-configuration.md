@@ -5,7 +5,7 @@ parents: ['Getting Started']
 keywords: ['configure', 'webdriver', 'playwright']
 ---
 
-## WebDriver
+### 1. WebDriver
 
 #### WindowSize
 
@@ -13,7 +13,7 @@ The default Configuration of Codeceptjs-BDD will "maximize" the browser window a
 
 ---
 
-## Screenshots
+### 2. Screenshots
 
 **Default Behavior:** The framework takes screenshots on each Failed Step and attaches to the Report.
 
