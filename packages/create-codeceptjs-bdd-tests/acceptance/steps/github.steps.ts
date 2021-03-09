@@ -17,5 +17,4 @@ When(/he searches for the \"([^\"]*)\"/, (searchFor) => {
 Then(/he sees all the detailed highlighted results including description or license info and many more/, async () => {
     I.see('Javascript BDD UI Automation Framework');
     I.see('MIT license\n');
-    I.say(`file://${process.cwd()}/acceptance/report/records.html`);
 });
