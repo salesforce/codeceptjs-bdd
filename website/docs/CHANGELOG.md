@@ -12,7 +12,7 @@ keywords: ['changelog', 'releases', 'release']
 
 - Support one more platform (an alternative to Selenoid Grid): `baas:<browser>:<version>`
 
-- Report Collectors
+- Report Collectors: Collect generated HTML Reports automatically as a backup. More info - https://gkushang.github.io/01-03-configuration/3-configuration/#3-html-reports
 
 ### CODECEPTJS-CONFIGURE V8.x (DEC-26-2020)
 
