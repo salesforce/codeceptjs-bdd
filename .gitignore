@@ -1,4 +1,5 @@
 node_modules
-packages/create-codeceptjs-bdd-tests/acceptance/report/
+packages/create-codeceptjs-bdd-tests/acceptance/report*/
 packages/salesforce-lwc-codecept-example/**/**/report/
 packages/create-codeceptjs-bdd-tests/acceptance/config/dev.codecept.secrets
+*.DS_Store

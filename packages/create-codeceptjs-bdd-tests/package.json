@@ -44,6 +44,7 @@
         "@wdio/selenium-standalone-service": "^5.16.10",
         "cfonts": "^2.8.6",
         "cli-ux": "^5.4.5",
+        "dateformat": "^4.5.1",
         "expect": "^26.6.2",
         "figlet": "^1.2.3",
         "inquirer": "^7.0.0",
