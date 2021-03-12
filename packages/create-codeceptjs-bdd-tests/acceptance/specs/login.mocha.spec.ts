@@ -37,7 +37,6 @@ Scenario('Fred intercept request for playwright @intercept', async ({ I }) => {
 
         // Validate
         I.amOnPage('https://danube-webshop.herokuapp.com/');
-        I.saveScreenshot('abc.png');
         I.seeTextEquals('How to Intercept a Response in Playwright', { css: '.preview-title' });
         I.seeTextEquals('CodeceptBDD', { css: '.preview-author' });
     }
