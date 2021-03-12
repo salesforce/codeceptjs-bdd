@@ -12,6 +12,8 @@ keywords: ['changelog', 'releases', 'release']
 
 - Support one more platform (an alternative to Selenoid Grid): `baas:<browser>:<version>`
 
+- Report Collectors
+
 ### CODECEPTJS-CONFIGURE V8.x (DEC-26-2020)
 
 - Exclusive Shadow DOM support for WebDriver. [More info](/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/) on support. Checkout the example on Github [here](https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example).

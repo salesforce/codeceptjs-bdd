@@ -1,7 +1,7 @@
 ---
 title: Configuration
 sub_title: Configure your CodeceptJS tests
-parents: ['Getting Started']
+parents: ['Configuration']
 keywords: ['configure', 'webdriver', 'playwright']
 ---
 
