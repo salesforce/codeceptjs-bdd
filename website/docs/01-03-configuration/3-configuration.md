@@ -32,3 +32,40 @@ All the screenshots will be attached to the Allure Report. Please make sure to p
 The Preview of Screenshots can be attached to the report. It will be available to the report dir as `records.html` file.
 
 You can put this value to the `codecept.env` file to have it enable for every run otherwise just pass as a Command Line argument.
+
+---
+
+### 3. HTML Reports
+
+This framework uses Allure Reporting.
+
+#### Clean Reports on each run
+
+Add below `bootstrap` function in the `codecept.conf.js` file,
+
+```js
+// in codecept.conf.js
+const { cleanReports } = require('codeceptjs-configure');
+
+const conf = {
+  // ...
+  bootstrap: callback =>
+    cleanReports({ path: REPORT_OUTPUT_DIR, relativePath: '/', callback }),
+};
+```
+
+#### Collect Reports automatically
+
+The reports get cleaned on each run. There could be such requirements to collect reports as a backup. To do so, add below `teardown` to the `codecept.conf.js`
+
+```js
+// in codecept.conf.js
+const { reportCollector } = require('codeceptjs-configure');
+
+const conf = {
+  // ...
+  async teardown() {
+    reportCollector({ reportOutputDir: REPORT_OUTPUT_DIR });
+  },
+};
+```
