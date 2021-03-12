@@ -9,7 +9,7 @@ When we browse the web, a series of HTTP requests and responses are exchanged be
 
 ## Request interception (Headless or non-headless)
 
-The example is available here - https://github.com/salesforce/codeceptjs-bdd/blob/develop/packages/create-codeceptjs-bdd-tests/acceptance/specs/login.mocha.spec.ts
+The example is available here - https://github.com/salesforce/codeceptjs-bdd/blob/develop/packages/create-codeceptjs-bdd-tests/acceptance/specs/login.mocha.spec.ts#L13
 
 To run,
 
