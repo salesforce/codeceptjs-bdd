@@ -15,6 +15,12 @@ let conf = {
 
     bootstrap: (callback) => cleanReports({ path: REPORT_OUTPUT_DIR, relativePath: '/', callback }),
 
+    helpers: {
+        driver_helper: {
+            require: './acceptance/helpers/driver.helper',
+        },
+    },
+
     // add more configuration as required
     rerun: {
         // how many times all tests should pass
