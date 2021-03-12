@@ -5,6 +5,10 @@ class Driver_commands extends Helper {
         return this.helpers.WebDriver || this.helpers.Playwright;
     }
 
+    isRunningOnPlaywright() {
+        return this.helpers.Playwright !== undefined;
+    }
+
     scrollAndClick(element) {
         const I = this.driver();
         this.scrollToElement(element);
