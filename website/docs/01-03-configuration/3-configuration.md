@@ -69,3 +69,5 @@ const conf = {
   },
 };
 ```
+
+The backup directory structure will be: `<path-to-tests-folder>/MMM_DD_YYYY/MMM_DD_YYYY___HH:MM:SS_TT`, e.g. `<path-to-tests-folder>/March_21_2021/Mar_12_2021___12-32-05_AM`.
