@@ -14,6 +14,8 @@ keywords: ['changelog', 'releases', 'release']
 
 - Report Collectors: Collect generated HTML Reports automatically as a backup. More info - https://gkushang.github.io/01-03-configuration/3-configuration/#3-html-reports
 
+- How to intercept Network Requests? https://gkushang.github.io/03-03-playwright/2-incercept-request/
+
 ### CODECEPTJS-CONFIGURE V8.x (DEC-26-2020)
 
 - Exclusive Shadow DOM support for WebDriver. [More info](/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/) on support. Checkout the example on Github [here](https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example).
