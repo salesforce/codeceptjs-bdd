@@ -13,7 +13,7 @@ let conf = {
 
     output: REPORT_OUTPUT_DIR,
 
-    bootstrap: (callback) => cleanReports({ path: REPORT_OUTPUT_DIR, callback }),
+    bootstrap: (callback) => cleanReports({ path: REPORT_OUTPUT_DIR, relativePath: '/', callback }),
 
     // add more configuration as required
     rerun: {
