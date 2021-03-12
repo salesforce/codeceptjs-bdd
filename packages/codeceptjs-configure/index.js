@@ -3,6 +3,7 @@ const cleanReports = require('./lib/reports/clean.reports').cleanReports;
 const configure = require('./lib/config/configure');
 const host = require('./lib/host/host');
 const logger = require('./lib/logger/logger');
+const reportCollector = require('./lib/reports/report.collector').collect;
 
 const Driver_commands = require.resolve('./lib/helpers/driver-commands.helper.js');
 
@@ -10,6 +11,7 @@ module.exports = {
     config: { master },
     helpers: { Driver_commands },
     cleanReports,
+    reportCollector,
     configure,
     host,
     log: logger.log,
