@@ -50,7 +50,7 @@ Scenario('Fred intercept request for playwright @intercept', async ({ I }) => {
     I.usePlaywrightTo('do intercept', async ({ page }) => {
       await page.route(
         'https://danube-webshop.herokuapp.com/api/books',
-        route =>
+        (route) =>
           route.fulfill({
             contentType: 'application/json',
             body: JSON.stringify(mockResponseObject),
@@ -60,7 +60,6 @@ Scenario('Fred intercept request for playwright @intercept', async ({ I }) => {
 
     // Validate
     I.amOnPage('https://danube-webshop.herokuapp.com/');
-    I.saveScreenshot('abc.png');
     I.seeTextEquals('How to Intercept a Response in Playwright', {
       css: '.preview-title',
     });
