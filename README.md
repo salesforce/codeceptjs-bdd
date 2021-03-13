@@ -29,20 +29,6 @@ Thanks goes to these wonderful people who are and will have contributing to this
 
 <a href="https://github.com/limingli0707"><img src="https://avatars.githubusercontent.com/u/5189344?s=460&v=4" width="80" height="80"></a>
 
-<a href="https://github.com/shikhar91939"><img src="https://avatars.githubusercontent.com/u/7753560?s=460&u=053fafdd9726982b6c5cf8ed0c9e2cc7cf57aa53&v=4" width="80" height="80"></a>
-
-<a href="https://github.com/abkap02"><img src="https://avatars.githubusercontent.com/u/14001171?s=460&u=7e6586b048b6f4b086a743ba93136fe0250420f3&v=4" width="80" height="80"></a>
-
-<a href="https://github.com/snyk-bot"><img src="https://avatars.githubusercontent.com/u/19733683?s=460&u=8b0c79920606bb8268bdc0388d99aa7aceaea5d5&v=4" width="80" height="80"></a>
-
-<a href="https://github.com/cthorsen31"><img src="https://avatars.githubusercontent.com/u/22415613?s=460&u=c29f2ae0fbbd6789fce7ad8dede89122f28ce6a8&v=4" width="80" height="80"></a>
-
-<a href="https://github.com/mir-nawaz"><img src="https://avatars.githubusercontent.com/u/32638051?s=460&u=4c8458becd540863fed20b9c695972ce4d658e86&v=4" width="80" height="80"></a>
-
-<a href="https://github.com/andre-becker"><img src="https://avatars.githubusercontent.com/u/29253259?s=460&u=5ec0c7d5a8ca76259b25ed2ca6ad4899938801bd&v=4" width="80" height="80"></a>
-
-<a href="https://github.com/lorsatti"><img src="https://avatars.githubusercontent.com/u/49567430?s=460&u=b2082eeccb85bdd54e944a496d9561fbb137c8e0&v=4" width="80" height="80"></a>
-
-<a href="https://github.com/meghasfdc"><img src="https://avatars.githubusercontent.com/u/47006762?s=460&v=4" width="80" height="80"></a>
+<a href="https://github.com/shikhar91939"><img src="https://avatars.githubusercontent.com/u/7753560?s=460&u=053fafdd9726982b6c5cf8ed0c9e2cc7cf57aa53&v=4" width="80" height="80"></a> <a href="https://github.com/abkap02"><img src="https://avatars.githubusercontent.com/u/14001171?s=460&u=7e6586b048b6f4b086a743ba93136fe0250420f3&v=4" width="80" height="80"></a> <a href="https://github.com/snyk-bot"><img src="https://avatars.githubusercontent.com/u/19733683?s=460&u=8b0c79920606bb8268bdc0388d99aa7aceaea5d5&v=4" width="80" height="80"></a> <a href="https://github.com/cthorsen31"><img src="https://avatars.githubusercontent.com/u/22415613?s=460&u=c29f2ae0fbbd6789fce7ad8dede89122f28ce6a8&v=4" width="80" height="80"></a> <a href="https://github.com/mir-nawaz"><img src="https://avatars.githubusercontent.com/u/32638051?s=460&u=4c8458becd540863fed20b9c695972ce4d658e86&v=4" width="80" height="80"></a> <a href="https://github.com/andre-becker"><img src="https://avatars.githubusercontent.com/u/29253259?s=460&u=5ec0c7d5a8ca76259b25ed2ca6ad4899938801bd&v=4" width="80" height="80"></a> <a href="https://github.com/lorsatti"><img src="https://avatars.githubusercontent.com/u/49567430?s=460&u=b2082eeccb85bdd54e944a496d9561fbb137c8e0&v=4" width="80" height="80"></a> <a href="https://github.com/meghasfdc"><img src="https://avatars.githubusercontent.com/u/47006762?s=460&v=4" width="80" height="80"></a>
 
 [//]: contributor-faces
