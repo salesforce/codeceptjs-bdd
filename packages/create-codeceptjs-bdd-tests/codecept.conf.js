@@ -13,7 +13,9 @@ let conf = {
 
     output: REPORT_OUTPUT_DIR,
 
-    bootstrap: (callback) => cleanReports({ path: REPORT_OUTPUT_DIR, relativePath: '/', callback }),
+    bootstrap: (callback) => {
+        cleanReports({ path: REPORT_OUTPUT_DIR, relativePath: '/', callback });
+    },
 
     helpers: {
         driver_helper: {
@@ -36,6 +38,4 @@ let conf = {
  * To configure Saucelabs Browser, pls take a look codeceptjs-saucelabs/packages/codeceptjs-saucelabs/lib/browsers.conf.js
  */
 
-const customSauceBrowsers = {};
-
-exports.config = configure.create(conf, customSauceBrowsers);
+exports.config = configure.create(conf);

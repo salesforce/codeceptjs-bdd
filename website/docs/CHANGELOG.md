@@ -4,7 +4,11 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-configure & @codeceptjs-sauce
 keywords: ['changelog', 'releases', 'release']
 ---
 
-### CODECEPTJS-CONFIGURE V8.1.1 (JAN-21-2021)
+### CODECEPTJS-CONFIGURE V8.x (MAR-13-2021)
+
+- Allure Static Report Launcher: https://gkushang.github.io/01-03-configuration/3-configuration/#3-html-reports
+
+### CODECEPTJS-CONFIGURE V8.x (MAR-12-2021)
 
 - Set ScreenResolution for the Selenoid Grid. If your Selenoid Grid renders the Tablet size browsers than you can set Screen Resolution as shown below. The default Scren Resolution is desktop size.
 
