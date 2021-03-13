@@ -58,8 +58,13 @@ const conf = {
 
 The reports get cleaned on each run. There could be such requirements to collect reports as a backup. To do so, add below `teardown` to the `codecept.conf.js`
 
+Report Collector options:`{reportOutputDir: string, destinationDir: string, shouldGenerateLauncher: boolean}`
+
+shouldGenerateLauncher: this option will generate the Single Click Static (-like) Allure Report Launcher
+
 ```js
 // in codecept.conf.js
+
 const { reportCollector } = require('codeceptjs-configure');
 
 const conf = {

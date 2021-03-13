@@ -10,6 +10,12 @@ Scenario('Fred logs in successfully', ({ I }) => {
     .tag('@login_mocha')
     .tag('smoke');
 
+Scenario('Fred logs in successfully', ({ I }) => {
+    I.amOnPage('/gkushang/codeceptjs-bdd');
+})
+    .tag('@login_one')
+    .tag('smoke');
+
 Scenario('Fred intercept request for playwright @intercept', async ({ I }) => {
     if (await I.checkIfRunningOnPlaywright()) {
         // Set Mock Data

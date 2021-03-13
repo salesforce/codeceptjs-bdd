@@ -11,7 +11,7 @@ const log = (logMessage) => {
         return;
     }
 
-    let message = '';
+    let message = '\n';
 
     if (logMessage.emoji) {
         message = `${emoji.get(logMessage.emoji)}  `;

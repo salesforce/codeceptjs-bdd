@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+SET PARENTDIR=%cd% 
+echo %PARENTDIR% 
+cd %PARENTDIR%\report\bin 
+allure serve %PARENTDIR%\report
