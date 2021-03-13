@@ -5,7 +5,7 @@ require('dotenv-extended').config({
 });
 require('ts-node/register');
 
-const { configure, cleanReports, reportCollector } = require('codeceptjs-configure');
+const { configure, cleanReports } = require('codeceptjs-configure');
 const REPORT_OUTPUT_DIR = './acceptance/report';
 
 let conf = {
@@ -15,14 +15,6 @@ let conf = {
 
     bootstrap: (callback) => {
         cleanReports({ path: REPORT_OUTPUT_DIR, relativePath: '/', callback });
-    },
-
-    async teardown() {
-        reportCollector({
-            reportOutputDir: REPORT_OUTPUT_DIR,
-            destinationDir: '/Users/kgajjar/Desktop/collector',
-            shouldGenerateLauncher: true,
-        });
     },
 
     helpers: {

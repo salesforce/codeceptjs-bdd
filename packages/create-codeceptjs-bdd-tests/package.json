@@ -22,7 +22,7 @@
         "create-codeceptjs-bdd-tests": "./cli/create.js"
     },
     "scripts": {
-        "acceptance": "codeceptjs run --verbose ",
+        "acceptance": "codeceptjs def && codeceptjs run --verbose ",
         "acceptance:all": "yarn acceptance && yarn acceptance:parallel && DRIVER=webdriver yarn acceptance --profile sauce:chrome && DRIVER=webdriver yarn acceptance",
         "acceptance:parallel": "npx codeceptjs run-workers --suites 3 --verbose",
         "acceptance:report": "allure serve ./acceptance/report",
