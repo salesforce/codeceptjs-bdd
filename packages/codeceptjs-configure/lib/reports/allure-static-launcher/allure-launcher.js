@@ -1,7 +1,5 @@
 const fs = require('fs-extra');
-const dateformat = require('dateformat');
 const path = require('path');
-// const logger = require('../logger/logger');
 const chalk = require('chalk');
 const allure_commandline = path.dirname(require.resolve('allure-commandline'));
 const win_launcher = path.dirname(require.resolve('./win/launch_html_report'));
@@ -10,6 +8,11 @@ const logger = require('../../logger/logger');
 
 const shell = require('shelljs');
 
+/**
+ * Allure Report Launcher: Win & Mac
+ *
+ * @param {destinationDir: string, launcherFilePath: string} options
+ */
 function allureReportLauncher(options) {
     const isWin = process.platform === 'win32';
 

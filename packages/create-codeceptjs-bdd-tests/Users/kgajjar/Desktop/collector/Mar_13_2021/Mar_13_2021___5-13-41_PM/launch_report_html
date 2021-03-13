@@ -1,5 +1,0 @@
-#!/bin/bash 
-
-parent_dir=$(dirname "$0")
-cd $parent_dir/allure-commandline/bin
-allure serve $parent_dir
