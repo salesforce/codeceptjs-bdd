@@ -123,11 +123,8 @@ export default function CreateTests() {
                 🚀
                 <span style={{ fontWeight: '600', paddingLeft: '0.1em' }}>
                   Recent Release: Exclusive "Shadow DOM" support for WebDriver.{' '}
-                  <a
-                    href="/03-03-webcomponents/1-webcomponents-playwright-webdriver-example/"
-                    style={{ color: '#1e1e99' }}
-                  >
-                    More info
+                  <a href="/CHANGELOG" style={{ color: '#1e1e99' }}>
+                    CHANGELOG
                   </a>
                 </span>
               </div>
