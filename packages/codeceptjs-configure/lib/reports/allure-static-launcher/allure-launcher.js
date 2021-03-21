@@ -2,7 +2,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const chalk = require('chalk');
 const allure_commandline = path.dirname(require.resolve('allure-commandline'));
-const win_launcher = path.dirname(require.resolve('./win/launch_html_report'));
+const win_launcher = path.dirname(require.resolve('./win/launch_html_report.bat'));
 const mac_launcher = path.dirname(require.resolve('./mac/launch_html_report'));
 const logger = require('../../logger/logger');
 
