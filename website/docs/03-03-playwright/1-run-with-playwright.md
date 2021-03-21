@@ -74,3 +74,13 @@ And, install below dependencies
 ```bash
 yarn add codeceptjs-configure@^4 -D
 ```
+
+### Trigger Method on DOM Component
+
+```js
+I.usePlaywrightTo('trigger method on component', async ({ page }) => {
+  await page.$eval(DOM_COMP, el =>
+    el.<method-name>(<any-param>)
+  );
+});
+```

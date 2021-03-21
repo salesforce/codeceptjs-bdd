@@ -60,3 +60,16 @@ Below command runs tests tagged with **@my_test_tag** on _default_ browser
 ```
 
 More information on tags is available [here](https://somelin.com)
+
+### Trigger Method on DOM Component through WebDriver
+
+```js
+// if using custom locator strategy, e.g. Shadow DOM, else use `browser.$`
+const foundElement = await browser.custom$(process.env.CUSTOM_LOCATOR_STRATEGY_NAME, DOM_COMP_NAME)
+
+I.useWebDriverTo('trigger method on DOM Component', async ({ browser }) => {
+  await browser.execute(e => {
+    e.<method-name>(<any-params>);
+  }, foundElement);
+});
+```
