@@ -40,7 +40,9 @@ function allureReportLauncher(options) {
         if (options.pathToWinAllureCommandline) {
             createLauncherForWindows(options);
         } else {
-            console.warn('⚠️ Path to Windows Allure Commandline is required');
+            console.warn(
+                '⚠️ Path to Windows Allure Commandline is required. Please provide "{ pathToWinAllureCommandline }" param.'
+            );
         }
     } else {
         createLauncherForMac(options);
