@@ -1,11 +1,11 @@
 ---
 title: Test Environment Variables
 sub_title: How Codeceptjs-BDD maintains your Test Environment Variables
-parents: ['Test Configurations']
+parents: ['Configuration']
 keywords: ['config', 'test properties', 'env vars', 'env', 'vars']
 ---
 
-Test Envioronmental Variables are a fundamental part of developing Automated tests, allowing your tests to behave differently based on the environment you want them to run in. Wherever your tests needs configuration, you use environment variables. And they’re so simple, they’re beautiful!
+Test Environmental Variables are a fundamental part of developing Automated tests, allowing your tests to behave differently based on the environment you want them to run in. Wherever your tests needs configuration, you use environment variables. And they’re so simple, they’re beautiful!
 
 This post walks you through creating and using environment variables, aka Test Properties.
 

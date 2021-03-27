@@ -1,12 +1,32 @@
 const fs = require('fs-extra');
 const path = require('path');
 const chalk = require('chalk');
-const allure_commandline = path.dirname(require.resolve('allure-commandline'));
+const allure_commandline_mac = path.dirname(require.resolve('allure-commandline'));
 const win_launcher = path.dirname(require.resolve('./win/launch_html_report.bat'));
 const mac_launcher = path.dirname(require.resolve('./mac/launch_html_report'));
 const logger = require('../../logger/logger');
 
 const shell = require('shelljs');
+
+/**
+ * Launcher for Windows
+ *
+ * @param {options} options
+ */
+function createLauncherForWindows(options) {
+    fs.copySync(options.pathToWinAllureCommandline, options.destinationDir);
+    fs.copySync(win_launcher, options.launcherFilePath || options.destinationDir);
+}
+
+/**
+ * Launcher for Mac
+ * @param {options} options
+ */
+function createLauncherForMac(options) {
+    fs.copySync(allure_commandline_mac, options.destinationDir);
+    fs.copySync(mac_launcher, options.launcherFilePath || options.destinationDir);
+    shell.exec(`chmod +x ${path.join(options.launcherFilePath || options.destinationDir, 'launch_html_report')}`);
+}
 
 /**
  * Allure Report Launcher: Win & Mac
@@ -16,13 +36,16 @@ const shell = require('shelljs');
 function allureReportLauncher(options) {
     const isWin = process.platform === 'win32';
 
-    fs.copySync(allure_commandline, options.destinationDir);
-
     if (isWin) {
-        fs.copySync(win_launcher, options.launcherFilePath || options.destinationDir);
+        if (options.pathToWinAllureCommandline) {
+            createLauncherForWindows(options);
+        } else {
+            console.warn(
+                '⚠️ Path to Windows Allure Commandline is required. Please provide "{ pathToWinAllureCommandline }" param.'
+            );
+        }
     } else {
-        fs.copySync(mac_launcher, options.launcherFilePath || options.destinationDir);
-        shell.exec(`chmod +x ${path.join(options.launcherFilePath || options.destinationDir, 'launch_html_report')}`);
+        createLauncherForMac(options);
     }
 
     logger.log({
