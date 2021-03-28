@@ -30,6 +30,7 @@ function collect(options) {
         const launcherFilePath = destinationDir;
         destinationDir = path.join(destinationDir, 'report');
         const pathToWinAllureCommandline = options.pathToWinAllureCommandline;
+
         report_launcher.allureReportLauncher({
             destinationDir,
             launcherFilePath,
