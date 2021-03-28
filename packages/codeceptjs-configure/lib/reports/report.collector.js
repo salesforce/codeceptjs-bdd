@@ -29,9 +29,11 @@ function collect(options) {
     if (options.shouldGenerateLauncher) {
         const launcherFilePath = destinationDir;
         destinationDir = path.join(destinationDir, 'report');
+        const pathToWinAllureCommandline = options.pathToWinAllureCommandline;
         report_launcher.allureReportLauncher({
             destinationDir,
             launcherFilePath,
+            pathToWinAllureCommandline,
         });
         fs.copySync(sourceDir, destinationDir);
     } else {
