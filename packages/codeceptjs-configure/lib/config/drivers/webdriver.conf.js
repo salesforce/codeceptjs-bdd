@@ -53,14 +53,26 @@ const get = (conf) => {
     conf = merge(conf, webdriver_conf);
     let profile = process.env.profile;
 
-    if (profile && profile === 'chrome:headless') {
+    // run Chrome Headless
+    if (conf.helpers.WebDriver && profile === 'chrome:headless') {
         conf.helpers.WebDriver.browser = 'chrome';
-        conf.helpers.WebDriver.capabilities = {
+        conf.helpers.WebDriver.desiredCapabilities = {
             chromeOptions: {
                 args: ['--headless', '--disable-gpu', '--window-size=1920,1080'],
             },
         };
-    } else if (profile && (profile === 'safari' || profile === 'firefox')) {
+    }
+
+    // disable Chrome Notifications
+    if (conf.helpers.WebDriver && conf.helpers.WebDriver.browser === 'chrome') {
+        conf.helpers.WebDriver.desiredCapabilities = {
+            chromeOptions: {
+                args: ['--disable-notifications'],
+            },
+        };
+    }
+
+    if (profile && (profile === 'safari' || profile === 'firefox')) {
         conf.helpers.WebDriver.windowSize = 'maximize';
     }
 
