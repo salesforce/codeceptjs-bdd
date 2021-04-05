@@ -23,6 +23,7 @@ let browsers = {
     chrome: {
         browser: 'chrome',
         capabilities: {
+            platformName: 'Windows 10',
             acceptInsecureCerts: true,
             'sauce:options': sauceOptions,
         },
@@ -31,6 +32,7 @@ let browsers = {
     firefox: {
         browser: 'firefox',
         capabilities: {
+            platformName: 'Windows 10',
             'sauce:options': sauceOptions,
         },
     },
@@ -38,6 +40,7 @@ let browsers = {
     safari: {
         browser: 'safari',
         capabilities: {
+            platformName: 'Windows 10',
             browserVersion: '12.0',
             'sauce:options': sauceOptions,
         },
@@ -46,6 +49,7 @@ let browsers = {
     edge: {
         browser: 'MicrosoftEdge',
         capabilities: {
+            platformName: 'Windows 10',
             'sauce:options': sauceOptions,
         },
     },
@@ -53,6 +57,7 @@ let browsers = {
     ie: {
         browser: 'internet explorer',
         capabilities: {
+            platformName: 'Windows 10',
             'sauce:options': sauceOptions,
         },
     },
