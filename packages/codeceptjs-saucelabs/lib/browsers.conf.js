@@ -94,7 +94,10 @@ let customConfig = (conf) => {
 
     let customConf = conf.split(':');
     customConf.shift();
-    customConf.shift();
+
+    if (conf.match('sauce:config:')) {
+        customConf.shift();
+    }
 
     if (customConf.length < 2) {
         throw new Error(
