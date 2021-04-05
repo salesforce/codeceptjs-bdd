@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-configure",
-    "version": "8.2.0",
+    "version": "8.2.1",
     "description": "Shared Configurations for CodeceptJS-BDD",
     "homepage": "https://gkushang.github.io/",
     "bugs": {
@@ -31,7 +31,7 @@
         "check-yarn-lock": "^0.2.1",
         "cli-ux": "^5.4.5",
         "codeceptjs": "^3.0.2",
-        "codeceptjs-saucelabs": "^5.2.16",
+        "codeceptjs-saucelabs": "^5.2.17",
         "codeceptjs-selenoid": "^1.0.3",
         "dateformat": "4.5.1",
         "debug": "^4.1.1",
