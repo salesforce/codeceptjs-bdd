@@ -1,3 +1,5 @@
+const softAssert = require('soft-assert');
+
 Feature('Login Tests (mocha)');
 
 Before(({ I }) => {
@@ -5,7 +7,10 @@ Before(({ I }) => {
 });
 
 Scenario('Fred logs in successfully', ({ I }) => {
-    I.amOnPage('/gkushang/codeceptjs-bdd');
+    I.amOnPage(
+        'https://www.mass.gov/doc/fcc-final-charter-order/download?_ga=2.6583154.1374185022.1618457005-1696695983.1610316036'
+    );
+    pause();
 })
     .tag('@login_mocha')
     .tag('smoke');

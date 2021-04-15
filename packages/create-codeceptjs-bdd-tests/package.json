@@ -50,6 +50,7 @@
         "inquirer": "^7.0.0",
         "node-emoji": "^1.10.0",
         "shelljs": "^0.8.3",
+        "soft-assert": "^0.2.6",
         "ts-node": "^9.1.0",
         "typescript": "^4.1.2"
     }
