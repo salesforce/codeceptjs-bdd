@@ -7904,7 +7904,7 @@ socks@~2.3.2:
     ip "1.1.5"
     smart-buffer "^4.1.0"
 
-soft-assert@^0.2.0:
+soft-assert@^0.2.0, soft-assert@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/soft-assert/-/soft-assert-0.2.6.tgz#0d5f491f5d4c9dc904faebe7e8c4d9bf4158a5a6"
   integrity sha512-pn6vhFNiwDUW6HaSnJQmIhXtA0KozFvcZjXButN2PGyBl2vS91a37xbf+1VitnbzvNkPfKuBxgnUYvGVpoR4Yw==

@@ -68,6 +68,9 @@ const get = (conf) => {
         conf.helpers.WebDriver.desiredCapabilities = {
             chromeOptions: {
                 args: ['--disable-notifications'],
+                prefs: {
+                    'plugins.always_open_pdf_externally': true,
+                },
             },
         };
     }
