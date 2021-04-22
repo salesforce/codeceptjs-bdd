@@ -47,6 +47,7 @@
         "prettier": "^2.1.2",
         "query-selector-shadow-dom": "0.8.0",
         "selenium-standalone": "^6.16.0",
+        "shelljs": "0.8.4",
         "should": "^13.2.3",
         "soft-assert": "^0.2.0",
         "typescript": "^4.0.5",
