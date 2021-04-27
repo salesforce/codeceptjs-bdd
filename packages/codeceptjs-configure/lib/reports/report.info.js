@@ -4,7 +4,13 @@ const sh = require('shelljs');
 const path = require('path');
 
 async function parse(options, callback) {
-    const reportOutputDir = path.join(process.cwd(), '.report-html');
+    let destinationDir = 'report-html';
+
+    if (options.destinationDir) {
+        destinationDir = path.join(options.destinationDir, destinationDir);
+    }
+
+    const reportOutputDir = path.join(process.cwd(), destinationDir);
 
     sh.exec(`allure generate ${path.join(process.cwd(), options.reportOutputDir)} --clean -o ${reportOutputDir}`);
 
