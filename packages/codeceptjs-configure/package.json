@@ -33,6 +33,7 @@
         "codeceptjs": "^3.0.2",
         "codeceptjs-saucelabs": "^5.2.18",
         "codeceptjs-selenoid": "^1.0.3",
+        "csv-parse": "^4.15.4",
         "dateformat": "4.5.1",
         "debug": "^4.1.1",
         "deepmerge": "^4.2.2",
