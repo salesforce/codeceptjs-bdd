@@ -10,12 +10,10 @@ async function parse(options, callback) {
         destinationDir = path.join(options.destinationDir, destinationDir);
     }
 
-    const reportOutputDir = path.join(process.cwd(), destinationDir);
+    sh.exec(`allure generate ${options.reportOutputDir} --clean -o ${destinationDir}`);
 
-    sh.exec(`allure generate ${path.join(process.cwd(), options.reportOutputDir)} --clean -o ${reportOutputDir}`);
-
-    const behaviorsCsv = _getFilePath({ reportOutputDir }, 'behaviors.csv');
-    const suitesCsv = _getFilePath({ reportOutputDir }, 'suites.csv');
+    const behaviorsCsv = _getFilePath({ destinationDir }, 'behaviors.csv');
+    const suitesCsv = _getFilePath({ destinationDir }, 'suites.csv');
 
     return {
         behaviors: await _parseCsv(behaviorsCsv, callback),
