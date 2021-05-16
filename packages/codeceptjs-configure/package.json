@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-configure",
-    "version": "8.2.9",
+    "version": "8.2.10",
     "description": "Shared Configurations for CodeceptJS-BDD",
     "homepage": "https://gkushang.github.io/",
     "bugs": {
