@@ -9,10 +9,13 @@ async function parse(options, callback) {
 
     const behaviorsCsv = _getFilePath(options, 'behaviors.csv');
     const suitesCsv = _getFilePath(options, 'suites.csv');
+    const categoriesJson = _getFilePath(options, 'categories.json');
+    const input = await fs.readFileSync(categoriesJson);
 
     return {
         behaviors: await _parseCsv(behaviorsCsv, callback),
         suites: await _parseCsv(suitesCsv, callback),
+        categories: JSON.parse(input),
     };
 }
 
