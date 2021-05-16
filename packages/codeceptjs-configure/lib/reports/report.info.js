@@ -7,15 +7,20 @@ async function parse(options, callback) {
         throw new Error('"pathToHtmlReportDir" must be defined.');
     }
 
-    const behaviorsCsv = _getFilePath(options, 'behaviors.csv');
-    const suitesCsv = _getFilePath(options, 'suites.csv');
+    // read behaviors
+    const behaviors = await _parseCsv(_getFilePath(options, 'behaviors.csv'), callback);
+
+    // read test suites
+    const suites = await _parseCsv(_getFilePath(options, 'suites.csv'), callback);
+
+    // read categories
     const categoriesJson = _getFilePath(options, 'categories.json');
-    const input = await fs.readFileSync(categoriesJson);
+    const categories = JSON.parse(await fs.readFileSync(categoriesJson));
 
     return {
-        behaviors: await _parseCsv(behaviorsCsv, callback),
-        suites: await _parseCsv(suitesCsv, callback),
-        categories: JSON.parse(input),
+        behaviors,
+        suites,
+        categories,
     };
 }
 
