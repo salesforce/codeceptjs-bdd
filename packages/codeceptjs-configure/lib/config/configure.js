@@ -20,10 +20,10 @@ logger.welcome();
  * @param {object} conf
  */
 const create = (conf, userSpecifiedSauceBrowsers) => {
-    if (gDriver !== 'WebDriver' && conf.helpers.WebDriver) {
+    if (conf.helpers.WebDriver && gDriver && gDriver.toLocaleLowerCase() !== 'webdriver') {
         delete conf.helpers.WebDriver;
     }
-    
+
     const findDriver = () =>
         Object.keys(master_conf.helpers).find((driver) => driver.toLowerCase() === gDriver.toLowerCase());
     const driver = master_conf.helpers[findDriver()];
