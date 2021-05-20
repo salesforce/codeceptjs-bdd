@@ -1,6 +1,6 @@
 {
     "name": "codeceptjs-configure",
-    "version": "8.1.24",
+    "version": "8.2.10",
     "description": "Shared Configurations for CodeceptJS-BDD",
     "homepage": "https://gkushang.github.io/",
     "bugs": {
@@ -30,9 +30,10 @@
         "chalk": "^4.0.0",
         "check-yarn-lock": "^0.2.1",
         "cli-ux": "^5.4.5",
-        "codeceptjs": "^3.0.2",
-        "codeceptjs-saucelabs": "^5.2.16",
+        "codeceptjs": "^3.0.7",
+        "codeceptjs-saucelabs": "^5.2.18",
         "codeceptjs-selenoid": "^1.0.3",
+        "csv-parse": "^4.15.4",
         "dateformat": "4.5.1",
         "debug": "^4.1.1",
         "deepmerge": "^4.2.2",
@@ -47,6 +48,7 @@
         "prettier": "^2.1.2",
         "query-selector-shadow-dom": "0.8.0",
         "selenium-standalone": "^6.16.0",
+        "shelljs": "0.8.4",
         "should": "^13.2.3",
         "soft-assert": "^0.2.0",
         "typescript": "^4.0.5",

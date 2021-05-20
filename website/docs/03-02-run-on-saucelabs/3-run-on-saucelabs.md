@@ -25,11 +25,11 @@ Export these environment variables through your ZSH or BASH profile or define in
 Codeceptjs-BDD implements the quick way to run your tests on Sauce Labs. Please note the `sauce:` in the below command, which does the magic running your tests on Sauce. Get your Sauce Labs Platform configurations from [here](https://wiki.saucelabs.com/display/DOCS/Platform+Configurator), and pass it thru the CLI,
 
 ```bash
- $ yarn acceptance --profile sauce:config:'<OS>':<browser>:<version>
+ $ yarn acceptance --profile sauce:'<OS>':<browser>:<version>
 
 ```
 
-e.g. `$ yarn acceptance --profile sauce:config:'Windows 10':MicrosoftEdge:80`
+e.g. `$ yarn acceptance --profile sauce:'Windows 10':MicrosoftEdge:80`
 
 To run with default CodeceptJS BDD configurations,
 
@@ -39,7 +39,7 @@ To run with default CodeceptJS BDD configurations,
 
 To connect with active Sauce Tunnel, pass param `SAUCE_TUNNEL_NAME`,
 
-`$ SAUCE_TUNNEL_NAME=<tunnel-name> yarn acceptance --profile sauce:config:'<OS>':<browser>:<version>`
+`$ SAUCE_TUNNEL_NAME=<tunnel-name> yarn acceptance --profile sauce:'<OS>':<browser>:<version>`
 
 ### 🎥 Watch in Action
 

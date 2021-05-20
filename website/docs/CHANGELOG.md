@@ -4,6 +4,11 @@ sub_title: Codeceptjs-BDD Releases for @codeceptjs-configure & @codeceptjs-sauce
 keywords: ['changelog', 'releases', 'release']
 ---
 
+### CODECEPTJS-CONFIGURE V8.2.x (MAR-30-2021)
+
+- Run Chrome Headless thru `--profile chrome:headless`
+- Disabled Chrome Notifications
+
 ### CODECEPTJS-CONFIGURE V8.x (MAR-13-2021)
 
 - Allure Static Report Launcher: https://gkushang.github.io/01-03-configuration/3-configuration/#3-html-reports

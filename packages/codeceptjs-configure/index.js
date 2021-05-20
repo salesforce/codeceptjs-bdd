@@ -4,6 +4,7 @@ const configure = require('./lib/config/configure');
 const host = require('./lib/host/host');
 const logger = require('./lib/logger/logger');
 const reportCollector = require('./lib/reports/report.collector').collect;
+const reportInfo = require('./lib/reports/report.info');
 const allureReportLauncher = require('./lib/reports/allure-static-launcher/allure-launcher').allureReportLauncher;
 const Driver_commands = require.resolve('./lib/helpers/driver-commands.helper.js');
 
@@ -13,6 +14,7 @@ module.exports = {
     cleanReports,
     allureReportLauncher,
     reportCollector,
+    reportInfo,
     configure,
     host,
     log: logger.log,

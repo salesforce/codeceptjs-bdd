@@ -14,10 +14,12 @@ const webdriver_conf = {
             browser: BROWSER && BROWSER.match('webdriver:[a-zA-Z]') ? BROWSER.split(':')[1] : BROWSER,
             smartWait: 10000,
             waitForTimeout: (process.env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
-            customLocatorStrategy:
-                process.env.CUSTOM_LOCATOR_STRATEGY === true || process.env.CUSTOM_LOCATOR_STRATEGY === 'true'
-                    ? locatorStrategy
-                    : undefined,
+            customLocatorStrategies: {
+                shadowDom:
+                    process.env.CUSTOM_LOCATOR_STRATEGY === true || process.env.CUSTOM_LOCATOR_STRATEGY === 'true'
+                        ? locatorStrategy
+                        : undefined,
+            },
             windowSize:
                 process.env.MAXIMIZE_WINDOW === false || process.env.MAXIMIZE_WINDOW === 'false'
                     ? undefined
@@ -53,14 +55,29 @@ const get = (conf) => {
     conf = merge(conf, webdriver_conf);
     let profile = process.env.profile;
 
-    if (profile && profile === 'chrome:headless') {
+    // run Chrome Headless
+    if (conf.helpers.WebDriver && profile === 'chrome:headless') {
         conf.helpers.WebDriver.browser = 'chrome';
-        conf.helpers.WebDriver.capabilities = {
+        conf.helpers.WebDriver.desiredCapabilities = {
             chromeOptions: {
                 args: ['--headless', '--disable-gpu', '--window-size=1920,1080'],
             },
         };
-    } else if (profile && (profile === 'safari' || profile === 'firefox')) {
+    }
+
+    // disable Chrome Notifications
+    if (conf.helpers.WebDriver && conf.helpers.WebDriver.browser === 'chrome') {
+        conf.helpers.WebDriver.desiredCapabilities = {
+            chromeOptions: {
+                args: ['--disable-notifications'],
+                prefs: {
+                    'plugins.always_open_pdf_externally': true,
+                },
+            },
+        };
+    }
+
+    if (profile && (profile === 'safari' || profile === 'firefox')) {
         conf.helpers.WebDriver.windowSize = 'maximize';
     }
 
