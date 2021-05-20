@@ -20,7 +20,7 @@ logger.welcome();
  * @param {object} conf
  */
 const create = (conf, userSpecifiedSauceBrowsers) => {
-    if (conf.helpers.WebDriver && gDriver && gDriver.toLocaleLowerCase() !== 'webdriver') {
+    if (gDriver && gDriver.toLocaleLowerCase() !== 'webdriver' && conf.helpers.WebDriver) {
         delete conf.helpers.WebDriver;
     }
 
