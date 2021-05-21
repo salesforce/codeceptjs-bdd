@@ -5,24 +5,10 @@ require('./set.driver')();
 const { steps } = require('../bdd/steps');
 const { pageObjects } = require('../bdd/pageObjects');
 
-let driver_commands = 'codeceptjs-configure/lib/helpers/driver-commands.helper.js';
-let custom_methods = 'codeceptjs-configure/lib/helpers/custom-methods.helper.js';
-
-if (process.env.CODECEPT_BDD_LERNA) {
-    driver_commands = require.resolve('../../helpers/driver-commands.helper.js');
-    custom_methods = require.resolve('../../helpers/custom-methods.helper.js');
-}
-
 let masterConf = {
     output: process.env.CODECEPT_RELATIVE_PATH + 'report',
     cleanup: true,
     helpers: {
-        Driver_commands: {
-            require: driver_commands,
-        },
-        custom_methods: {
-            require: custom_methods,
-        },
         REST: {
             endpoint: host.get(),
             timeout: 300000,
