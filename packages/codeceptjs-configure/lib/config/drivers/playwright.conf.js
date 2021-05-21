@@ -47,6 +47,7 @@ const playwright_conf = {
             show: process.env.HEADLESS === 'false',
             waitForTimeout: (process.env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
             restart: true,
+            fullPageScreenshots: true,
             emulate: {
                 ignoreHTTPSErrors: true,
                 acceptDownloads: true,
