@@ -28,6 +28,9 @@ let masterConf = {
         tryTo: {
             enabled: true,
         },
+        pauseOnFail: {
+            enabled: process.env.PAUSE_ON_FAIL === 'true',
+        },
         stepByStepReport: {
             enabled: process.env.ENABLE_PAGE_BY_PAGE_SCREENSHOTS,
             deleteSuccessful: false,
