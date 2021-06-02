@@ -81,6 +81,17 @@ module.exports = {
 
 ```
 
+### Load Page Objects from other directories
+
+```js
+// codecept.conf.js
+const { pageObjects } = require('codeceptjs-configure');
+
+   include: {
+        ...pageObjects({ from: 'path-to-other-page-objects' }), //  ...pageObjects({ from: 'src/e2e/flows/**/*.flow.ts' }),
+    },
+```
+
 ### More about Page Objects
 
 - [About Locators](/05-page-objects/2-locators/)
