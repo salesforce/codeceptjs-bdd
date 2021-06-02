@@ -5,6 +5,7 @@ const camelCase = require('camelcase');
 const pageObjects = (pathToPages) => {
     let pages = {};
     let pageObjects = '';
+    let prefix = '';
 
     if (!pathToPages) {
         pathToPages = '/pages/**/*.page.{js,ts}';
@@ -15,8 +16,12 @@ const pageObjects = (pathToPages) => {
         pageObjects = pathToPages.from;
     }
 
+    if (pathToPages.prefix) {
+        prefix = pathToPages.prefix;
+    }
+
     glob.sync(pageObjects).map((file) => {
-        pages[camelCase(path.parse(file).name)] = './' + file;
+        pages[prefix + camelCase(path.parse(file).name)] = './' + file;
     });
 
     return pages;
