@@ -6,8 +6,6 @@ const chalk = require('chalk');
 const debug = require('debug')('config');
 
 const driversConf = require('./drivers/drivers.conf');
-require('expect-playwright');
-
 const gDriver = process.env.DRIVER;
 
 logger.welcome();
