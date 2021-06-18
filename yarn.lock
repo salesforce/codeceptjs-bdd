@@ -1192,9 +1192,9 @@
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
 "@types/node@*", "@types/node@>= 8":
-  version "15.12.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.2.tgz#1f2b42c4be7156ff4a6f914b2fb03d05fa84e38d"
-  integrity sha512-zjQ69G564OCIWIOHSXyQEEDpdpGl+G348RAKY0XXy9Z5kU9Vzv1GMNnkar/ZJ8dzXB3COzD9Mo9NtRZ4xfgUww==
+  version "15.12.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.3.tgz#2817bf5f25bc82f56579018c53f7d41b1830b1af"
+  integrity sha512-SNt65CPCXvGNDZ3bvk1TQ0Qxoe3y1RKH88+wZ2Uf05dduBCqqFQ76ADP9pbT+Cpvj60SkRppMCh2Zo8tDixqjQ==
 
 "@types/node@^14.14.31":
   version "14.17.3"
@@ -4440,7 +4440,7 @@ globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
-got@^11.0.2, got@^11.7.0, got@^11.8.0, got@^11.8.1:
+got@^11.0.2, got@^11.7.0, got@^11.8.0, got@^11.8.1, got@^11.8.2:
   version "11.8.2"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.2.tgz#7abb3959ea28c31f3576f1576c1effce23f33599"
   integrity sha512-D0QywKgIe30ODs+fm8wMZiAcZjypcCodPNuMz5H9Mny7RJ+IjJ10BdmGW7OM7fHXP+O7r6ZwapQ/YQmMSvB0UQ==
@@ -7028,10 +7028,10 @@ pkg-dir@^5.0.0:
   dependencies:
     find-up "^5.0.0"
 
-playwright@1.11.1:
+playwright-core@1.11.1:
   version "1.11.1"
-  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.11.1.tgz#c5f2946db5195bd099a57ce4e188c01057876cff"
-  integrity sha512-UuMrYuvzttbJXUD7sTVcQBsGRojelGepvuQPD+QtVm/n5zyKvkiUErU/DGRXfX8VDZRdQ5D6qVqZndrydC2b4w==
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.11.1.tgz#2a9ca6118ce94eccfc29dd4996cdc87bbac68eae"
+  integrity sha512-EQ/K7WucNHiL5AkFBLWNyIGWqPcD/m/k5LmYn5fgAf7mbInGTFkiZgQHibz+ZwEPb+NvcaEO7WVVZr3MrIzUpA==
   dependencies:
     commander "^6.1.0"
     debug "^4.1.1"
@@ -7788,7 +7788,7 @@ seek-bzip@^1.0.5:
   dependencies:
     commander "^2.8.1"
 
-selenium-standalone@6.23.0, selenium-standalone@^6.22.1:
+selenium-standalone@6.23.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/selenium-standalone/-/selenium-standalone-6.23.0.tgz#91a7d12b1c8ba077a82b44323445c5882eb20ff1"
   integrity sha512-6dVLSEvbixd/MRSEmrcRQD8dmABrzNsxRqroKFQY+RVzm1JVPgGHIlo6qJzG6akfjc2V8SadHslE6lN4BFVM3w==
@@ -7803,6 +7803,24 @@ selenium-standalone@6.23.0, selenium-standalone@^6.22.1:
     mkdirp "^1.0.4"
     progress "2.0.3"
     tar-stream "2.1.4"
+    which "^2.0.2"
+    yauzl "^2.10.0"
+
+selenium-standalone@^6.22.1:
+  version "6.24.0"
+  resolved "https://registry.yarnpkg.com/selenium-standalone/-/selenium-standalone-6.24.0.tgz#cca7c1c36bfa3429078a8e6a1a4fd373f641a7c8"
+  integrity sha512-Dun2XgNAgCfJNrrSzuv7Z7Wj7QTvBKpqx0VXFz7bW9T9FUe5ytzgzoCEEshwDVMh0Dv6sCgdZg7VDhM/q2yPPQ==
+  dependencies:
+    commander "^2.20.3"
+    cross-spawn "^7.0.3"
+    debug "^4.3.1"
+    got "^11.8.2"
+    lodash.mapvalues "^4.6.0"
+    lodash.merge "^4.6.2"
+    minimist "^1.2.5"
+    mkdirp "^1.0.4"
+    progress "2.0.3"
+    tar-stream "2.2.0"
     which "^2.0.2"
     yauzl "^2.10.0"
 
@@ -8490,6 +8508,17 @@ tar-stream@2.1.4:
     inherits "^2.0.3"
     readable-stream "^3.1.1"
 
+tar-stream@2.2.0, tar-stream@^2.1.4, tar-stream@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-2.2.0.tgz#acad84c284136b060dc3faa64474aa9aebd77287"
+  integrity sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==
+  dependencies:
+    bl "^4.0.3"
+    end-of-stream "^1.4.1"
+    fs-constants "^1.0.0"
+    inherits "^2.0.3"
+    readable-stream "^3.1.1"
+
 tar-stream@^1.5.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-1.6.2.tgz#8ea55dab37972253d9a9af90fdcd559ae435c555"
@@ -8502,17 +8531,6 @@ tar-stream@^1.5.2:
     readable-stream "^2.3.0"
     to-buffer "^1.1.1"
     xtend "^4.0.0"
-
-tar-stream@^2.1.4, tar-stream@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-2.2.0.tgz#acad84c284136b060dc3faa64474aa9aebd77287"
-  integrity sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==
-  dependencies:
-    bl "^4.0.3"
-    end-of-stream "^1.4.1"
-    fs-constants "^1.0.0"
-    inherits "^2.0.3"
-    readable-stream "^3.1.1"
 
 tar@^4.4.10, tar@^4.4.12, tar@^4.4.8:
   version "4.4.13"

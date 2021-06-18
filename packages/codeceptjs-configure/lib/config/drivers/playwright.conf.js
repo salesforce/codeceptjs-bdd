@@ -4,7 +4,7 @@ let BROWSER =
         : process.env.profile;
 const merge = require('deepmerge');
 const host = require('../../host/host');
-const { devices } = require('playwright');
+const { devices } = require('playwright-core');
 
 const getPlaywrightBrowser = function () {
     if (BROWSER && BROWSER.match('playwright:[a-zA-Z]')) {
