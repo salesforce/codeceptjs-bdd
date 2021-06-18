@@ -21,11 +21,10 @@
         "lint:prettier": "eslint lib/**/*.js --fix && prettier --write -ignore-unknown . "
     },
     "dependencies": {
-        "@wdio/sauce-service": "^6.10.0",
-        "chalk": "^4.1.0",
-        "codeceptjs-saucehelper": "^1.4.0",
-        "debug": "^4.1.1",
-        "deepmerge": "^4.0.0",
-        "node-emoji": "^1.10.0"
+        "@wdio/sauce-service": "7.7.3",
+        "codeceptjs-saucehelper": "1.4.0",
+        "debug": "4.1.1",
+        "deepmerge": "4.0.0",
+        "node-emoji": "1.10.0"
     }
 }

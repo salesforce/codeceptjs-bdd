@@ -1,5 +1,3 @@
-const softAssert = require('soft-assert');
-
 Feature('Login Tests (mocha)');
 
 Before(({ I }) => {

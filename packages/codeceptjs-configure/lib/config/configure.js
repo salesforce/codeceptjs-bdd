@@ -1,15 +1,11 @@
-global.expect = require('expect');
 require('./master/set.driver')();
 const merge = require('deepmerge');
 const master_conf = require('./master/codecept.master.conf').master_conf;
 const logger = require('../logger/logger');
 const chalk = require('chalk');
 const debug = require('debug')('config');
-const allureReportLauncher = require('../reports/allure-static-launcher/allure-launcher').allureReportLauncher;
 
 const driversConf = require('./drivers/drivers.conf');
-require('expect-playwright');
-
 const gDriver = process.env.DRIVER;
 
 logger.welcome();
