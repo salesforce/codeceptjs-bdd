@@ -22,7 +22,6 @@
     },
     "dependencies": {
         "@wdio/sauce-service": "^6.10.0",
-        "chalk": "^4.1.0",
         "codeceptjs-saucehelper": "^1.4.0",
         "debug": "^4.1.1",
         "deepmerge": "^4.0.0",

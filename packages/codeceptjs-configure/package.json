@@ -22,36 +22,18 @@
         "test": "echo \"Error: run tests from root\" && exit 1"
     },
     "dependencies": {
-        "@codeceptjs/helper": "^1.0.1",
-        "@types/node": "^14.14.16",
-        "@wdio/selenium-standalone-service": "^6.10.0",
-        "allure-commandline": "^2.9.0",
+        "@codeceptjs/helper": "^1.0.2",
         "camelcase": "^6.0.0",
-        "chalk": "^4.0.0",
-        "check-yarn-lock": "^0.2.1",
         "cli-ux": "^5.4.5",
-        "codeceptjs": "^3.0.7",
-        "codeceptjs-saucelabs": "^5.2.20",
-        "codeceptjs-selenoid": "^1.0.3",
         "csv-parse": "^4.15.4",
         "dateformat": "4.5.1",
-        "debug": "^4.1.1",
         "deepmerge": "^4.2.2",
         "dotenv-extended": "^2.8.0",
-        "expect": "^26.4.2",
-        "expect-playwright": "^0.2.5",
         "faker": "^5.1.0",
         "figlet": "^1.3.0",
         "fs-extra": "^9.0.1",
-        "node-emoji": "^1.10.0",
-        "playwright": "1.6.1",
-        "prettier": "^2.1.2",
         "query-selector-shadow-dom": "0.8.0",
         "selenium-standalone": "^6.16.0",
-        "shelljs": "0.8.4",
-        "should": "^13.2.3",
-        "soft-assert": "^0.2.0",
-        "typescript": "^4.0.5",
-        "webdriverio": "^6.10.0"
+        "shelljs": "0.8.4"
     }
 }
