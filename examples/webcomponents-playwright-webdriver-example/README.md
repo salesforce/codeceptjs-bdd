@@ -12,16 +12,23 @@ yarn
 
 ### 🚀 Run
 
+##### Playwright
+
+HEADLESS mode ON
+```
+yarn acceptance --profile playwright:chrome
+yarn acceptance --profile playwright:firefox
+yarn acceptance --profile playwright:safari
+```
+HEADLESS mode OFF
+```
+HEADLESS=false yarn acceptance --profile playwright:chrome
+```
+
 ##### Webdriver
 
 ```
 yarn acceptance --profile webdriver:chrome
-```
-
-##### Playwright
-
-```
-yarn acceptance --profile playwright:chrome
 ```
 
 ![](wc.png)

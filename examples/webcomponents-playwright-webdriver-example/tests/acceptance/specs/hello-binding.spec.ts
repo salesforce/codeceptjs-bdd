@@ -7,7 +7,7 @@ Scenario('Verify the Hello Binding Component', async ({ I, lwcRecipeHelloPage })
 
     I.amOnPage('/#hello');
 
-    helloBinding.enterName('Kushang Gajjar');
+    helloBinding.enterName('John Doe');
 
-    expect(await helloBinding.grabTitle()).toEqual('Hello, Kushang Gajjar!');
+    expect(await helloBinding.grabTitle()).toEqual('Hello, John Doe!');
 }).tag('@@hello_binding');
