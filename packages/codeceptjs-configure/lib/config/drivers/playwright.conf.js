@@ -5,12 +5,14 @@ let BROWSER =
 const merge = require('deepmerge');
 const host = require('../../host/host');
 const { devices } = require('playwright');
+const GOOGLE_CHROME = 'google:chrome';
+const CHROMIUM = 'chromium';
 
 const getPlaywrightBrowser = function () {
     if (BROWSER && BROWSER.match('playwright:[a-zA-Z]')) {
         const profileInfo = process.env.profile.split(':');
-        if (BROWSER.includes('google:chrome') || BROWSER.includes('chrome:stable')) {
-            return 'google:chrome';
+        if (BROWSER.includes(GOOGLE_CHROME) || BROWSER.includes('chrome:stable')) {
+            return GOOGLE_CHROME;
         }
         BROWSER = profileInfo[1];
     }
@@ -27,10 +29,10 @@ const getPlaywrightBrowser = function () {
     }
 
     if (!BROWSER || BROWSER === '' || BROWSER === 'chrome') {
-        return 'chromium';
+        return CHROMIUM;
     }
 
-    if (BROWSER === 'google:chrome') {
+    if (BROWSER === GOOGLE_CHROME) {
         return 'chrome';
     }
 
@@ -40,9 +42,9 @@ const getPlaywrightBrowser = function () {
 const get = function (conf) {
     const playwrightConf = playwright_conf();
 
-    if (playwrightConf.helpers.Playwright.browser === 'google:chrome') {
-        playwrightConf.helpers.Playwright.browser = 'chromium';
-        playwrightConf.helpers.Playwright['chromium'] = { channel: 'chrome' };
+    if (playwrightConf.helpers.Playwright.browser === GOOGLE_CHROME) {
+        playwrightConf.helpers.Playwright.browser = CHROMIUM;
+        playwrightConf.helpers.Playwright[CHROMIUM] = { channel: 'chrome' };
     }
 
     conf = merge(conf, playwrightConf);
