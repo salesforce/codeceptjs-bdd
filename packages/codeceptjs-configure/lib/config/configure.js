@@ -29,9 +29,12 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
     }
 
     const browser = driver.browser;
+
     let driverMessage;
     if (process.env.PLAYWRIGHT_DEVICE) {
         driverMessage = `Launching '${browser}' on mobile device '${process.env.PLAYWRIGHT_DEVICE}' with ${gDriver}.`;
+    } else if (driver.chromium && driver.chromium.channel && driver.chromium.channel === 'chrome') {
+        driverMessage = `Launching 'Google Chrome' on ${gDriver}.`;
     } else {
         driverMessage = `Launching '${browser}' on ${gDriver}.`;
     }
