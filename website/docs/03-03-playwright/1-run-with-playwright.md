@@ -57,6 +57,14 @@ $ DRIVER=playwright yarn acceptance --profile [firefox|chrome|safari]
 
 ```
 
+### Run on Google Chrome: Stable Chrome build
+
+```bash
+
+$ DRIVER=playwright yarn acceptance --profile playwright:google:chrome
+
+```
+
 ### 🤖 Run Headless
 
 ```bash
