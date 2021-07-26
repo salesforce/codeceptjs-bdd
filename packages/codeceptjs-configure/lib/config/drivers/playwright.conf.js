@@ -5,10 +5,16 @@ let BROWSER =
 const merge = require('deepmerge');
 const host = require('../../host/host');
 const { devices } = require('playwright');
+const GOOGLE_CHROME = 'google:chrome';
+const CHROMIUM = 'chromium';
 
 const getPlaywrightBrowser = function () {
     if (BROWSER && BROWSER.match('playwright:[a-zA-Z]')) {
-        BROWSER = process.env.profile.split(':')[1];
+        const profileInfo = process.env.profile.split(':');
+        if (BROWSER.includes(GOOGLE_CHROME) || BROWSER.includes('chrome:stable')) {
+            return GOOGLE_CHROME;
+        }
+        BROWSER = profileInfo[1];
     }
 
     if (BROWSER && BROWSER.match('device:[a-zA-Z]')) {
@@ -23,14 +29,25 @@ const getPlaywrightBrowser = function () {
     }
 
     if (!BROWSER || BROWSER === '' || BROWSER === 'chrome') {
-        return 'chromium';
+        return CHROMIUM;
+    }
+
+    if (BROWSER === GOOGLE_CHROME) {
+        return 'chrome';
     }
 
     return BROWSER;
 };
 
 const get = function (conf) {
-    conf = merge(conf, playwright_conf);
+    const playwrightConf = playwright_conf();
+
+    if (playwrightConf.helpers.Playwright.browser === GOOGLE_CHROME) {
+        playwrightConf.helpers.Playwright.browser = CHROMIUM;
+        playwrightConf.helpers.Playwright[CHROMIUM] = { channel: 'chrome' };
+    }
+
+    conf = merge(conf, playwrightConf);
 
     if (process.env.PLAYWRIGHT_DEVICE) {
         conf.helpers.Playwright.emulate = devices[process.env.PLAYWRIGHT_DEVICE];
@@ -39,22 +56,24 @@ const get = function (conf) {
     return conf;
 };
 
-const playwright_conf = {
-    helpers: {
-        Playwright: {
-            url: host.get(),
-            waitForNavigation: 'domcontentloaded',
-            show: process.env.HEADLESS === 'false',
-            waitForTimeout: (process.env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
-            restart: true,
-            fullPageScreenshots: true,
-            emulate: {
-                ignoreHTTPSErrors: true,
-                acceptDownloads: true,
+const playwright_conf = function () {
+    return {
+        helpers: {
+            Playwright: {
+                url: host.get(),
+                waitForNavigation: 'domcontentloaded',
+                show: process.env.HEADLESS === 'false',
+                waitForTimeout: (process.env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
+                restart: true,
+                fullPageScreenshots: true,
+                emulate: {
+                    ignoreHTTPSErrors: true,
+                    acceptDownloads: true,
+                },
+                browser: getPlaywrightBrowser(),
             },
-            browser: getPlaywrightBrowser(),
         },
-    },
+    };
 };
 
 module.exports = {

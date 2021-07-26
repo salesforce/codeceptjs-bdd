@@ -53,7 +53,17 @@ Default browser for Playwright is `chromium`. To run on different desktop browse
 
 ```bash
 
-$ DRIVER=playwright yarn acceptance --profile [firefox|chrome|safari]
+$ yarn acceptance --profile playwright:chrome
+$ yarn acceptance --profile playwright:firefox
+$ yarn acceptance --profile playwright:safari
+
+```
+
+### Run on Google Chrome: Stable Chrome build
+
+```bash
+
+$ yarn acceptance --profile playwright:google:chrome
 
 ```
 

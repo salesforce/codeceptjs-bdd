@@ -197,7 +197,7 @@ export default function CreateTests() {
                 {/* -- */}
                 {runCommands({
                   title: 'Playwright',
-                  profile: 'playwright:chrome',
+                  profile: 'playwright:chrome || playwright:google:chrome',
                 })}
                 {/* -- */}
                 <br />
