@@ -110,3 +110,21 @@ const conf = {
 ```
 
 The backup directory structure will be: `<path-to-tests-folder>/MMM_DD_YYYY/MMM_DD_YYYY___HH:MM:SS_TT`, e.g. `<path-to-tests-folder>/March_21_2021/Mar_12_2021___12-32-05_AM`.
+
+#### Print Repository Info
+
+default: 🌏 [repository] https://github.com/salesforce/codeceptjs-bdd
+custom: add `repository` info to the `codecept.conf.js` file, and the console will print the repository.
+
+```js
+// codecept.conf.js
+
+const conf = {
+
+  repository: 'https:.//my.internal.repository'
+
+  ...
+  ...
+}
+
+```
