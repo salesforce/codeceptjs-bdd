@@ -11,6 +11,8 @@ const REPORT_OUTPUT_DIR = './acceptance/report';
 let conf = {
     name: '<your-acceptance-tests-name>',
 
+    repository: 'https://github.com/salesforce/codeceptjs-bdd',
+
     output: REPORT_OUTPUT_DIR,
 
     bootstrap: (callback) => {
