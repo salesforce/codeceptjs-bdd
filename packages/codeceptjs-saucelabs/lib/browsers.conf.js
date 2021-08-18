@@ -14,7 +14,8 @@ const grabSauceTunnelInfo = () => {
     }
 };
 const sauceOptions = {
-    idleTimeout: 300,
+    idleTimeout: 600,
+    commandTimeout: 600,
     seleniumVersion: '3.14.0',
     ...grabSauceTunnelInfo(),
 };
