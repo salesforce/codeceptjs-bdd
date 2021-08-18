@@ -94,3 +94,11 @@ I.usePlaywrightTo('trigger method on component', async ({ page }) => {
   );
 });
 ```
+
+### Record Playwright Video on FAIL
+
+To enable this feature, add the below ENV property to the `codecept.env` file,
+
+```js
+RECORD_VIDEO_ON_FAIL = true;
+```
