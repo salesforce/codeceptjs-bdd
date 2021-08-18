@@ -1,6 +1,6 @@
 {
     "name": "create-codeceptjs-bdd-tests",
-    "version": "7.0.26",
+    "version": "7.0.27",
     "description": "Create Codeceptjs BDD Tests",
     "keywords": [
         "Cucumber",
@@ -46,7 +46,7 @@
         "cfonts": "^2.8.6",
         "cli-ux": "^5.4.5",
         "codeceptjs": "3.0.7",
-        "codeceptjs-saucelabs": "^5.2.21",
+        "codeceptjs-saucelabs": "^5.2.22",
         "codeceptjs-selenoid": "^1.0.3",
         "dateformat": "4.5.1",
         "expect": "26.6.2",
