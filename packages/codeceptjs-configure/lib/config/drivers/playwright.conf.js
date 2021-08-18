@@ -66,6 +66,7 @@ const playwright_conf = function () {
                 waitForTimeout: (process.env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
                 restart: true,
                 video: process.env.RECORD_VIDEO_ON_FAIL === 'true',
+                trace: process.env.RECORD_TRACE_ON_FAIL === 'true',
                 fullPageScreenshots: true,
                 emulate: {
                     ignoreHTTPSErrors: true,
