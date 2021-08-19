@@ -68,7 +68,7 @@ const playwright_conf = function () {
                 restart: true,
                 video: env.RECORD_VIDEO_ON_FAIL === 'true' || env.RECORD_PLAYWRIGHT_VIDEO === 'true',
                 keepVideoForPassedTests: env.RECORD_PLAYWRIGHT_VIDEO === 'true',
-                trace: process.env.RECORD_TRACE_ON_FAIL === 'true',
+                trace: env.RECORD_TRACE_ON_FAIL === 'true',
                 fullPageScreenshots: true,
                 emulate: {
                     ignoreHTTPSErrors: true,

@@ -95,13 +95,17 @@ I.usePlaywrightTo('trigger method on component', async ({ page }) => {
 });
 ```
 
-### Record Playwright Video on FAIL
+### Record Playwright Video and Attach on Allure Report
 
 To enable this feature, add the below ENV property to the `codecept.env` file,
 
 ```js
-RECORD_VIDEO_ON_FAIL = true;
+RECORD_VIDEO_ON_FAIL = true; // only to record video on Fail & attach to Allure
 ```
+
+````js
+RECORD_PLAYWRIGHT_VIDEO = true; // record and attach Playwright video regardless of results
+
 
 ### Record Playwright Trace on FAIL
 
@@ -109,6 +113,6 @@ To enable this feature, add the below ENV property to the `codecept.env` file,
 
 ```js
 RECORD_TRACE_ON_FAIL = true;
-```
+````
 
 More info trace: https://codecept.io/playwright/#trace
