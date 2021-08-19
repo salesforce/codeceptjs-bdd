@@ -34,5 +34,6 @@
         "fs-extra": "9.0.1",
         "query-selector-shadow-dom": "0.8.0",
         "shelljs": "0.8.4"
-    }
+    },
+    "gitHead": "ef4ddd2ef8e956bcc9741be552ea058eac4a34fc"
 }
