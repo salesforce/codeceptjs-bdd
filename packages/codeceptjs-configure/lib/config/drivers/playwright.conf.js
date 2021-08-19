@@ -7,6 +7,7 @@ const host = require('../../host/host');
 const { devices } = require('playwright');
 const GOOGLE_CHROME = 'google:chrome';
 const CHROMIUM = 'chromium';
+const { env } = require('process');
 
 const getPlaywrightBrowser = function () {
     if (BROWSER && BROWSER.match('playwright:[a-zA-Z]')) {
@@ -63,9 +64,10 @@ const playwright_conf = function () {
                 url: host.get(),
                 waitForNavigation: 'domcontentloaded',
                 show: process.env.HEADLESS === 'false',
-                waitForTimeout: (process.env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
+                waitForTimeout: (env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
                 restart: true,
-                video: process.env.RECORD_VIDEO_ON_FAIL === 'true',
+                video: env.RECORD_VIDEO_ON_FAIL === 'true' || env.RECORD_PLAYWRIGHT_VIDEO === 'true',
+                keepVideoForPassedTests: env.RECORD_PLAYWRIGHT_VIDEO === 'true',
                 trace: process.env.RECORD_TRACE_ON_FAIL === 'true',
                 fullPageScreenshots: true,
                 emulate: {
