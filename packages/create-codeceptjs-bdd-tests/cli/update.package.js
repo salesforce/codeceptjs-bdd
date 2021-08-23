@@ -7,11 +7,11 @@ exports.addNpmScripts = (packageJson, RELATIVE_PATH, DRIVER) => {
     let multibrowsersScript = '"codeceptjs def && codeceptjs run-multiple multibrowsers"';
 
     const SCRIPTS = `"scripts": {
-  "acceptance": "codeceptjs def && codeceptjs run --steps", 
-  "acceptance:parallel": ${parallelScript},
-  "acceptance:parallel:multibrowsers": ${multibrowsersScript},
-  "acceptance:report": "allure serve ./${RELATIVE_PATH}/acceptance/report",
-  "acceptance:clean": "allure generate -c -o ./${RELATIVE_PATH}/acceptance/report",`;
+                                    "acceptance": "codeceptjs def && codeceptjs run --steps", 
+                                    "acceptance:parallel": ${parallelScript},
+                                    "acceptance:parallel:multibrowsers": ${multibrowsersScript},
+                                    "acceptance:report": "allure serve ./${RELATIVE_PATH}/acceptance/report",
+                                    "acceptance:clean": "allure generate -c -o ./${RELATIVE_PATH}/acceptance/report",`;
 
     shell.sed('-i', '"scripts": {', SCRIPTS, packageJson);
 };
