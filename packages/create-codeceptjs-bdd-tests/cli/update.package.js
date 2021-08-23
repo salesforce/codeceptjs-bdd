@@ -21,7 +21,7 @@ exports.installDependencies = () => {
 
     if (
         shell.exec(
-            'yarn add @wdio/selenium-standalone-service@latest prettier typescript shelljs ts-node dotenv-extended@latest codeceptjs-saucelabs@latest codeceptjs-selenoid@latest expect@latest codeceptjs-configure@latest allure-commandline codeceptjs@latest debug playwright@latest rimraf deepmerge webdriverio@latest -D --registry https://registry.npmjs.org/'
+            'yarn add @wdio/selenium-standalone-service@latest prettier typescript shelljs@latest ts-node dotenv-extended@latest codeceptjs-saucelabs@latest codeceptjs-selenoid@latest expect@latest codeceptjs-configure@latest allure-commandline codeceptjs@latest debug playwright@latest rimraf deepmerge webdriverio@latest -D --registry https://registry.npmjs.org/'
         ).code !== 0
     ) {
         throw new Error('Yarn command failed.');
