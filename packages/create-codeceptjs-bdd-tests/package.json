@@ -31,9 +31,6 @@
         "circleci:test:playwright:parallel": "DEBUG=pw:api HEADLESS=true DRIVER=playwright yarn acceptance:parallel --profile firefox",
         "circleci:test:webdriver": "DRIVER=webdriver yarn acceptance --profile chrome:headless",
         "circleci:test:webdriver:parallel": "DRIVER=webdriver yarn acceptance:parallel --profile chrome:headless",
-        "e2e": "codeceptjs def && codeceptjs run ",
-        "e2e:parallel": "codeceptjs def && npx codeceptjs run-workers --suites 5",
-        
         "report": "allure serve ./acceptance/report",
         "lerna:lint:prettier": "lerna run lint:prettier",
         "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
@@ -53,6 +50,6 @@
         "inquirer": "7.0.0",
         "node-emoji": "1.10.0",
         "ts-node": "9.1.0",
-        "typescript": "4.1.2",
+        "typescript": "4.1.2"
     }
 }
