@@ -23,6 +23,9 @@ let conf = {
         driver_helper: {
             require: './acceptance/helpers/driver.helper',
         },
+        PlaywrightHelper: {
+            require: 'codeceptjs-configure/lib/helpers/playwright.helper.js',
+        },
     },
 
     // add more configuration as required
