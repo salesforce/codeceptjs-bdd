@@ -7,11 +7,11 @@ exports.addNpmScripts = (packageJson, RELATIVE_PATH, DRIVER) => {
     let multibrowsersScript = '"codeceptjs def && codeceptjs run-multiple multibrowsers"';
 
     const SCRIPTS = `"scripts": {
-  "acceptance": "codeceptjs def && codeceptjs run --steps", 
-  "acceptance:parallel": ${parallelScript},
-  "acceptance:parallel:multibrowsers": ${multibrowsersScript},
-  "acceptance:report": "allure serve ./${RELATIVE_PATH}/acceptance/report",
-  "acceptance:clean": "allure generate -c -o ./${RELATIVE_PATH}/acceptance/report",`;
+                                    "acceptance": "codeceptjs def && codeceptjs run --steps", 
+                                    "acceptance:parallel": ${parallelScript},
+                                    "acceptance:parallel:multibrowsers": ${multibrowsersScript},
+                                    "acceptance:report": "allure serve ./${RELATIVE_PATH}/acceptance/report",
+                                    "acceptance:clean": "allure generate -c -o ./${RELATIVE_PATH}/acceptance/report",`;
 
     shell.sed('-i', '"scripts": {', SCRIPTS, packageJson);
 };
@@ -21,7 +21,7 @@ exports.installDependencies = () => {
 
     if (
         shell.exec(
-            'yarn add prettier typescript shelljs ts-node dotenv-extended@latest codeceptjs-saucelabs@latest codeceptjs-selenoid@latest expect@latest expect-playwright@latest codeceptjs-configure@latest allure-commandline codeceptjs@3.0.2 debug faker playwright@latest protractor rimraf should deepmerge -D --registry https://registry.npmjs.org/'
+            'yarn add @wdio/selenium-standalone-service@latest prettier typescript shelljs@latest ts-node dotenv-extended@latest codeceptjs-saucelabs@latest codeceptjs-selenoid@latest expect@latest codeceptjs-configure@latest allure-commandline codeceptjs@latest debug playwright@latest rimraf deepmerge webdriverio@latest -D --registry https://registry.npmjs.org/'
         ).code !== 0
     ) {
         throw new Error('Yarn command failed.');

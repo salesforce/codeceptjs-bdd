@@ -1,0 +1,88 @@
+Arguments: 
+  /Users/kgajjar/.nvm/versions/node/v14.16.1/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js run report
+
+PATH: 
+  /Users/kgajjar/Library/Application Support/cloud-code/installer/google-cloud-sdk/bin:/usr/bin:/Users/kgajjar/.nvm/versions/node/v14.16.1/bin:/Users/kgajjar/bin:/usr/local/bin:/Library/Java/JavaVirtualMachines/sfdc-openjdk_11.0.9.1_11.43.56.jdk/Contents/Home/bin/java:/Users/kgajjar/blt/app/main/core/build/apache-maven/bin:/Users/kgajjar/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kgajjar/Documents/workspace/codeceptjs-bdd/packages/create-codeceptjs-bdd-tests/package.json: Unexpected token } in JSON at position 2839
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "create-codeceptjs-bdd-tests",
+      "version": "7.0.27",
+      "description": "Create Codeceptjs BDD Tests",
+      "keywords": [
+          "Cucumber",
+          "CodeceptJS",
+          "Gherkin"
+      ],
+      "homepage": "https://gkushang.github.io/",
+      "repository": {
+          "type": "git",
+          "url": "git+https://github.com/gkushang/codeceptjs-bdd.git"
+      },
+      "license": "MIT",
+      "author": {
+          "name": "Kushang Gajjar",
+          "email": "g.kushang@gmail.com"
+      },
+      "main": "./cli/create.js",
+      "bin": {
+          "create-codeceptjs-bdd-tests": "./cli/create.js"
+      },
+      "scripts": {
+          "acceptance": "codeceptjs def && codeceptjs run --verbose ",
+          "acceptance:all": "yarn acceptance && yarn acceptance:parallel && DRIVER=webdriver yarn acceptance --profile sauce:chrome && DRIVER=webdriver yarn acceptance",
+          "acceptance:parallel": "npx codeceptjs run-workers --suites 3 --verbose",
+          "acceptance:report": "allure serve ./acceptance/report",
+          "acceptance:washer": "npx codeceptjs run-rerun",
+          "circleci:test:playwright": "DEBUG=pw:api HEADLESS=true DRIVER=playwright yarn acceptance --profile firefox",
+          "circleci:test:playwright:parallel": "DEBUG=pw:api HEADLESS=true DRIVER=playwright yarn acceptance:parallel --profile firefox",
+          "circleci:test:webdriver": "DRIVER=webdriver yarn acceptance --profile chrome:headless",
+          "circleci:test:webdriver:parallel": "DRIVER=webdriver yarn acceptance:parallel --profile chrome:headless",
+          "e2e": "codeceptjs def && codeceptjs run ",
+          "e2e:parallel": "codeceptjs def && npx codeceptjs run-workers --suites 5",
+          
+          "report": "allure serve ./acceptance/report",
+          "lerna:lint:prettier": "lerna run lint:prettier",
+          "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+          "test": "codeceptjs def && yarn circleci:test:playwright:chromium && yarn circleci:test:playwright:firefox && yarn circleci:test:playwright:safari && circleci:test:webdriver && circleci:test:playwright:parallel && circleci:test:webdriver:parallel",
+          "ui:test": "codeceptjs def && codeceptjs run ",
+          "ui:test:all": "yarn ui:test && yarn ui:test:parallel && DRIVER=webdriver yarn ui:test --profile sauce:chrome && DRIVER=webdriver yarn ui:test",
+          "ui:test:parallel": "codeceptjs def && npx codeceptjs run-workers --suites 3",
+          "ui:test:report": "allure serve ./acceptance/report",
+          "ui:test:washer": "npx codeceptjs run-rerun"
+      },
+      "dependencies": {
+          "@wdio/selenium-standalone-service": "^7.10.1",
+          "allure-commandline": "^2.9.0",
+          "cfonts": "^2.8.6",
+          "cli-ux": "^5.4.5",
+          "figlet": "1.2.3",
+          "inquirer": "7.0.0",
+          "node-emoji": "1.10.0",
+          "ts-node": "9.1.0",
+          "typescript": "4.1.2",
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
