@@ -6,7 +6,7 @@ Feature: Login to Github
   Wants to be able to login
 
 
-        @login @test__
+        @login
         Scenario: Fred successfully logs in to contribute to the Git repository
 
             Given Fred logs in with the valid credentials
