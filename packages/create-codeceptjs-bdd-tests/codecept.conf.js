@@ -27,6 +27,17 @@ let conf = {
             require: 'codeceptjs-configure/lib/helpers/playwright.helper.js',
         },
     },
+
+    /********************** Enable additional plugins as required
+     * 
+     * plugins: {
+        retryFailedTests: {
+            enabled: false,
+            retries: 1,
+            require: 'codeceptjs-configure/plugins/retry-failed-tests.plugin.js',
+        },
+    },
+     */
 };
 
 /**

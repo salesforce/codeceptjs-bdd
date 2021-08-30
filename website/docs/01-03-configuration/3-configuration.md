@@ -134,6 +134,7 @@ To Retry Failed Scenario, enable the below plugin in the `codecept.conf.js`,
 ```js
  plugins: {
   retryFailedTests: {
+      require: 'codeceptjs-configure/plugins/retry-failed-tests.plugin.js',
       enabled: true,
       retries: 1
   }
