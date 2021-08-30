@@ -10,6 +10,7 @@ const { event, output } = require('codeceptjs');
  *
  * plugins: {
  *  retryFailedTests: {
+ *      require: 'codeceptjs-configure/plugins/retry-failed-tests.plugin.js',
  *      enabled: true,
  *      retries: 1
  *  }
