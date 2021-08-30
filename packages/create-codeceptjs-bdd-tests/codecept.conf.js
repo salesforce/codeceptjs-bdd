@@ -28,14 +28,16 @@ let conf = {
         },
     },
 
-    // add more configuration as required
-    rerun: {
-        // how many times all tests should pass
-        minSuccess: 2,
-
-        // how many times to try to rerun all tests
-        maxReruns: 4,
+    /********************** Enable additional plugins as required
+     * 
+     * plugins: {
+        retryFailedTests: {
+            enabled: false,
+            retries: 1,
+            require: 'codeceptjs-configure/plugins/retry-failed-tests.plugin.js',
+        },
     },
+     */
 };
 
 /**
