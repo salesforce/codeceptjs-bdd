@@ -124,3 +124,19 @@ const conf = {
   repository: 'https:.//my.internal.repository',
 };
 ```
+
+#### Re-try Failed Scenarios: BDD or Mocha
+
+To Retry Failed Scenario, enable the below plugin in the `codecept.conf.js`,
+
+`retries: number of retries for each failed scenario`
+
+```js
+ plugins: {
+  retryFailedTests: {
+      enabled: true,
+      retries: 1
+  }
+}
+
+```
