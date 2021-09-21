@@ -15,6 +15,10 @@
 
 ### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
 
+### Example of out-of-the-box ShadowDOM support for WebComponents (LWC for Salesforce) & Applitools
+
+Take a look at (here)[https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example#webcomponents-playwright--webdriver-e2e-example]
+
 ### 🎥 How to Videos
 
 <a href="https://www.youtube.com/playlist?list=PL4i-APck4KuhawdeMqhREtuVf_14CBihm" rel="nofollow noreferrer" target="_blank"><img src="https://i.postimg.cc/3R3gddC3/quick-setup-yt.png" alt="YouTube How To Videos"></a>
