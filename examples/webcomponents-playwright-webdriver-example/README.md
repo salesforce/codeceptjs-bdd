@@ -36,7 +36,7 @@ yarn acceptance --profile webdriver:chrome
 
 ![](wc.png)
 
-##### Applitools
+## Applitools
 
 Applitools is integrated thru the helper defined [here](https://codecept.io/visual/#using-applitools). In order to enabled Applitools for this example repo, provide the applitools key thru env variable as shown below, or add the KEY to your `codecept.dev.env` file,
 
