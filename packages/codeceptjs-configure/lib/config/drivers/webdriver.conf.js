@@ -60,13 +60,13 @@ const get = (conf) => {
         conf.helpers.WebDriver.browser = 'chrome';
         conf.helpers.WebDriver.desiredCapabilities = {
             chromeOptions: {
-                args: ['--headless', '--disable-gpu', '--window-size=1920,1080'],
+                args: ['--headless', '--disable-gpu', '--window-size=1920,1080', '--disable-notifications'],
+                prefs: {
+                    'plugins.always_open_pdf_externally': true,
+                },
             },
         };
-    }
-
-    // disable Chrome Notifications
-    if (conf.helpers.WebDriver && conf.helpers.WebDriver.browser === 'chrome') {
+    } else if (conf.helpers.WebDriver && conf.helpers.WebDriver.browser === 'chrome') {
         conf.helpers.WebDriver.desiredCapabilities = {
             chromeOptions: {
                 args: ['--disable-notifications'],
