@@ -14,10 +14,12 @@
     "author": "Kushang Gajjar <gkushang@gmail.com>",
     "license": "ISC",
     "devDependencies": {
+        "@wdio/selenium-standalone-service": "7.12.5",
         "allure-commandline": "^2.13.0",
         "codeceptjs": "3.0.7",
-        "codeceptjs-configure": "9.0.8",
-        "codeceptjs-saucelabs": "5.2.21",
+        "codeceptjs-applitoolshelper": "^1.1.5",
+        "codeceptjs-configure": "9.0.18",
+        "codeceptjs-saucelabs": "5.2.22",
         "debug": "^4.3.1",
         "deepmerge": "^4.2.2",
         "dotenv-extended": "^2.9.0",
@@ -31,6 +33,7 @@
         "should": "^13.2.3",
         "soft-assert": "^0.2.3",
         "ts-node": "^9.1.0",
-        "typescript": "^4.1.2"
+        "typescript": "^4.1.2",
+        "webdriverio": "7.12.5"
     }
 }
