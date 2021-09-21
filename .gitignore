@@ -3,4 +3,5 @@ packages/create-codeceptjs-bdd-tests/acceptance/report*/
 packages/salesforce-lwc-codecept-example/**/**/report/
 packages/create-codeceptjs-bdd-tests/acceptance/config/dev.codecept.secrets
 examples/webcomponents-playwright-webdriver-example/tests/acceptance/report
+examples/webcomponents-playwright-webdriver-example/tests/acceptance/config/codecept.dev.env
 *.DS_Store
