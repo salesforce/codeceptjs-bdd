@@ -1,1 +1,2 @@
  tests/acceptance/report/
+ tests/acceptance/config/codecept.dev.env
