@@ -18,13 +18,13 @@ let conf = {
             enabled: true,
         },
     },
-    // add more configuration as required
-    rerun: {
-        // how many times all tests should pass
-        minSuccess: 2,
 
-        // how many times to try to rerun all tests
-        maxReruns: 4,
+    helpers: {
+        ApplitoolsHelper: {
+            require: 'codeceptjs-applitoolshelper',
+            applitoolsKey: process.env.APPLITOOLS_API_KEY,
+            windowSize: '1920x600',
+        },
     },
 };
 
