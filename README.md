@@ -9,15 +9,15 @@
 > This is the Javascript UI Automation framework to automate Mocha-styled low-level Integration tests or Webdriver-based high-level E2E tests (BDD or traditional) tests.
 > Tests runs on various platforms such as Playwright Mobile/Tablet browsers, SauceLabs, SelenoidGrid, Appium and local browsers.
 
+##### Example of out-of-the-box ShadowDOM support for WebComponents (LWC for Salesforce) & Applitools
+
+Take a look at [here](https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example#webcomponents-playwright--webdriver-e2e-example)
+
 #### 🌈 PWA Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
 
 <a href="https://gkushang.github.io" rel="nofollow noreferrer" target="_blank">![](website/cbdd.gif)</a>
 
 ### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
-
-### Example of out-of-the-box ShadowDOM support for WebComponents (LWC for Salesforce) & Applitools
-
-Take a look at (here)[https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example#webcomponents-playwright--webdriver-e2e-example]
 
 ### 🎥 How to Videos
 
