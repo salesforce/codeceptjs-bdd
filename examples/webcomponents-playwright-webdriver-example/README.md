@@ -44,6 +44,6 @@ Applitools is integrated thru the helper defined [here](https://codecept.io/visu
 APPLITOOLS_API_KEY=<your-key> yarn acceptance --profile webdriver:chrome
 ```
 
-and enable the line `(I as any).eyeCheck('helloBindin')` in `hello-binding.spec.ts` file.
+and enable the line `(I as any).eyeCheck('helloBinding')` in `hello-binding.spec.ts` file.
 
 Please note: at this time the helper is only supported for Webdriver. Playwright will be enabled soon!
