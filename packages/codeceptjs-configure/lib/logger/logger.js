@@ -38,7 +38,7 @@ const error = (errorMessage) => {
     throw new Error(`${emoji.get('warning')}  ${errorMessage}`);
 };
 
-const welcome = () => {
+const welcome = (name) => {
     console.clear();
 
     let message = '\n';
@@ -49,7 +49,13 @@ const welcome = () => {
         message = message.concat(zap).concat(' ');
     }
 
-    message = message.concat('  Codeceptjs-BDD Acceptance Tests   ');
+    if (name && !name.toLowerCase().includes('codecept')) {
+        name = `Codeceptjs: ${name}`;
+    }
+
+    const h1Name = name || 'Codeceptjs-BDD Acceptance Tests';
+
+    message = message.concat(`  ${h1Name}   `);
 
     for (let m = 0; m < i; m++) {
         message = message.concat(zap).concat(' ');

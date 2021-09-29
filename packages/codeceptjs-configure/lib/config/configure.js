@@ -8,14 +8,14 @@ const debug = require('debug')('config');
 const driversConf = require('./drivers/drivers.conf');
 const gDriver = process.env.DRIVER;
 
-logger.welcome();
-
 /**
  * Create Configure with Master config
  *
  * @param {object} conf
  */
 const create = (conf, userSpecifiedSauceBrowsers) => {
+    logger.welcome(conf.name);
+
     if (conf.helpers && conf.helpers.WebDriver && gDriver && gDriver.toLocaleLowerCase() !== 'webdriver') {
         delete conf.helpers.WebDriver;
     }
