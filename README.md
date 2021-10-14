@@ -8,7 +8,8 @@
 * BDD Cucumber and traditional Mocha-styled, 
 * SauceLabs and Selenoid integrations, 
 * Applitools, Appium integrations
-* Exclusive support to automate WebComponents, LWC Apps & ease of locating #shadow-roots elements for both Webdriver & Playwright
+* Ease of Automating Salesforce Apps
+  * Exlcusive Shadow DOM support for LWC/LWR applications, WebComponents
 * and many more features
 
 ##### 🌈 Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
