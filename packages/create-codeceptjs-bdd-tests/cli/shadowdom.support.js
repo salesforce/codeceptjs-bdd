@@ -23,8 +23,6 @@ class ShadowDomSupport {
 
         const codeceptEnvFile = path.join(envs.rootPath, envs.relativePath, `acceptance`, 'config', 'codecept.env');
 
-        console.log('\n\n\n\n\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>' + codeceptEnvFile);
-
         fs.appendFileSync(codeceptEnvFile, '\n\n# SHADOW DOM SUPPORT');
         fs.appendFileSync(codeceptEnvFile, '\nENABLE_SHADOW_DOM_SUPPORT = true');
         fs.appendFileSync(codeceptEnvFile, '\nCUSTOM_LOCATOR_STRATEGY = true');

@@ -38,6 +38,8 @@ const run = async () => {
      * update driver
      **********************************************/
     const updateDriver = async () => {
+        log.shadowDomInfo();
+
         const { ENABLE_SHADOW_DOM_SUPPORT } = await enableShadowDomSupport();
 
         if (ENABLE_SHADOW_DOM_SUPPORT) {
