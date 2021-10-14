@@ -4,9 +4,9 @@
 
 [![CircleCI](https://circleci.com/gh/salesforce/codeceptjs-bdd.svg?style=svg)](https://circleci.com/gh/salesforce/codeceptjs-bdd) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 
--   Webdriver and Playwright drivers,
--   BDD Cucumber and traditional Mocha-styled,
--   SauceLabs and Selenoid integrations,
+-   Webdriver and Playwright parity: Write one test, Run on both drivers
+-   BDD Cucumber and traditional Mocha-styled
+-   SauceLabs and Selenoid integrations
 -   Applitools, Appium integrations
 -   Ease of Automating Salesforce Apps
     -   Exclusive Shadow DOM support for LWC/LWR applications, WebComponents
