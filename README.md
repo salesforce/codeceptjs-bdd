@@ -102,13 +102,15 @@ There may be cases that doesn't require you to deal with Shadow Element, e.g. pl
 I.fillField({css: 'div.username'},'myusername');
 I.fillField({css: 'div.password'},'******');
 ```
-## Have any question? Join Slack community for more help
+## Have any questions? Join Slack community for more help
 
 [Slack Chat](https://bit.ly/chat-codeceptjs) and join channel #codeceptjs-bdd
 
-### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
+## 🚚 Changelog
 
-### 🎥 How to Videos
+[Link to Changelog](https://gkushang.github.io/CHANGELOG)
+
+## 🎥 How to Videos
 
 <a href="https://www.youtube.com/playlist?list=PL4i-APck4KuhawdeMqhREtuVf_14CBihm" rel="nofollow noreferrer" target="_blank"><img src="https://i.postimg.cc/3R3gddC3/quick-setup-yt.png" alt="YouTube How To Videos"></a>
 
