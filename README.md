@@ -86,7 +86,7 @@ HEADLESS=true yarn acceptance:parallel --profile playwright:chrome
 ### Work with Shadow Elements
 Assuming you've enabled the Shadow DOM Support thru the CLI framework setup. 
 
-Let's say you want to fill field on Shadow element on this Lighting Web Components page: https://recipes.lwc.dev/
+Let's say you want to fill field on Shadow element on this Lighting Web Components page: https://recipes.lwc.dev/. You aren't required to provide the DOM Hierarchy in this frameowrk and still it will find the elements thru Webdriver (Playwright has a default support). Meaning, it provies you the Playwright parity with Webdriver and same tests can run on both. So, all you need is to provide any unique element as shown below,
 
 ```
 I.fillField('ui-input input','codeceptjs-bdd')
