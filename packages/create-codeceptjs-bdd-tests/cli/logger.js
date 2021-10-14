@@ -80,11 +80,22 @@ const infoAboutPaths = (path) => {
     );
 };
 
-const saucelabsInfo = (username, key) => {
+const saucelabsInfo = () => {
     cli.default.log(
         '\n' +
             chalk.bold.red(emoji.emojify(':bulb:') + ' You can run tests on Saucelabs thru a "--profile" flag: ') +
             chalk.bold.bgBlue('yarn acceptance --profile sauce:chrome')
+    );
+};
+
+const shadowDomInfo = () => {
+    cli.default.log(
+        '\n' +
+            chalk.bold.blue(
+                emoji.emojify(':new_moon_with_face:') +
+                    ' Add Shadow DOM exclusive support for the Webdriver run. Adds Webdriver parity with Playwright. Ease to automate Salesforce apps.' +
+                    emoji.emojify(':cyclone:')
+            )
     );
 };
 
@@ -138,4 +149,5 @@ module.exports = {
     scenarioExecutions,
     tipsToExecuteOnDriver,
     infoAboutPaths,
+    shadowDomInfo,
 };

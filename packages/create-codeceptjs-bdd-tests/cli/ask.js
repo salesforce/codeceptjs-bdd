@@ -12,8 +12,7 @@ exports.aboutProjectPaths = () => {
             name: 'ROOT_PATH',
             type: 'input',
             default: process.cwd(),
-            message:
-                "Enter the Full PATH to your Project's source-code location (full path to /package.json): ",
+            message: "Enter the Full PATH to your Project's source-code location (full path to /package.json): ",
         },
         {
             name: 'RELATIVE_PATH',
@@ -30,6 +29,16 @@ exports.aboutSauceLabs = () => {
             name: 'INTEGRATE_SAUCE_LABS',
             type: 'confirm',
             message: 'Do you want to integrate SauceLabs?',
+        },
+    ]);
+};
+
+exports.enableShadowDomSupport = () => {
+    return inquirer.prompt([
+        {
+            name: 'ENABLE_SHADOW_DOM_SUPPORT',
+            type: 'confirm',
+            message: 'Do you want to enable the Shadow DOM support for Webdriver runs?',
         },
     ]);
 };
