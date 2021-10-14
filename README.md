@@ -83,6 +83,22 @@ HEADLESS=true yarn acceptance:parallel --profile playwright:chrome
 
 ###### For more info about the framework visit [CodeceptJS BDD Docs](http://gkushang.github.io/)
 
+### Work with Shadow Elements
+Assuming you've enabled the Shadow DOM Support thru the CLI framework setup. 
+
+Let's say you want to fill field on Shadow element on this Lighting Web Components page: https://recipes.lwc.dev/
+
+```
+I.fillField('ui-input input','codeceptjs-bdd')
+```
+
+There may be cases that doesn't require you to deal with Shadow Element, e.g. plain login page, you can disable the Shadow Locators finder by providing CSS objects, e.g. 
+
+```
+I.fillField({css: 'div.username'},'myusername');
+I.fillField({css: 'div.password'},'******');
+```
+
 ### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
 
 ### 🎥 How to Videos
