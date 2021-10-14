@@ -20,14 +20,17 @@ let conf = {
     },
 
     helpers: {
-        driver_helper: {
-            require: './acceptance/helpers/driver.helper',
-        },
         PlaywrightHelper: {
             require: 'codeceptjs-configure/lib/helpers/playwright.helper.js',
         },
     },
 
+    plugins: {
+        shadowDom: {
+            enabled: process.env.ENABLE_SHADOW_DOM_SUPPORT === 'true',
+            require: './acceptance/plugins/shadow-dom.plugin.js',
+        },
+    },
     /********************** Enable additional plugins as required
      * 
      * plugins: {
