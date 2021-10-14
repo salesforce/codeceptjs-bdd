@@ -1,6 +1,6 @@
 # [CodeceptJS BDD](http://gkushang.github.io/)
 
-### UI Test Automation Framework
+#### UI Test Automation Framework
 
 [![CircleCI](https://circleci.com/gh/salesforce/codeceptjs-bdd.svg?style=svg)](https://circleci.com/gh/salesforce/codeceptjs-bdd) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 
@@ -11,7 +11,7 @@
 
 ##### 🌈 Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
 
-### Get Started
+## Get Started
 
 Run below command to setup framework from scratch,
 
@@ -27,7 +27,7 @@ Above command will also add Webdriver parity with Playwright to work with Shadow
 
 Take a look at [here](https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example#webcomponents-playwright--webdriver-e2e-example)
 
-### Execute 
+## Execute 
 
 ##### Webdriver
 ```
@@ -59,7 +59,6 @@ yarn acceptance --profile sauce:"macOS 11.00":firefox:80
 ```
 yarn acceptance:parallel --profile playwright:chrome
 ```
-
 
 
 ### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
