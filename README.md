@@ -104,7 +104,7 @@ I.fillField({css: 'div.password'},'******');
 ```
 ## Have any questions? Join Slack community for more help
 
-[Slack Chat](https://bit.ly/chat-codeceptjs) and join channel `#codeceptjs-bdd` for any specific question about this framework
+[Slack Chat](https://bit.ly/chat-codeceptjs) and join channel `#codeceptjs-bdd` for any specific questions about this framework
 
 ## 🚚 Changelog
 
