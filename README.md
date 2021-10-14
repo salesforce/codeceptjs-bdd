@@ -7,6 +7,7 @@
 **_[Codeceptjs-BDD](http://gkushang.github.io/) Framework with BDD Cucumber, Webdriver, Playwright, SauceLabs & Selenoid integrations. Exclusive support to automate WebComponents, LWC Apps & ease of locating #shadow-roots elements._**
 
 > This is the Javascript UI Automation framework to automate Mocha-styled low-level Integration tests or Webdriver-based high-level E2E tests (BDD or traditional) tests.
+
 > Tests runs on various platforms such as Playwright Mobile/Tablet browsers, SauceLabs, SelenoidGrid, Appium and local browsers.
 
 ##### 🌈 Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
