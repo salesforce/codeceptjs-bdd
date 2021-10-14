@@ -83,7 +83,7 @@ HEADLESS=true yarn acceptance:parallel --profile playwright:chrome
 
 ###### For more info about the framework visit [CodeceptJS BDD Docs](http://gkushang.github.io/)
 
-### Work with Shadow Elements
+### Ease of working with Shadow Elements. Webdriver & Playwright Parity
 Assuming you've enabled the Shadow DOM Support thru the CLI framework setup. 
 
 Let's say you want to fill-field on the Shadow element on this Lighting Web Components page: https://recipes.lwc.dev/. You aren't required to provide the DOM Hierarchy in this framework and still, it will find the elements thru Webdriver (Playwright has default support). Meaning, it provides the Playwright parity with Webdriver. 
