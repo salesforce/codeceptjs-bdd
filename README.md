@@ -65,6 +65,11 @@ yarn acceptance --profile sauce:"macOS 11.00":firefox:80
 yarn acceptance:parallel --profile playwright:chrome
 ```
 
+##### Headless
+```
+HEADLESS=true yarn acceptance:parallel --profile playwright:chrome
+```
+
 
 ### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
 
