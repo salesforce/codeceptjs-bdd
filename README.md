@@ -10,6 +10,7 @@
 * Applitools, Appium integrations
 * Ease of Automating Salesforce Apps
   * Exlcusive Shadow DOM support for LWC/LWR applications, WebComponents
+  * WebdriverIO parity with Playwright to work with Shadow Elements
 * and many more features
 
 ##### 🌈 Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
