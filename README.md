@@ -19,9 +19,13 @@ Run below command to setup framework from scratch,
 npx create-codeceptjs-bdd-tests
 ```
 
-This is the interactive CLI which will walk you through the step-step setup and will setup Webdriver & Playwright. It also creates the framework with page objects, helpers, plugins etc. If you have Sauce Labs account, you can also set the integration thru the CLI.
+This **Interactive CLI** walk you through the _step-step setup_. It will setup,
+* Executios on both Webdriver & Playwright. 
+* Create the framework structure with page objects, helpers, plugins, test env files etc. 
+* Integrate Sauce Labs with framework
+* Provides you with Default BDD & Mocha-style example scenarios to start with
 
-Above command will also add Webdriver parity with Playwright to work with Shadow elements. 
+Above command will also add **Webdriver parity with Playwright to work with Shadow elements**. 
 
 #### Example of out-of-the-box ShadowDOM support for WebComponents (LWC for Salesforce) & Applitools
 
