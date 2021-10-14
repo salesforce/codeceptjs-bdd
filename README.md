@@ -70,6 +70,8 @@ yarn acceptance:parallel --profile playwright:chrome
 HEADLESS=true yarn acceptance:parallel --profile playwright:chrome
 ```
 
+For more info about the framework visit [CodeceptJS BDD Docs](http://gkushang.github.io/)
+
 
 ### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
 
