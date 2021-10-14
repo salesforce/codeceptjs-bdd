@@ -13,7 +13,7 @@
   * WebdriverIO parity with Playwright to work with Shadow Elements
 * and many more features
 
-##### 🌈 Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
+##### Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
 
 ## Get Started
 
