@@ -81,7 +81,7 @@ yarn acceptance:parallel --profile playwright:chrome
 HEADLESS=true yarn acceptance:parallel --profile playwright:chrome
 ```
 
-###### For more info about the framework visit [CodeceptJS BDD Docs](http://gkushang.github.io/)
+###### For more info about the framework visit [CodeceptJS BDD Docs](http://gkushang.github.io/) & https://codecept.io/
 
 ### Ease of working with Shadow Elements. Webdriver & Playwright Parity
 Assuming you've enabled the Shadow DOM Support thru the CLI framework setup. 
@@ -102,6 +102,9 @@ There may be cases that doesn't require you to deal with Shadow Element, e.g. pl
 I.fillField({css: 'div.username'},'myusername');
 I.fillField({css: 'div.password'},'******');
 ```
+## Have any question? Join Slack community for more help
+
+[Slack Chat](https://bit.ly/chat-codeceptjs) and join channel #codeceptjs-bdd
 
 ### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
 
