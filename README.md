@@ -90,7 +90,7 @@ Let's say you want to fill-field on the Shadow element on this Lighting Web Comp
 
 Means, same tests can run on both: Webdriver & Playwright. 
 
-So, all you need is to provide any unique element as shown below,
+So, all you need to provide unique CSS as shown below,
 
 ```
 I.fillField('ui-input input','codeceptjs-bdd')
