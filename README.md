@@ -9,7 +9,7 @@
 > This is the Javascript UI Automation framework to automate Mocha-styled low-level Integration tests or Webdriver-based high-level E2E tests (BDD or traditional) tests.
 > Tests runs on various platforms such as Playwright Mobile/Tablet browsers, SauceLabs, SelenoidGrid, Appium and local browsers.
 
-#### 🌈 Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
+##### 🌈 Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
 
 ### Get Started
 
@@ -28,6 +28,28 @@ Above command will also add Webdriver parity with Playwright to work with Shadow
 Take a look at [here](https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example#webcomponents-playwright--webdriver-e2e-example)
 
 ### Execute 
+
+##### Webdriver
+```
+yarn acceptance --profile webdriver:chrome
+```
+
+##### Playwright
+```
+yarn acceptance --profile playwright:chrome
+yarn acceptance --profile playwright:safari
+yarn acceptance --profile playwright:firefox
+yarn acceptance --profile playwright:google:chrome
+```
+
+##### Mobile or Tablets
+```
+yarn acceptance --profile device:'iPhone 11':safari
+```
+
+[List of devices](https://github.com/microsoft/playwright/blob/master/packages/playwright-core/src/server/deviceDescriptorsSource.json)
+
+
 
 ### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
 
