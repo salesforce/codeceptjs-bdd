@@ -46,8 +46,19 @@ yarn acceptance --profile playwright:google:chrome
 ```
 yarn acceptance --profile device:'iPhone 11':safari
 ```
-
 [List of devices](https://github.com/microsoft/playwright/blob/master/packages/playwright-core/src/server/deviceDescriptorsSource.json)
+
+
+##### Sauce Labs
+```
+yarn acceptance --profile sauce:chrome
+yarn acceptance --profile sauce:"macOS 11.00":firefox:80
+```
+
+##### Parallel
+```
+yarn acceptance:parallel --profile playwright:chrome
+```
 
 
 
