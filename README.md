@@ -5,9 +5,9 @@
 [![CircleCI](https://circleci.com/gh/salesforce/codeceptjs-bdd.svg?style=svg)](https://circleci.com/gh/salesforce/codeceptjs-bdd) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 
 **_[Codeceptjs-BDD](http://gkushang.github.io/)_** framework with 
-* BDD Cucumber and/or traditional Mocha-styled, 
-* Webdriver and/or Playwright, 
-* SauceLabs and/ore Selenoid integrations, 
+* Webdriver and Playwright drivers, 
+* BDD Cucumber and traditional Mocha-styled, 
+* SauceLabs and Selenoid integrations, 
 * Applitools, Appium integrations
 * Exclusive support to automate WebComponents, LWC Apps & ease of locating #shadow-roots elements for both Webdriver & Playwright
 * and many more features
