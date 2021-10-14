@@ -23,7 +23,7 @@ Run below command to setup framework from scratch,
 npx create-codeceptjs-bdd-tests
 ```
 
-This **Interactive CLI** walk you through the _step-step setup_. It will setup,
+This **Interactive CLI** walks you through the _step-step setup_. It will setup,
 * Executios on both Webdriver & Playwright. 
 * Create the framework structure with page objects, helpers, plugins, test env files etc. 
 * Integrate Sauce Labs with framework
