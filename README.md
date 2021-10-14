@@ -17,7 +17,7 @@
 
 ## Get Started
 
-Run below command to setup framework from scratch,
+One line Setup,
 
 ```
 npx create-codeceptjs-bdd-tests
