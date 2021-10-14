@@ -1,6 +1,6 @@
 # [CodeceptJS BDD](http://gkushang.github.io/)
 
-#### UI Test Automation Framework
+#### UI/API Test Automation Framework: Webdriver & Playwright
 
 [![CircleCI](https://circleci.com/gh/salesforce/codeceptjs-bdd.svg?style=svg)](https://circleci.com/gh/salesforce/codeceptjs-bdd) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 
