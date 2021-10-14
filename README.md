@@ -23,7 +23,8 @@ This **Interactive CLI** walk you through the _step-step setup_. It will setup,
 * Executios on both Webdriver & Playwright. 
 * Create the framework structure with page objects, helpers, plugins, test env files etc. 
 * Integrate Sauce Labs with framework
-* Provides you with Default BDD & Mocha-style example scenarios to start with
+* Provides default BDD & Mocha-style example scenarios to start with
+* Setup Parallel executions, and many more
 
 Above command will also add **Webdriver parity with Playwright to work with Shadow elements**. 
 
