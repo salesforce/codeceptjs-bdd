@@ -4,14 +4,14 @@
 
 [![CircleCI](https://circleci.com/gh/salesforce/codeceptjs-bdd.svg?style=svg)](https://circleci.com/gh/salesforce/codeceptjs-bdd) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![License](https://img.shields.io/npm/l/codeceptjs-cucumber.svg)](LICENSE)
 
-* Webdriver and Playwright drivers, 
-* BDD Cucumber and traditional Mocha-styled, 
-* SauceLabs and Selenoid integrations, 
-* Applitools, Appium integrations
-* Ease of Automating Salesforce Apps
-  * Exlcusive Shadow DOM support for LWC/LWR applications, WebComponents
-  * WebdriverIO parity with Playwright to work with Shadow Elements
-* and many more features
+-   Webdriver and Playwright drivers,
+-   BDD Cucumber and traditional Mocha-styled,
+-   SauceLabs and Selenoid integrations,
+-   Applitools, Appium integrations
+-   Ease of Automating Salesforce Apps
+    -   Exclusive Shadow DOM support for LWC/LWR applications, WebComponents
+    -   WebdriverIO parity with Playwright to work with Shadow Elements
+-   and many more features
 
 ##### Website: [Codeceptjs-BDD Framework Documentations](http://gkushang.github.io/)
 
@@ -24,26 +24,29 @@ npx create-codeceptjs-bdd-tests
 ```
 
 This **Interactive CLI** walks you through the _step-step setup_. It will setup,
-* Executios on both Webdriver & Playwright. 
-* Create the framework structure with page objects, helpers, plugins, test env files etc. 
-* Integrate Sauce Labs with framework
-* Provides default BDD & Mocha-style example scenarios to start with
-* Setup Parallel executions, and many more
 
-Above command will also add **Webdriver parity with Playwright to work with Shadow elements**. 
+-   Executios on both Webdriver & Playwright.
+-   Create the framework structure with page objects, helpers, plugins, test env files etc.
+-   Integrate Sauce Labs with framework
+-   Provides default BDD & Mocha-style example scenarios to start with
+-   Setup Parallel executions, and many more
+
+Above command will also add **Webdriver parity with Playwright to work with Shadow elements**.
 
 #### Example of out-of-the-box ShadowDOM support for WebComponents (LWC for Salesforce) & Applitools
 
 Take a look at [here](https://github.com/salesforce/codeceptjs-bdd/tree/develop/examples/webcomponents-playwright-webdriver-example#webcomponents-playwright--webdriver-e2e-example)
 
-## Execute 
+## Execute
 
 ##### Webdriver
+
 ```
 yarn acceptance --profile webdriver:chrome
 ```
 
 ##### Playwright
+
 ```
 yarn acceptance --profile playwright:chrome
 yarn acceptance --profile playwright:safari
@@ -52,30 +55,33 @@ yarn acceptance --profile playwright:google:chrome
 ```
 
 ##### Mobile or Tablets
+
 ```
 yarn acceptance --profile device:'iPhone 11':safari
 ```
+
 [List of devices](https://github.com/microsoft/playwright/blob/master/packages/playwright-core/src/server/deviceDescriptorsSource.json)
 
-
 ##### Sauce Labs
+
 ```
 yarn acceptance --profile sauce:chrome
 yarn acceptance --profile sauce:"macOS 11.00":firefox:80
 ```
 
 ##### Parallel
+
 ```
 yarn acceptance:parallel --profile playwright:chrome
 ```
 
 ##### Headless
+
 ```
 HEADLESS=true yarn acceptance:parallel --profile playwright:chrome
 ```
 
 ###### For more info about the framework visit [CodeceptJS BDD Docs](http://gkushang.github.io/)
-
 
 ### 🚚 [Link to Changelog](https://gkushang.github.io/CHANGELOG)
 
