@@ -20,6 +20,7 @@ const webdriver_conf = {
                         ? locatorStrategy
                         : undefined,
             },
+            shadowDomEnabled: process.env.ENABLE_SHADOW_DOM_SUPPORT === 'true',
             windowSize:
                 process.env.MAXIMIZE_WINDOW === false || process.env.MAXIMIZE_WINDOW === 'false'
                     ? undefined
