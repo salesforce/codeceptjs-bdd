@@ -31,6 +31,10 @@ let masterConf = {
         pauseOnFail: {
             enabled: process.env.PAUSE_ON_FAIL === 'true',
         },
+        shadowDom: {
+            enabled: process.env.ENABLE_SHADOW_DOM_SUPPORT === 'true',
+            require: 'codeceptjs-configure/plugins/shadow-dom.plugin.js',
+        },
         stepByStepReport: {
             enabled: process.env.ENABLE_PAGE_BY_PAGE_SCREENSHOTS,
             deleteSuccessful: false,
