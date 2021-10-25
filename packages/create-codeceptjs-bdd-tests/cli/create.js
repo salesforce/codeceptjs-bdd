@@ -6,7 +6,6 @@ const shell = require('shelljs');
 const path = require('path');
 const fs = require('fs');
 const UpdateEnvironments = require('./update.env');
-const ShadowDomSupport = require('./shadowdom.support');
 
 const { addNpmScripts, installDependencies } = require('./update.package');
 const log = require('./logger');
@@ -16,7 +15,6 @@ const {
     aboutDriver,
     aboutScenarioExecutions,
     aboutSauceLabsAccount,
-    enableShadowDomSupport,
 } = require('./ask');
 
 const run = async () => {
@@ -40,14 +38,6 @@ const run = async () => {
     const updateDriver = async () => {
         log.shadowDomInfo();
 
-        const { ENABLE_SHADOW_DOM_SUPPORT } = await enableShadowDomSupport();
-
-        if (ENABLE_SHADOW_DOM_SUPPORT) {
-            new ShadowDomSupport({
-                rootPath: ROOT_PATH,
-                relativePath: RELATIVE_PATH,
-            });
-        }
         if (DRIVER === 'WebDriver') {
             const { INTEGRATE_SAUCE_LABS } = await aboutSauceLabs();
 

@@ -93,7 +93,7 @@ const shadowDomInfo = () => {
         '\n' +
             chalk.bold.blue(
                 emoji.emojify(':new_moon_with_face:') +
-                    ' Add Shadow DOM exclusive support for the Webdriver run. Adds Webdriver parity with Playwright. Ease to automate Salesforce apps.' +
+                    ' The framework exclusively supports ShadowDOM locators, specifically for Salesforce apps. It needs to be configure separately.' +
                     emoji.emojify(':cyclone:')
             )
     );

@@ -40,6 +40,7 @@ const error = (errorMessage) => {
 
 const welcome = (name) => {
     console.clear();
+    process.env.CODECEPT_PROJECT___NAME = name;
 
     let message = '\n';
     const i = 3;
