@@ -41,6 +41,18 @@ To connect with active Sauce Tunnel, pass param `SAUCE_TUNNEL_NAME`,
 
 `$ SAUCE_TUNNEL_NAME=<tunnel-name> yarn acceptance --profile sauce:'<OS>':<browser>:<version>`
 
+### Enable Extended Debugging and Capture Performance for Sauce Labs runs
+
+Set the env vars,
+
+```
+SAUCE_EXTENDED_DEBUGGING = true
+SAUCE_CAPTURE_PERFORMANCE = true
+
+```
+
+After enablig above options, Saucelabs will show the Browser Network responses, Console logs and also Performance of app.
+
 ### 🎥 Watch in Action
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ugCjMOJlClc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
