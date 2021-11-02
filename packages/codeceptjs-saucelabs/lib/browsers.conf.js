@@ -17,6 +17,8 @@ const sauceOptions = {
     idleTimeout: 600,
     commandTimeout: 600,
     seleniumVersion: '3.14.0',
+    extendedDebugging: process.env.SAUCE_EXTENDED_DEBUGGING === 'true',
+    capturePerformance: process.env.SAUCE_CAPTURE_PERFORMANCE === 'true',
     ...grabSauceTunnelInfo(),
 };
 
