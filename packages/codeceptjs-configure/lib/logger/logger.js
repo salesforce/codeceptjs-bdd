@@ -23,6 +23,7 @@ const log = (logMessage) => {
         message = logMessage;
     }
 
+    // log message
     if (logMessage.chalk) {
         cli.default.log(logMessage.chalk(message.concat('\n')));
     } else {
