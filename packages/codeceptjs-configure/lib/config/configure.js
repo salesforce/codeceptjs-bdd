@@ -39,12 +39,14 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
         driverMessage = `Launching '${browser}' on ${gDriver}.`;
     }
 
-    const repository = conf.repository || 'https://github.com/salesforce/codeceptjs-bdd';
+    const repository = conf.repository;
 
-    logger.log({
-        chalk: chalk.hex('#5d5dff'),
-        message: `🌏 [repository] ${repository}`,
-    });
+    if (repository) {
+        logger.log({
+            chalk: chalk.hex('#5d5dff'),
+            message: `🌏 [repository] ${repository}`,
+        });
+    }
 
     logger.log({
         chalk: chalk.bgBlue.bold,
