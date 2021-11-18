@@ -115,4 +115,13 @@ To enable this feature, add the below ENV property to the `codecept.env` file,
 RECORD_TRACE_ON_FAIL = true;
 ````
 
+### Start Playwright Browser with Proxy
+
+Set env variable mentioned below, and codecept-bdd will start playwright with proxy,
+
+```js
+PLAYWRIGHT_BROWSER_PROXY = <your-proxy>
+``
+
 More info trace: https://codecept.io/playwright/#trace
+```
