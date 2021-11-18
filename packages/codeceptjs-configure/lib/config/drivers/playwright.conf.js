@@ -48,6 +48,24 @@ const get = function (conf) {
         playwrightConf.helpers.Playwright[CHROMIUM] = { channel: 'chrome' };
     }
 
+    if (process.env.PLAYWRIGHT_BROWSER_PROXY) {
+        console.log('playwrightConf.helpers.Playwright.browser >> ', playwrightConf.helpers.Playwright.browser);
+        console.log('playwrightConf.helpers.Playwright.browser >> ', playwrightConf.helpers.Playwright);
+        let playwrightBrowser = playwrightConf.helpers.Playwright[playwrightConf.helpers.Playwright.browser];
+
+        if (playwrightBrowser) {
+            playwrightConf.helpers.Playwright[playwrightConf.helpers.Playwright.browser].proxy = {
+                server: process.env.PLAYWRIGHT_BROWSER_PROXY,
+            };
+        } else {
+            playwrightConf.helpers.Playwright[playwrightConf.helpers.Playwright.browser] = {
+                proxy: {
+                    server: process.env.PLAYWRIGHT_BROWSER_PROXY,
+                },
+            };
+        }
+    }
+
     conf = merge(conf, playwrightConf);
 
     if (process.env.PLAYWRIGHT_DEVICE) {
