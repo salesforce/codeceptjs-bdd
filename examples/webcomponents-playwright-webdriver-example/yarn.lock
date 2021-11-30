@@ -1619,10 +1619,10 @@ co@^4.6.0:
   dependencies:
     "@wdio/eyes.webdriverio" "^2.0.5"
 
-codeceptjs-configure@9.0.18:
-  version "9.0.18"
-  resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/codeceptjs-configure/-/codeceptjs-configure-9.0.18.tgz#306b431ca05aa2b662060f3182efd91d27c950ae"
-  integrity sha512-5SfUDm3koR+0fNNp2HcRCxkhuyC4SBkfy18jVyx1gdUmvv5rj27/0KSOib28kz+ezxy8YLAk3FIYWWDbRkfuiw==
+codeceptjs-configure@^9.1.4:
+  version "9.1.4"
+  resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/codeceptjs-configure/-/codeceptjs-configure-9.1.4.tgz#b6970c1c23f203c63e7c68c49c58dc8cc8393924"
+  integrity sha512-fY7h40NEx4YHxugOgD+giVCRRYWG/IxuSxdvH6cHWsob2aRlfGoiF+Vq1UTBBNy5K1LemKUXyQFyCcAZL0Xq2w==
   dependencies:
     "@codeceptjs/helper" "1.0.2"
     camelcase "6.0.0"
@@ -1641,10 +1641,10 @@ codeceptjs-saucehelper@1.4.0:
   resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/codeceptjs-saucehelper/-/codeceptjs-saucehelper-1.4.0.tgz#1b94dd73670d93194b2dcfbb7824a8730b0a391a"
   integrity sha512-ZsEuSJFqHhQxKymWjcrYeZqj/tlEX7jbpN8VhXJRb5EEfCLPQxDjzRzNNlY6pugcReoJ/Hy/aflfQKbS80BlQg==
 
-codeceptjs-saucelabs@5.2.22:
-  version "5.2.22"
-  resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/codeceptjs-saucelabs/-/codeceptjs-saucelabs-5.2.22.tgz#29af6a556ca9cf5b35f191aa2c6e5574f8bc701c"
-  integrity sha512-JqGiSdbE6tAaiVB4aAdzeG+GLEcnvllG1aHVWF3aCbtEmlPA1u+UE5WGiwb5pDzT3KrdDhYqF9tM/QNOS4PSdA==
+codeceptjs-saucelabs@^5.3.1:
+  version "5.3.1"
+  resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/codeceptjs-saucelabs/-/codeceptjs-saucelabs-5.3.1.tgz#5fae02035f5dc4bc44842adfeac41a0be1512d12"
+  integrity sha512-8tXFsBWdzoWzczSUtGO/c8SA3B3ywPyYqhAeommVvxDZMt/8ur0s2XxMWh1ES7PE1vYXkkGgmeGTiE+EissCzQ==
   dependencies:
     "@wdio/sauce-service" "7.7.3"
     codeceptjs-saucehelper "1.4.0"
