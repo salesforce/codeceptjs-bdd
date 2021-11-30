@@ -58,6 +58,16 @@
     "@applitools/types" "1.0.19"
     "@applitools/utils" "1.2.4"
 
+"@applitools/eyes-playwright@^1.11.1":
+  version "1.11.1"
+  resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/@applitools/eyes-playwright/-/eyes-playwright-1.11.1.tgz#7f4ee1e318ac00c4dbfd3ae5381e88dde2a4d395"
+  integrity sha512-Jc48sAI0ZSvs4X3Emn+XJA+cVBub8qEZvH1shxm2rQWB9HQKuAl5q+udIPUaAFc6wcieVEUwKHY31efHDLzHKA==
+  dependencies:
+    "@applitools/eyes-api" "1.1.6"
+    "@applitools/eyes-sdk-core" "12.24.2"
+    "@applitools/spec-driver-playwright" "1.3.0"
+    "@applitools/visual-grid-client" "15.8.47"
+
 "@applitools/eyes-sdk-core@12.24.2":
   version "12.24.2"
   resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/@applitools/eyes-sdk-core/-/eyes-sdk-core-12.24.2.tgz#2357e1d3aa6529e03158e09492dad3b6786fabe2"
@@ -188,6 +198,14 @@
   version "2.1.7"
   resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/@applitools/snippets/-/snippets-2.1.7.tgz#bcd89152b83ce49dc51f4a44dec6d0dba7338317"
   integrity sha512-Tr4Gj7Qov/oPy+8WI4oVmmubxqpOzr8P3Wjzpl6rA57xKLg6/TiIg5oZNb4+jEmO2ShjNYLaEwRWHl7kPgb4fw==
+
+"@applitools/spec-driver-playwright@1.3.0":
+  version "1.3.0"
+  resolved "https://ash-nexus-proxy.internal.salesforce.com/nexus/content/groups/npm-all/@applitools/spec-driver-playwright/-/spec-driver-playwright-1.3.0.tgz#68bea5d2892203946ad5cf3250bee4911bdfb848"
+  integrity sha512-d6K6a6CxfO2xHKTUtq/c0qiZPyJow5WniDgF9omyhFmzVYeYksVkXF25CRMJKIp/x5Gx97sP/AHoRBPrAgOo5A==
+  dependencies:
+    "@applitools/types" "1.0.20"
+    "@applitools/utils" "1.2.4"
 
 "@applitools/spec-driver-webdriverio@1.2.1":
   version "1.2.1"
