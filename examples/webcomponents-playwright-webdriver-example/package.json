@@ -15,10 +15,11 @@
     "author": "Kushang Gajjar <gkushang@gmail.com>",
     "license": "ISC",
     "devDependencies": {
+        "@applitools/eyes-webdriverio": "^5.34.2",
         "@wdio/selenium-standalone-service": "^7.16.6",
         "allure-commandline": "^2.13.0",
         "codeceptjs": "3.0.7",
-        "codeceptjs-applitoolshelper": "^1.1.5",
+        "codeceptjs-applitoolshelper": "git+https://github.com/gkushang/codeceptjs-applitoolshelper.git#master",
         "codeceptjs-configure": "9.0.18",
         "codeceptjs-saucelabs": "5.2.22",
         "debug": "^4.3.1",

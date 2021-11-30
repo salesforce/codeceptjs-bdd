@@ -22,7 +22,9 @@ let conf = {
     helpers: {
         ApplitoolsHelper: {
             require: 'codeceptjs-applitoolshelper',
-            applitoolsKey: process.env.APPLITOOLS_API_KEY,
+            appName: 'sfdc-app',
+            apiKey: process.env.APPLITOOLS_API_KEY,
+            serverUrl: process.env.APPLITOOLS_SERVER_URL,
             windowSize: '1920x600',
         },
     },
