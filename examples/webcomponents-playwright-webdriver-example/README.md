@@ -46,7 +46,7 @@ APPLITOOLS_SERVER_URL=<your-enterprise-server-url> // if your Applitools is ente
 
 ```
 
-#### Example Test Run
+#### Execute on Applitools
 
 Uncomment the line `(I as any).eyeCheck('helloBinding')` in `hello-binding.spec.ts` file
 
