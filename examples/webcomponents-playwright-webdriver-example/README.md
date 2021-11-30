@@ -53,6 +53,11 @@ Uncomment the line `(I as any).eyeCheck('helloBinding')` in `hello-binding.spec.
 ##### Run on WebDriver
 
 ```
+APPLITOOLS_SERVER_URL=<applitools-server-url-host> APPLITOOLS_API_KEY=<api-key> yarn acceptance --profile webdriver:chrome
 ```
 
-Please note: at this time the helper is only supported for Webdriver. Playwright will be enabled soon!
+##### Run on Plawright
+
+```
+APPLITOOLS_SERVER_URL=<applitools-server-url-host> APPLITOOLS_API_KEY=<api-key> yarn acceptance --profile playwright:chrome
+```
