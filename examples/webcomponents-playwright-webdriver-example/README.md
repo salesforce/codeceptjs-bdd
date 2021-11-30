@@ -41,9 +41,18 @@ yarn acceptance --profile webdriver:chrome
 Applitools is integrated thru the helper defined [here](https://codecept.io/visual/#using-applitools). In order to enabled Applitools for this example repo, provide the applitools key thru env variable as shown below, or add the KEY to your `codecept.dev.env` file,
 
 ```
-APPLITOOLS_API_KEY=<your-key> yarn acceptance --profile webdriver:chrome
+APPLITOOLS_API_KEY=<your-key>
+APPLITOOLS_SERVER_URL=<your-enterprise-server-url> // if your Applitools is enterprise server
+
 ```
 
-and enable the line `(I as any).eyeCheck('helloBinding')` in `hello-binding.spec.ts` file.
+#### Example Test Run
+
+Uncomment the line `(I as any).eyeCheck('helloBinding')` in `hello-binding.spec.ts` file
+
+##### Run on WebDriver
+
+```
+```
 
 Please note: at this time the helper is only supported for Webdriver. Playwright will be enabled soon!

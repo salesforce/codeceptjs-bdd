@@ -15,7 +15,7 @@ Scenario('Verify the Hello Binding Component', async ({ I, lwcRecipeHelloPage })
      * APPLITOOLS_API_KEY = <your-key>
      */
 
-    await (I as any).eyeCheck('helloBinding');
+    // await (I as any).eyeCheck('helloBinding');
 
     expect(await helloBinding.grabTitle()).toEqual('Hello, John Doe!');
 }).tag('@@hello_binding');
