@@ -1615,7 +1615,7 @@ co@^4.6.0:
 
 "codeceptjs-applitoolshelper@git+https://github.com/gkushang/codeceptjs-applitoolshelper.git#master":
   version "1.1.5"
-  resolved "git+https://github.com/gkushang/codeceptjs-applitoolshelper.git#4d1abb42c4e6132cdaff106433ac0b24377cbd72"
+  resolved "git+https://github.com/gkushang/codeceptjs-applitoolshelper.git#19414cae7190ae3e90415850d028a624dc781c33"
   dependencies:
     "@wdio/eyes.webdriverio" "^2.0.5"
 
