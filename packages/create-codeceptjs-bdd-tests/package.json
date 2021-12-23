@@ -53,7 +53,7 @@
         "playwright": "1.11.1",
         "shelljs": "^0.8.4",
         "ts-node": "9.1.0",
-        "typescript": "4.1.2",
+        "typescript": "4.5.2",
         "webdriverio": "^7.10.1"
     },
     "gitHead": "0c747789a87e988dea0eefb4a91d8d33341a10c6"
