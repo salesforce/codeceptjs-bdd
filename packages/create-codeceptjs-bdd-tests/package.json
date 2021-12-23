@@ -48,7 +48,7 @@
         "cli-ux": "^5.4.5",
         "codeceptjs": "^3.1.1",
         "figlet": "1.2.3",
-        "inquirer": "7.0.0",
+        "inquirer": "7.3.3",
         "node-emoji": "1.10.0",
         "playwright": "1.11.1",
         "shelljs": "^0.8.4",
