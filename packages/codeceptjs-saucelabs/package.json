@@ -21,7 +21,7 @@
         "lint:prettier": "eslint lib/**/*.js --fix && prettier --write -ignore-unknown . "
     },
     "dependencies": {
-        "@wdio/sauce-service": "7.7.3",
+        "@wdio/sauce-service": "7.16.10",
         "codeceptjs-saucehelper": "1.4.0",
         "debug": "4.1.1",
         "deepmerge": "4.0.0",
