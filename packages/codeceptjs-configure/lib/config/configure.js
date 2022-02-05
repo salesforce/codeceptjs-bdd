@@ -59,7 +59,10 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
     }
 
     master_conf.plugins.stepByStepReport.output = conf.output;
-    master_conf.gherkin.steps = conf.gherkin.steps ? {} : master_conf.gherkin.steps;
+
+    if (master_conf.gherkin && conf.gherkin) {
+        master_conf.gherkin.steps = conf.gherkin.steps ? {} : master_conf.gherkin.steps;
+    }
 
     const config = merge(
         merge(
