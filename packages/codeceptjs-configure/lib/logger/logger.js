@@ -4,7 +4,8 @@ const chalk = require('chalk');
 
 const isTypescriptDef = () => process.argv.includes('def');
 
-const printTypescriptDef = () => cli.default.log(`\n${chalk.bgBlue.bold('📝 Generating Typescript Defs...\n')}`);
+const printTypescriptDef = () =>
+    cli.default.log(`\n${chalk.bgBlue.bold(chalk.white('📝 Generating Typescript Defs...\n'))}`);
 
 const log = (logMessage) => {
     if (isTypescriptDef()) {
@@ -63,7 +64,7 @@ const welcome = (name) => {
         message = message.concat(zap).concat(' ');
     }
 
-    cli.default.log(chalk.yellow(message.concat('\n')));
+    cli.default.log(chalk.green.bold(message.concat('\n')));
 };
 
 module.exports = { log, welcome, host, error, isTypescriptDef, printTypescriptDef };

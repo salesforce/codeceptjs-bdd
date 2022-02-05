@@ -1,4 +1,4 @@
-const debug = require('debug')('codeceptjs-selenoid:config');
+const debug = require('debug')('codeceptjs-bdd:selenoid:config');
 const merge = require('deepmerge');
 const chalk = require('chalk');
 const emoji = require('node-emoji');

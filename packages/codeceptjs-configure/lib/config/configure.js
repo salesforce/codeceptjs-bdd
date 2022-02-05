@@ -3,7 +3,7 @@ const merge = require('deepmerge');
 const master_conf = require('./master/codecept.master.conf').master_conf;
 const logger = require('../logger/logger');
 const chalk = require('chalk');
-const debug = require('debug')('config');
+const debug = require('debug')('codeceptjs-bdd:config');
 
 const driversConf = require('./drivers/drivers.conf');
 const gDriver = process.env.DRIVER;
@@ -50,7 +50,7 @@ const create = (conf, userSpecifiedSauceBrowsers) => {
 
     logger.log({
         chalk: chalk.bgBlue.bold,
-        message: driverMessage,
+        message: chalk.white(driverMessage),
         emoji: 'star2',
     });
 

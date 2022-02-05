@@ -1,6 +1,6 @@
 const defaultBrowsers = require('./browsers.conf').browsers;
 const customConfig = require('./browsers.conf').customConfig;
-const debug = require('debug')('codeceptjs-saucelabs:config');
+const debug = require('debug')('codeceptjs-bdd:saucelabs:config');
 const merge = require('deepmerge');
 const chalk = require('chalk');
 const emoji = require('node-emoji');
