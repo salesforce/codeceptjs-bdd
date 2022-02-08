@@ -80,6 +80,7 @@ const playwright_conf = function () {
         helpers: {
             Playwright: {
                 url: host.get(),
+                pressKeyDelay: 3,
                 waitForNavigation: 'domcontentloaded',
                 show: process.env.HEADLESS === 'false',
                 waitForTimeout: (env.BROWSER_WAIT_TIMEOUT_IN_SECONDS || 15) * 1000,
