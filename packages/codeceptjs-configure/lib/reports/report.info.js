@@ -17,6 +17,10 @@ async function parse(options, callback) {
     const categoriesJson = _getFilePath(options, 'categories.json');
     const categories = JSON.parse(await fs.readFileSync(categoriesJson));
 
+    // read suitesJson
+    const suitesJsonFilePath = _getFilePath(options, 'suites.json');
+    const suitesJson = JSON.parse(await fs.readFileSync(suitesJsonFilePath));
+
     // read environments
     const environmentJson = path.join(options.pathToHtmlReportDir, 'widgets', 'environment.json');
     const environments = JSON.parse(await fs.readFileSync(environmentJson));
@@ -24,6 +28,7 @@ async function parse(options, callback) {
     return {
         behaviors,
         suites,
+        suitesJson,
         categories,
         environments,
     };
