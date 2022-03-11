@@ -24,7 +24,7 @@
     "dependencies": {
         "@codeceptjs/helper": "1.0.2",
         "camelcase": "6.0.0",
-        "cli-ux": "5.4.5",
+        "cli-ux": "5.6.5",
         "csv-parse": "4.15.4",
         "dateformat": "4.5.1",
         "deepmerge": "4.2.2",
