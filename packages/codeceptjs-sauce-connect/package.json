@@ -26,7 +26,7 @@
         "sauce:connect": "node bin/sauce.connect.launcher.js"
     },
     "dependencies": {
-        "cfonts": "2.9.1",
+        "cfonts": "2.10.0",
         "chalk": "4.1.0",
         "commander": "7.0.0",
         "computer-name": "0.1.0",
