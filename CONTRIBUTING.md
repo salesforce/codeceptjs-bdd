@@ -10,7 +10,7 @@ If you'd like to contribute, please make sure to discuss the intended changes ei
 1. Create a [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows) locally such as `feature/support-visual-testing` for new Feature or `bugfix/saucelabs-api` for Bug fixes.
 1. Install [Lerna](https://www.npmjs.com/package/lerna) globally.
 1. Install [Node and YARN](https://nodejs.org/en/).
-1. `cd codepceptjs-bdd` and run `learna bootstrap` to install dependencies.
+1. `cd codepceptjs-bdd` and run `lerna bootstrap` to install dependencies.
 1. Make your changes locally and commit to your Forked git repository
 1. Create a PR to the origin `codeceptjs-bdd` `develop` branch.
 1. Once your changes are approved in `develop` branch, it will be released within few days.
