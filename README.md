@@ -23,9 +23,18 @@ One line Setup,
 npx create-codeceptjs-bdd-tests
 ```
 
+Supported Node engine,
+
+```
+ "engines": {
+        "yarn": ">=3.1.0",
+        "node": ">=14.3.0 <15.0.0"
+    },
+```
+
 This **Interactive CLI** walks you through the _step-step setup_. It will setup,
 
--   Executios on both Webdriver & Playwright.
+-   Executions on both Webdriver & Playwright.
 -   Create the framework structure with page objects, helpers, plugins, test env files etc.
 -   Integrate Sauce Labs with framework
 -   Provides default BDD & Mocha-style example scenarios to start with
@@ -84,11 +93,12 @@ HEADLESS=true yarn acceptance:parallel --profile playwright:chrome
 ###### For more info about the framework visit [CodeceptJS BDD Docs](http://gkushang.github.io/) & https://codecept.io/
 
 ### Ease of working with Shadow Elements. Webdriver & Playwright Parity
-Assuming you've enabled the Shadow DOM Support thru the CLI framework setup. 
 
-Let's say you want to fill-field on the Shadow element on this Lighting Web Components page: https://recipes.lwc.dev/. You aren't required to provide the DOM Hierarchy in this framework and still, it will find the elements thru Webdriver (Playwright has default support). Meaning, it provides the Playwright parity with Webdriver. 
+Assuming you've enabled the Shadow DOM Support thru the CLI framework setup.
 
-Means, same tests can run on both: Webdriver & Playwright. 
+Let's say you want to fill-field on the Shadow element on this Lighting Web Components page: https://recipes.lwc.dev/. You aren't required to provide the DOM Hierarchy in this framework and still, it will find the elements thru Webdriver (Playwright has default support). Meaning, it provides the Playwright parity with Webdriver.
+
+Means, same tests can run on both: Webdriver & Playwright.
 
 So, all you need to provide unique CSS as shown below,
 
@@ -96,12 +106,13 @@ So, all you need to provide unique CSS as shown below,
 I.fillField('ui-input input','codeceptjs-bdd')
 ```
 
-There may be cases that doesn't require you to deal with Shadow Element, e.g. plain login page, you can disable the Shadow Locators finder by providing CSS objects, e.g. 
+There may be cases that doesn't require you to deal with Shadow Element, e.g. plain login page, you can disable the Shadow Locators finder by providing CSS objects, e.g.
 
 ```
 I.fillField({css: 'div.username'},'myusername');
 I.fillField({css: 'div.password'},'******');
 ```
+
 ## Have any questions? Join Slack community for more help
 
 [Slack Chat](https://bit.ly/chat-codeceptjs) and join channel `#codeceptjs-bdd` for any specific questions about this framework
