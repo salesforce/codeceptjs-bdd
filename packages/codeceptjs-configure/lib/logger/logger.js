@@ -53,7 +53,7 @@ const welcome = (name) => {
     }
 
     if (name && !name.toLowerCase().includes('codecept')) {
-        name = `Codeceptjs: ${name}`;
+        name = `Codecept: ${name}`;
     }
 
     const h1Name = name || 'Codeceptjs-BDD Acceptance Tests';
