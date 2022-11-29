@@ -47,7 +47,7 @@
         "cfonts": "^2.8.6",
         "cli-ux": "^5.4.5",
         "codeceptjs": "^3.1.1",
-        "figlet": "1.2.3",
+        "figlet": "1.5.2",
         "inquirer": "7.0.0",
         "node-emoji": "1.10.0",
         "playwright": "1.11.1",
