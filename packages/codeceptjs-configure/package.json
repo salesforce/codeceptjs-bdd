@@ -15,7 +15,7 @@
         "name": "Kushang Gajjar",
         "email": "g.kushang@gmail.com"
     },
-    "main": "lib/index.js",
+    "main": "index.js",
     "scripts": {
         "lint": "eslint lib/**/*.js",
         "lint:prettier": "eslint lib/**/*.js --fix && prettier --write -ignore-unknown . ",
