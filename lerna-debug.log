@@ -1,0 +1,7 @@
+45 error Error: Command failed: git tag create-codeceptjs-bdd-tests@8.1.6 -m create-codeceptjs-bdd-tests@8.1.6
+45 error fatal: tag 'create-codeceptjs-bdd-tests@8.1.6' already exists
+45 error
+45 error     at makeError (/Users/kgajjar/dev/b2c/codeceptjs-bdd/node_modules/execa/index.js:174:9)
+45 error     at /Users/kgajjar/dev/b2c/codeceptjs-bdd/node_modules/execa/index.js:278:16
+45 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+45 error     at async Promise.all (index 0)
