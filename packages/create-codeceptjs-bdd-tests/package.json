@@ -57,8 +57,7 @@
         "webdriverio": "^7.10.1"
     },
     "engines": {
-        "node": "16.18.1",
-        "yarn": "1.22.10"
+        "node": "^14 || ^16"
     },
     "gitHead": "927755a5397582e973027ece1eb36aab015d459b"
 }
