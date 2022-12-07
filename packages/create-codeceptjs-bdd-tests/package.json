@@ -56,8 +56,5 @@
         "typescript": "4.1.2",
         "webdriverio": "^7.10.1"
     },
-    "engines": {
-        "node": "^14 || ^16"
-    },
     "gitHead": "927755a5397582e973027ece1eb36aab015d459b"
 }
