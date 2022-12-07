@@ -1,6 +1,6 @@
 {
     "name": "create-codeceptjs-bdd-tests",
-    "version": "8.1.6",
+    "version": "8.1.5",
     "description": "Create Codeceptjs BDD Tests",
     "keywords": [
         "Cucumber",
@@ -55,6 +55,9 @@
         "ts-node": "9.1.0",
         "typescript": "4.1.2",
         "webdriverio": "^7.10.1"
+    },
+    "engines": {
+        "node": ">=14.0.0 <17.0.0"
     },
     "gitHead": "927755a5397582e973027ece1eb36aab015d459b"
 }
