@@ -8,10 +8,10 @@ exports.addNpmScripts = (packageJson, RELATIVE_PATH, DRIVER) => {
 
     const SCRIPTS = `"scripts": {
                                     "acceptance": "codeceptjs def && codeceptjs run --steps", 
-                                    "acceptance:parallel": ${parallelScript},
-                                    "acceptance:parallel:multibrowsers": ${multibrowsersScript},
-                                    "acceptance:report": "allure serve ./${RELATIVE_PATH}/acceptance/report",
-                                    "acceptance:clean": "allure generate -c -o ./${RELATIVE_PATH}/acceptance/report",`;
+                                    "acceptance:parallel": ${parallelScript}",
+                                    "acceptance:parallel:multibrowsers": ${multibrowsersScript}",
+                                    "acceptance:clean": "allure generate -c -o ./${RELATIVE_PATH}/acceptance/report",
+                                    "acceptance:report": "allure serve ./${RELATIVE_PATH}/acceptance/report",`;
 
     shell.sed('-i', '"scripts": {', SCRIPTS, packageJson);
 };
