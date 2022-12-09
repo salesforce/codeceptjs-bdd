@@ -23,14 +23,7 @@ One line Setup,
 npx create-codeceptjs-bdd-tests
 ```
 
-Supported Node engine,
-
-```
- "engines": {
-        "yarn": ">=3.1.0",
-        "node": ">=14.3.0 <15.0.0"
-    },
-```
+Node 16 is required!
 
 This **Interactive CLI** walks you through the _step-step setup_. It will setup,
 
