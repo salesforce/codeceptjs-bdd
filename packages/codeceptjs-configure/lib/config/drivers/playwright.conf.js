@@ -92,6 +92,7 @@ const playwright_conf = function () {
                 emulate: {
                     ignoreHTTPSErrors: true,
                     acceptDownloads: true,
+                    javaScriptEnabled: env.PLAYWRIGHT_BROWSER_JAVASCRIPT_DISABLED !== 'true',
                     permissions: ['geolocation'],
                 },
                 browser: getPlaywrightBrowser(),
