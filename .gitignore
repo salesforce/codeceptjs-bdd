@@ -1,5 +1,6 @@
 node_modules
 packages/create-codeceptjs-bdd-tests/acceptance/report*/
+packages/create-codeceptjs-bdd-tests/yarn-error.log
 packages/salesforce-lwc-codecept-example/**/**/report/
 packages/create-codeceptjs-bdd-tests/acceptance/config/dev.codecept.secrets
 examples/webcomponents-playwright-webdriver-example/tests/acceptance/report
