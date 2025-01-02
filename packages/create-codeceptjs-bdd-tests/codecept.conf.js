@@ -25,6 +25,13 @@ let conf = {
         },
     },
 
+    plugins: {
+        allure: {
+          enabled: true,
+          require: '@codeceptjs/allure-legacy',
+        }
+    },
+
     /********************** Enable additional plugins as required
      * 
      * plugins: {

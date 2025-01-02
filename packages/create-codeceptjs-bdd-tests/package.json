@@ -40,6 +40,7 @@
         "ui:test:washer": "npx codeceptjs run-rerun"
     },
     "dependencies": {
+        "@codeceptjs/allure-legacy": "^1.0.2",
         "@wdio/selenium-standalone-service": "^7.10.1",
         "allure-commandline": "^2.9.0",
         "cfonts": "^2.8.6",
