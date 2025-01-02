@@ -19,7 +19,7 @@
         "@applitools/eyes-playwright": "^1.11.1",
         "@wdio/selenium-standalone-service": "^7.16.6",
         "allure-commandline": "^2.13.0",
-        "codeceptjs": "3.0.7",
+        "codeceptjs": "3.6.10",
         "codeceptjs-applitoolshelper": "git+https://github.com/gkushang/codeceptjs-applitoolshelper.git#master",
         "codeceptjs-configure": "^9.1.4",
         "codeceptjs-saucelabs": "^5.3.1",

@@ -4173,9 +4173,9 @@ codeceptjs-saucehelper@1.4.0:
   resolved "https://registry.npmjs.org/codeceptjs-saucehelper/-/codeceptjs-saucehelper-1.4.0.tgz"
   integrity sha512-ZsEuSJFqHhQxKymWjcrYeZqj/tlEX7jbpN8VhXJRb5EEfCLPQxDjzRzNNlY6pugcReoJ/Hy/aflfQKbS80BlQg==
 
-codeceptjs@^3.1.1:
+codeceptjs@^3.6.10:
   version "3.6.10"
-  resolved "https://registry.npmjs.org/codeceptjs/-/codeceptjs-3.6.10.tgz"
+  resolved "https://registry.yarnpkg.com/codeceptjs/-/codeceptjs-3.6.10.tgz#b8d232c0121a3ca550f44356ea7de1236baf4e5b"
   integrity sha512-enlNNuzNkXCYAAfU8yWi+ZoHvUFGUWjFF/H1IYXbik7krrPh0fte0PXU2LNWboHtY7Hvpiqwk3IgPcM1o5xX6Q==
   dependencies:
     "@codeceptjs/configure" "1.0.1"

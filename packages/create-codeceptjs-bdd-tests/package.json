@@ -45,7 +45,7 @@
         "allure-commandline": "^2.9.0",
         "cfonts": "^2.8.6",
         "cli-ux": "^5.4.5",
-        "codeceptjs": "^3.1.1",
+        "codeceptjs": "^3.6.10",
         "figlet": "1.5.2",
         "inquirer": "7.0.0",
         "node-emoji": "1.10.0",
