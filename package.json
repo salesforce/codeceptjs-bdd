@@ -18,7 +18,7 @@
         "packages/*"
     ],
     "scripts": {
-        "acceptance": "lerna run --scope create-codeceptjs-bdd-tests test",
+        "acceptance": "lerna run --scope create-codeceptjs-bdd-tests acceptance",
         "bootstrap": "lerna bootstrap",
         "circleci:test:playwright": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright",
         "circleci:test:playwright:parallel": "lerna run --scope create-codeceptjs-bdd-tests circleci:test:playwright:parallel",
