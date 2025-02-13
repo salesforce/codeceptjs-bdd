@@ -8,6 +8,7 @@ const { pageObjects } = require('../bdd/pageObjects');
 let masterConf = {
     output: process.env.CODECEPT_RELATIVE_PATH + 'report',
     cleanup: true,
+    maskSensitiveData: true, 
     helpers: {
         REST: {
             endpoint: host.get(),
